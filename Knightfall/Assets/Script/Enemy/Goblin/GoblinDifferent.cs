@@ -142,7 +142,10 @@ public class GoblinDifferent : EntityManager
             if (isParrying)
             {
                 TakeHitKnockback(0, target, force * 0.5f, knockBackDuration * 0.5f);
-                source.TakeKnockBack(transform.position, force * 0.5f, knockBackDuration * 0.5f);
+                if (source != null)
+                {
+                    source.TakeKnockBack(transform.position, force * 0.5f, knockBackDuration * 0.5f);
+                }
                 parryTimer = parryDuration;
                 audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
                 if (audioClips.Length > 0)
