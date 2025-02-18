@@ -22,7 +22,8 @@ public class RoninFlashSlash : MonoBehaviour
         {
             Destroy(attackInstance);
         }
-        attackInstance = Instantiate(attackZone, transform.position, Quaternion.identity);
+        Vector3 attackPos = new Vector3(transform.position.x, transform.position.y * 4f, transform.position.z);
+        attackInstance = Instantiate(attackZone, attackPos, Quaternion.identity);
         if(attackCoroutine != null) { 
             StopCoroutine(attackCoroutine);
         }

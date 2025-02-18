@@ -282,10 +282,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackZone: {fileID: 8179653642698619495, guid: 81c7188480a5c6e46a30c2ea7a2b9f8b, type: 3}
-  attackDuration: 1
-  Damage: 0
-  knockbackForce: 0
-  knockbackDuration: 0
+  attackDuration: 0.3
+  Damage: 5
+  knockbackForce: 3
+  knockbackDuration: 0.3
   attackCooldown: 5
 --- !u!82 &3842321875405047698
 AudioSource:
