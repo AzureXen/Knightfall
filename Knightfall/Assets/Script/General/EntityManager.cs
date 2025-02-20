@@ -50,7 +50,6 @@ public class EntityManager : MonoBehaviour
             Debug.Log("Knocking back.");
             if(knockbackTimer >= knockbackDuration)
             {
-                knockbackTimer = 0;
                 isKnockingBack=false;
             }
         }
@@ -151,8 +150,6 @@ public class EntityManager : MonoBehaviour
             IFrameCoroutine = null;
         }
     }
-
-    // Knockback duratiton is calculated here
     public void TakeKnockBack(Vector3 target, float force, float duration)
     {
         float finalKnockbackForce = force - knockbackResist;
