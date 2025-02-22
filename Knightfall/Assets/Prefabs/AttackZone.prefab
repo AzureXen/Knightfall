@@ -240,3 +240,5 @@ MonoBehaviour:
   damageSourcePosition: {x: 0, y: 0, z: 0}
   knockbackForce: 1
   knockbackDuration: 1
+  showHitbox: 1
+  attackShow: {fileID: 3646155254116413035}
