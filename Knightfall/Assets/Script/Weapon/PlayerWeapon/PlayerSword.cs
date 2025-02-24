@@ -10,7 +10,7 @@ public class PlayerSword : MonoBehaviour
 
     public float attackDuration = 1f;
     private float attackTimer;
-    private Boolean isAttacking = false;
+    public Boolean isAttacking = false;
 
     public float attackCooldown = 1f;
     private float attackCooldownTimer;
@@ -46,7 +46,8 @@ public class PlayerSword : MonoBehaviour
         isAttacking = true;
         attackTimer = attackDuration;
         attackCooldownTimer = attackCooldown;
-        while(attackTimer > 0)
+        Debug.Log("Attack Started! Duration: " + attackDuration + " seconds");
+        while (attackTimer > 0)
         {
             yield return null;
         }
