@@ -18,14 +18,24 @@ public class RoninFlashSlash : MonoBehaviour
     public Transform attackTransform;
 
     public float attackCooldown = 5f;
-    private float attackCoolDownTimer;
+    public float attackCoolDownTimer;
 
     private GameObject attackInstance;
     private Coroutine attackCoroutine;
 
+    [SerializeField] private float followPlayerDuration = 0.5f;
+    [SerializeField] private float delayAfterFollowDuration = 0.5f;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+    private void Update()
+    {
+        if(attackCoolDownTimer > 0)
+        {
+            attackCoolDownTimer -= Time.deltaTime;
+            attackCoolDownTimer = Mathf.Clamp(attackCoolDownTimer, 0, attackCooldown);
+        }
     }
 
     public void Attack()
@@ -50,8 +60,8 @@ public class RoninFlashSlash : MonoBehaviour
 
         // Aim attack at player.
         Vector3 playerPos = player.transform.position;
-        Vector3 attackRotation = (attackTransform.position - playerPos).normalized;
-        float rotateZ = Mathf.Atan2(attackRotation.y, attackRotation.x) * Mathf.Rad2Deg;
+        Vector3 attackDir = (attackTransform.position - playerPos).normalized;
+        float rotateZ = Mathf.Atan2(attackDir.y, attackDir.x) * Mathf.Rad2Deg;
         attackInstance.transform.RotateAround(attackTransform.position, Vector3.forward, rotateZ + 90);
 
         AttackZoneScript attackZoneScript = attackInstance.GetComponent<AttackZoneScript>();
@@ -59,12 +69,29 @@ public class RoninFlashSlash : MonoBehaviour
         attackZoneScript.knockbackForce = knockbackForce;
         attackZoneScript.knockbackDuration = knockbackDuration;
 
-        // Detach the attackInstance + DisableMove Enemy till the end of the hitbox over a time.
+        // Detach the attackInstance + Move Enemy till the end of the hitbox over a time.
         attackInstance.transform.parent = null;
-        Vector3 hitboxEnd = attackInstance.transform.position + attackInstance.transform.up * (attackInstance.transform.localScale.y / 2);
+        
         // Delay for a while + keep aiming at player for a specified amount of time
-        yield return new WaitForSeconds(1f);
+        float followPlayerTimer = 0f;
+        while (followPlayerTimer <= followPlayerDuration)
+        {
+            followPlayerTimer += Time.deltaTime;
 
+            Vector3 playerPosFollow = player.transform.position;
+            if(playerPosFollow != playerPos)
+            {
+                Vector3 attackDirFollow = (attackTransform.position - playerPosFollow).normalized;
+                float rotateZFollow = Mathf.Atan2(attackDirFollow.y, attackDirFollow.x) * Mathf.Rad2Deg;
+                float rotationDifference = rotateZFollow - rotateZ;
+                attackInstance.transform.RotateAround(attackTransform.position, Vector3.forward, rotationDifference);
+                rotateZ = rotateZFollow;
+                playerPos = playerPosFollow;
+            }
+            yield return null;
+        }
+        yield return new WaitForSeconds(delayAfterFollowDuration);
+        Vector3 hitboxEnd = attackInstance.transform.position + attackInstance.transform.up * (attackInstance.transform.localScale.y / 2);
         // Start Attacking
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         while (Vector3.Distance(transform.position, hitboxEnd) > 0.1f)

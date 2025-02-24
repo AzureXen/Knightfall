@@ -19,6 +19,7 @@ public class PlayerMovement : EntityMovement
     [SerializeField] private float staminaRegenPS;
     [SerializeField] private float sprintCostPerSecond;
     [SerializeField] private float dodgeCost;
+    [SerializeField] private float dodgeIFrameDuration;
 
 
     public Boolean isRunning;
@@ -121,7 +122,7 @@ public class PlayerMovement : EntityMovement
 
         isDodging = true;
 
-        playerManager.TakeIFrameNoCollision(0.5f);
+        playerManager.TakeIFrameNoCollision(dodgeIFrameDuration);
 
         DisableMovement();
 

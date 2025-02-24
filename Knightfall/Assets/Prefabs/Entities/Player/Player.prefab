@@ -471,6 +471,7 @@ MonoBehaviour:
   staminaRegenPS: 1
   sprintCostPerSecond: 2
   dodgeCost: 7
+  dodgeIFrameDuration: 0.2
   isRunning: 0
   isHoldingShift: 0
   isHoldingCtrl: 0
@@ -523,6 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   takeDamageCooldown: 1
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
 --- !u!114 &5191313729354690015
 MonoBehaviour:
