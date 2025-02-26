@@ -299,7 +299,7 @@ MonoBehaviour:
   knockbackForce: 3
   knockbackDuration: 0.3
   flashSpeed: 100
-  flashSlashRange: 12
+  flashSlashRange: 9
   attackTransform: {fileID: 2611350318778995394}
   attackCooldown: 9
   attackCoolDownTimer: 0
