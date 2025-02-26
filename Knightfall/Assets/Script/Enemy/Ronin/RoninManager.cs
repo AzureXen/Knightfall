@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+
 public class RoninManager : EntityManager
 {
     private RoninFlashSlash flashSlash;
@@ -18,6 +19,7 @@ public class RoninManager : EntityManager
     public AudioSource audioSource;
     public AudioClip[] audioClips;
 
+    private RoninAction roninAction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
@@ -34,6 +36,7 @@ public class RoninManager : EntityManager
         curMotivation = maxMotivation;
         superParry = 1;
         flashSlash = GetComponent<RoninFlashSlash>();
+        roninAction = GetComponent<RoninAction>();
     }
 
     private void Update()
@@ -50,7 +53,6 @@ public class RoninManager : EntityManager
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Debug.Log("RoninManager: Received Input");
             flashSlash.Attack();
         }
     }
@@ -59,6 +61,13 @@ public class RoninManager : EntityManager
     {
         if (canDamage)
         {
+            // If ronin is in the starting idle (not attacking at all) and takes a hit, he will start attacking now.
+            if(roninAction.currentAction == RoninAction.RoninActions.STARTING_IDLE)
+            {
+                roninAction.currentAction = RoninAction.RoninActions.IDLE;
+                Debug.Log("Ronin is starting to attack player.");
+                Debug.Log("Ronin's current action: " + roninAction.currentAction);
+            }
             if(superParry > 0)
             {
                 // super parry does NOT consume motivation.
@@ -106,6 +115,13 @@ public class RoninManager : EntityManager
     {
         if (canDamage)
         {
+            // If ronin is in the starting idle (not attacking at all) and takes a hit, he will start attacking now.
+            if (roninAction.currentAction == RoninAction.RoninActions.STARTING_IDLE)
+            {
+                roninAction.currentAction = RoninAction.RoninActions.IDLE;
+                Debug.Log("Ronin is starting to attack player.");
+                Debug.Log("Ronin's current action: " + roninAction.currentAction);
+            }
             if (curMotivation > 0)
             {
                 TakeHitKnockback(0, target, 0, 0);
@@ -133,6 +149,7 @@ public class RoninManager : EntityManager
     protected IEnumerator parryBreakStun(float duration)
     {
         isStunned = true;
+        roninAction.TakeStun(duration);
         yield return new WaitForSeconds(duration);
         isStunned = false;
         curMotivation = maxMotivation;

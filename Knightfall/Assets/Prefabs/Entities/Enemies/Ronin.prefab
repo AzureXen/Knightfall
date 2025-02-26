@@ -245,6 +245,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01072610dfcdd934b80c3c276a03c403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMoving: 0
+  isChasing: 0
+  canMove: 1
+  moveSpeed: 2
+  chaseSpeed: 4
+  idealDistance: 5
+  directionChangeInterval: 1
+  distanceThreshold: 0.5
 --- !u!114 &5314194225283207780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e840dd469eacbf34aa9f67ab1bef4345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceFromPlayer: 0
+  currentAction: 0
+  attackCooldown: 5
+  canDecide: 1
 --- !u!114 &617716884915444814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,10 +298,13 @@ MonoBehaviour:
   Damage: 5
   knockbackForce: 3
   knockbackDuration: 0.3
-  flashSpeed: 70
+  flashSpeed: 100
   flashSlashRange: 12
   attackTransform: {fileID: 2611350318778995394}
   attackCooldown: 9
+  attackCoolDownTimer: 0
+  followPlayerDuration: 0.75
+  delayAfterFollowDuration: 0.2
 --- !u!82 &3842321875405047698
 AudioSource:
   m_ObjectHideFlags: 0
