@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3105092191268293472}
   - component: {fileID: 2616187512052471055}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PopupText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 830211977303327962}
   - component: {fileID: 2416761870622719773}
   - component: {fileID: 4793453382198943402}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PopupText
   m_TagString: Untagged
   m_Icon: {fileID: 0}

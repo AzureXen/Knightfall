@@ -469,7 +469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps: {fileID: 5582966858010730386}
-  playerAnimator: {fileID: 4393373870306327074}
   isSwinging: 0
 --- !u!95 &3978976347696205881
 Animator:
@@ -765,8 +764,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -801896167
+  m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: 5989588498724427480, guid: 6a3e862fd6c587e4898a938b7505a7d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -874,6 +873,7 @@ MonoBehaviour:
   staminaRegenPS: 1
   sprintCostPerSecond: 2
   dodgeCost: 7
+  dodgeIFrameDuration: 0
   isRunning: 0
   isHoldingShift: 0
   isHoldingCtrl: 0

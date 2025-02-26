@@ -81,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -801896167
+  m_SortingLayer: 4
   m_SortingOrder: 5
   m_Sprite: {fileID: 972327949096590531, guid: 73addc00e88d6684ab6a9994f65d2f9a, type: 3}
   m_Color: {r: 0.8218724, g: 0.028301716, b: 1, a: 1}
@@ -233,7 +233,10 @@ MonoBehaviour:
   maxParry: 5
   curParry: 5
   parryCooldown: 5
+  parryCooldownTimer: 0
+  isRegeningParry: 0
   parryDuration: 1
+  isParrying: 0
   canParry: 1
   audioSource: {fileID: 643083985646931971}
   audioClips:

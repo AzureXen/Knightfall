@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5873426698671900827}
   - component: {fileID: 4831670173560622275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -801896167
+  m_SortingLayer: 4
   m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9245283, g: 0.53552866, b: 0.53552866, a: 0.21568628}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3400673123594348961}
   - component: {fileID: 1936413555610810091}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SquareFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,8 +160,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -801896167
+  m_SortingLayer: 4
   m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.7283019, g: 0.21849048, b: 0.21849048, a: 0.50980395}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2960562660747988364}
   - component: {fileID: 7975223625800518281}
   - component: {fileID: 8987500162671258083}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackWarningSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
