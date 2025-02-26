@@ -280,6 +280,7 @@ MonoBehaviour:
   distanceFromPlayer: 0
   currentAction: 0
   attackCooldown: 5
+  canDecide: 1
 --- !u!114 &617716884915444814
 MonoBehaviour:
   m_ObjectHideFlags: 0
