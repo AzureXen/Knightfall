@@ -52,7 +52,8 @@ public class PlayerSword : MonoBehaviour
             yield return null;
         }
         hitbox.SetActive(false);
-        isAttacking=false;
+        isAttacking =false;
+        Debug.Log("Attack Stopped");
     }
 
     // if during attack, the player switches their weapon, disable the hitbox

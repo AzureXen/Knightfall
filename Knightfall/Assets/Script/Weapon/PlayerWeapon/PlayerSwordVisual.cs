@@ -3,34 +3,25 @@ using UnityEngine;
 
 public class PlayerSwordVisual : MonoBehaviour
 {
-    private PlayerAnimator playerAnimator;
+    private Camera mainCam;
 
-    private Vector3 defaultSwordPosition;
-    private Vector3 flippedSwordPosition;
+    private Vector3 mousePos;
 
     private bool lastFlipState;
     void Start()
     {
-        playerAnimator = transform.parent.parent.parent.GetComponent<PlayerAnimator>();
-        defaultSwordPosition = transform.localPosition;
-        flippedSwordPosition = new Vector3(-defaultSwordPosition.x, defaultSwordPosition.y, defaultSwordPosition.z);
-
-        lastFlipState = playerAnimator.isFlipped;
-        SwordPositionCheck();
+        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     void Update()
     {
-        if (playerAnimator.isFlipped != lastFlipState)
-        {
-            lastFlipState = playerAnimator.isFlipped;
-            SwordPositionCheck();
-        }
-    }
-    void SwordPositionCheck()
-    {
-        transform.localScale = new Vector3(playerAnimator.isFlipped ? -1 : 1, 1, 1);
+        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
 
-        transform.localPosition = playerAnimator.isFlipped ? flippedSwordPosition : defaultSwordPosition;
+        Vector3 playerToMouse = mousePos - transform.position;
+
+        float rotateZ = Mathf.Atan2(playerToMouse.y, playerToMouse.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0, 0, rotateZ);
     }
+    
 }
