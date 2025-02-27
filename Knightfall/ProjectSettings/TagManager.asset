@@ -61,5 +61,14 @@ TagManager:
   - name: Decor
     uniqueID: 2044281619
     locked: 0
+  - name: GroundDesert
+    uniqueID: 205003993
+    locked: 0
+  - name: GroundDetailsDesert
+    uniqueID: 1422644239
+    locked: 0
+  - name: ObstaclesDesert
+    uniqueID: 2459854755
+    locked: 0
   m_RenderingLayers:
   - Default
