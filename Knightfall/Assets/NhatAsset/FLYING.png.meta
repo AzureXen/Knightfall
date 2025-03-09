@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: ee2acf989bf0f274db67d582a117ffd1
+guid: 5c071d9b0a5f2ab41a1c7fcc32641fbf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8578021242791487037
-    second: KnightJumpAndFall_strip_0
+      213: 6772775923325811741
+    second: FLYING_0
+  - first:
+      213: 5941632107932350943
+    second: FLYING_1
+  - first:
+      213: -2846053855543560624
+    second: FLYING_2
+  - first:
+      213: -6678637041112908962
+    second: FLYING_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,29 +105,38 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KnightJumpAndFall_strip_0
+      name: FLYING_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2016
+        x: 1
+        y: 6
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c372d81dbbdfd50800000000000000
+      internalID: 6772775923325811741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2
+        width: 62
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +146,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c998a3c02fb4f880800000000000000
-      internalID: -8578021242791487037
+      spriteID: fd9fc5b0ceae47250800000000000000
+      internalID: 5941632107932350943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 6
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056f1b0f819c088d0800000000000000
+      internalID: -2846053855543560624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 6
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bf2bcfef6b053a0800000000000000
+      internalID: -6678637041112908962
       vertices: []
       indices: 
       edges: []
@@ -138,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 36132646ec15cdf43aefdd086c6414e5
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KnightJumpAndFall_strip_0: -8578021242791487037
+      FLYING_0: 6772775923325811741
+      FLYING_1: 5941632107932350943
+      FLYING_2: -2846053855543560624
+      FLYING_3: -6678637041112908962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

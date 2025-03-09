@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee2acf989bf0f274db67d582a117ffd1
+guid: 572601e344b3d214ebc78e5b586f304c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8578021242791487037
-    second: KnightJumpAndFall_strip_0
+      213: -825278261400980603
+    second: grasses_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KnightJumpAndFall_strip_0
+      name: grasses_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2016
-        height: 64
+        width: 1920
+        height: 969
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c998a3c02fb4f880800000000000000
-      internalID: -8578021242791487037
+      spriteID: 583b7543bc50c84f0800000000000000
+      internalID: -825278261400980603
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      KnightJumpAndFall_strip_0: -8578021242791487037
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
