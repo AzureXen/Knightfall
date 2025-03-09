@@ -7,19 +7,29 @@ public class RoninManager : EntityManager
 {
     private RoninFlashSlash flashSlash;
 
+
     [SerializeField] private float maxMotivation;
     [SerializeField] private float curMotivation;
     [SerializeField] private float motivationRegenRate;
-    [SerializeField] private int maxSuperParry;
-    [SerializeField] private int superParry;
-    [SerializeField] private float stunDuration;    
+    [SerializeField] private int maxAbsoluteDefenseStacks;
+    [SerializeField] private int curAbsoluteDefenseStacks;
+    [SerializeField] private float absoluteDefenseKnockbackForce;
+    [SerializeField] private float absoluteDefenseKknockbackDuration;
+    [SerializeField] private float stunDuration;
 
+    [SerializeField] private float parryStateDuration = 0.75f;
+    [SerializeField] public float parryStateTimer = 0;
+    [SerializeField] private int resilience = 0;
+    [SerializeField] private int resilienceStacksToAbsoluteDefense = 2;
+    public Boolean isInParryState = false;
     private Boolean isStunned = false;
 
     public AudioSource audioSource;
     public AudioClip[] audioClips;
 
     private RoninAction roninAction;
+
+    public Boolean canParry = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
@@ -34,13 +44,24 @@ public class RoninManager : EntityManager
         defaultColor = new Color(1, 1, 1, 1);
 
         curMotivation = maxMotivation;
-        superParry = 1;
+        curAbsoluteDefenseStacks = 1;
         flashSlash = GetComponent<RoninFlashSlash>();
         roninAction = GetComponent<RoninAction>();
     }
 
     private void Update()
     {
+        if (parryStateTimer > 0)
+        {
+            parryStateTimer -= Time.deltaTime;
+            isInParryState = true;
+        }
+        else
+        {
+            isInParryState = false;
+            resilience = 0;
+        }
+
         if(curMotivation < 0 && !isStunned)
         {
             StartCoroutine(parryBreakStun(stunDuration));
@@ -68,12 +89,20 @@ public class RoninManager : EntityManager
                 Debug.Log("Ronin is starting to attack player.");
                 Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
-            if(superParry > 0)
+
+
+            if(curAbsoluteDefenseStacks > 0 && canParry)
             {
+                // Activating superParry will immediately end ParryState.
+                if(parryStateTimer > 0)
+                {
+                    parryStateTimer = 0;
+                }
+                roninAction.EnterAbsoluteDefense();
                 // super parry does NOT consume motivation.
                 TakeHitKnockback(0, target, 0, 0);
-                source.TakeKnockBack(transform.position, 15, 0.4f);
-                superParry--;
+                source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
+                curAbsoluteDefenseStacks--;
                 audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
                 if (audioClips.Length > 0)
                 {
@@ -87,8 +116,28 @@ public class RoninManager : EntityManager
                 }
 
             }
-            else if(curMotivation > 0)
+            else if(curMotivation > 0 && canParry)
             {
+                // If Ronin can parry can attack, and currently is not in Parry State, enter Parry State
+                if(!isInParryState)
+                {
+                    parryStateTimer = parryStateDuration;
+                    isInParryState = true;
+                    Debug.Log("Entering Parry state.");
+                    roninAction.EnterParryState();
+                }
+                // If Ronin is in Parry State (the parryStateDuration is > 0) start accumulating Anger.
+                if(parryStateTimer > 0)
+                {
+                    resilience++;
+                    parryStateTimer = parryStateDuration;
+                    if (resilience >= resilienceStacksToAbsoluteDefense)
+                    {
+                        resilience = 0;
+                        curAbsoluteDefenseStacks++;
+                        curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
+                    }
+                }
                 curMotivation -= damage;
                 TakeHitKnockback(0, target, force * 0.25f, knockBackDuration * 0.25f);
                 source.TakeKnockBack(transform.position, force * 0.75f, knockBackDuration * 0.75f);
@@ -103,6 +152,11 @@ public class RoninManager : EntityManager
                 {
                     Debug.LogWarning("Audio for ParryHit not found.");
                 }
+            }
+            // If motivation is > 0 but currently cannot parry, reduce 50% damage and 50% knockback.
+            else if(curMotivation > 0)
+            {
+                TakeHitKnockback(damage/2, target, force * 0.5f, knockBackDuration * 0.5f);
             }
             else
             {
@@ -119,11 +173,28 @@ public class RoninManager : EntityManager
             if (roninAction.currentAction == RoninAction.RoninActions.STARTING_IDLE)
             {
                 roninAction.currentAction = RoninAction.RoninActions.IDLE;
-                Debug.Log("Ronin is starting to attack player.");
-                Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
-            if (curMotivation > 0)
+            if (curMotivation > 0 && canParry)
             {
+                if (!isInParryState)
+                {
+                    parryStateTimer = parryStateDuration;
+                    isInParryState = true;
+                    Debug.Log("Entering Parry state.");
+                    roninAction.EnterParryState();
+                }
+                // If Ronin is in Parry State (the parryStateDuration is > 0) start accumulating Anger.
+                // Ranged Hits will not accumulate resilience
+                if (parryStateTimer > 0)
+                {
+                    parryStateTimer = parryStateDuration;
+                    if (resilience >= resilienceStacksToAbsoluteDefense)
+                    {
+                        resilience = 0;
+                        curAbsoluteDefenseStacks++;
+                        curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
+                    }
+                }
                 TakeHitKnockback(0, target, 0, 0);
                 audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
                 if (audioClips.Length > 0)
@@ -153,8 +224,8 @@ public class RoninManager : EntityManager
         yield return new WaitForSeconds(duration);
         isStunned = false;
         curMotivation = maxMotivation;
-        superParry++;
-        superParry = Mathf.Clamp(superParry, 0, maxSuperParry);
+        curAbsoluteDefenseStacks++;
+        curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
     }
 
 }

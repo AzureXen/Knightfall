@@ -118,8 +118,6 @@ public class PlayerMovement : EntityMovement
 
     public IEnumerator Dodge()
     {
-        Debug.Log("Attempted to dodge");
-
         isDodging = true;
 
         playerManager.TakeIFrameNoCollision(dodgeIFrameDuration);

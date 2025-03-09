@@ -155,7 +155,6 @@ public class EntityManager : MonoBehaviour
         float finalKnockbackForce = force - knockbackResist;
         if (finalKnockbackForce > 0)
         {
-            Debug.Log("Taking knockback force: " + finalKnockbackForce);
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
     }
@@ -165,8 +164,6 @@ public class EntityManager : MonoBehaviour
         yield return null;
         if (rb != null)
         {
-            Debug.Log("found the rigidbody.");
-            Debug.Log("The rigidbody belongs to: " + rb.transform);
         }
         Vector3 direction = (transform.position - target).normalized;
         knockbackDirection = direction;
