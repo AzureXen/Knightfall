@@ -14,11 +14,11 @@ GameObject:
   - component: {fileID: 8226357010408771277}
   - component: {fileID: 1509373930504333433}
   - component: {fileID: 4384462308866755112}
-  - component: {fileID: 3242120519581929639}
-  - component: {fileID: 5163320077356515978}
-  - component: {fileID: 258100558819524261}
+  - component: {fileID: 4278970029570211888}
+  - component: {fileID: 4074364276650737111}
+  - component: {fileID: 6514825574535031309}
   m_Layer: 7
-  m_Name: square
+  m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1344780703779386018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.97, y: 1.64, z: 0}
+  m_LocalPosition: {x: 2.61, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: -801896167
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 972327949096590531, guid: 73addc00e88d6684ab6a9994f65d2f9a, type: 3}
+  m_Sprite: {fileID: 368543389579951487, guid: 48c00e89617d74f4c955fa300e46f67f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -143,17 +143,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.010508597, y: 0.036779046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8076923, y: 0.9230769}
+    oldSize: {x: 1.125, y: 0.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.67, y: 0.89}
+  m_Size: {x: 1.3215204, y: 1.0686424}
   m_EdgeRadius: 0
 --- !u!50 &1509373930504333433
 Rigidbody2D:
@@ -192,7 +192,7 @@ Animator:
   m_GameObject: {fileID: 1344780703779386018}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50d533c5f2827734c91a3e40e4e46b2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4aa86cfcb3bed2c4d9e73f03c1d7e366, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,7 +204,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3242120519581929639
+--- !u!114 &4278970029570211888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,10 +213,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344780703779386018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bb2852e2b68a94c9fee457e163f185, type: 3}
+  m_Script: {fileID: 11500000, guid: a9cc8ea491ac32943af8d6d88c175a25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5163320077356515978
+--- !u!114 &4074364276650737111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,10 +225,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344780703779386018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59a544b9a34e1bc4d81148290a3e7aa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f89f91ed1cc07a40a7e529d91775be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &258100558819524261
+  takeDamageCooldown: 0.2
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  knockbackResist: 0
+  touchDamageEnabled: 1
+  touchDamage: 5
+  touchKnockbackForce: 5
+  touchKnockbackDuration: 1.5
+--- !u!114 &6514825574535031309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,6 +244,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344780703779386018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c867199dae2f6504da5930619fd497de, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ae86f7f1e706ea4eb37fe8467df35f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  moveSpeed: 2
+  canMove: 1
+  moveDir: {x: 0, y: 0}
