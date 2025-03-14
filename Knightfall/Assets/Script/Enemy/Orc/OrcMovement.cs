@@ -8,10 +8,12 @@ public class OrcMovement : EntityMovement
     [SerializeField] private float moveSpeed = 2;
     public Boolean canMove = true;
     [HideInInspector] public Vector2 moveDir;
+    private SpriteRenderer SpriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine(FindPlayer());
+        SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class OrcMovement : EntityMovement
             {
                 moveDir = (player.transform.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+                SpriteRenderer.flipX = moveDir.x < 0? true : false;
             }
             else moveDir = Vector2.zero;
         }
