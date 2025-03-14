@@ -65,12 +65,14 @@ public class EntityManager : MonoBehaviour
             bullet.DestroyBullet();
         }
     }
-    public virtual void TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
+    public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
         if (canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
+            return true;
         }
+        return false;
     }
 
     public virtual void TakeHitKnockback(int damage, Vector3 target, float force, float duration)

@@ -173,6 +173,7 @@ public class RoninAction : MonoBehaviour
     }
     public void EnterParryState()
     {
+        if (currentAction == RoninAction.RoninActions.PARRY) return;
         if (ActionCoroutine != null)
         {
             StopCurrentAction();
@@ -191,6 +192,10 @@ public class RoninAction : MonoBehaviour
             while (parryStateTimer > 0)
             {
                 yield return null;
+                if (currentAction != RoninActions.PARRY)
+                {
+                    EnterParryState();
+                }
             }
         }
         finally
@@ -230,6 +235,7 @@ public class RoninAction : MonoBehaviour
     {
         try
         {
+            roninAnimator.canChangeDirection = false;
             canDecide = false;
             ChangeAnimationState(RONIN_STUNNED);
             currentAction = RoninActions.STUNNED;
@@ -245,6 +251,7 @@ public class RoninAction : MonoBehaviour
         }
         finally
         {
+            attackCooldownTimer = 1f;
             canDecide = true;
             ChangeAnimationState(RONIN_IDLE);
             currentAction = RoninActions.IDLE;

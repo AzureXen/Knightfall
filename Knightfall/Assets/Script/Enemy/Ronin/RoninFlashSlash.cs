@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoninFlashSlash : MonoBehaviour
 {
+    private RoninSFX roninSFX;
     private RoninAnimator roninAnimator;
     private RoninAction roninAction;
     private GameObject player;
@@ -30,6 +31,7 @@ public class RoninFlashSlash : MonoBehaviour
     [SerializeField] private float delayAfterFollowDuration = 0.5f;
     private void Start()
     {
+        roninSFX = GetComponent<RoninSFX>();
         roninAnimator = GetComponent<RoninAnimator>();
         roninAction = GetComponent<RoninAction>();
         player = GameObject.FindGameObjectWithTag("Player");
@@ -87,6 +89,9 @@ public class RoninFlashSlash : MonoBehaviour
             attackZoneScript.knockbackForce = knockbackForce;
             attackZoneScript.knockbackDuration = knockbackDuration;
 
+            attackZoneScript.attackZoneType = AttackZoneScript.AttackZoneType.FlashSlash;
+            attackZoneScript.roninSFX = roninSFX;
+
 
             // Keep aiming at player for a specified amount of time + Delay for a while  
             float followPlayerTimer = 0f;
@@ -115,6 +120,10 @@ public class RoninFlashSlash : MonoBehaviour
             attackInstance.transform.parent = null;
             Vector3 hitboxEnd = attackInstance.transform.position + attackInstance.transform.up * (attackInstance.transform.localScale.y / 2);
             // Start Attacking
+
+            // play sfx
+            roninSFX.playFlashSlash();
+
             roninAction.ChangeAnimationState("RoninAttack2");
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
             while (Vector3.Distance(transform.position, hitboxEnd) > 0.1f)

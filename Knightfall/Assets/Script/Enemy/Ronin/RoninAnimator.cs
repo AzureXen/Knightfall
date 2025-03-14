@@ -22,10 +22,10 @@ public class RoninAnimator : MonoBehaviour
     {
         if(canChangeDirection)
         {
-            updateDirection();
+            UpdateDirection();
         }
     }
-    private void updateDirection()
+    private void UpdateDirection()
     {
         Vector3 playerPos = player.transform.position;
         Vector3 playerDir = playerPos - transform.position;
