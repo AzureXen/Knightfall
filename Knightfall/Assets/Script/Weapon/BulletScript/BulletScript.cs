@@ -11,8 +11,9 @@ public class BulletScript : MonoBehaviour
     public int damage = 5;
     public float knockbackForce = 0f;
     public float knockbackDuration = 1.5f;
-    void Start()
+    protected virtual void Start()
     {
+
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
