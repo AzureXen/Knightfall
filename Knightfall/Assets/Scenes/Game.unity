@@ -643,10 +643,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1373613633}
-  - {fileID: 789177697}
+  - {fileID: 666822078}
   - {fileID: 1285175239}
   - {fileID: 334619455}
-  - {fileID: 666822078}
+  - {fileID: 789177697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285180861
@@ -4070,7 +4070,7 @@ GameObject:
   - component: {fileID: 666822080}
   - component: {fileID: 666822079}
   m_Layer: 0
-  m_Name: Decor
+  m_Name: Walk Infront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4132,8 +4132,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2044281619
-  m_SortingLayer: 6
+  m_SortingLayerID: -1227522643
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.65625, y: 0.375, z: 0}
@@ -4433,7 +4433,7 @@ GameObject:
   - component: {fileID: 789177699}
   - component: {fileID: 789177698}
   m_Layer: 0
-  m_Name: Walk Infront
+  m_Name: Decor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
