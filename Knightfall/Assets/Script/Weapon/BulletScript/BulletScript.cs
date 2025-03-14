@@ -35,10 +35,6 @@ public class BulletScript : MonoBehaviour
                 enemyManager.TakeRangedHit(damage, transform.position, knockbackForce, knockbackDuration, this);
             }
         }
-        else
-        {
-            Debug.Log("Hm, the bullet might've gone through something.");
-        }
     }
     public virtual void DestroyBullet()
     {

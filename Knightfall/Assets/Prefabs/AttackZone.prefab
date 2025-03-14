@@ -235,6 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070f343077c941948aec3a72d7ff7386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackZoneType: 0
+  roninSFX: {fileID: 0}
   damage: 5
   damageSourcePosition: {x: 0, y: 0, z: 0}
   knockbackForce: 1

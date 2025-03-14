@@ -873,7 +873,7 @@ MonoBehaviour:
   staminaRegenPS: 1
   sprintCostPerSecond: 2
   dodgeCost: 7
-  dodgeIFrameDuration: 0
+  dodgeIFrameDuration: 0.2
   isRunning: 0
   isHoldingShift: 0
   isHoldingCtrl: 0
