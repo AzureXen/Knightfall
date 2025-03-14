@@ -94,7 +94,7 @@ public class EntityManager : MonoBehaviour
         return false;
     }
 
-    protected void TakeDamage(int damage)
+    protected virtual void TakeDamage(int damage)
     {
         entityHealth.TakeDamage(damage);
         if(damage>0)

@@ -30,13 +30,7 @@ public class SwordAnimator : MonoBehaviour
 
         if (ps.isAttacking)
         {
-            am.SetBool("isAttacking", true);
-            isSwinging = true;
-        }
-        else
-        {
-            am.SetBool("isAttacking", false);
-            isSwinging = false;
+            am.SetTrigger("SwordAttack");
         }
     }
 }

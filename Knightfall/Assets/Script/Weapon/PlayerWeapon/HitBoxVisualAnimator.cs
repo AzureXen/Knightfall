@@ -29,13 +29,9 @@ public class HitBoxVisualAnimator : MonoBehaviour
 
         if (ps == null) { return; }
 
-        if (ps.isAttacking && swordAnimator.isSwinging)
+        if (ps.isAttacking)
         {
-            am.SetBool("Swing", true);
-        }
-        else
-        {
-            am.SetBool("Swing", false);
+            am.SetTrigger("Slash");
         }
     }
 }
