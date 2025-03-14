@@ -40,20 +40,20 @@ public class EntityManager : MonoBehaviour
         defaultColor = Color.white;
     }
 
-    protected virtual void FixedUpdate()
-    {
-        if(isKnockingBack)
-        {
-            rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
-            //rb.AddForce(new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce));
-            knockbackTimer += Time.deltaTime;
-            Debug.Log("Knocking back.");
-            if(knockbackTimer >= knockbackDuration)
-            {
-                isKnockingBack=false;
-            }
-        }
-    }
+    //protected virtual void FixedUpdate()
+    //{
+    //    if(isKnockingBack)
+    //    {
+    //        rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
+    //        //rb.AddForce(new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce));
+    //        knockbackTimer += Time.deltaTime;
+    //        Debug.Log("Knocking back.");
+    //        if(knockbackTimer >= knockbackDuration)
+    //        {
+    //            isKnockingBack=false;
+    //        }
+    //    }
+    //}
 
 
 
@@ -160,25 +160,41 @@ public class EntityManager : MonoBehaviour
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
     }
+    //protected IEnumerator KnockBack(Vector3 target, float force, float duration)
+    //{
+    //    entityMovement.DisableMovement();
+    //    yield return null;
+    //    if (rb != null)
+    //    {
+
+    //    }
+    //    Vector3 direction = (transform.position - target).normalized;
+    //    knockbackDirection = direction;
+    //    knockbackForce = force;
+    //    knockbackDuration = duration;
+    //    isKnockingBack = true;
+    //    while (isKnockingBack)
+    //    {
+    //        yield return null;
+    //    }
+    //    knockbackTimer = 0;
+    //    rb.linearVelocity = Vector2.zero;
+    //    yield return null;
+    //    entityMovement.EnableMovement();
+    //}
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
         entityMovement.DisableMovement();
         yield return null;
+
         if (rb != null)
         {
+            Vector3 direction = (transform.position - target).normalized;
+            rb.AddForce(direction * force, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(duration);
+            rb.linearVelocity = Vector2.zero; // Stop movement after duration
         }
-        Vector3 direction = (transform.position - target).normalized;
-        knockbackDirection = direction;
-        knockbackForce = force;
-        knockbackDuration = duration;
-        isKnockingBack = true;
-        while (isKnockingBack)
-        {
-            yield return null;
-        }
-        knockbackTimer = 0;
-        rb.linearVelocity = Vector2.zero;
-        yield return null;
+
         entityMovement.EnableMovement();
     }
 
