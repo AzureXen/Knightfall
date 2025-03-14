@@ -16,7 +16,7 @@ public class PlayerSword : MonoBehaviour
     private float attackCooldownTimer;
 
     public GameObject hitbox;
-
+    private Coroutine attackCoroutine;
 
     void Update()
     {
@@ -37,7 +37,8 @@ public class PlayerSword : MonoBehaviour
     {
         if(Input.GetMouseButton(0) && !isAttacking && attackCooldownTimer<=0)
         {
-            StartCoroutine(Attack());
+            if (attackCoroutine != null) { isAttacking = false; StopCoroutine(attackCoroutine); }
+            attackCoroutine = StartCoroutine(Attack());
         }
     }
     protected IEnumerator Attack()
@@ -46,14 +47,12 @@ public class PlayerSword : MonoBehaviour
         isAttacking = true;
         attackTimer = attackDuration;
         attackCooldownTimer = attackCooldown;
-        Debug.Log("Attack Started! Duration: " + attackDuration + " seconds");
         while (attackTimer > 0)
         {
             yield return null;
         }
         hitbox.SetActive(false);
         isAttacking =false;
-        Debug.Log("Attack Stopped");
     }
 
     // if during attack, the player switches their weapon, disable the hitbox
