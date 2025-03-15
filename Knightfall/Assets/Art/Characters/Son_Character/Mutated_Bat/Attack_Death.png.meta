@@ -972,7 +972,41 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Attack_Death_0: 7051569666769413183
+      Attack_Death_1: 3355160325758913367
+      Attack_Death_10: -9181884007693990783
+      Attack_Death_11: 1806965657638384130
+      Attack_Death_12: 5506870040858791492
+      Attack_Death_13: -7934279377675453263
+      Attack_Death_14: -5117701492536573826
+      Attack_Death_15: -3292277959050694989
+      Attack_Death_16: -2009615105169470660
+      Attack_Death_17: -6115643389030267353
+      Attack_Death_18: 6451183594309502060
+      Attack_Death_19: 6486754135457146693
+      Attack_Death_2: -6462162399864093068
+      Attack_Death_20: -2453780940628272107
+      Attack_Death_21: -1246206116603511237
+      Attack_Death_22: 1996142947548522532
+      Attack_Death_23: 8226904695329717848
+      Attack_Death_24: -2185861296781916084
+      Attack_Death_25: -4765398934046978762
+      Attack_Death_26: 6263829243534591349
+      Attack_Death_27: 5904820559696576678
+      Attack_Death_28: 1073316427800233758
+      Attack_Death_29: 2958051317785355931
+      Attack_Death_3: -6276267626261231713
+      Attack_Death_30: -911607844786994374
+      Attack_Death_31: -1236877438925980969
+      Attack_Death_32: 7057258647793461774
+      Attack_Death_33: 2203826264753426247
+      Attack_Death_4: 8066835656369006423
+      Attack_Death_5: 4672724178084132957
+      Attack_Death_6: -6634907459196939941
+      Attack_Death_7: 8239048191989321363
+      Attack_Death_8: -8529900236272937431
+      Attack_Death_9: 194770928370593996
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

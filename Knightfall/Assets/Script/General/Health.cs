@@ -1,11 +1,13 @@
-using System;
+﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
     public int health = 100;
+    public Slider healthBar;
 
     // used to instantiate
     public GameObject popUpDamage;
@@ -15,6 +17,13 @@ public class Health : MonoBehaviour
     void Start()
     {
         health = maxHealth;
+
+        if (healthBar != null)
+        {
+            healthBar.minValue = 0;      // Đảm bảo minValue là 0
+            healthBar.maxValue = maxHealth;
+            healthBar.value = health;
+        }
     }
     private void Update()
     {
@@ -34,6 +43,15 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount)
     {
         health -= amount;
+
+        health = Mathf.Clamp(health, 0, maxHealth);
+
+        // Cập nhật thanh máu
+        if (healthBar != null)
+        {
+            healthBar.value = health;
+        }
+
         popUpText = Instantiate(popUpDamage, transform.position, Quaternion.identity) as GameObject;
         TextMeshPro damageDisplayMesh = popUpText.transform.GetChild(0).GetComponent<TextMeshPro>();
         damageDisplayMesh.text = amount.ToString();
