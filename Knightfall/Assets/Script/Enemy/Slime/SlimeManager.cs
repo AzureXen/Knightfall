@@ -35,5 +35,15 @@ namespace Assets.Script.Enemy.Slime
                 targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
             }
         }
+        public void SetSlimeColor(Color newColor)
+        {
+            sr.color = newColor;
+        }
+
+        public void ResetColor()
+        {
+            sr.color = defaultColor;
+        }
+
     }
 }

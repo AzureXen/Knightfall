@@ -233,8 +233,8 @@ MonoBehaviour:
   knockbackResist: 0
   touchDamageEnabled: 1
   touchDamage: 5
-  touchKnockbackForce: 5
-  touchKnockbackDuration: 1.5
+  touchKnockbackForce: 4
+  touchKnockbackDuration: 1
 --- !u!114 &6514825574535031309
 MonoBehaviour:
   m_ObjectHideFlags: 0
