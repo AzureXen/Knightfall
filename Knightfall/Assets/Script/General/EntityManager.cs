@@ -40,20 +40,20 @@ public class EntityManager : MonoBehaviour
         defaultColor = Color.white;
     }
 
-    protected virtual void FixedUpdate()
-    {
-        if(isKnockingBack)
-        {
-            rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
-            //rb.AddForce(new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce));
-            knockbackTimer += Time.deltaTime;
-            Debug.Log("Knocking back.");
-            if(knockbackTimer >= knockbackDuration)
-            {
-                isKnockingBack=false;
-            }
-        }
-    }
+    //protected virtual void FixedUpdate()
+    //{
+    //    if(isKnockingBack)
+    //    {
+    //        rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
+    //        //rb.AddForce(new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce));
+    //        knockbackTimer += Time.deltaTime;
+    //        Debug.Log("Knocking back.");
+    //        if(knockbackTimer >= knockbackDuration)
+    //        {
+    //            isKnockingBack=false;
+    //        }
+    //    }
+    //}
 
 
 
@@ -65,12 +65,14 @@ public class EntityManager : MonoBehaviour
             bullet.DestroyBullet();
         }
     }
-    public virtual void TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
+    public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
         if (canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
+            return true;
         }
+        return false;
     }
 
     public virtual void TakeHitKnockback(int damage, Vector3 target, float force, float duration)
@@ -92,7 +94,7 @@ public class EntityManager : MonoBehaviour
         return false;
     }
 
-    protected void TakeDamage(int damage)
+    protected virtual void TakeDamage(int damage)
     {
         entityHealth.TakeDamage(damage);
         if(damage>0)
@@ -155,31 +157,44 @@ public class EntityManager : MonoBehaviour
         float finalKnockbackForce = force - knockbackResist;
         if (finalKnockbackForce > 0)
         {
-            Debug.Log("Taking knockback force: " + finalKnockbackForce);
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
     }
+    //protected IEnumerator KnockBack(Vector3 target, float force, float duration)
+    //{
+    //    entityMovement.DisableMovement();
+    //    yield return null;
+    //    if (rb != null)
+    //    {
+
+    //    }
+    //    Vector3 direction = (transform.position - target).normalized;
+    //    knockbackDirection = direction;
+    //    knockbackForce = force;
+    //    knockbackDuration = duration;
+    //    isKnockingBack = true;
+    //    while (isKnockingBack)
+    //    {
+    //        yield return null;
+    //    }
+    //    knockbackTimer = 0;
+    //    rb.linearVelocity = Vector2.zero;
+    //    yield return null;
+    //    entityMovement.EnableMovement();
+    //}
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
         entityMovement.DisableMovement();
         yield return null;
+
         if (rb != null)
         {
-            Debug.Log("found the rigidbody.");
-            Debug.Log("The rigidbody belongs to: " + rb.transform);
+            Vector3 direction = (transform.position - target).normalized;
+            rb.AddForce(direction * force, ForceMode2D.Impulse);
+            yield return new WaitForSeconds(duration);
+            rb.linearVelocity = Vector2.zero; // Stop movement after duration
         }
-        Vector3 direction = (transform.position - target).normalized;
-        knockbackDirection = direction;
-        knockbackForce = force;
-        knockbackDuration = duration;
-        isKnockingBack = true;
-        while (isKnockingBack)
-        {
-            yield return null;
-        }
-        knockbackTimer = 0;
-        rb.linearVelocity = Vector2.zero;
-        yield return null;
+
         entityMovement.EnableMovement();
     }
 
