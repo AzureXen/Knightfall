@@ -1,30 +1,9 @@
 fileFormatVersion: 2
-guid: e41cff490f56ef047b3cb1a1dd5b7529
+guid: ae8dedfadc8ec1f4ca0f6569b8b694be
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3219084086770127776
-    second: bones_0
-  - first:
-      213: -5193276013480602723
-    second: bones_1
-  - first:
-      213: -2189497306108170101
-    second: bones_2
-  - first:
-      213: 4172300919306603057
-    second: bones_3
-  - first:
-      213: 3631403871238202601
-    second: bones_4
-  - first:
-      213: 969903907407778509
-    second: bones_5
-  - first:
-      213: 906551114975076398
-    second: bones_6
+  internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -55,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,20 +67,19 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -111,11 +89,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -124,187 +101,154 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bones_0
+      name: Grape Attack Sheet_0
       rect:
         serializedVersion: 2
-        x: 187
-        y: 403
-        width: 170
-        height: 62
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0a3db06ebeb7cac20800000000000000
-      internalID: 3219084086770127776
+      spriteID: c5bddf07723047b4dad343e7137a1f5c
+      internalID: 1406116747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_1
+      name: Grape Attack Sheet_1
       rect:
         serializedVersion: 2
-        x: 1143
-        y: 343
-        width: 110
-        height: 118
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d939eeb1bf6cde7b0800000000000000
-      internalID: -5193276013480602723
+      spriteID: 402f88e55252e4c4ca2defa6f78cec82
+      internalID: 1296675522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_2
+      name: Grape Attack Sheet_2
       rect:
         serializedVersion: 2
-        x: 1683
-        y: 371
-        width: 90
-        height: 94
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b807fb0fcc75d91e0800000000000000
-      internalID: -2189497306108170101
+      spriteID: 5fd9124f48af02142a3b17f753e0dbea
+      internalID: -985190142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_3
+      name: Grape Attack Sheet_3
       rect:
         serializedVersion: 2
-        x: 435
-        y: 219
-        width: 102
-        height: 102
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13a4e4f849df6e930800000000000000
-      internalID: 4172300919306603057
+      spriteID: 382eef8ecb368714ab21b07636d16696
+      internalID: 1467392578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_4
+      name: Grape Attack Sheet_4
       rect:
         serializedVersion: 2
-        x: 679
-        y: 159
-        width: 222
-        height: 74
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e4a125b496556230800000000000000
-      internalID: 3631403871238202601
+      spriteID: 927c5f0d564a2ff45a098e56f922ef39
+      internalID: -1913615474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_5
+      name: Grape Attack Sheet_5
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 203
-        width: 166
-        height: 106
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc2dd4b077ac57d00800000000000000
-      internalID: 969903907407778509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bones_6
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 83
-        width: 158
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e20e2da9f67b49c00800000000000000
-      internalID: 906551114975076398
+      spriteID: a9d34442e49c5e342ac3f5f7a93f4e7d
+      internalID: -193403796
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
-      bones_0: 3219084086770127776
-      bones_1: -5193276013480602723
-      bones_2: -2189497306108170101
-      bones_3: 4172300919306603057
-      bones_4: 3631403871238202601
-      bones_5: 969903907407778509
-      bones_6: 906551114975076398
+      Grape Attack Sheet_2: -985190142
+      Grape Attack Sheet_0: 1406116747
+      Grape Attack Sheet_1: 1296675522
+      Grape Attack Sheet_3: 1467392578
+      Grape Attack Sheet_4: -1913615474
+      Grape Attack Sheet_5: -193403796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

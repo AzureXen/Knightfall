@@ -1,30 +1,9 @@
 fileFormatVersion: 2
-guid: e41cff490f56ef047b3cb1a1dd5b7529
+guid: cb72e768b48297d478695f82b2c7a327
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3219084086770127776
-    second: bones_0
-  - first:
-      213: -5193276013480602723
-    second: bones_1
-  - first:
-      213: -2189497306108170101
-    second: bones_2
-  - first:
-      213: 4172300919306603057
-    second: bones_3
-  - first:
-      213: 3631403871238202601
-    second: bones_4
-  - first:
-      213: 969903907407778509
-    second: bones_5
-  - first:
-      213: 906551114975076398
-    second: bones_6
+  internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -55,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -88,12 +67,12 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,7 +93,46 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -131,180 +149,192 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bones_0
+      name: Gold Coin Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 187
-        y: 403
-        width: 170
-        height: 62
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0a3db06ebeb7cac20800000000000000
-      internalID: 3219084086770127776
+      spriteID: fd7861035ef783b45bd869fa47e6548f
+      internalID: 205855355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_1
+      name: Gold Coin Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 1143
-        y: 343
-        width: 110
-        height: 118
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d939eeb1bf6cde7b0800000000000000
-      internalID: -5193276013480602723
+      spriteID: 68a7781d6785fdd44a3c8803e86016be
+      internalID: -1076202174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_2
+      name: Gold Coin Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 1683
-        y: 371
-        width: 90
-        height: 94
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b807fb0fcc75d91e0800000000000000
-      internalID: -2189497306108170101
+      spriteID: f1ec57b01387a66489a1e0fd81f3d986
+      internalID: 338963362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_3
+      name: Gold Coin Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 435
-        y: 219
-        width: 102
-        height: 102
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13a4e4f849df6e930800000000000000
-      internalID: 4172300919306603057
+      spriteID: ea8dd736478ff5e409244ebe623b3e28
+      internalID: -162949500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_4
+      name: Gold Coin Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 679
-        y: 159
-        width: 222
-        height: 74
+        x: 64
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e4a125b496556230800000000000000
-      internalID: 3631403871238202601
+      spriteID: 50177768f6f3b244ea1d71c282870e70
+      internalID: -522400976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_5
+      name: Gold Coin Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 203
-        width: 166
-        height: 106
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc2dd4b077ac57d00800000000000000
-      internalID: 969903907407778509
+      spriteID: ff2c8ff19ab4d384ab4544e8f6cfab73
+      internalID: -715903769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bones_6
+      name: Gold Coin Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 131
-        y: 83
-        width: 158
-        height: 86
+        x: 96
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e20e2da9f67b49c00800000000000000
-      internalID: 906551114975076398
+      spriteID: 3a9c9fb0a59a4024e965e6ac182e0b0d
+      internalID: 729079226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold Coin Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc7a61e44f9dd348a1111d29d01344b
+      internalID: -1482499336
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
-      bones_0: 3219084086770127776
-      bones_1: -5193276013480602723
-      bones_2: -2189497306108170101
-      bones_3: 4172300919306603057
-      bones_4: 3631403871238202601
-      bones_5: 969903907407778509
-      bones_6: 906551114975076398
+      Gold Coin Sprite Sheet_0: 205855355
+      Gold Coin Sprite Sheet_1: -1076202174
+      Gold Coin Sprite Sheet_2: 338963362
+      Gold Coin Sprite Sheet_3: -162949500
+      Gold Coin Sprite Sheet_4: -522400976
+      Gold Coin Sprite Sheet_5: -715903769
+      Gold Coin Sprite Sheet_6: 729079226
+      Gold Coin Sprite Sheet_7: -1482499336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
