@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     // used to make the text follow
     private GameObject popUpText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public virtual void Start()
     {
         health = maxHealth;
 
@@ -25,14 +25,14 @@ public class Health : MonoBehaviour
             healthBar.value = health;
         }
     }
-    private void Update()
+    public virtual void Update()
     {
         if (health <= 0)
         {
             Destroy(gameObject);
         }
     }
-    private void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         if(popUpText != null)
         {
@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
         }
     }
     // Update is called once per frame
-    public void TakeDamage(int amount)
+    public virtual void TakeDamage(int amount)
     {
         health -= amount;
 

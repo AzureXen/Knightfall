@@ -8,6 +8,9 @@ TagManager:
   - Bullet
   - Stair
   - StairHandRail
+  - BGM
+  - SceneController
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -15,6 +18,9 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Enemy
+  - Wall
   - 
   - 
   - 
@@ -50,6 +56,26 @@ TagManager:
     locked: 0
   - name: Floor2
     uniqueID: 540790365
+  - name: Foreground
+    uniqueID: 3264982367
+    locked: 0
+  - name: Walk Infront
+    uniqueID: 3067444653
+    locked: 0
+  - name: Collision
+    uniqueID: 1248464309
+    locked: 0
+  - name: Entity
+    uniqueID: 3493071129
+    locked: 0
+  - name: Walk Behind
+    uniqueID: 2387183377
+    locked: 0
+  - name: Decor
+    uniqueID: 2044281619
+    locked: 0
+  - name: DecorVFX
+    uniqueID: 1553567527
     locked: 0
   m_RenderingLayers:
   - Default

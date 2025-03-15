@@ -135,7 +135,7 @@ public class GoblinDifferent : EntityManager
             }
         }
     }
-    public override void TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
+    public override Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
         if (canDamage)
         {
@@ -158,6 +158,7 @@ public class GoblinDifferent : EntityManager
                 {
                     Debug.LogWarning("Audio for ParryHit not found.");
                 }
+                return false;
             }
             else
             {
@@ -179,13 +180,16 @@ public class GoblinDifferent : EntityManager
                     {
                         Debug.LogWarning("Audio for ParryHit not found.");
                     }
+                    return false;
                 }
                 else
                 {
                     TakeHitKnockback(damage, target, force, knockBackDuration);
+                    return true;
                 }
             }
         }
+        return false;
     }
     public override void TakeHitKnockback(int damage, Vector3 target, float force, float duration)
     {

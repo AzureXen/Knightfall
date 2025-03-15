@@ -3,6 +3,30 @@ using UnityEngine;
 
 public class PlayerManager : EntityManager
 {
+    Animator am;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public override void Start()
+    {
+        base.Start();
+        entityMovement = GetComponent<PlayerMovement>();
+        am = GetComponent<Animator>();
+        EntityName = "Player";
+    }
+
+    protected override IEnumerator FlashRed()
+    {
+        am.SetTrigger("Hurt");
+        yield return new WaitForSeconds(0.7f);
+    }
+
+}
+
+/*
+ using System.Collections;
+using UnityEngine;
+
+public class PlayerManager : EntityManager
+{
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
@@ -29,3 +53,4 @@ public class PlayerManager : EntityManager
         flashCoroutine = null;
     }
 }
+ */

@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 13f805e39aeaab743a5928180c6ba352
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1583918931172937737
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_0
+  - first:
+      213: -5854672278450262099
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_1
+  - first:
+      213: -4444373516009388609
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_2
+  - first:
+      213: 5455126537865555588
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_3
+  - first:
+      213: 8311258927362225384
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_4
+  - first:
+      213: 1410480016658682097
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_5
+  - first:
+      213: -9200110618185376299
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_6
+  - first:
+      213: -720071950000834839
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_7
+  - first:
+      213: -7546672071909482846
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_8
+  - first:
+      213: 5700940139979638556
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_9
+  - first:
+      213: 2919416619588783262
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_10
+  - first:
+      213: 2558351674652371611
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_11
+  - first:
+      213: 2772611197411884088
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_12
+  - first:
+      213: -2134418622165948655
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_13
+  - first:
+      213: 470173584568143106
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_14
+  - first:
+      213: -7226880845741572251
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_15
+  - first:
+      213: 9145606219884550339
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_16
+  - first:
+      213: -3817121962200758800
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_17
+  - first:
+      213: -6560002050793214396
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_18
+  - first:
+      213: -8864882887834739468
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_19
+  - first:
+      213: 6487546994208320488
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_20
+  - first:
+      213: -4228741837694482400
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_21
+  - first:
+      213: 1406130419540445493
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_22
+  - first:
+      213: 5414324179200971765
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_23
+  - first:
+      213: -157485889522973134
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_24
+  - first:
+      213: 8973165865507358629
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_25
+  - first:
+      213: 5708828359347775311
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_26
+  - first:
+      213: -6199799921945004463
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_27
+  - first:
+      213: 620554815102127964
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_28
+  - first:
+      213: 5365219574759547561
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_29
+  - first:
+      213: -7148484299752268938
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_30
+  - first:
+      213: -7491954871682036564
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_31
+  - first:
+      213: 4121619518578249380
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_32
+  - first:
+      213: -6954077462495655358
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_33
+  - first:
+      213: 6015219753957742238
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_34
+  - first:
+      213: 4451031618347244179
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_35
+  - first:
+      213: 5861177517208392899
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_36
+  - first:
+      213: 7172115442080680462
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_37
+  - first:
+      213: -4615247262253109442
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_38
+  - first:
+      213: -4014029270482522538
+    second: jack-brown-black-idle-and-shoulder-stretch-sheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900549d30e53bf510800000000000000
+      internalID: 1583918931172937737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf25a6059600cea0800000000000000
+      internalID: -5854672278450262099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb54b11a5d96252c0800000000000000
+      internalID: -4444373516009388609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e68460fa084bb40800000000000000
+      internalID: 5455126537865555588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e438b1a5f5875370800000000000000
+      internalID: 8311258927362225384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f05ab32a18039310800000000000000
+      internalID: 1410480016658682097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddd2c41324a25080800000000000000
+      internalID: -9200110618185376299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e63a77606ac106f0800000000000000
+      internalID: -720071950000834839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae597d0cb5d44790800000000000000
+      internalID: -7546672071909482846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1780493adecd1f40800000000000000
+      internalID: 5700940139979638556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c06f1a2f9d38820800000000000000
+      internalID: 2919416619588783262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a2e2a1b47118320800000000000000
+      internalID: 2558351674652371611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c7102b13b4a7620800000000000000
+      internalID: 2772611197411884088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117e1df52950162e0800000000000000
+      internalID: -2134418622165948655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dc4f25264668600800000000000000
+      internalID: 470173584568143106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56fbf731926f4bb90800000000000000
+      internalID: -7226880845741572251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c852d7c668bbee70800000000000000
+      internalID: 9145606219884550339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f58ea2accbd60bc0800000000000000
+      internalID: -3817121962200758800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ee2a424e036f4a0800000000000000
+      internalID: -6560002050793214396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcdb2f4bfb99f480800000000000000
+      internalID: -8864882887834739468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eba0756e95680a50800000000000000
+      internalID: 6487546994208320488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028436514bd7055c0800000000000000
+      internalID: -4228741837694482400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5394494aa24938310800000000000000
+      internalID: 1406130419540445493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f31518972b832b40800000000000000
+      internalID: 5414324179200971765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236c8d9fa6f70ddf0800000000000000
+      internalID: -157485889522973134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a70a3410d6178c70800000000000000
+      internalID: 8973165865507358629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47a99a6525d93f40800000000000000
+      internalID: 5708828359347775311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15639f5a1d2e5f9a0800000000000000
+      internalID: -6199799921945004463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f02d50157ac9800800000000000000
+      internalID: 620554815102127964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2e38fe6c6157a40800000000000000
+      internalID: 5365219574759547561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b1fc6576b7bcc90800000000000000
+      internalID: -7148484299752268938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac82200dba370890800000000000000
+      internalID: -7491954871682036564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae4c286d1fe23930800000000000000
+      internalID: 4121619518578249380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a856364672e7f90800000000000000
+      internalID: -6954077462495655358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9650980f7a5a7350800000000000000
+      internalID: 6015219753957742238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a9e9f9cad35cd30800000000000000
+      internalID: 4451031618347244179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c456b6e5e5175150800000000000000
+      internalID: 5861177517208392899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a005dbef8788360800000000000000
+      internalID: 7172115442080680462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f2fce411953ffb0800000000000000
+      internalID: -4615247262253109442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-black-idle-and-shoulder-stretch-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e6ede45ad4b48c0800000000000000
+      internalID: -4014029270482522538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a9c722d689336014783b90a304ea6c97
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jack-brown-black-idle-and-shoulder-stretch-sheet_0: 1583918931172937737
+      jack-brown-black-idle-and-shoulder-stretch-sheet_1: -5854672278450262099
+      jack-brown-black-idle-and-shoulder-stretch-sheet_10: 2919416619588783262
+      jack-brown-black-idle-and-shoulder-stretch-sheet_11: 2558351674652371611
+      jack-brown-black-idle-and-shoulder-stretch-sheet_12: 2772611197411884088
+      jack-brown-black-idle-and-shoulder-stretch-sheet_13: -2134418622165948655
+      jack-brown-black-idle-and-shoulder-stretch-sheet_14: 470173584568143106
+      jack-brown-black-idle-and-shoulder-stretch-sheet_15: -7226880845741572251
+      jack-brown-black-idle-and-shoulder-stretch-sheet_16: 9145606219884550339
+      jack-brown-black-idle-and-shoulder-stretch-sheet_17: -3817121962200758800
+      jack-brown-black-idle-and-shoulder-stretch-sheet_18: -6560002050793214396
+      jack-brown-black-idle-and-shoulder-stretch-sheet_19: -8864882887834739468
+      jack-brown-black-idle-and-shoulder-stretch-sheet_2: -4444373516009388609
+      jack-brown-black-idle-and-shoulder-stretch-sheet_20: 6487546994208320488
+      jack-brown-black-idle-and-shoulder-stretch-sheet_21: -4228741837694482400
+      jack-brown-black-idle-and-shoulder-stretch-sheet_22: 1406130419540445493
+      jack-brown-black-idle-and-shoulder-stretch-sheet_23: 5414324179200971765
+      jack-brown-black-idle-and-shoulder-stretch-sheet_24: -157485889522973134
+      jack-brown-black-idle-and-shoulder-stretch-sheet_25: 8973165865507358629
+      jack-brown-black-idle-and-shoulder-stretch-sheet_26: 5708828359347775311
+      jack-brown-black-idle-and-shoulder-stretch-sheet_27: -6199799921945004463
+      jack-brown-black-idle-and-shoulder-stretch-sheet_28: 620554815102127964
+      jack-brown-black-idle-and-shoulder-stretch-sheet_29: 5365219574759547561
+      jack-brown-black-idle-and-shoulder-stretch-sheet_3: 5455126537865555588
+      jack-brown-black-idle-and-shoulder-stretch-sheet_30: -7148484299752268938
+      jack-brown-black-idle-and-shoulder-stretch-sheet_31: -7491954871682036564
+      jack-brown-black-idle-and-shoulder-stretch-sheet_32: 4121619518578249380
+      jack-brown-black-idle-and-shoulder-stretch-sheet_33: -6954077462495655358
+      jack-brown-black-idle-and-shoulder-stretch-sheet_34: 6015219753957742238
+      jack-brown-black-idle-and-shoulder-stretch-sheet_35: 4451031618347244179
+      jack-brown-black-idle-and-shoulder-stretch-sheet_36: 5861177517208392899
+      jack-brown-black-idle-and-shoulder-stretch-sheet_37: 7172115442080680462
+      jack-brown-black-idle-and-shoulder-stretch-sheet_38: -4615247262253109442
+      jack-brown-black-idle-and-shoulder-stretch-sheet_39: -4014029270482522538
+      jack-brown-black-idle-and-shoulder-stretch-sheet_4: 8311258927362225384
+      jack-brown-black-idle-and-shoulder-stretch-sheet_5: 1410480016658682097
+      jack-brown-black-idle-and-shoulder-stretch-sheet_6: -9200110618185376299
+      jack-brown-black-idle-and-shoulder-stretch-sheet_7: -720071950000834839
+      jack-brown-black-idle-and-shoulder-stretch-sheet_8: -7546672071909482846
+      jack-brown-black-idle-and-shoulder-stretch-sheet_9: 5700940139979638556
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
