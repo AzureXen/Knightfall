@@ -7,16 +7,13 @@ public class UIManager : MonoBehaviour
     public GameObject pausePanel;
     public GameObject optionPanel;
 
-    Animator animator;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
     }
     public void OnRestartPress()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        animator.SetTrigger("Press");
     }
 
     public void OnContinuePress()
@@ -33,7 +30,6 @@ public class UIManager : MonoBehaviour
     {
         pauseUI.SetActive(true);
         Time.timeScale = 0;
-        animator.SetTrigger("Press");
     }
 
     public void OnSettingsPress()
