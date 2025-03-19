@@ -2,14 +2,11 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using static RoninAction;
 
 public class NecromancerManager : EntityManager
 {
-    private NecromancerAttack necromancerAttack;
-
-    [SerializeField] private float maxMana;
-    [SerializeField] private float curMana;
+    [SerializeField] private int maxMana;
+    public int curMana;
     [SerializeField] private float manaExhaustDuration;
 
     private Boolean isOOM = false;
@@ -27,25 +24,25 @@ public class NecromancerManager : EntityManager
         EntityName = "Necromancer";
         defaultColor = new Color(1, 1, 1, 1);
 
-        necromancerAttack = GetComponent<NecromancerAttack>();
         actions = GetComponent<NecromancerActions>();
     }
 
     void Update()
     {
-        if (curMana <= 0)
-        {
-            StartCoroutine(ManaExhaust(manaExhaustDuration));
-        }
+
     }
 
     public void DepletingMana()
     {
         if (curMana > 0 && !isOOM)
         {
-            isOOM = false;
-            curMana--;
+            curMana -= 1;
         }
+    }
+
+    public void DepletedMana()
+    {
+        StartCoroutine(ManaExhaust(manaExhaustDuration));
     }
 
     protected IEnumerator ManaExhaust(float duration)

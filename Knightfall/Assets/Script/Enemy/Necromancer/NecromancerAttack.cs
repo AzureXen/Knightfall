@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class NecromancerAttack : MonoBehaviour
 {
-    private NecromancerManager manager;
     private GameObject player;
     public GameObject attackHitbox;
     public GameObject skeleton;
     private Animator animator;
     private UndeadHealth undeadHealth;
+
+    NecromancerManager manager;
 
     public float attackDuration = 1f;
     public int Damage;
@@ -34,13 +35,14 @@ public class NecromancerAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         undeadHealth = GetComponent<UndeadHealth>();
+        manager = GetComponent<NecromancerManager>();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (undeadHealth.inflictPain) { Destroy(attackInstance); }
+        if (undeadHealth.inflictPain && attackInstance!=null) { Destroy(attackInstance); }
         if (IsOnCooldown)
         {
             cooldownTimer -= Time.deltaTime;
@@ -67,6 +69,7 @@ public class NecromancerAttack : MonoBehaviour
             StopCoroutine(attackCoroutine);
         }
         StartCooldown();
+        manager.DepletingMana();
         attackCoroutine = StartCoroutine(AttackCoroutine());
     }
     public IEnumerator AttackCoroutine()
@@ -108,6 +111,7 @@ public class NecromancerAttack : MonoBehaviour
             Destroy(attackInstance);
         }
         yield return new WaitForSeconds(attackDuration - 4.5f);
+        if (manager.curMana <= 0) { manager.DepletedMana(); }
         NecroIsAttacking = false;
     }
 
@@ -119,6 +123,7 @@ public class NecromancerAttack : MonoBehaviour
             StopCoroutine(summonCoroutine);
         }
         StartCooldown();
+        manager.DepletingMana();
         summonCoroutine = StartCoroutine(SummonCoroutine());
     }
 
@@ -128,11 +133,12 @@ public class NecromancerAttack : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
 
         summonInstance = Instantiate(skeleton, transform.position, Quaternion.identity, attackTransform);
-        summonInstance.transform.position += new Vector3(1f, 1f, 0f);
+        summonInstance.transform.position += new Vector3(0, 0.5f, 0);
 
         summonInstance.transform.parent = null;
 
         yield return new WaitForSeconds(attackDuration - 2.7f - 0.8f);
+        if (manager.curMana <= 0) { manager.DepletedMana(); }
         NecroIsSummoning = false;
     }
 }

@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 15
   m_Sprite: {fileID: 6614839386148412462, guid: fcc8333bc3005ec45bf044bb1e526553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -443,7 +443,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 0669b8657f775284fbce5df46e19cc0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -563,8 +563,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 1.3333334}
-    newSize: {x: 0.7, y: 1.3333334}
+    oldSize: {x: 1.0833334, y: 1.25}
+    newSize: {x: 1.0833334, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
   damage: 0
   knockbackForce: 0
   knockbackDuration: 0
-  hitboxDelay: 0.35
+  hitboxDelay: 0.3
 --- !u!1 &8861873514743108748
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +669,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 10
   m_Sprite: {fileID: -415446080585258355, guid: 6cecc4717e9cbfd43aa5bd1d4093cd9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -765,7 +765,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 10
   m_Sprite: {fileID: 5989588498724427480, guid: 6a3e862fd6c587e4898a938b7505a7d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
