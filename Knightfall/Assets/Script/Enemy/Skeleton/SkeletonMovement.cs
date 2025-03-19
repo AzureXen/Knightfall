@@ -25,6 +25,14 @@ public class SkeletonMovement : EntityMovement
         }
     }
 
+    public void NoticedPlayer()
+    {
+        if (!canMove) return;
+        Vector2 direction = (player.position - transform.position).normalized;
+        rb.linearVelocity = direction * 0;
+        FlipSprite(direction);
+    }
+
     public void ChasePlayer()
     {
         if (!canMove) return;

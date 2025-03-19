@@ -14,9 +14,10 @@ public class PlayerMovement : EntityMovement
     Rigidbody2D rb;
     [HideInInspector] public Vector2 moveDir;
 
-    [SerializeField] private float maxStamina;
-    [SerializeField] private float stamina;
+    public float maxStamina;
+    public float stamina;
     [SerializeField] private float staminaRegenPS;
+    [SerializeField] private float staminaRegenBonusMultiplier;
     [SerializeField] private float sprintCostPerSecond;
     [SerializeField] private float dodgeCost;
     [SerializeField] private float dodgeIFrameDuration;
@@ -142,7 +143,7 @@ public class PlayerMovement : EntityMovement
         {
             if (!isWalking)
             {
-                stamina += staminaRegenPS * 3 * Time.deltaTime;
+                stamina += staminaRegenPS * staminaRegenBonusMultiplier * Time.deltaTime;
             }
             else stamina += staminaRegenPS * Time.deltaTime;
         }
