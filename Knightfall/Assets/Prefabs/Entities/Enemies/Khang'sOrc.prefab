@@ -196,8 +196,8 @@ MonoBehaviour:
   knockbackResist: 0
   touchDamageEnabled: 1
   touchDamage: 10
-  touchKnockbackForce: 2
-  touchKnockbackDuration: 1.1
+  touchKnockbackForce: 3
+  touchKnockbackDuration: 1
 --- !u!114 &2199414063788444015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  health: 50
+  maxHealth: 25
+  health: 25
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!95 &6591512953669101738
 Animator:

@@ -868,12 +868,13 @@ MonoBehaviour:
   sprintSpeed: 8
   dodgeSpeed: 12
   moveDir: {x: 0, y: 0}
-  maxStamina: 100
-  stamina: 100
-  staminaRegenPS: 1
+  maxStamina: 120
+  stamina: 120
+  staminaRegenPS: 4
+  staminaRegenBonusMultiplier: 3
   sprintCostPerSecond: 2
-  dodgeCost: 7
-  dodgeIFrameDuration: 0.2
+  dodgeCost: 20
+  dodgeIFrameDuration: 0.4
   isRunning: 0
   isHoldingShift: 0
   isHoldingCtrl: 0
