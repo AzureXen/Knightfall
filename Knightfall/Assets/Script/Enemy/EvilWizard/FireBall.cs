@@ -35,7 +35,6 @@ public class FireBall : BulletScript
             {
                 player.TakeRangedHit(damage, transform.position, knockbackForce, touchKnockbackDuration, this);
             }
-            Destroy(gameObject);
         }
     }
 }

@@ -64,15 +64,12 @@ public class EvilWizardManager : EntityManager
         switch (attackType)
         {
             case 0:
-                animator.SetTrigger("Attack1");
                 Invoke(nameof(ShootFireball), 0.5f);
                 break;
             case 1:
-                animator.SetTrigger("Attack2");
                 Invoke(nameof(ShootTripleFireball), 0.7f);
                 break;
             case 2:
-                animator.SetTrigger("Attack3");
                 Invoke(nameof(CastMagicBlast), 1f);
                 break;
         }
@@ -137,6 +134,6 @@ public class EvilWizardManager : EntityManager
 
     public void HealthChange()
     {
-        healthImage.fillAmount = entityHealth.health / 100f;
+        healthImage.fillAmount = entityHealth.health / 130f;
     }
 }
