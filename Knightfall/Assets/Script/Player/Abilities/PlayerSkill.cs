@@ -123,9 +123,12 @@ public class PlayerSkill : MonoBehaviour
 
     private void DestroyHitboxes(List<GameObject> hitboxes)
     {
-        foreach (var hitbox in hitboxes)
+        if (hitboxes != null)
         {
-            Destroy(hitbox);
+            foreach (var hitbox in hitboxes)
+            {
+                Destroy(hitbox);
+            }
         }
     }
 }

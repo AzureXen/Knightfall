@@ -94,9 +94,8 @@ public class NecromancerAttack : MonoBehaviour
         rangedDamageHitboxScript.knockbackForce = knockbackForce;
         rangedDamageHitboxScript.knockbackDuration = knockbackDuration;
 
-        attackInstance.transform.parent = null;
-        
         yield return new WaitForSeconds(3.2f);
+        attackInstance.transform.parent = null;
         rangedDamageHitboxScript.EnableDamage();
         Vector3 playerPos = player.transform.position;
         Vector3 attackDir = (attackTransform.position - playerPos).normalized;

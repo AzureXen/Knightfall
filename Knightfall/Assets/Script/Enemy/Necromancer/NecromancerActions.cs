@@ -20,7 +20,7 @@ public class NecromancerActions : MonoBehaviour
     private GameObject spawnInstance;
     private Boolean spawned = false;
 
-    private Boolean isSpotted = false;
+    public Boolean isSpotted = false;
     public enum NecromancerState
     { 
         IDLE, 
@@ -47,6 +47,7 @@ public class NecromancerActions : MonoBehaviour
 
     void Update()
     {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         float distance = Vector3.Distance(transform.position, player.position);
 
         if (!spawned)

@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: 74d4548436156324987ee9135c9ac6fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 104646561452192064
+    second: ThunderGodBlessSheet_0
+  - first:
+      213: -1826074808318944102
+    second: ThunderGodBlessSheet_1
+  - first:
+      213: -4722681713274792358
+    second: ThunderGodBlessSheet_2
+  - first:
+      213: 6149123200070531744
+    second: ThunderGodBlessSheet_3
+  - first:
+      213: -6773673580101351946
+    second: ThunderGodBlessSheet_4
+  - first:
+      213: -1616468342132666553
+    second: ThunderGodBlessSheet_5
+  - first:
+      213: 8697460066791487526
+    second: ThunderGodBlessSheet_6
+  - first:
+      213: 1782328505112126579
+    second: ThunderGodBlessSheet_7
+  - first:
+      213: 8944763089728665220
+    second: ThunderGodBlessSheet_8
+  - first:
+      213: 7687054889255521468
+    second: ThunderGodBlessSheet_9
+  - first:
+      213: 8510861863215681748
+    second: ThunderGodBlessSheet_10
+  - first:
+      213: 7263475904937298241
+    second: ThunderGodBlessSheet_11
+  - first:
+      213: -8909846173445014210
+    second: ThunderGodBlessSheet_12
+  - first:
+      213: -8615645449285162529
+    second: ThunderGodBlessSheet_13
+  - first:
+      213: 8310531583277300891
+    second: ThunderGodBlessSheet_14
+  - first:
+      213: -8305494640359901145
+    second: ThunderGodBlessSheet_15
+  - first:
+      213: 4695751047582229550
+    second: ThunderGodBlessSheet_16
+  - first:
+      213: -4875281846082580907
+    second: ThunderGodBlessSheet_17
+  - first:
+      213: -2592310198927789303
+    second: ThunderGodBlessSheet_18
+  - first:
+      213: 2391395649017309936
+    second: ThunderGodBlessSheet_19
+  - first:
+      213: -5552831528010616495
+    second: ThunderGodBlessSheet_20
+  - first:
+      213: -8366689128391956271
+    second: ThunderGodBlessSheet_21
+  - first:
+      213: 6627922872495894568
+    second: ThunderGodBlessSheet_22
+  - first:
+      213: -9064217732202441853
+    second: ThunderGodBlessSheet_23
+  - first:
+      213: 4755894154326766019
+    second: ThunderGodBlessSheet_24
+  - first:
+      213: 1795571158518542741
+    second: ThunderGodBlessSheet_25
+  - first:
+      213: 8278846928828074384
+    second: ThunderGodBlessSheet_26
+  - first:
+      213: 3949878920096901194
+    second: ThunderGodBlessSheet_27
+  - first:
+      213: -4035476564545557316
+    second: ThunderGodBlessSheet_28
+  - first:
+      213: -8310401570294825491
+    second: ThunderGodBlessSheet_29
+  - first:
+      213: 8002729729028418012
+    second: ThunderGodBlessSheet_30
+  - first:
+      213: 4155030410728719050
+    second: ThunderGodBlessSheet_31
+  - first:
+      213: 1598759267367559587
+    second: ThunderGodBlessSheet_32
+  - first:
+      213: -2863098282290306950
+    second: ThunderGodBlessSheet_33
+  - first:
+      213: 5502796089202125888
+    second: ThunderGodBlessSheet_34
+  - first:
+      213: 7921604856279481119
+    second: ThunderGodBlessSheet_35
+  - first:
+      213: 196448337605152804
+    second: ThunderGodBlessSheet_36
+  - first:
+      213: 3692594573381470801
+    second: ThunderGodBlessSheet_37
+  - first:
+      213: 1523670548944087995
+    second: ThunderGodBlessSheet_38
+  - first:
+      213: -7182681996439834598
+    second: ThunderGodBlessSheet_39
+  - first:
+      213: 6673199662431593792
+    second: ThunderGodBlessSheet_40
+  - first:
+      213: 2479331379272662283
+    second: ThunderGodBlessSheet_41
+  - first:
+      213: -1887548731453258885
+    second: ThunderGodBlessSheet_42
+  - first:
+      213: -2259601432160897766
+    second: ThunderGodBlessSheet_43
+  - first:
+      213: 1083441164304022384
+    second: ThunderGodBlessSheet_44
+  - first:
+      213: 2116166216398753224
+    second: ThunderGodBlessSheet_45
+  - first:
+      213: 1744441692639370036
+    second: ThunderGodBlessSheet_46
+  - first:
+      213: 3312836772005284907
+    second: ThunderGodBlessSheet_47
+  - first:
+      213: -6012180481110330302
+    second: ThunderGodBlessSheet_48
+  - first:
+      213: -1624967852241506322
+    second: ThunderGodBlessSheet_49
+  - first:
+      213: 3614577610431141012
+    second: ThunderGodBlessSheet_50
+  - first:
+      213: -4892812051842592945
+    second: ThunderGodBlessSheet_51
+  - first:
+      213: 88203972223121293
+    second: ThunderGodBlessSheet_52
+  - first:
+      213: -7540519604145400651
+    second: ThunderGodBlessSheet_53
+  - first:
+      213: -8431777956157544790
+    second: ThunderGodBlessSheet_54
+  - first:
+      213: 2879290423673467596
+    second: ThunderGodBlessSheet_55
+  - first:
+      213: -1553658537431876047
+    second: ThunderGodBlessSheet_56
+  - first:
+      213: -7587378178316170525
+    second: ThunderGodBlessSheet_57
+  - first:
+      213: 5244479750737183217
+    second: ThunderGodBlessSheet_58
+  - first:
+      213: -1957574500505310964
+    second: ThunderGodBlessSheet_59
+  - first:
+      213: 7688831799368228831
+    second: ThunderGodBlessSheet_60
+  - first:
+      213: -8839570053940719840
+    second: ThunderGodBlessSheet_61
+  - first:
+      213: 3863872307981392669
+    second: ThunderGodBlessSheet_62
+  - first:
+      213: -4536320117584878337
+    second: ThunderGodBlessSheet_63
+  - first:
+      213: -7816912498037175234
+    second: ThunderGodBlessSheet_64
+  - first:
+      213: 1170081210865796420
+    second: ThunderGodBlessSheet_65
+  - first:
+      213: 6423433760204780185
+    second: ThunderGodBlessSheet_66
+  - first:
+      213: -566121595563664070
+    second: ThunderGodBlessSheet_67
+  - first:
+      213: -7900407329454392000
+    second: ThunderGodBlessSheet_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370c62efb36054240803420ae65c777f
+      internalID: 1068449954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27df715fd3ec69647a71e533f2d1f01c
+      internalID: 996421267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b955fdf9224842c4891bdeb5759d8f23
+      internalID: 1332568730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_3
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a1581a729213b47a7c85e8f184896c
+      internalID: 1016599255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dfd975898fe1f4e82285b3995fad99
+      internalID: -1055078173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5682b0b61dc39cb479b9adad2310b955
+      internalID: -1725488311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e93e1bb103654499b6dbac83fb76ee
+      internalID: 1292643681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c6b69214165f43bb4df95fcc0c7af
+      internalID: -2074850041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc1afdf7a21b964385949020eea00db
+      internalID: 76806803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d22b62c4cc7e447a6c49de61b13a3e
+      internalID: -1959586099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_10
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1425e511bca49834d8c2124a74ec3f06
+      internalID: 554992928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2acae84f9b7ff3478807c55744b36ed
+      internalID: -244218804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a842f6aa4d8ec8a4aad97f6ea141d2ee
+      internalID: 446013438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eabbe7b4463d44db17b37992686328
+      internalID: -587632254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b574eca218380b43a12d6eeb5598087
+      internalID: 2108614198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_15
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4057222a05c4c734e9e56800d1794e66
+      internalID: -270541537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_16
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d193a18bcb11db84eb6800d867984e94
+      internalID: -1258047419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_17
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9bacd129817044da9899d73a7219fe
+      internalID: 1291268689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b1d205ef001b408d1c35129970e01
+      internalID: 1705639849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de721db2e8675642aaba3ce6ba5f00d
+      internalID: -56548493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412d0111b6fe6784495cb646e79db7fb
+      internalID: -1311590475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7351f68f722052441896c4beef283159
+      internalID: -1396756313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_22
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67237dd95ca068478ea6664024908bf
+      internalID: -916998133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_23
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5bd0d18d792034da35970aa225ea66
+      internalID: 1729304730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_24
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9210cae89ce911f498b7b5760060113c
+      internalID: -400578975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8494bd8e930f072489eadc3ed8e4f1b0
+      internalID: 1840456588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cef5725a261984fa8447c2cec12dfb
+      internalID: 388229288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodBlessSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d340c7d12bc6edb4b94feb22a78f503e
+      internalID: -1752660770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 98df72131314e054a92cdccd5acedc23
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ThunderGodBlessSheet_0: 1068449954
+      ThunderGodBlessSheet_1: 996421267
+      ThunderGodBlessSheet_10: 554992928
+      ThunderGodBlessSheet_11: -244218804
+      ThunderGodBlessSheet_12: 446013438
+      ThunderGodBlessSheet_13: -587632254
+      ThunderGodBlessSheet_14: 2108614198
+      ThunderGodBlessSheet_15: -270541537
+      ThunderGodBlessSheet_16: -1258047419
+      ThunderGodBlessSheet_17: 1291268689
+      ThunderGodBlessSheet_18: 1705639849
+      ThunderGodBlessSheet_19: -56548493
+      ThunderGodBlessSheet_2: 1332568730
+      ThunderGodBlessSheet_20: -1311590475
+      ThunderGodBlessSheet_21: -1396756313
+      ThunderGodBlessSheet_22: -916998133
+      ThunderGodBlessSheet_23: 1729304730
+      ThunderGodBlessSheet_24: -400578975
+      ThunderGodBlessSheet_25: 1840456588
+      ThunderGodBlessSheet_26: 388229288
+      ThunderGodBlessSheet_27: -1752660770
+      ThunderGodBlessSheet_3: 1016599255
+      ThunderGodBlessSheet_4: -1055078173
+      ThunderGodBlessSheet_5: -1725488311
+      ThunderGodBlessSheet_6: 1292643681
+      ThunderGodBlessSheet_7: -2074850041
+      ThunderGodBlessSheet_8: 76806803
+      ThunderGodBlessSheet_9: -1959586099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

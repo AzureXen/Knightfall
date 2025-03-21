@@ -1,0 +1,1026 @@
+fileFormatVersion: 2
+guid: fbe4d038b6abcb94aabbe150cfcc1a12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5612874750447590005
+    second: AgisCosmosExitSheet_0
+  - first:
+      213: -8670185373799890693
+    second: AgisCosmosExitSheet_1
+  - first:
+      213: 4235676760120875971
+    second: AgisCosmosExitSheet_2
+  - first:
+      213: -123112389615633102
+    second: AgisCosmosExitSheet_3
+  - first:
+      213: -8586021376469897334
+    second: AgisCosmosExitSheet_4
+  - first:
+      213: -6402244228637660679
+    second: AgisCosmosExitSheet_5
+  - first:
+      213: 3816276114798248155
+    second: AgisCosmosExitSheet_6
+  - first:
+      213: 8171797809280557863
+    second: AgisCosmosExitSheet_7
+  - first:
+      213: -5262437008640639760
+    second: AgisCosmosExitSheet_8
+  - first:
+      213: -779419319633129277
+    second: AgisCosmosExitSheet_9
+  - first:
+      213: -7922167530241090766
+    second: AgisCosmosExitSheet_10
+  - first:
+      213: -8079418897959920762
+    second: AgisCosmosExitSheet_11
+  - first:
+      213: 6193121140267113637
+    second: AgisCosmosExitSheet_12
+  - first:
+      213: 322261237903339247
+    second: AgisCosmosExitSheet_13
+  - first:
+      213: 1842910645902213261
+    second: AgisCosmosExitSheet_14
+  - first:
+      213: 8113111250833585014
+    second: AgisCosmosExitSheet_15
+  - first:
+      213: -5716677889314643026
+    second: AgisCosmosExitSheet_16
+  - first:
+      213: -5451004771137913514
+    second: AgisCosmosExitSheet_17
+  - first:
+      213: 6037122280326937871
+    second: AgisCosmosExitSheet_18
+  - first:
+      213: 4484536797702874035
+    second: AgisCosmosExitSheet_19
+  - first:
+      213: 2834888749682772832
+    second: AgisCosmosExitSheet_20
+  - first:
+      213: -6349696416836465200
+    second: AgisCosmosExitSheet_21
+  - first:
+      213: 2786331202501982658
+    second: AgisCosmosExitSheet_22
+  - first:
+      213: 7629973530532069048
+    second: AgisCosmosExitSheet_23
+  - first:
+      213: -832719112916673633
+    second: AgisCosmosExitSheet_24
+  - first:
+      213: 3314980246917189416
+    second: AgisCosmosExitSheet_25
+  - first:
+      213: -8584039596400385134
+    second: AgisCosmosExitSheet_26
+  - first:
+      213: -3455817151579792349
+    second: AgisCosmosExitSheet_27
+  - first:
+      213: -9136838547975363703
+    second: AgisCosmosExitSheet_28
+  - first:
+      213: -6005306240428996396
+    second: AgisCosmosExitSheet_29
+  - first:
+      213: -2237581676354918301
+    second: AgisCosmosExitSheet_30
+  - first:
+      213: -4888622981092342284
+    second: AgisCosmosExitSheet_31
+  - first:
+      213: -7211251173484963681
+    second: AgisCosmosExitSheet_32
+  - first:
+      213: 2708344655889100325
+    second: AgisCosmosExitSheet_33
+  - first:
+      213: 8617598942833236232
+    second: AgisCosmosExitSheet_34
+  - first:
+      213: -1179341646432158675
+    second: AgisCosmosExitSheet_35
+  - first:
+      213: 7227189529279199681
+    second: AgisCosmosExitSheet_36
+  - first:
+      213: -1741620697114997138
+    second: AgisCosmosExitSheet_37
+  - first:
+      213: -3732937066722839511
+    second: AgisCosmosExitSheet_38
+  - first:
+      213: -808321955171398120
+    second: AgisCosmosExitSheet_39
+  - first:
+      213: -3907497373225653552
+    second: AgisCosmosExitSheet_40
+  - first:
+      213: -555148741360650317
+    second: AgisCosmosExitSheet_41
+  - first:
+      213: 7709618060617730593
+    second: AgisCosmosExitSheet_42
+  - first:
+      213: 5490285954021236341
+    second: AgisCosmosExitSheet_43
+  - first:
+      213: 2410044047263725675
+    second: AgisCosmosExitSheet_44
+  - first:
+      213: 2479453083544179000
+    second: AgisCosmosExitSheet_45
+  - first:
+      213: 4950480069916259008
+    second: AgisCosmosExitSheet_46
+  - first:
+      213: 7344357344025442688
+    second: AgisCosmosExitSheet_47
+  - first:
+      213: -5908709514071236062
+    second: AgisCosmosExitSheet_48
+  - first:
+      213: -6906507928520683531
+    second: AgisCosmosExitSheet_49
+  - first:
+      213: 1739685575687883023
+    second: AgisCosmosExitSheet_50
+  - first:
+      213: -8325383291958214212
+    second: AgisCosmosExitSheet_51
+  - first:
+      213: -1763660966388256979
+    second: AgisCosmosExitSheet_52
+  - first:
+      213: -5505296999095014333
+    second: AgisCosmosExitSheet_53
+  - first:
+      213: -162070447920598229
+    second: AgisCosmosExitSheet_54
+  - first:
+      213: 1365685015592912363
+    second: AgisCosmosExitSheet_55
+  - first:
+      213: 3671138116566372458
+    second: AgisCosmosExitSheet_56
+  - first:
+      213: -2317431190672265960
+    second: AgisCosmosExitSheet_57
+  - first:
+      213: -3125576814505968165
+    second: AgisCosmosExitSheet_58
+  - first:
+      213: -9137896429072722930
+    second: AgisCosmosExitSheet_59
+  - first:
+      213: -6233585557660385298
+    second: AgisCosmosExitSheet_60
+  - first:
+      213: 1195110854419000809
+    second: AgisCosmosExitSheet_61
+  - first:
+      213: 7799269040374730570
+    second: AgisCosmosExitSheet_62
+  - first:
+      213: 8944108347425136249
+    second: AgisCosmosExitSheet_63
+  - first:
+      213: -3739790756712163309
+    second: AgisCosmosExitSheet_64
+  - first:
+      213: -5934291248907675528
+    second: AgisCosmosExitSheet_65
+  - first:
+      213: -8010784938648072197
+    second: AgisCosmosExitSheet_66
+  - first:
+      213: 7007307843803028669
+    second: AgisCosmosExitSheet_67
+  - first:
+      213: -6305657352506736891
+    second: AgisCosmosExitSheet_68
+  - first:
+      213: -1613994228701726888
+    second: AgisCosmosExitSheet_69
+  - first:
+      213: 14547774771105553
+    second: AgisCosmosExitSheet_70
+  - first:
+      213: -6202152664561000830
+    second: AgisCosmosExitSheet_71
+  - first:
+      213: 8964732095224089493
+    second: AgisCosmosExitSheet_72
+  - first:
+      213: 7176602184209392990
+    second: AgisCosmosExitSheet_73
+  - first:
+      213: -5700686798022846003
+    second: AgisCosmosExitSheet_74
+  - first:
+      213: 6674841236354384401
+    second: AgisCosmosExitSheet_75
+  - first:
+      213: 2715868947030874943
+    second: AgisCosmosExitSheet_76
+  - first:
+      213: -8331926049679979689
+    second: AgisCosmosExitSheet_77
+  - first:
+      213: -4457108696003629806
+    second: AgisCosmosExitSheet_78
+  - first:
+      213: 2642968485380741408
+    second: AgisCosmosExitSheet_79
+  - first:
+      213: 5773369886116365890
+    second: AgisCosmosExitSheet_80
+  - first:
+      213: -7007001702745349836
+    second: AgisCosmosExitSheet_81
+  - first:
+      213: 4942979999833824119
+    second: AgisCosmosExitSheet_82
+  - first:
+      213: 2265191363130346955
+    second: AgisCosmosExitSheet_83
+  - first:
+      213: -8856480686380119458
+    second: AgisCosmosExitSheet_84
+  - first:
+      213: -4862387158868692184
+    second: AgisCosmosExitSheet_85
+  - first:
+      213: -7610649519612298619
+    second: AgisCosmosExitSheet_86
+  - first:
+      213: 3579549988529636148
+    second: AgisCosmosExitSheet_87
+  - first:
+      213: 5847672550466616232
+    second: AgisCosmosExitSheet_88
+  - first:
+      213: -7508947883442233897
+    second: AgisCosmosExitSheet_89
+  - first:
+      213: 6255828454734906422
+    second: AgisCosmosExitSheet_90
+  - first:
+      213: -8882278880328106011
+    second: AgisCosmosExitSheet_91
+  - first:
+      213: -3074021631564732188
+    second: AgisCosmosExitSheet_92
+  - first:
+      213: 6494763107040159384
+    second: AgisCosmosExitSheet_93
+  - first:
+      213: -6770610928524937000
+    second: AgisCosmosExitSheet_94
+  - first:
+      213: -8668502612511828235
+    second: AgisCosmosExitSheet_95
+  - first:
+      213: -5277992670306991868
+    second: AgisCosmosExitSheet_96
+  - first:
+      213: 6091957366941798737
+    second: AgisCosmosExitSheet_97
+  - first:
+      213: -7168444762023514853
+    second: AgisCosmosExitSheet_98
+  - first:
+      213: 5491611697167093900
+    second: AgisCosmosExitSheet_99
+  - first:
+      213: -2829489924751331745
+    second: AgisCosmosExitSheet_100
+  - first:
+      213: 9113106516526806963
+    second: AgisCosmosExitSheet_101
+  - first:
+      213: -4805844550908091145
+    second: AgisCosmosExitSheet_102
+  - first:
+      213: -6917527654639352657
+    second: AgisCosmosExitSheet_103
+  - first:
+      213: 4643952961034614526
+    second: AgisCosmosExitSheet_104
+  - first:
+      213: 6070647550226595512
+    second: AgisCosmosExitSheet_105
+  - first:
+      213: 3100556138533270990
+    second: AgisCosmosExitSheet_106
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85efca17201b12b0800000000000000
+      internalID: -5612874750447590005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0ced1d6505da780800000000000000
+      internalID: -8670185373799890693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbd16e529528ca30800000000000000
+      internalID: 4235676760120875971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23db2851fed9a4ef0800000000000000
+      internalID: -123112389615633102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fe99d7c0358d880800000000000000
+      internalID: -8586021376469897334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9e1ca6bc8a627a0800000000000000
+      internalID: -6402244228637660679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd08b5b28e226f430800000000000000
+      internalID: 3816276114798248155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723ab7ebfce086170800000000000000
+      internalID: 8171797809280557863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fcfa171c6118f6b0800000000000000
+      internalID: -5262437008640639760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0d0322242fe25f0800000000000000
+      internalID: -779419319633129277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b98dcca9ece0290800000000000000
+      internalID: -7922167530241090766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b5583a15320ef80800000000000000
+      internalID: -8079418897959920762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac55905dd262f550800000000000000
+      internalID: 6193121140267113637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee2b1273e6e87400800000000000000
+      internalID: 322261237903339247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8089c1e775539910800000000000000
+      internalID: 1842910645902213261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673392192bf879070800000000000000
+      internalID: 8113111250833585014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea322187fb74aa0b0800000000000000
+      internalID: -5716677889314643026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d7d539a042a54b0800000000000000
+      internalID: -5451004771137913514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dbb785aba28c350800000000000000
+      internalID: 6037122280326937871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b36f3915764c3e30800000000000000
+      internalID: 4484536797702874035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bc7964c4c875720800000000000000
+      internalID: 2834888749682772832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd44e240c851e7a0800000000000000
+      internalID: -6349696416836465200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9b7bf47790ba620800000000000000
+      internalID: 2786331202501982658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be3ffc208c13e960800000000000000
+      internalID: 7629973530532069048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosExitSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b5ce4f0669174f0800000000000000
+      internalID: -832719112916673633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: db5a34f65d92c2f47adf4910e73047a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AgisCosmosExitSheet_0: -5612874750447590005
+      AgisCosmosExitSheet_1: -8670185373799890693
+      AgisCosmosExitSheet_10: -7922167530241090766
+      AgisCosmosExitSheet_11: -8079418897959920762
+      AgisCosmosExitSheet_12: 6193121140267113637
+      AgisCosmosExitSheet_13: 322261237903339247
+      AgisCosmosExitSheet_14: 1842910645902213261
+      AgisCosmosExitSheet_15: 8113111250833585014
+      AgisCosmosExitSheet_16: -5716677889314643026
+      AgisCosmosExitSheet_17: -5451004771137913514
+      AgisCosmosExitSheet_18: 6037122280326937871
+      AgisCosmosExitSheet_19: 4484536797702874035
+      AgisCosmosExitSheet_2: 4235676760120875971
+      AgisCosmosExitSheet_20: 2834888749682772832
+      AgisCosmosExitSheet_21: -6349696416836465200
+      AgisCosmosExitSheet_22: 2786331202501982658
+      AgisCosmosExitSheet_23: 7629973530532069048
+      AgisCosmosExitSheet_24: -832719112916673633
+      AgisCosmosExitSheet_3: -123112389615633102
+      AgisCosmosExitSheet_4: -8586021376469897334
+      AgisCosmosExitSheet_5: -6402244228637660679
+      AgisCosmosExitSheet_6: 3816276114798248155
+      AgisCosmosExitSheet_7: 8171797809280557863
+      AgisCosmosExitSheet_8: -5262437008640639760
+      AgisCosmosExitSheet_9: -779419319633129277
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

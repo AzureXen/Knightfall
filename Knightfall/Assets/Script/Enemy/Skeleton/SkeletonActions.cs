@@ -19,7 +19,7 @@ public class SkeletonActions : MonoBehaviour
     private GameObject spawnInstance;
     private Boolean spawned = false;
 
-    private Boolean isSpotted = false;
+    public Boolean isSpotted = false;
     public enum SkeletonState { 
         IDLE, 
         CHASE, 

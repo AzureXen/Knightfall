@@ -10,7 +10,7 @@ public class WaveSystem : MonoBehaviour {
     public GameObject Skeleton;
     public GameObject Necromancer;
 
-    private GameObject spawnInstance3;
+    private GameObject spawnInstance;
 
     private Coroutine waveCoroutine;
 
@@ -32,31 +32,49 @@ public class WaveSystem : MonoBehaviour {
 
     private void StartBattle()
     {
-        spawnInstance3 = Instantiate(Skeleton, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance3.transform.localScale = new Vector3(40, 20, 1);
+        spawnInstance = Instantiate(Skeleton, transform.position, Quaternion.identity, spawnPos);
+        spawnInstance.transform.position += new Vector3(20, 20, 1);
 
-        spawnInstance3.transform.parent = null;
+        SkeletonActions skeletonActions = spawnInstance.GetComponent<SkeletonActions>();
+        SkeletonMovement skeletonMovement = spawnInstance.GetComponent<SkeletonMovement>();
+
+        skeletonActions.isSpotted = true;
+        skeletonMovement.backOffSpeed = 0.1f;
+
+        spawnInstance.transform.parent = null;
 
         wave++;
     }
 
     private void StartBattle2()
     {
-        spawnInstance3 = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance3.transform.localScale = new Vector3(0, 20, 1);
+        spawnInstance = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
+        spawnInstance.transform.position += new Vector3(0, 20, 1);
 
-        spawnInstance3.transform.parent = null;
+        NecromancerActions necromancerActions = spawnInstance.GetComponent<NecromancerActions>();
+        NecromancerMovement necromancerMovement = spawnInstance.GetComponent<NecromancerMovement>();
+
+        necromancerActions.isSpotted = true;
+        necromancerMovement.backOffSpeed = 0.1f;
+
+        spawnInstance.transform.parent = null;
 
         wave++;
     }
 
     private void StartBattle3()
     {
-        spawnInstance3 = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance3.transform.localScale = new Vector3(0, -20, 1);
+        spawnInstance = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
+        spawnInstance.transform.position = new Vector3(0, -20, 1);
 
-        spawnInstance3.transform.parent = null;
+        //NecromancerActions necromancerActions = spawnInstance.GetComponent<NecromancerActions>();
+        NecromancerMovement necromancerMovement = spawnInstance.GetComponent<NecromancerMovement>();
 
-        wave++;
+        //necromancerActions.isSpotted = true;
+        necromancerMovement.backOffSpeed = 0.1f;
+
+        spawnInstance.transform.parent = null;
+
+        wave=0;
     }
 }
