@@ -2,20 +2,23 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 public class SwordHitbox : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private float knockbackForce;
     [SerializeField] float knockbackDuration;
     [SerializeField] private float hitboxDelay;
-    private PlayerManager player;
+    private PlayerManager playerManager;
     private Collider2D hitboxCollider;
+    public GameObject player;
+    private PlayerSFX playerSFX;
 
     private HashSet<GameObject> hitEnemies = new HashSet<GameObject> ();
     private void OnEnable()
     {
         hitEnemies.Clear ();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+        playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
 
         hitboxCollider = GetComponent<Collider2D>();
         if (hitboxCollider != null)
@@ -38,6 +41,7 @@ public class SwordHitbox : MonoBehaviour
         damage = transform.parent.parent.GetComponent<PlayerSword>().meleeDamage;
         knockbackForce = transform.parent.parent.GetComponent<PlayerSword>().knockbackForce;
         knockbackDuration = transform.parent.parent.GetComponent<PlayerSword>().knockbackDuratiton;
+        playerSFX = player.GetComponent<PlayerSFX>();
     }
 
     // Update is called once per frame
@@ -46,8 +50,12 @@ public class SwordHitbox : MonoBehaviour
         if (collision.CompareTag("Enemy") && !hitEnemies.Contains(collision.gameObject))
         {
             EntityManager target = collision.GetComponent<EntityManager>();
-            target.TakeMeleeHit(damage, transform.position, knockbackForce, knockbackDuration, player);
-            hitEnemies.Add(collision.gameObject);
+            Boolean hitSuccess = target.TakeMeleeHit(damage, transform.position, knockbackForce, knockbackDuration, playerManager);
+            if (hitSuccess)
+            {
+                hitEnemies.Add(collision.gameObject);
+                playerSFX.playMeleeHit();
+            }
         }
     }
 }

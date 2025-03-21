@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 /// <summary>
 /// What does Ronin Manager manages?
@@ -13,6 +14,8 @@ using UnityEngine;
 /// </summary>
 public class RoninManager : EntityManager
 {
+    public GameObject deflectedBullet;
+    private RoninRetributionSlash retributionSlash;
     private RoninFlashSlash flashSlash;
     private RoninBGM roninBGM;
 
@@ -33,7 +36,7 @@ public class RoninManager : EntityManager
 
     [SerializeField] private float parryStateDuration = 0.75f;
     [SerializeField] public float parryStateTimer = 0;
-    [SerializeField] private int resilience = 0;
+    [SerializeField] private float resilience = 0;
     [SerializeField] private int resilienceStacksToAbsoluteDefense = 2;
     public Boolean isInParryState = false;
     private Boolean isStunned = false;
@@ -62,12 +65,17 @@ public class RoninManager : EntityManager
         curMotivation = maxMotivation;
         curAbsoluteDefenseStacks = 1;
         flashSlash = GetComponent<RoninFlashSlash>();
+        retributionSlash = GetComponent<RoninRetributionSlash>();
         roninAction = GetComponent<RoninAction>();
         roninSFX = GetComponent<RoninSFX>();
         roninBGM = GetComponent<RoninBGM>();
 
         roninCanvasInstance = Instantiate(RoninCanvasPrefab);
         roninCanvasScript = roninCanvasInstance.GetComponent<RoninCanvasScript>();
+
+        // Ronin cannot be pushed by player
+        rb.mass = 10000;
+        rb.linearDamping = 10;
     }
 
     private void Update()
@@ -97,10 +105,9 @@ public class RoninManager : EntityManager
             curMotivation += Time.deltaTime;
             curMotivation = Mathf.Clamp(curMotivation, 0, maxMotivation);
         }
-
-        if (Input.GetKeyDown(KeyCode.K))
+        if(Input.GetKeyDown(KeyCode.K))
         {
-            flashSlash.Attack();
+            retributionSlash.Attack();
         }
     }
 
@@ -180,7 +187,7 @@ public class RoninManager : EntityManager
         return false;
     }
 
-    public override void TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration, BulletScript bullet)
+    public override Boolean TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration, BulletScript bullet)
     {
         if (canDamage)
         {
@@ -193,7 +200,23 @@ public class RoninManager : EntityManager
                 Debug.Log("Ronin is starting to attack player.");
                 Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
-            if (curMotivation > 0 && canParry)
+
+            if (curAbsoluteDefenseStacks > 0 && canParry)
+            {
+                // Activating superParry will immediately end ParryState.
+                if (parryStateTimer > 0)
+                {
+                    parryStateTimer = 0;
+                }
+                roninAction.EnterAbsoluteDefense();
+                curAbsoluteDefenseStacks--;
+                bullet.DestroyBulletInstant();
+                GameObject instance = Instantiate(deflectedBullet, transform.position, Quaternion.identity);
+
+                roninSFX.playDeflect();
+                return false;
+            }
+            else if (curMotivation > 0 && canParry)
             {
                 if (!isInParryState)
                 {
@@ -202,10 +225,11 @@ public class RoninManager : EntityManager
                     Debug.Log("Entering Parry state.");
                     roninAction.EnterParryState();
                 }
-                // If Ronin is in Parry State (the parryStateDuration is > 0) start accumulating Anger.
-                // Ranged Hits will not accumulate resilience
+                // If Ronin is in Parry State (the parryStateDuration is > 0) start accumulating Resilience.
+                // Ranged Hits accumulate resilience 50% slower
                 if (parryStateTimer > 0)
                 {
+                    resilience = resilience+0.5f;
                     parryStateTimer = parryStateDuration;
                     if (resilience >= resilienceStacksToAbsoluteDefense)
                     {
@@ -230,15 +254,22 @@ public class RoninManager : EntityManager
                 //}
 
                 bullet.BreakBullet();
+                return false;
             }
             else
             {
                 TakeHitKnockback(damage, target, force, knockBackDuration);
                 bullet.DestroyBullet();
+                return true;
             }
         }
+        return false;
     }
 
+    protected void DeflectBullet(BulletScript source)
+    {
+
+    }
     protected IEnumerator parryBreakStun(float duration)
     {
         isStunned = true;
