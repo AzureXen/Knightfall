@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    protected Vector3 mousePos;
-    protected Camera mainCam;
-    protected Rigidbody2D rb;
+    private Vector3 mousePos;
+    private Camera mainCam;
+    private Rigidbody2D rb;
     public float force;
     public float despawnTime = 1f;
     public int damage = 5;
@@ -36,14 +36,7 @@ public class BulletScript : MonoBehaviour
             }
         }
     }
-    // For DestroyBullet, you may implement your custom bullet destruction, like the bullet getting chopped in half or whatever
     public virtual void DestroyBullet()
-    {
-        Destroy(gameObject);
-    }
-
-    // But for DestroyBulletInstant, you may NOT implement any custom bullet destruction, for its purpose is to instantly delete the bullet from the game.
-    public virtual void DestroyBulletInstant()
     {
         Destroy(gameObject);
     }

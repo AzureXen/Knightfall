@@ -73,10 +73,7 @@ public class RoninAction : MonoBehaviour
     private void Update()
     {
         parryStateTimer = roninManager.parryStateTimer;
-        if (player != null)
-        {
-            distanceFromPlayer = Vector3.Distance(transform.position, player.position);
-        }
+        distanceFromPlayer = Vector3.Distance(transform.position, player.position);
         flashSlashCooldown = roninFlashSlash.attackCoolDownTimer;
 
         // If Ronin is attacking, he cannot parry.
