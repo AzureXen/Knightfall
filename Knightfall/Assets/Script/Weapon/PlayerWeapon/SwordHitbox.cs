@@ -24,7 +24,7 @@ public class SwordHitbox : MonoBehaviour
         if (hitboxCollider != null)
         {
             hitboxCollider.enabled = false;
-            StartCoroutine(EnableColliderAfterDelay(hitboxDelay)); // Delay 0.2s to sync with animation
+            StartCoroutine(EnableColliderAfterDelay(hitboxDelay)); // Delay to sync with animation
         }
     }
 

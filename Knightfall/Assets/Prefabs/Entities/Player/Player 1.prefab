@@ -564,8 +564,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7, y: 1.3333334}
-    newSize: {x: 0.7, y: 1.3333334}
+    oldSize: {x: 1.0833334, y: 1.25}
+    newSize: {x: 1.0833334, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -595,8 +595,12 @@ MonoBehaviour:
   damage: 0
   knockbackForce: 0
   knockbackDuration: 0
+<<<<<<< HEAD
   hitboxDelay: 0.35
   player: {fileID: 9063268744978135184}
+=======
+  hitboxDelay: 0.3
+>>>>>>> 794873e7962c2320821eb78644c5c700f64d55c4
 --- !u!1 &8861873514743108748
 GameObject:
   m_ObjectHideFlags: 0
