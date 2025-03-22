@@ -14,8 +14,12 @@ using static Unity.VisualScripting.Member;
 /// </summary>
 public class RoninManager : EntityManager
 {
-    public GameObject deflectedBullet;
     private RoninRetributionSlash retributionSlash;
+    [SerializeField] private int maxRetributionStacks;
+    public int curRetributionStacks;
+    private float resolve;
+
+    public GameObject deflectedBullet;
     private RoninFlashSlash flashSlash;
     private RoninBGM roninBGM;
 
@@ -96,7 +100,7 @@ public class RoninManager : EntityManager
             resilience = 0;
         }
 
-        if(curMotivation < 0 && !isStunned)
+        if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED))
         {
             StartCoroutine(parryBreakStun(stunDuration));
         }
@@ -125,8 +129,26 @@ public class RoninManager : EntityManager
                 Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
 
+            if (curAbsoluteDefenseStacks > 0 && canParry && curRetributionStacks > 0)
+            {
+                // Activating superParry will immediately end ParryState.
+                if (parryStateTimer > 0)
+                {
+                    parryStateTimer = 0;
+                }
+                roninAction.EnterAbsoluteDefenseRetribtion();
+                // super parry does NOT consume motivation.
+                TakeHitKnockback(0, target, 0, 0);
+                source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
+                // curRetributionStacks is removed at RoninAction, at roninAction.EnterAbsoluteDefenseRetribution(); .
+                curAbsoluteDefenseStacks--;
 
-            if(curAbsoluteDefenseStacks > 0 && canParry)
+                roninSFX.playDeflect();
+                return false;
+            }
+
+
+            else if (curAbsoluteDefenseStacks > 0 && canParry)
             {
                 // Activating superParry will immediately end ParryState.
                 if(parryStateTimer > 0)
@@ -138,7 +160,13 @@ public class RoninManager : EntityManager
                 TakeHitKnockback(0, target, 0, 0);
                 source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
                 curAbsoluteDefenseStacks--;
-
+                resolve++;
+                if(resolve >= 2)
+                {
+                    resolve = 0;
+                    curRetributionStacks++;
+                }
+                curRetributionStacks = Mathf.Clamp(curRetributionStacks, 0, maxRetributionStacks);
                 roninSFX.playDeflect();
                 return false;
             }
@@ -172,15 +200,18 @@ public class RoninManager : EntityManager
                 return false;
 
             }
-            // If motivation is > 0 but currently cannot parry, reduce 50% damage and 50% knockback.
+            // If motivation is > 0 but currently cannot parry, reduce 80% damage and 80% knockback.
             else if(curMotivation > 0)
             {
-                TakeHitKnockback(damage/2, target, force * 0.5f, knockBackDuration * 0.5f);
+                int reducedDamage = Mathf.RoundToInt(damage * 0.2f);
+                TakeHitKnockback(reducedDamage, target, force * 0.2f, knockBackDuration * 0.2f);
                 return true;
             }
+            // If motivation <= 0, take 50% more damage
             else
             {
-                TakeHitKnockback(damage, target, force, knockBackDuration);
+                int increasedDamage = Mathf.RoundToInt(damage * 1.5f);
+                TakeHitKnockback(increasedDamage, target, force, knockBackDuration);
                 return true;
             }
         }
@@ -210,10 +241,17 @@ public class RoninManager : EntityManager
                 }
                 roninAction.EnterAbsoluteDefense();
                 curAbsoluteDefenseStacks--;
+                resolve++;
+                if (resolve >= 2)
+                {
+                    resolve = 0;
+                    curRetributionStacks++;
+                }
+                curRetributionStacks = Mathf.Clamp(curRetributionStacks, 0, maxRetributionStacks);
                 bullet.DestroyBulletInstant();
                 GameObject instance = Instantiate(deflectedBullet, transform.position, Quaternion.identity);
 
-                roninSFX.playDeflect();
+                roninSFX.playDeflectRanged();
                 return false;
             }
             else if (curMotivation > 0 && canParry)
@@ -256,20 +294,24 @@ public class RoninManager : EntityManager
                 bullet.BreakBullet();
                 return false;
             }
+            // If motivation is > 0 but currently cannot parry, reduce 80% damage and 80% knockback.
+            else if (curMotivation > 0)
+            {
+                int reducedDamage = Mathf.RoundToInt(damage * 0.2f);
+                TakeHitKnockback(reducedDamage, target, force * 0.2f, knockBackDuration * 0.2f);
+                return true;
+            }
+            // If motivation <= 0, take 50% more damage
             else
             {
-                TakeHitKnockback(damage, target, force, knockBackDuration);
-                bullet.DestroyBullet();
+                int increasedDamage = Mathf.RoundToInt(damage * 1.5f);
+                TakeHitKnockback(increasedDamage, target, force, knockBackDuration);
                 return true;
             }
         }
         return false;
     }
 
-    protected void DeflectBullet(BulletScript source)
-    {
-
-    }
     protected IEnumerator parryBreakStun(float duration)
     {
         isStunned = true;

@@ -10,7 +10,6 @@ public class RoninAnimator : MonoBehaviour
     private SpriteRenderer sr;
     // canChangeDirection: Ronin's sprite will flip based on position of player, making him look at player.
     public Boolean canChangeDirection { get; set; } = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();

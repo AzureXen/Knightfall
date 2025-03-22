@@ -46,7 +46,6 @@ Transform:
   m_Children:
   - {fileID: 2611350318778995394}
   - {fileID: 6469301871861355346}
-  - {fileID: 6585020573861312027}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3353838080339855975
@@ -116,8 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
-  health: 500
+  maxHealth: 200
+  health: 200
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
 BoxCollider2D:
@@ -229,16 +228,18 @@ MonoBehaviour:
   takeDamageCooldown: 0.2
   defaultColor: {r: 1, g: 0.9339622, b: 0.9339622, a: 0}
   knockbackResist: 10
+  maxRetributionStacks: 1
+  curRetributionStacks: 0
   deflectedBullet: {fileID: 4799751954020987770, guid: c6f24945aec20ed41916114c3ec06631, type: 3}
   RoninCanvasPrefab: {fileID: 0}
-  maxMotivation: 200
-  curMotivation: 200
+  maxMotivation: 250
+  curMotivation: 250
   motivationRegenRate: 2
   maxAbsoluteDefenseStacks: 1
   curAbsoluteDefenseStacks: 0
   absoluteDefenseKnockbackForce: 30
   absoluteDefenseKknockbackDuration: 0.35
-  stunDuration: 5
+  stunDuration: 7.5
   parryStateDuration: 1.5
   parryStateTimer: 0
   resilience: 0
@@ -321,7 +322,7 @@ MonoBehaviour:
   attackCooldown: 9
   attackCoolDownTimer: 0
   followPlayerDuration: 0.75
-  delayAfterFollowDuration: 0.2
+  delayAfterFollowDuration: 0.5
 --- !u!114 &5570917127877376178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,10 +475,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: abdc9449ad9a34144a403f1627920e80, type: 3}
   - {fileID: 8300000, guid: 0b8a1b0604d595843bc807252c681c7f, type: 3}
   - {fileID: 8300000, guid: 6599f5bac1a0d29408554e3bc7c2b38e, type: 3}
+  deflectRangedClips:
+  - {fileID: 8300000, guid: 82f817b0021556c4e856ef0959ffd7c4, type: 3}
+  - {fileID: 8300000, guid: 280b161a257ea0b4bbda33374751db90, type: 3}
   flashSlashClips:
   - {fileID: 8300000, guid: 248661ff022223a479615af578ee569b, type: 3}
   flashSlashHitClips:
   - {fileID: 8300000, guid: d4ba0d632bf63624c9a092e279702cbf, type: 3}
+  attackWarningClips:
+  - {fileID: 8300000, guid: bdf83334ffd0bcc4caeca27290993e74, type: 3}
+  - {fileID: 8300000, guid: caf790ce97d3ca94d9a4a123ce8739de, type: 3}
+  retributionSlashClips:
+  - {fileID: 8300000, guid: 3940b6e8cc888d547b64f17b32ac3daf, type: 3}
 --- !u!114 &5107192225798668688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,93 +533,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6991699607890397173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6094264957177310888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6585020573861312027}
-  - component: {fileID: 5157390158124162176}
-  m_Layer: 7
-  m_Name: HolyVFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6585020573861312027
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6094264957177310888}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.372, y: 0.647, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6991699607890397173}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5157390158124162176
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6094264957177310888}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -801896167
-  m_SortingLayer: 5
-  m_SortingOrder: 8
-  m_Sprite: {fileID: -795402406353857515, guid: 24e63884a56696f419c86636b351dd42, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.5714286, y: 0.5714286}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &6693562246832156136
 GameObject:
   m_ObjectHideFlags: 0

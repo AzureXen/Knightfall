@@ -155,7 +155,8 @@ public class RoninFlashSlash : MonoBehaviour
                 yield return null;
             }
 
-            roninAction.ChangeAnimationState("RoninUnsheathe2");
+            roninAction.ChangeAnimationState("RoninUnsheathe2Special");
+            roninSFX.playAttackWarning(0);
             roninAnimator.canChangeDirection = false;
             yield return new WaitForSeconds(delayAfterFollowDuration);
 
