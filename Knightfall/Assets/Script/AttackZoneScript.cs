@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class AttackZoneScript : MonoBehaviour
 {
+    // For now, the "AttackZoneType" is purely for playing attack_hit_sfx accordingly.
+    // If you want to add SFX to your attacks, its better NOT to use my way, its unnecessarily complicated.
+    public enum AttackZoneType
+    {
+        None,
+        FlashSlash,
+    }
+    // By default, the AttackZoneType is None. You can still use AttackZoneScript without declaring one.
+    public AttackZoneType attackZoneType = AttackZoneType.None;
+
+    public RoninSFX roninSFX;
+
     private Boolean hitBoxActive = false;
     public int damage = 5;
     public Vector3 damageSourcePosition = Vector3.zero;
@@ -34,7 +46,23 @@ public class AttackZoneScript : MonoBehaviour
 
         if(playerIsInHitbox && !damagedPlayer && hitBoxActive)
         {
-            playerManager.TakeMeleeHit(damage, damageSourcePosition, knockbackForce, knockbackDuration, null);
+            Boolean successHit = playerManager.TakeMeleeHit(damage, damageSourcePosition, knockbackForce, knockbackDuration, null);
+            if (successHit)
+            {
+                damagedPlayer = true;
+                if (attackZoneType == AttackZoneType.FlashSlash)
+                {
+                    if (roninSFX != null)
+                    {
+                        Debug.Log("AttackZoneScript: Playing FlashSlashHit");
+                        roninSFX.playFlashSlashHit();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("roninSFX has not been assigned.");
+                    }
+                }
+            }
         }
     }
 

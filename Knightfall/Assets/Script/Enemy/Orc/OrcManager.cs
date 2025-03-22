@@ -7,6 +7,7 @@ public class OrcManager : EntityManager
     public int touchDamage = 10;
     public int touchKnockbackForce = 10;
     public float touchKnockbackDuration = 1.5f;
+    private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
@@ -19,6 +20,7 @@ public class OrcManager : EntityManager
         flashDuration = 2.5f;
         EntityName = "Orc";
         defaultColor = new Color(1, 1, 1, 1);
+        animator = GetComponent<Animator>();
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -27,6 +29,12 @@ public class OrcManager : EntityManager
         {
             EntityManager targetManager = target.GetComponent<EntityManager>();
             targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
+            animator.SetBool("isAttacking", true);
         }
+    }
+
+    public void ResetAttack() 
+    {
+        animator.SetBool("isAttacking", false);
     }
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - BGM
+  - SceneController
+  - Wall
   - PlayerSword
   - Object
   layers:
@@ -17,7 +20,7 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
+  - Wall
   - 
   - 
   - 
@@ -48,6 +51,9 @@ TagManager:
   - name: Ground
     uniqueID: 4126335567
     locked: 0
+  - name: Foreground
+    uniqueID: 3264982367
+    locked: 0
   - name: Walk Infront
     uniqueID: 3067444653
     locked: 0
@@ -62,6 +68,9 @@ TagManager:
     locked: 0
   - name: Decor
     uniqueID: 2044281619
+    locked: 0
+  - name: DecorVFX
+    uniqueID: 1553567527
     locked: 0
   m_RenderingLayers:
   - Default
