@@ -8,9 +8,13 @@ public class PlayerBow : MonoBehaviour
     public Transform bow;
     public float cooldownTimer;
     public float cooldown = 1f;
+
+    public GameObject player;
+    private PlayerSFX playerSFX;
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        playerSFX = player.GetComponent<PlayerSFX>();
     }
 
     // Update is called once per frame
@@ -34,7 +38,9 @@ public class PlayerBow : MonoBehaviour
     }
     void Fire()
     {
+        playerSFX.playBowShoot();
         cooldownTimer = cooldown;
-        Instantiate(bullet, bow.position, Quaternion.identity);
+        GameObject instance = Instantiate(bullet, bow.position, Quaternion.identity);
+        instance.GetComponent<PlayerBullet>().playerSFX = playerSFX;
     }
 }

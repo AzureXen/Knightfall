@@ -15,8 +15,12 @@ public class NecromancerActions : MonoBehaviour
     [SerializeField] private float detectionRange = 10f;  // When Skeleton starts chasing
     [SerializeField] private float approachRange = 3f;   // When Skeleton starts slowing down
     [SerializeField] private float attackRange = 1f;   // When Skeleton should stop moving to attack
-    
-    private Boolean isSpotted = false;
+
+    public GameObject spawnCircle;
+    private GameObject spawnInstance;
+    private Boolean spawned = false;
+
+    public Boolean isSpotted = false;
     public enum NecromancerState
     { 
         IDLE, 
@@ -43,9 +47,16 @@ public class NecromancerActions : MonoBehaviour
 
     void Update()
     {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (canDecide && !health.isDead)
+        if (!spawned)
+        {
+            StartCoroutine(SpawnState());
+            spawned = true;
+        }
+
+        if (canDecide && !health.isDead && spawned)
         {
             StartCoroutine(DecideNextAction(distance));
         }
@@ -62,7 +73,6 @@ public class NecromancerActions : MonoBehaviour
 
     private IEnumerator DecideNextAction(float distance)
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
@@ -73,6 +83,10 @@ public class NecromancerActions : MonoBehaviour
         if (distance > detectionRange && !isSpotted)
         {
             actionCoroutine = StartCoroutine(IdleState());
+        }
+        if (!isSpotted && distance <= detectionRange)
+        {
+            actionCoroutine = StartCoroutine(NoticedState());
         }
         else if (distance > approachRange && (distance <= detectionRange || isSpotted) && necromancerAttack.cooldownTimer == 0)
         {
@@ -92,6 +106,22 @@ public class NecromancerActions : MonoBehaviour
         }
     }
 
+    private IEnumerator SpawnState()
+    {
+        canDecide = false;
+        necromancerMovement.StopMoving();
+        spawnInstance = Instantiate(spawnCircle, transform.position, Quaternion.identity);
+        spawnInstance.transform.position += new Vector3(0, -2f, 0);
+
+        spawnInstance.transform.parent = null;
+
+        yield return new WaitForSeconds(1f);
+
+        Destroy(spawnInstance);
+
+        canDecide = true;
+    }
+
     private IEnumerator IdleState()
     {
         canDecide = false;
@@ -102,10 +132,20 @@ public class NecromancerActions : MonoBehaviour
         canDecide = true;
     }
 
+    private IEnumerator NoticedState()
+    {
+        canDecide = false;
+        currentState = NecromancerState.IDLE;
+        necromancerMovement.NoticedPlayer();
+        yield return new WaitForSeconds(1f);
+        isSpotted = true;
+
+        canDecide = true;
+    }
+
     private IEnumerator ChaseState()
     {
         canDecide = false;
-        isSpotted = true;
         currentState = NecromancerState.CHASE;
         necromancerMovement.ChasePlayer();
         yield return new WaitForSeconds(0.1f);
@@ -161,6 +201,7 @@ public class NecromancerActions : MonoBehaviour
         canDecide = false;
         currentState = NecromancerState.DEAD;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         necromancerMovement.StopMoving();
         yield return null;
     }
@@ -172,14 +213,17 @@ public class NecromancerActions : MonoBehaviour
     private IEnumerator Manaless(float duration)
     {
         canDecide = false;
+        currentState = NecromancerState.OOM;
+        necromancerMovement.StopMoving();
+        Animator animator = GetComponent<Animator>();
+        animator.SetTrigger("ManaRecover");
+
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
             necromancerMovement.StopMoving();
         }
-        currentState = NecromancerState.OOM;
-        necromancerMovement.BackOffPlayer();
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(duration-0.1f);
         canDecide = true;
     }
 }

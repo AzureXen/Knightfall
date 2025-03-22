@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5314194225283207780}
   - component: {fileID: 140741450886339849}
   - component: {fileID: 617716884915444814}
+  - component: {fileID: 5570917127877376178}
   - component: {fileID: 6287489972011232366}
   - component: {fileID: 3842321875405047698}
   - component: {fileID: 2726192783376217163}
@@ -89,7 +90,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 4723107735738678597, guid: c136d541e7bca38498d40ff7ed3fc5f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -114,8 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
-  health: 500
+  maxHealth: 200
+  health: 200
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
 BoxCollider2D:
@@ -171,7 +172,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344780703779386018}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -188,8 +189,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!95 &4384462308866755112
 Animator:
   serializedVersion: 7
@@ -227,15 +228,18 @@ MonoBehaviour:
   takeDamageCooldown: 0.2
   defaultColor: {r: 1, g: 0.9339622, b: 0.9339622, a: 0}
   knockbackResist: 10
+  maxRetributionStacks: 1
+  curRetributionStacks: 0
+  deflectedBullet: {fileID: 4799751954020987770, guid: c6f24945aec20ed41916114c3ec06631, type: 3}
   RoninCanvasPrefab: {fileID: 0}
-  maxMotivation: 200
-  curMotivation: 200
+  maxMotivation: 250
+  curMotivation: 250
   motivationRegenRate: 2
   maxAbsoluteDefenseStacks: 1
   curAbsoluteDefenseStacks: 0
   absoluteDefenseKnockbackForce: 30
   absoluteDefenseKknockbackDuration: 0.35
-  stunDuration: 5
+  stunDuration: 7.5
   parryStateDuration: 1.5
   parryStateTimer: 0
   resilience: 0
@@ -318,7 +322,28 @@ MonoBehaviour:
   attackCooldown: 9
   attackCoolDownTimer: 0
   followPlayerDuration: 0.75
-  delayAfterFollowDuration: 0.2
+  delayAfterFollowDuration: 0.5
+--- !u!114 &5570917127877376178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344780703779386018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b818ad40156c7774ebb20c247f2bf1aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rebtributionSlashLength: 0.5
+  retributionSlashPrefab: {fileID: 6857924010955406395, guid: a3f3af9fabace954c893e466101b050a, type: 3}
+  attackDuration: 1
+  Damage: 10
+  knockbackForce: 3
+  knockbackDuration: 0.5
+  attackCooldown: 5
+  attackCoolDownTimer: 0
+  attackTransform: {fileID: 2611350318778995394}
 --- !u!114 &6287489972011232366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,10 +475,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: abdc9449ad9a34144a403f1627920e80, type: 3}
   - {fileID: 8300000, guid: 0b8a1b0604d595843bc807252c681c7f, type: 3}
   - {fileID: 8300000, guid: 6599f5bac1a0d29408554e3bc7c2b38e, type: 3}
+  deflectRangedClips:
+  - {fileID: 8300000, guid: 82f817b0021556c4e856ef0959ffd7c4, type: 3}
+  - {fileID: 8300000, guid: 280b161a257ea0b4bbda33374751db90, type: 3}
   flashSlashClips:
   - {fileID: 8300000, guid: 248661ff022223a479615af578ee569b, type: 3}
   flashSlashHitClips:
   - {fileID: 8300000, guid: d4ba0d632bf63624c9a092e279702cbf, type: 3}
+  attackWarningClips:
+  - {fileID: 8300000, guid: bdf83334ffd0bcc4caeca27290993e74, type: 3}
+  - {fileID: 8300000, guid: caf790ce97d3ca94d9a4a123ce8739de, type: 3}
+  retributionSlashClips:
+  - {fileID: 8300000, guid: 3940b6e8cc888d547b64f17b32ac3daf, type: 3}
 --- !u!114 &5107192225798668688
 MonoBehaviour:
   m_ObjectHideFlags: 0

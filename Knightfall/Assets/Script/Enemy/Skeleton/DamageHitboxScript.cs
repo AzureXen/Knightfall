@@ -23,7 +23,7 @@ public class DamageHitboxScript : MonoBehaviour
     void Start()
     {
         playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-        damageSourcePosition = -(transform.position + transform.right * (transform.localScale.y));
+        damageSourcePosition = (transform.position + transform.right * (transform.localScale.x));
     }
 
     // Update is called once per frame
