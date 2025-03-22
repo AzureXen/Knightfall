@@ -7,9 +7,13 @@ public class NhatManager : EntityManager
     public int touchDamage = 5;
     public int touchKnockbackForce = 5;
     public float touchKnockbackDuration = 1.5f;
+    private NhatAttack attackScript;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
+        base.Start();
+        attackScript = GetComponent<NhatAttack>();
         entityHealth = GetComponent<Health>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();

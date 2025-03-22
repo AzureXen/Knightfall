@@ -88,4 +88,16 @@ public class HealthGauge : MonoBehaviour
         sr.color = defaultColor;
         flashCoroutine = null;
     }
+
+    public void Heal(int amount)
+    {
+        health += amount;
+        health = Mathf.Clamp(health, 0, maxHealth);
+
+        if (healthBar != null)
+        {
+            healthBar.value = health;
+        }
+    }
+
 }
