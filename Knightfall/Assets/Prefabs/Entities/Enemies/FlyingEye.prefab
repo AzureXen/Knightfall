@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1894358415671412521}
   - component: {fileID: 370013090541378026}
   - component: {fileID: 5553396225276920437}
-  - component: {fileID: 681178857050405250}
   - component: {fileID: 8803645038761706078}
   - component: {fileID: 5304359244288691449}
   - component: {fileID: 1763001018203510327}
+  - component: {fileID: 7601901128205913805}
   m_Layer: 7
   m_Name: FlyingEye
   m_TagString: Enemy
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -3236675104909177313, guid: 9da6cf3b34a1083429ccc5e8f72ebcc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,21 +166,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &681178857050405250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8409527561792853631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
-  health: 20
-  popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!114 &8803645038761706078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +187,8 @@ MonoBehaviour:
   touchKnockbackDuration: 1.5
   attackRange: 10
   fireRate: 2
+  healChance: 0.3
+  healAmount: 20
 --- !u!114 &5304359244288691449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,3 +230,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7601901128205913805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409527561792853631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8697ad60d65c04d94ba65136a3ba93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  health: 20
+  popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
