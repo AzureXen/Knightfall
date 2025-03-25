@@ -16241,7 +16241,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16304,8 +16304,8 @@ Transform:
   m_GameObject: {fileID: 1994791897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.12, y: 30.65, z: -0.07106486}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalPosition: {x: 49.3, y: 70.19, z: -0.07106486}
+  m_LocalScale: {x: 25, y: 25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -16395,8 +16395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 155
-  health: 155
+  maxHealth: 50
+  health: 50
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!114 &1994791904
 MonoBehaviour:
@@ -16444,10 +16444,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed99a38c72d451f40baccfbf497df01c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.2
+  attackRange: 4
   attackCooldown: 2
   attackDamage: 10
   damageDelay: 0.4
+  stopDistanceFactor: 0.8
+  angryColor: {r: 0.8, g: 0.2, b: 0.2, a: 1}
+  speedMultiplier: 1.5
 --- !u!60 &1994791907
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16455,7 +16458,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994791897}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -16494,13 +16497,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.14999999, y: 0.16}
-      - {x: -0.14999999, y: -0.08}
-      - {x: -0.089999996, y: -0.16}
-      - {x: 0.08, y: -0.16}
-      - {x: 0.14999999, y: -0.04}
-      - {x: 0.14999999, y: 0.13}
-      - {x: 0.14, y: 0.16}
+    - - {x: -0.120906666, y: 0.06369567}
+      - {x: -0.070068575, y: -0.020443164}
+      - {x: -0.052385125, y: -0.16}
+      - {x: 0.06275992, y: -0.16}
+      - {x: 0.0590975, y: -0.008654248}
+      - {x: 0.09671232, y: 0.11902893}
+      - {x: -0.03083396, y: 0.17253838}
   m_UseDelaunayMesh: 0
 --- !u!1 &2012996457
 GameObject:

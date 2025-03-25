@@ -10,16 +10,24 @@ public class MushroomAnimatorController : MonoBehaviour
     public int attackDamage = 10;
     public float damageDelay = 0.4f;
 
+    [Header("Movement Control")]
+    public float stopDistanceFactor = 0.8f;
+
+    [Header("Angry Mode Settings")]
+    public Color angryColor = new Color(0.8f, 0.2f, 0.2f, 1f); // đỏ đậm
+    public float speedMultiplier = 1.5f;
+
     private Animator animator;
     private Health health;
     private Transform player;
     private Health playerHealth;
     private SpriteRenderer sr;
+    private NhatMovement movement;
 
     private bool isAttacking = false;
     private bool isDead = false;
+    private bool hasEnraged = false;
     private float lastAttackTime = -999f;
-
     private int lastHealth = -1;
 
     public bool IsAttacking => isAttacking;
@@ -29,6 +37,7 @@ public class MushroomAnimatorController : MonoBehaviour
         animator = GetComponent<Animator>();
         health = GetComponent<Health>();
         sr = GetComponent<SpriteRenderer>();
+        movement = GetComponent<NhatMovement>();
         lastHealth = health.health;
 
         StartCoroutine(FindPlayer());
@@ -38,7 +47,7 @@ public class MushroomAnimatorController : MonoBehaviour
     {
         if (isDead || player == null) return;
 
-        // === Death ===
+        // === Check death ===
         if (health.health <= 0)
         {
             if (!isDead)
@@ -50,28 +59,41 @@ public class MushroomAnimatorController : MonoBehaviour
             return;
         }
 
-        // === Flip theo hướng player ===
-        Vector3 scale = transform.localScale;
-        if (player.position.x > transform.position.x)
-            scale.x = -Mathf.Abs(scale.x); // ← đổi chỗ
-        else
-            scale.x = Mathf.Abs(scale.x);
+        float distance = Vector2.Distance(transform.position, player.position);
 
+        // === Flip ===
+        Vector3 scale = transform.localScale;
+        scale.x = (player.position.x > transform.position.x) ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
         transform.localScale = scale;
 
-        // === Hit animation khi máu giảm ===
+        // === Trigger hit animation ===
         if (health.health < lastHealth)
         {
             animator.SetTrigger("hit");
             lastHealth = health.health;
         }
 
-        float distance = Vector2.Distance(transform.position, player.position);
+        // === Enrage when under 50% HP ===
+        if (!hasEnraged && health.health <= health.maxHealth * 0.5f)
+        {
+            hasEnraged = true;
+            sr.color = angryColor;
+            if (movement != null)
+            {
+                movement.moveSpeed *= speedMultiplier;
+            }
+        }
 
-        // === Walking condition ===
-        animator.SetBool("isWalking", !isAttacking && distance > attackRange);
+        // === Stop moving when close ===
+        float stopDistance = attackRange * stopDistanceFactor;
+        bool shouldStop = distance <= stopDistance;
 
-        // === Attack condition ===
+        if (movement != null)
+            movement.canMove = !shouldStop && !isAttacking;
+
+        animator.SetBool("isWalking", !shouldStop && !isAttacking);
+
+        // === Attack ===
         if (!isAttacking && distance <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
             StartCoroutine(Attack());

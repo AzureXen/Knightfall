@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class NhatMovement : EntityMovement
 {
-    [SerializeField] private float moveSpeed = 2;
+    [SerializeField] public float moveSpeed = 2;
     public bool canMove = true;
     public bool isRanged = false; // ✅ Nếu true → quái tầm xa, false → quái cận chiến
 
