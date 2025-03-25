@@ -1,0 +1,2358 @@
+fileFormatVersion: 2
+guid: 0b38ef9868b2fb44689f81ed8aec792a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6277236016675772284
+    second: AgisCosmosPowerUpSheet_0
+  - first:
+      213: 723872551158551460
+    second: AgisCosmosPowerUpSheet_1
+  - first:
+      213: 7265494371553364753
+    second: AgisCosmosPowerUpSheet_2
+  - first:
+      213: -2048134631114057704
+    second: AgisCosmosPowerUpSheet_3
+  - first:
+      213: -4788029049095873281
+    second: AgisCosmosPowerUpSheet_4
+  - first:
+      213: 8122273084707904630
+    second: AgisCosmosPowerUpSheet_5
+  - first:
+      213: -5953957277706525676
+    second: AgisCosmosPowerUpSheet_6
+  - first:
+      213: 236155629496543290
+    second: AgisCosmosPowerUpSheet_7
+  - first:
+      213: -1094119776266345573
+    second: AgisCosmosPowerUpSheet_8
+  - first:
+      213: -8290105824166923452
+    second: AgisCosmosPowerUpSheet_9
+  - first:
+      213: -5500608517003790645
+    second: AgisCosmosPowerUpSheet_10
+  - first:
+      213: -1663851584520627766
+    second: AgisCosmosPowerUpSheet_11
+  - first:
+      213: -6677055571245825939
+    second: AgisCosmosPowerUpSheet_12
+  - first:
+      213: 1304001536119365366
+    second: AgisCosmosPowerUpSheet_13
+  - first:
+      213: 1045320833900407064
+    second: AgisCosmosPowerUpSheet_14
+  - first:
+      213: -2493134337482543717
+    second: AgisCosmosPowerUpSheet_15
+  - first:
+      213: 5691254589495475367
+    second: AgisCosmosPowerUpSheet_16
+  - first:
+      213: 8331764275059702898
+    second: AgisCosmosPowerUpSheet_17
+  - first:
+      213: 96438788190145548
+    second: AgisCosmosPowerUpSheet_18
+  - first:
+      213: 7036651441558133044
+    second: AgisCosmosPowerUpSheet_19
+  - first:
+      213: 2921496880454917575
+    second: AgisCosmosPowerUpSheet_20
+  - first:
+      213: -5499033018442997680
+    second: AgisCosmosPowerUpSheet_21
+  - first:
+      213: -3201196949426836461
+    second: AgisCosmosPowerUpSheet_22
+  - first:
+      213: -1846028776307357456
+    second: AgisCosmosPowerUpSheet_23
+  - first:
+      213: -2778957535755846412
+    second: AgisCosmosPowerUpSheet_24
+  - first:
+      213: -8535858372601984048
+    second: AgisCosmosPowerUpSheet_25
+  - first:
+      213: -2020540026753002012
+    second: AgisCosmosPowerUpSheet_26
+  - first:
+      213: -4191259256260475476
+    second: AgisCosmosPowerUpSheet_27
+  - first:
+      213: 5782802324856666742
+    second: AgisCosmosPowerUpSheet_28
+  - first:
+      213: 7999463525500285488
+    second: AgisCosmosPowerUpSheet_29
+  - first:
+      213: -228389942281890740
+    second: AgisCosmosPowerUpSheet_30
+  - first:
+      213: -3981713624222028056
+    second: AgisCosmosPowerUpSheet_31
+  - first:
+      213: 2397216527552809433
+    second: AgisCosmosPowerUpSheet_32
+  - first:
+      213: 2160299833865202269
+    second: AgisCosmosPowerUpSheet_33
+  - first:
+      213: 2239313615614701959
+    second: AgisCosmosPowerUpSheet_34
+  - first:
+      213: -2302255283104038767
+    second: AgisCosmosPowerUpSheet_35
+  - first:
+      213: -9059967902872499232
+    second: AgisCosmosPowerUpSheet_36
+  - first:
+      213: -6171367294429009710
+    second: AgisCosmosPowerUpSheet_37
+  - first:
+      213: -3743723989905378344
+    second: AgisCosmosPowerUpSheet_38
+  - first:
+      213: -6324275306465054286
+    second: AgisCosmosPowerUpSheet_39
+  - first:
+      213: 1058984363630104462
+    second: AgisCosmosPowerUpSheet_40
+  - first:
+      213: -321489200655731228
+    second: AgisCosmosPowerUpSheet_41
+  - first:
+      213: -3963308920718051456
+    second: AgisCosmosPowerUpSheet_42
+  - first:
+      213: -818359683383043017
+    second: AgisCosmosPowerUpSheet_43
+  - first:
+      213: -4962957287519765712
+    second: AgisCosmosPowerUpSheet_44
+  - first:
+      213: 5900906686044987705
+    second: AgisCosmosPowerUpSheet_45
+  - first:
+      213: -5119800984812917015
+    second: AgisCosmosPowerUpSheet_46
+  - first:
+      213: 1799148331177329475
+    second: AgisCosmosPowerUpSheet_47
+  - first:
+      213: 721414323942905619
+    second: AgisCosmosPowerUpSheet_48
+  - first:
+      213: -2536844567645192442
+    second: AgisCosmosPowerUpSheet_49
+  - first:
+      213: -6240895695027272833
+    second: AgisCosmosPowerUpSheet_50
+  - first:
+      213: 9119889247613985611
+    second: AgisCosmosPowerUpSheet_51
+  - first:
+      213: 5999232966495984560
+    second: AgisCosmosPowerUpSheet_52
+  - first:
+      213: 8264090360159091358
+    second: AgisCosmosPowerUpSheet_53
+  - first:
+      213: 8942675898188492175
+    second: AgisCosmosPowerUpSheet_54
+  - first:
+      213: -5339416496328818249
+    second: AgisCosmosPowerUpSheet_55
+  - first:
+      213: -8990063175459170486
+    second: AgisCosmosPowerUpSheet_56
+  - first:
+      213: -4362005749948368636
+    second: AgisCosmosPowerUpSheet_57
+  - first:
+      213: -6425638040415836832
+    second: AgisCosmosPowerUpSheet_58
+  - first:
+      213: 7131238644009304179
+    second: AgisCosmosPowerUpSheet_59
+  - first:
+      213: 2511352839747419668
+    second: AgisCosmosPowerUpSheet_60
+  - first:
+      213: 6472805519335891667
+    second: AgisCosmosPowerUpSheet_61
+  - first:
+      213: -1600006834206392952
+    second: AgisCosmosPowerUpSheet_62
+  - first:
+      213: -5234702595722468377
+    second: AgisCosmosPowerUpSheet_63
+  - first:
+      213: 542997043031343552
+    second: AgisCosmosPowerUpSheet_64
+  - first:
+      213: 7657948337990036902
+    second: AgisCosmosPowerUpSheet_65
+  - first:
+      213: 7863446577422589507
+    second: AgisCosmosPowerUpSheet_66
+  - first:
+      213: -3948108915225102334
+    second: AgisCosmosPowerUpSheet_67
+  - first:
+      213: 410872396115268706
+    second: AgisCosmosPowerUpSheet_68
+  - first:
+      213: 2076066798338880419
+    second: AgisCosmosPowerUpSheet_69
+  - first:
+      213: -2970618071355750121
+    second: AgisCosmosPowerUpSheet_70
+  - first:
+      213: -3115480893880575404
+    second: AgisCosmosPowerUpSheet_71
+  - first:
+      213: -8087663533435718320
+    second: AgisCosmosPowerUpSheet_72
+  - first:
+      213: 4825675588879674929
+    second: AgisCosmosPowerUpSheet_73
+  - first:
+      213: -8338238849295484216
+    second: AgisCosmosPowerUpSheet_74
+  - first:
+      213: -1477827809695786906
+    second: AgisCosmosPowerUpSheet_75
+  - first:
+      213: 3462358899470268464
+    second: AgisCosmosPowerUpSheet_76
+  - first:
+      213: 188632072853241216
+    second: AgisCosmosPowerUpSheet_77
+  - first:
+      213: 3542207289438507095
+    second: AgisCosmosPowerUpSheet_78
+  - first:
+      213: 3197458852743288575
+    second: AgisCosmosPowerUpSheet_79
+  - first:
+      213: 6053906200249748331
+    second: AgisCosmosPowerUpSheet_80
+  - first:
+      213: -3954676899587889437
+    second: AgisCosmosPowerUpSheet_81
+  - first:
+      213: 6893037482348119271
+    second: AgisCosmosPowerUpSheet_82
+  - first:
+      213: -9093127624633357374
+    second: AgisCosmosPowerUpSheet_83
+  - first:
+      213: -8235927003539120546
+    second: AgisCosmosPowerUpSheet_84
+  - first:
+      213: 5060732475018843531
+    second: AgisCosmosPowerUpSheet_85
+  - first:
+      213: 6305821352949584647
+    second: AgisCosmosPowerUpSheet_86
+  - first:
+      213: -5673960938075351451
+    second: AgisCosmosPowerUpSheet_87
+  - first:
+      213: -8033987802947315756
+    second: AgisCosmosPowerUpSheet_88
+  - first:
+      213: 5303599176494938782
+    second: AgisCosmosPowerUpSheet_89
+  - first:
+      213: -8405520860742980402
+    second: AgisCosmosPowerUpSheet_90
+  - first:
+      213: 8422756700534211277
+    second: AgisCosmosPowerUpSheet_91
+  - first:
+      213: 5998194593792239587
+    second: AgisCosmosPowerUpSheet_92
+  - first:
+      213: -2565921054351127323
+    second: AgisCosmosPowerUpSheet_93
+  - first:
+      213: -4630757838242450864
+    second: AgisCosmosPowerUpSheet_94
+  - first:
+      213: -4731389740060710474
+    second: AgisCosmosPowerUpSheet_95
+  - first:
+      213: 6951059303701259561
+    second: AgisCosmosPowerUpSheet_96
+  - first:
+      213: -4557205075628945145
+    second: AgisCosmosPowerUpSheet_97
+  - first:
+      213: -8313763890998228901
+    second: AgisCosmosPowerUpSheet_98
+  - first:
+      213: 7075106516801956412
+    second: AgisCosmosPowerUpSheet_99
+  - first:
+      213: -8676058249163694171
+    second: AgisCosmosPowerUpSheet_100
+  - first:
+      213: 6150108131013304864
+    second: AgisCosmosPowerUpSheet_101
+  - first:
+      213: 8101139041711555072
+    second: AgisCosmosPowerUpSheet_102
+  - first:
+      213: -3517254930469738303
+    second: AgisCosmosPowerUpSheet_103
+  - first:
+      213: 1559566172665116787
+    second: AgisCosmosPowerUpSheet_104
+  - first:
+      213: -7324276802978582741
+    second: AgisCosmosPowerUpSheet_105
+  - first:
+      213: -3203199924434530889
+    second: AgisCosmosPowerUpSheet_106
+  - first:
+      213: -8723763799957550291
+    second: AgisCosmosPowerUpSheet_107
+  - first:
+      213: -8126726616071605001
+    second: AgisCosmosPowerUpSheet_108
+  - first:
+      213: 132123517625508580
+    second: AgisCosmosPowerUpSheet_109
+  - first:
+      213: 8772895503880178247
+    second: AgisCosmosPowerUpSheet_110
+  - first:
+      213: 7916100026669300713
+    second: AgisCosmosPowerUpSheet_111
+  - first:
+      213: -4864199492386535044
+    second: AgisCosmosPowerUpSheet_112
+  - first:
+      213: -3304752693993062128
+    second: AgisCosmosPowerUpSheet_113
+  - first:
+      213: -2250032535879931722
+    second: AgisCosmosPowerUpSheet_114
+  - first:
+      213: 1045828780189080993
+    second: AgisCosmosPowerUpSheet_115
+  - first:
+      213: 6891606067840147189
+    second: AgisCosmosPowerUpSheet_116
+  - first:
+      213: 1307783102692888067
+    second: AgisCosmosPowerUpSheet_117
+  - first:
+      213: -4396992091578300231
+    second: AgisCosmosPowerUpSheet_118
+  - first:
+      213: 7949906404966615316
+    second: AgisCosmosPowerUpSheet_119
+  - first:
+      213: 6528881019445911831
+    second: AgisCosmosPowerUpSheet_120
+  - first:
+      213: 671238576716958097
+    second: AgisCosmosPowerUpSheet_121
+  - first:
+      213: 4095454740914025345
+    second: AgisCosmosPowerUpSheet_122
+  - first:
+      213: 7590760499832220613
+    second: AgisCosmosPowerUpSheet_123
+  - first:
+      213: 2970168099216552488
+    second: AgisCosmosPowerUpSheet_124
+  - first:
+      213: -6688936298111490042
+    second: AgisCosmosPowerUpSheet_125
+  - first:
+      213: -1472803901738026337
+    second: AgisCosmosPowerUpSheet_126
+  - first:
+      213: -8586398795338248997
+    second: AgisCosmosPowerUpSheet_127
+  - first:
+      213: 8737826594423723182
+    second: AgisCosmosPowerUpSheet_128
+  - first:
+      213: -6513776520458073148
+    second: AgisCosmosPowerUpSheet_129
+  - first:
+      213: 6326707534433185466
+    second: AgisCosmosPowerUpSheet_130
+  - first:
+      213: 4806096661466270528
+    second: AgisCosmosPowerUpSheet_131
+  - first:
+      213: 273227799712630392
+    second: AgisCosmosPowerUpSheet_132
+  - first:
+      213: -939778773029990252
+    second: AgisCosmosPowerUpSheet_133
+  - first:
+      213: -2574035052653404563
+    second: AgisCosmosPowerUpSheet_134
+  - first:
+      213: -8631715300367816689
+    second: AgisCosmosPowerUpSheet_135
+  - first:
+      213: -8650903550328020619
+    second: AgisCosmosPowerUpSheet_136
+  - first:
+      213: 2725427328371632340
+    second: AgisCosmosPowerUpSheet_137
+  - first:
+      213: -1531269884868715127
+    second: AgisCosmosPowerUpSheet_138
+  - first:
+      213: -1483711150150630459
+    second: AgisCosmosPowerUpSheet_139
+  - first:
+      213: -583934674679247899
+    second: AgisCosmosPowerUpSheet_140
+  - first:
+      213: 677043473229737631
+    second: AgisCosmosPowerUpSheet_141
+  - first:
+      213: -5365073621316457227
+    second: AgisCosmosPowerUpSheet_142
+  - first:
+      213: 4815363776682730989
+    second: AgisCosmosPowerUpSheet_143
+  - first:
+      213: 3145769667202946599
+    second: AgisCosmosPowerUpSheet_144
+  - first:
+      213: -3961040419356869684
+    second: AgisCosmosPowerUpSheet_145
+  - first:
+      213: -1328736362363125710
+    second: AgisCosmosPowerUpSheet_146
+  - first:
+      213: -2372207528682120433
+    second: AgisCosmosPowerUpSheet_147
+  - first:
+      213: 7338179892801711844
+    second: AgisCosmosPowerUpSheet_148
+  - first:
+      213: 4243488650234977717
+    second: AgisCosmosPowerUpSheet_149
+  - first:
+      213: -1406895409120762349
+    second: AgisCosmosPowerUpSheet_150
+  - first:
+      213: -6169874060404539147
+    second: AgisCosmosPowerUpSheet_151
+  - first:
+      213: 908827701954808279
+    second: AgisCosmosPowerUpSheet_152
+  - first:
+      213: -9022723428452982152
+    second: AgisCosmosPowerUpSheet_153
+  - first:
+      213: -769504702709521060
+    second: AgisCosmosPowerUpSheet_154
+  - first:
+      213: 9212724531188578350
+    second: AgisCosmosPowerUpSheet_155
+  - first:
+      213: -5057350324050594810
+    second: AgisCosmosPowerUpSheet_156
+  - first:
+      213: 6476433026958373844
+    second: AgisCosmosPowerUpSheet_157
+  - first:
+      213: 4902175335106356251
+    second: AgisCosmosPowerUpSheet_158
+  - first:
+      213: -7190555248084432670
+    second: AgisCosmosPowerUpSheet_159
+  - first:
+      213: 8550375405501570822
+    second: AgisCosmosPowerUpSheet_160
+  - first:
+      213: 8394970361776159710
+    second: AgisCosmosPowerUpSheet_161
+  - first:
+      213: 6449533249334007685
+    second: AgisCosmosPowerUpSheet_162
+  - first:
+      213: 5853169819430720852
+    second: AgisCosmosPowerUpSheet_163
+  - first:
+      213: 5498931074389273903
+    second: AgisCosmosPowerUpSheet_164
+  - first:
+      213: 6903093638895952814
+    second: AgisCosmosPowerUpSheet_165
+  - first:
+      213: 433267266737249315
+    second: AgisCosmosPowerUpSheet_166
+  - first:
+      213: -3366455813703108910
+    second: AgisCosmosPowerUpSheet_167
+  - first:
+      213: 6386274544502890027
+    second: AgisCosmosPowerUpSheet_168
+  - first:
+      213: -8190223447733939830
+    second: AgisCosmosPowerUpSheet_169
+  - first:
+      213: 8639247442889234648
+    second: AgisCosmosPowerUpSheet_170
+  - first:
+      213: -5433633065061798768
+    second: AgisCosmosPowerUpSheet_171
+  - first:
+      213: -3952515917143986086
+    second: AgisCosmosPowerUpSheet_172
+  - first:
+      213: -4676356950979384186
+    second: AgisCosmosPowerUpSheet_173
+  - first:
+      213: -7389466574930258307
+    second: AgisCosmosPowerUpSheet_174
+  - first:
+      213: -484681376470241624
+    second: AgisCosmosPowerUpSheet_175
+  - first:
+      213: 4885896737688055935
+    second: AgisCosmosPowerUpSheet_176
+  - first:
+      213: -3361377747609980897
+    second: AgisCosmosPowerUpSheet_177
+  - first:
+      213: 4770327111729529953
+    second: AgisCosmosPowerUpSheet_178
+  - first:
+      213: -3188424527956193805
+    second: AgisCosmosPowerUpSheet_179
+  - first:
+      213: 2177917692304438016
+    second: AgisCosmosPowerUpSheet_180
+  - first:
+      213: -3895929097077539861
+    second: AgisCosmosPowerUpSheet_181
+  - first:
+      213: -3843904359085770268
+    second: AgisCosmosPowerUpSheet_182
+  - first:
+      213: 3063448357091848296
+    second: AgisCosmosPowerUpSheet_183
+  - first:
+      213: 6273961974951854811
+    second: AgisCosmosPowerUpSheet_184
+  - first:
+      213: 594308384572185093
+    second: AgisCosmosPowerUpSheet_185
+  - first:
+      213: -53567799601337530
+    second: AgisCosmosPowerUpSheet_186
+  - first:
+      213: 9002381241998802869
+    second: AgisCosmosPowerUpSheet_187
+  - first:
+      213: 4516206502736305861
+    second: AgisCosmosPowerUpSheet_188
+  - first:
+      213: 811995874728413164
+    second: AgisCosmosPowerUpSheet_189
+  - first:
+      213: 96310389345016372
+    second: AgisCosmosPowerUpSheet_190
+  - first:
+      213: 4987770909740848726
+    second: AgisCosmosPowerUpSheet_191
+  - first:
+      213: 7574233449975500360
+    second: AgisCosmosPowerUpSheet_192
+  - first:
+      213: 4865759678800418750
+    second: AgisCosmosPowerUpSheet_193
+  - first:
+      213: 769399483005082309
+    second: AgisCosmosPowerUpSheet_194
+  - first:
+      213: -8950840960003731525
+    second: AgisCosmosPowerUpSheet_195
+  - first:
+      213: 253137623942533353
+    second: AgisCosmosPowerUpSheet_196
+  - first:
+      213: 5107221201353341143
+    second: AgisCosmosPowerUpSheet_197
+  - first:
+      213: -1019759404943972660
+    second: AgisCosmosPowerUpSheet_198
+  - first:
+      213: -3703841635908736038
+    second: AgisCosmosPowerUpSheet_199
+  - first:
+      213: 8943746971201498296
+    second: AgisCosmosPowerUpSheet_200
+  - first:
+      213: 247108701709006085
+    second: AgisCosmosPowerUpSheet_201
+  - first:
+      213: 5467734171938027275
+    second: AgisCosmosPowerUpSheet_202
+  - first:
+      213: 3194517871510942360
+    second: AgisCosmosPowerUpSheet_203
+  - first:
+      213: -7959276622744467384
+    second: AgisCosmosPowerUpSheet_204
+  - first:
+      213: -2724514786596870630
+    second: AgisCosmosPowerUpSheet_205
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488a0ced917c2e8a0800000000000000
+      internalID: -6277236016675772284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a316720046bb0a00800000000000000
+      internalID: 723872551158551460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bc90ef2a834d460800000000000000
+      internalID: 7265494371553364753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818554c87609393e0800000000000000
+      internalID: -2048134631114057704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc936aa2f08d8db0800000000000000
+      internalID: -4788029049095873281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c1bbe365c18b070800000000000000
+      internalID: 8122273084707904630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414637eb66b4f5da0800000000000000
+      internalID: -5953957277706525676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_7
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38a9d73b4ef64300800000000000000
+      internalID: 236155629496543290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_8
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b932ae14cd7e0d0f0800000000000000
+      internalID: -1094119776266345573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_9
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3840
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44332200da0a3fc80800000000000000
+      internalID: -8290105824166923452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6308f72b9e9a3b0800000000000000
+      internalID: -5500608517003790645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac95da1accfc8e8e0800000000000000
+      internalID: -1663851584520627766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d608952a5555653a0800000000000000
+      internalID: -6677055571245825939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe55fafc7eb81210800000000000000
+      internalID: 1304001536119365366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819e2f492c9b18e00800000000000000
+      internalID: 1045320833900407064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_15
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d260d778b966dd0800000000000000
+      internalID: -2493134337482543717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac703545e56bfe40800000000000000
+      internalID: 5691254589495475367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_17
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c393fe67f50a370800000000000000
+      internalID: 8331764275059702898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_18
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c84a0219e965100800000000000000
+      internalID: 96438788190145548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_19
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3200
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439105e443537a160800000000000000
+      internalID: 7036651441558133044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd5deb1fed3b8820800000000000000
+      internalID: 2921496880454917575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050af87da928fa3b0800000000000000
+      internalID: -5499033018442997680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c695dc5501393d0800000000000000
+      internalID: -3201196949426836461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f80d0fcb969166e0800000000000000
+      internalID: -1846028776307357456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcb06348d82f69d0800000000000000
+      internalID: -2778957535755846412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_25
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbc308f80a8a8980800000000000000
+      internalID: -8535858372601984048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_26
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5ddea0d8995f3e0800000000000000
+      internalID: -2020540026753002012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_27
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5c605a9e7a5d5c0800000000000000
+      internalID: -4191259256260475476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_28
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a726b6314a04050800000000000000
+      internalID: 5782802324856666742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_29
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2560
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032732781bdc30f60800000000000000
+      internalID: 7999463525500285488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44140cbe8894dcf0800000000000000
+      internalID: -228389942281890740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eea9e60e8c1eb8c0800000000000000
+      internalID: -3981713624222028056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d90b761bbf944120800000000000000
+      internalID: 2397216527552809433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aeeddc04deafd10800000000000000
+      internalID: 2160299833865202269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781f8677ed3a31f10800000000000000
+      internalID: 2239313615614701959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1904154940fbc00e0800000000000000
+      internalID: -2302255283104038767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_36
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb08d0b137844280800000000000000
+      internalID: -9059967902872499232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_37
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8681d9426ea5aa0800000000000000
+      internalID: -6171367294429009710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_38
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3f494cdde9b0cc0800000000000000
+      internalID: -3743723989905378344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_39
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b13060cd19ab38a0800000000000000
+      internalID: -6324275306465054286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f8dd00ba442be00800000000000000
+      internalID: 1058984363630104462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e57acb7647d98bf0800000000000000
+      internalID: -321489200655731228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087b67df88f7ff8c0800000000000000
+      internalID: -3963308920718051456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cd37d243a94a4f0800000000000000
+      internalID: -818359683383043017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_44
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bb2f154a8002bb0800000000000000
+      internalID: -4962957287519765712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_45
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931607add5b34e150800000000000000
+      internalID: 5900906686044987705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_46
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eee7835120d2f8b0800000000000000
+      internalID: -5119800984812917015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_47
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343cf0affdbd7f810800000000000000
+      internalID: 1799148331177329475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_48
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317de72618af20a00800000000000000
+      internalID: 721414323942905619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_49
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ff0277e415bccd0800000000000000
+      internalID: -2536844567645192442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7382a95e62e369a0800000000000000
+      internalID: -6240895695027272833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_51
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43afe293fa509e70800000000000000
+      internalID: 9119889247613985611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_52
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb5ec4099e814350800000000000000
+      internalID: 5999232966495984560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a3305c562ffa270800000000000000
+      internalID: 8264090360159091358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_54
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8de8fc5954ca1c70800000000000000
+      internalID: 8942675898188492175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_55
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1c57c6cf496e5b0800000000000000
+      internalID: -5339416496328818249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_56
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a479f6e5c21ec3380800000000000000
+      internalID: -8990063175459170486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_57
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409bd1e91ea0773c0800000000000000
+      internalID: -4362005749948368636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_58
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065e6c92f3c83d6a0800000000000000
+      internalID: -6425638040415836832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_59
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37086b883cf37f260800000000000000
+      internalID: 7131238644009304179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e30de1a1e1ad220800000000000000
+      internalID: 2511352839747419668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d22430535604d950800000000000000
+      internalID: 6472805519335891667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d3ee0f242abc9e0800000000000000
+      internalID: -1600006834206392952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_63
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3a52d49b99a57b0800000000000000
+      internalID: -5234702595722468377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c188f70fec198700800000000000000
+      internalID: 542997043031343552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_65
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad603a907f764a60800000000000000
+      internalID: 7657948337990036902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_66
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ed885fff2902d60800000000000000
+      internalID: 7863446577422589507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_67
+      rect:
+        serializedVersion: 2
+        x: 4480
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208747d0cdf7539c0800000000000000
+      internalID: -3948108915225102334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_68
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264d6727446b3b500800000000000000
+      internalID: 410872396115268706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AgisCosmosPowerUpSheet_69
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3b8fce0cbafcc10800000000000000
+      internalID: 2076066798338880419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6054890df154fee4387a6b545072b665
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AgisCosmosPowerUpSheet_0: -6277236016675772284
+      AgisCosmosPowerUpSheet_1: 723872551158551460
+      AgisCosmosPowerUpSheet_10: -5500608517003790645
+      AgisCosmosPowerUpSheet_11: -1663851584520627766
+      AgisCosmosPowerUpSheet_12: -6677055571245825939
+      AgisCosmosPowerUpSheet_13: 1304001536119365366
+      AgisCosmosPowerUpSheet_14: 1045320833900407064
+      AgisCosmosPowerUpSheet_15: -2493134337482543717
+      AgisCosmosPowerUpSheet_16: 5691254589495475367
+      AgisCosmosPowerUpSheet_17: 8331764275059702898
+      AgisCosmosPowerUpSheet_18: 96438788190145548
+      AgisCosmosPowerUpSheet_19: 7036651441558133044
+      AgisCosmosPowerUpSheet_2: 7265494371553364753
+      AgisCosmosPowerUpSheet_20: 2921496880454917575
+      AgisCosmosPowerUpSheet_21: -5499033018442997680
+      AgisCosmosPowerUpSheet_22: -3201196949426836461
+      AgisCosmosPowerUpSheet_23: -1846028776307357456
+      AgisCosmosPowerUpSheet_24: -2778957535755846412
+      AgisCosmosPowerUpSheet_25: -8535858372601984048
+      AgisCosmosPowerUpSheet_26: -2020540026753002012
+      AgisCosmosPowerUpSheet_27: -4191259256260475476
+      AgisCosmosPowerUpSheet_28: 5782802324856666742
+      AgisCosmosPowerUpSheet_29: 7999463525500285488
+      AgisCosmosPowerUpSheet_3: -2048134631114057704
+      AgisCosmosPowerUpSheet_30: -228389942281890740
+      AgisCosmosPowerUpSheet_31: -3981713624222028056
+      AgisCosmosPowerUpSheet_32: 2397216527552809433
+      AgisCosmosPowerUpSheet_33: 2160299833865202269
+      AgisCosmosPowerUpSheet_34: 2239313615614701959
+      AgisCosmosPowerUpSheet_35: -2302255283104038767
+      AgisCosmosPowerUpSheet_36: -9059967902872499232
+      AgisCosmosPowerUpSheet_37: -6171367294429009710
+      AgisCosmosPowerUpSheet_38: -3743723989905378344
+      AgisCosmosPowerUpSheet_39: -6324275306465054286
+      AgisCosmosPowerUpSheet_4: -4788029049095873281
+      AgisCosmosPowerUpSheet_40: 1058984363630104462
+      AgisCosmosPowerUpSheet_41: -321489200655731228
+      AgisCosmosPowerUpSheet_42: -3963308920718051456
+      AgisCosmosPowerUpSheet_43: -818359683383043017
+      AgisCosmosPowerUpSheet_44: -4962957287519765712
+      AgisCosmosPowerUpSheet_45: 5900906686044987705
+      AgisCosmosPowerUpSheet_46: -5119800984812917015
+      AgisCosmosPowerUpSheet_47: 1799148331177329475
+      AgisCosmosPowerUpSheet_48: 721414323942905619
+      AgisCosmosPowerUpSheet_49: -2536844567645192442
+      AgisCosmosPowerUpSheet_5: 8122273084707904630
+      AgisCosmosPowerUpSheet_50: -6240895695027272833
+      AgisCosmosPowerUpSheet_51: 9119889247613985611
+      AgisCosmosPowerUpSheet_52: 5999232966495984560
+      AgisCosmosPowerUpSheet_53: 8264090360159091358
+      AgisCosmosPowerUpSheet_54: 8942675898188492175
+      AgisCosmosPowerUpSheet_55: -5339416496328818249
+      AgisCosmosPowerUpSheet_56: -8990063175459170486
+      AgisCosmosPowerUpSheet_57: -4362005749948368636
+      AgisCosmosPowerUpSheet_58: -6425638040415836832
+      AgisCosmosPowerUpSheet_59: 7131238644009304179
+      AgisCosmosPowerUpSheet_6: -5953957277706525676
+      AgisCosmosPowerUpSheet_60: 2511352839747419668
+      AgisCosmosPowerUpSheet_61: 6472805519335891667
+      AgisCosmosPowerUpSheet_62: -1600006834206392952
+      AgisCosmosPowerUpSheet_63: -5234702595722468377
+      AgisCosmosPowerUpSheet_64: 542997043031343552
+      AgisCosmosPowerUpSheet_65: 7657948337990036902
+      AgisCosmosPowerUpSheet_66: 7863446577422589507
+      AgisCosmosPowerUpSheet_67: -3948108915225102334
+      AgisCosmosPowerUpSheet_68: 410872396115268706
+      AgisCosmosPowerUpSheet_69: 2076066798338880419
+      AgisCosmosPowerUpSheet_7: 236155629496543290
+      AgisCosmosPowerUpSheet_8: -1094119776266345573
+      AgisCosmosPowerUpSheet_9: -8290105824166923452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

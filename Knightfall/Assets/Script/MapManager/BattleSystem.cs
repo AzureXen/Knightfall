@@ -15,8 +15,6 @@ public class BattleSystem : MonoBehaviour
 
     private GameObject spawnInstance3;
 
-    private GameObject spawnInstanceBoss;
-
     private int stages = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,8 +25,7 @@ public class BattleSystem : MonoBehaviour
     private void ColliderTrigger_OnPlayerEnterTrigger(object senderm, System.EventArgs e)
     {
         if (stages == 0 && spawnInstance1 == null && spawnInstance2 == null) { StartBattle(); }
-        if (stages == 1 && spawnInstance3 == null && spawnInstance1 == null && spawnInstance2 == null) { StartBattle2(); }
-        if (stages == 2 && spawnInstanceBoss == null) { StartBattle3(); }
+        if (stages == 1 && spawnInstance3 == null ) { StartBattle2(); }
     }
 
     private void StartBattle()
@@ -49,15 +46,10 @@ public class BattleSystem : MonoBehaviour
     private void StartBattle2()
     {
         spawnInstance3 = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnTransform);
-        spawnInstance3.transform.localScale = new Vector3(1, 0, 0);
+        spawnInstance3.transform.position += new Vector3(1, 0, 0);
 
         spawnInstance3.transform.parent = null;
 
         stages++;
-    }
-
-    private void StartBattle3()
-    {
-        
     }
 }

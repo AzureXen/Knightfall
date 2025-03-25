@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseSpeed: 5
   approachSpeed: 3
+  backOffSpeed: 1.5
 --- !u!114 &5583241221167164300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +240,7 @@ MonoBehaviour:
   approachRange: 4
   attackRange: 2
   spawnCircle: {fileID: 1942812545223820408, guid: 0e217219272cd9b41844d96229ea428a, type: 3}
+  isSpotted: 0
   currentState: 0
   canDecide: 1
 --- !u!114 &6026263143746165308

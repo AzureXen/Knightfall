@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: c40c62d4eccf1a548b73d45bc8903682
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6290327774692571039
+    second: ThunderGodDissolveSheet_0
+  - first:
+      213: -558878159989917439
+    second: ThunderGodDissolveSheet_1
+  - first:
+      213: -8792810200885327450
+    second: ThunderGodDissolveSheet_2
+  - first:
+      213: -8442193637244798718
+    second: ThunderGodDissolveSheet_3
+  - first:
+      213: -1231496825333264252
+    second: ThunderGodDissolveSheet_4
+  - first:
+      213: 8022517119716599384
+    second: ThunderGodDissolveSheet_5
+  - first:
+      213: -9136006133530997821
+    second: ThunderGodDissolveSheet_6
+  - first:
+      213: -7419220466420109268
+    second: ThunderGodDissolveSheet_7
+  - first:
+      213: -8517448865699013332
+    second: ThunderGodDissolveSheet_8
+  - first:
+      213: 1669974476705384420
+    second: ThunderGodDissolveSheet_9
+  - first:
+      213: 1341338230980768547
+    second: ThunderGodDissolveSheet_10
+  - first:
+      213: 3805479194407322892
+    second: ThunderGodDissolveSheet_11
+  - first:
+      213: 929894496396416828
+    second: ThunderGodDissolveSheet_12
+  - first:
+      213: 3852335937488634027
+    second: ThunderGodDissolveSheet_13
+  - first:
+      213: 6868244134565648181
+    second: ThunderGodDissolveSheet_14
+  - first:
+      213: -3230578528015618004
+    second: ThunderGodDissolveSheet_15
+  - first:
+      213: -878024642616695059
+    second: ThunderGodDissolveSheet_16
+  - first:
+      213: -5099086995139954912
+    second: ThunderGodDissolveSheet_17
+  - first:
+      213: -3571515645115206065
+    second: ThunderGodDissolveSheet_18
+  - first:
+      213: -5626617504227234281
+    second: ThunderGodDissolveSheet_19
+  - first:
+      213: -4887350117883983849
+    second: ThunderGodDissolveSheet_20
+  - first:
+      213: -6320471789719198287
+    second: ThunderGodDissolveSheet_21
+  - first:
+      213: -5862653301030938177
+    second: ThunderGodDissolveSheet_22
+  - first:
+      213: -3639991315918956981
+    second: ThunderGodDissolveSheet_23
+  - first:
+      213: 6373215713152558836
+    second: ThunderGodDissolveSheet_24
+  - first:
+      213: 6820864839124156754
+    second: ThunderGodDissolveSheet_25
+  - first:
+      213: -3130673710705589303
+    second: ThunderGodDissolveSheet_26
+  - first:
+      213: -6436605778263697289
+    second: ThunderGodDissolveSheet_27
+  - first:
+      213: -6392214736305256394
+    second: ThunderGodDissolveSheet_28
+  - first:
+      213: 4174704366940700861
+    second: ThunderGodDissolveSheet_29
+  - first:
+      213: 4389681502140912297
+    second: ThunderGodDissolveSheet_30
+  - first:
+      213: -40381990606467856
+    second: ThunderGodDissolveSheet_31
+  - first:
+      213: -7129733638563576864
+    second: ThunderGodDissolveSheet_32
+  - first:
+      213: -77880660523893770
+    second: ThunderGodDissolveSheet_33
+  - first:
+      213: -7109738097521897298
+    second: ThunderGodDissolveSheet_34
+  - first:
+      213: 1641057169321298353
+    second: ThunderGodDissolveSheet_35
+  - first:
+      213: 5940474311665264558
+    second: ThunderGodDissolveSheet_36
+  - first:
+      213: -728945942034386201
+    second: ThunderGodDissolveSheet_37
+  - first:
+      213: -849829796139736436
+    second: ThunderGodDissolveSheet_38
+  - first:
+      213: 5859668413473093697
+    second: ThunderGodDissolveSheet_39
+  - first:
+      213: -5585438205868816661
+    second: ThunderGodDissolveSheet_40
+  - first:
+      213: -3170004003026858770
+    second: ThunderGodDissolveSheet_41
+  - first:
+      213: 42540323265828335
+    second: ThunderGodDissolveSheet_42
+  - first:
+      213: 2275166015859927773
+    second: ThunderGodDissolveSheet_43
+  - first:
+      213: 2564197192793890132
+    second: ThunderGodDissolveSheet_44
+  - first:
+      213: 5825778438731147518
+    second: ThunderGodDissolveSheet_45
+  - first:
+      213: -4186137738718090025
+    second: ThunderGodDissolveSheet_46
+  - first:
+      213: 915745356249397395
+    second: ThunderGodDissolveSheet_47
+  - first:
+      213: -3076560956461980783
+    second: ThunderGodDissolveSheet_48
+  - first:
+      213: 8592615826468652183
+    second: ThunderGodDissolveSheet_49
+  - first:
+      213: -4272813478529483004
+    second: ThunderGodDissolveSheet_50
+  - first:
+      213: 2127073886878062325
+    second: ThunderGodDissolveSheet_51
+  - first:
+      213: 3311449910180063678
+    second: ThunderGodDissolveSheet_52
+  - first:
+      213: -4156012746567835025
+    second: ThunderGodDissolveSheet_53
+  - first:
+      213: -3954749658544689707
+    second: ThunderGodDissolveSheet_54
+  - first:
+      213: -1596399607064978253
+    second: ThunderGodDissolveSheet_55
+  - first:
+      213: -5515616912628340409
+    second: ThunderGodDissolveSheet_56
+  - first:
+      213: 6556667830352914759
+    second: ThunderGodDissolveSheet_57
+  - first:
+      213: 6636194920681129951
+    second: ThunderGodDissolveSheet_58
+  - first:
+      213: 5645986913603651247
+    second: ThunderGodDissolveSheet_59
+  - first:
+      213: 749973849620959679
+    second: ThunderGodDissolveSheet_60
+  - first:
+      213: 112991695242830274
+    second: ThunderGodDissolveSheet_61
+  - first:
+      213: 5948197736770504647
+    second: ThunderGodDissolveSheet_62
+  - first:
+      213: -8314479216756800747
+    second: ThunderGodDissolveSheet_63
+  - first:
+      213: 6346239390869911146
+    second: ThunderGodDissolveSheet_64
+  - first:
+      213: -4493375410321546684
+    second: ThunderGodDissolveSheet_65
+  - first:
+      213: -3860944711486043446
+    second: ThunderGodDissolveSheet_66
+  - first:
+      213: -2362858582153499608
+    second: ThunderGodDissolveSheet_67
+  - first:
+      213: -2731008133587788000
+    second: ThunderGodDissolveSheet_68
+  - first:
+      213: -8096409294921102256
+    second: ThunderGodDissolveSheet_69
+  - first:
+      213: -8864809037835018282
+    second: ThunderGodDissolveSheet_70
+  - first:
+      213: 2173395359151437960
+    second: ThunderGodDissolveSheet_71
+  - first:
+      213: 4934918468713808817
+    second: ThunderGodDissolveSheet_72
+  - first:
+      213: 8712663127278555392
+    second: ThunderGodDissolveSheet_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1680dac673444b8a0800000000000000
+      internalID: -6290327774692571039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109b31946477e38f0800000000000000
+      internalID: -558878159989917439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a98cc665b9a9f580800000000000000
+      internalID: -8792810200885327450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_3
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 900
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209f5f69d9d47da80800000000000000
+      internalID: -8442193637244798718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4805dff7928d8eee0800000000000000
+      internalID: -1231496825333264252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856a235b0d4b55f60800000000000000
+      internalID: 8022517119716599384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb481183d2663180800000000000000
+      internalID: -9136006133530997821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_7
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 600
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20b8b46b42a90990800000000000000
+      internalID: -7419220466420109268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2dd47f4261fbc980800000000000000
+      internalID: -8517448865699013332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e74efb40f0fc2710800000000000000
+      internalID: 1669974476705384420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_10
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323724da3046d9210800000000000000
+      internalID: 1341338230980768547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_11
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 300
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05c9ce3a27cfc430800000000000000
+      internalID: 3805479194407322892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c379c402e16a7ec00800000000000000
+      internalID: 929894496396416828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_13
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba04b75ef1f367530800000000000000
+      internalID: 3852335937488634027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_14
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537127f96a7e05f50800000000000000
+      internalID: 6868244134565648181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThunderGodDissolveSheet_15
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 0
+        width: 324
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20ff92f1fdaa23d0800000000000000
+      internalID: -3230578528015618004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d9dbde09793ac78429560c533535d2a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ThunderGodDissolveSheet_0: -6290327774692571039
+      ThunderGodDissolveSheet_1: -558878159989917439
+      ThunderGodDissolveSheet_10: 1341338230980768547
+      ThunderGodDissolveSheet_11: 3805479194407322892
+      ThunderGodDissolveSheet_12: 929894496396416828
+      ThunderGodDissolveSheet_13: 3852335937488634027
+      ThunderGodDissolveSheet_14: 6868244134565648181
+      ThunderGodDissolveSheet_15: -3230578528015618004
+      ThunderGodDissolveSheet_2: -8792810200885327450
+      ThunderGodDissolveSheet_3: -8442193637244798718
+      ThunderGodDissolveSheet_4: -1231496825333264252
+      ThunderGodDissolveSheet_5: 8022517119716599384
+      ThunderGodDissolveSheet_6: -9136006133530997821
+      ThunderGodDissolveSheet_7: -7419220466420109268
+      ThunderGodDissolveSheet_8: -8517448865699013332
+      ThunderGodDissolveSheet_9: 1669974476705384420
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

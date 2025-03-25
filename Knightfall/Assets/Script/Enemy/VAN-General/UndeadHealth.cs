@@ -76,7 +76,9 @@ public class UndeadHealth : Health
 
     private IEnumerator Die(float delay)
     {
-        yield return new WaitForSeconds(delay); // Wait a delayed seconds before destroying
+        // Optionally, trigger a death animation here
+        animator.SetTrigger("Dead");
+        yield return new WaitForSeconds(delay); // Wait 2 seconds before destroying
         Destroy(gameObject);
     }
 }

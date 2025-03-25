@@ -178,7 +178,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 120
+  m_Mass: 800
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseSpeed: 4
   approachSpeed: 2
+  backOffSpeed: 0.75
 --- !u!114 &8269708854724797716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +285,7 @@ MonoBehaviour:
   approachRange: 8
   attackRange: 6
   spawnCircle: {fileID: 8335464276257409450, guid: 3af7f163b44fc374493e3d015d80805f, type: 3}
+  isSpotted: 0
   currentState: 0
   canDecide: 1
 --- !u!114 &5010339859285097303

@@ -8,6 +8,7 @@ public class NecromancerMovement : EntityMovement
 
     [SerializeField] private float chaseSpeed = 2f;
     [SerializeField] private float approachSpeed = 1.5f;
+    public float backOffSpeed = 1.5f;
     private bool canMove = true;
 
     private void Start()
@@ -53,7 +54,7 @@ public class NecromancerMovement : EntityMovement
     {
         if (!canMove) return;
         Vector2 direction = (transform.position - player.position).normalized; // Move away from player
-        rb.linearVelocity = direction * (approachSpeed-0.5f);
+        rb.linearVelocity = direction * (backOffSpeed - 0.5f);
         FlipSprite(-direction);
     }
 
