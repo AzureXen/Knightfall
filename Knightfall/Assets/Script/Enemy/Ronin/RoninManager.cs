@@ -14,13 +14,14 @@ using static Unity.VisualScripting.Member;
 /// </summary>
 public class RoninManager : EntityManager
 {
-    private RoninRetributionSlash retributionSlash;
+    
+
     [SerializeField] private int maxRetributionStacks;
     public int curRetributionStacks;
     private float resolve;
 
     public GameObject deflectedBullet;
-    private RoninFlashSlash flashSlash;
+    private RoninSeverance roninSeverance;
     private RoninBGM roninBGM;
 
     // for UI
@@ -68,8 +69,7 @@ public class RoninManager : EntityManager
 
         curMotivation = maxMotivation;
         curAbsoluteDefenseStacks = 1;
-        flashSlash = GetComponent<RoninFlashSlash>();
-        retributionSlash = GetComponent<RoninRetributionSlash>();
+        roninSeverance = GetComponent<RoninSeverance>();
         roninAction = GetComponent<RoninAction>();
         roninSFX = GetComponent<RoninSFX>();
         roninBGM = GetComponent<RoninBGM>();
@@ -100,7 +100,7 @@ public class RoninManager : EntityManager
             resilience = 0;
         }
 
-        if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED))
+        if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED) && !roninAction.isDefeated)
         {
             StartCoroutine(parryBreakStun(stunDuration));
         }
@@ -111,7 +111,7 @@ public class RoninManager : EntityManager
         }
         if(Input.GetKeyDown(KeyCode.K))
         {
-            retributionSlash.Attack();
+            roninSeverance.Attack();
         }
     }
 
@@ -299,6 +299,7 @@ public class RoninManager : EntityManager
             {
                 int reducedDamage = Mathf.RoundToInt(damage * 0.2f);
                 TakeHitKnockback(reducedDamage, target, force * 0.2f, knockBackDuration * 0.2f);
+                bullet.DestroyBullet();
                 return true;
             }
             // If motivation <= 0, take 50% more damage
@@ -306,6 +307,7 @@ public class RoninManager : EntityManager
             {
                 int increasedDamage = Mathf.RoundToInt(damage * 1.5f);
                 TakeHitKnockback(increasedDamage, target, force, knockBackDuration);
+                bullet.DestroyBullet();
                 return true;
             }
         }
