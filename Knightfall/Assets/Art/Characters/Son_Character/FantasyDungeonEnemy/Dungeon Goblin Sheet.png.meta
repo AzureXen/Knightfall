@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon Goblin Sheet_0: -773232646646509844
+      Dungeon Goblin Sheet_1: -883004031814712787
+      Dungeon Goblin Sheet_10: 6477436411182859305
+      Dungeon Goblin Sheet_11: 2210303609166317101
+      Dungeon Goblin Sheet_12: -8927502929321901138
+      Dungeon Goblin Sheet_13: -8410386269904519672
+      Dungeon Goblin Sheet_2: -7564459797851792514
+      Dungeon Goblin Sheet_3: -619438850617952838
+      Dungeon Goblin Sheet_4: 7005842953293038282
+      Dungeon Goblin Sheet_5: 3516901632771529776
+      Dungeon Goblin Sheet_6: 4838552581724461291
+      Dungeon Goblin Sheet_7: 5607657362100161517
+      Dungeon Goblin Sheet_8: -3525959031468299349
+      Dungeon Goblin Sheet_9: 1951960690026404385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

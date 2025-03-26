@@ -622,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon Slime Sheet_0: -8579188307121520253
+      Dungeon Slime Sheet_1: -5090435395283814461
+      Dungeon Slime Sheet_10: -7627182312036042921
+      Dungeon Slime Sheet_11: -1888142867401434980
+      Dungeon Slime Sheet_12: 960820104746642876
+      Dungeon Slime Sheet_13: -408138280315049166
+      Dungeon Slime Sheet_14: -8337624182171846062
+      Dungeon Slime Sheet_15: 2335364788310159995
+      Dungeon Slime Sheet_16: 1617479263802609468
+      Dungeon Slime Sheet_17: -8933549609675921051
+      Dungeon Slime Sheet_18: 3616746517666422179
+      Dungeon Slime Sheet_19: 4169359450895373865
+      Dungeon Slime Sheet_2: -4073975496280494501
+      Dungeon Slime Sheet_3: -8996089248882115320
+      Dungeon Slime Sheet_4: 501167294536550554
+      Dungeon Slime Sheet_5: -4453197138769072005
+      Dungeon Slime Sheet_6: -3262554570555701077
+      Dungeon Slime Sheet_7: 3584306924772021404
+      Dungeon Slime Sheet_8: 7616103098487529115
+      Dungeon Slime Sheet_9: -5949565778146333427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

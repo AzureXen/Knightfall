@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon Knight Sheet_0: 2216513059837277714
+      Dungeon Knight Sheet_1: -7287284331101077512
+      Dungeon Knight Sheet_10: 1769653193503657544
+      Dungeon Knight Sheet_11: -5302234253352331066
+      Dungeon Knight Sheet_12: 448743618770757408
+      Dungeon Knight Sheet_13: -7949188912400980866
+      Dungeon Knight Sheet_2: -5682965743033999013
+      Dungeon Knight Sheet_3: -980081187449286966
+      Dungeon Knight Sheet_4: 2800236091209374599
+      Dungeon Knight Sheet_5: -6308672440968341928
+      Dungeon Knight Sheet_6: 7786235605416567597
+      Dungeon Knight Sheet_7: 2355340135909961813
+      Dungeon Knight Sheet_8: -2517915811726812412
+      Dungeon Knight Sheet_9: -7770222751839641847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

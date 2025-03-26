@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon Mage Sheet_0: -2190868109440747367
+      Dungeon Mage Sheet_1: 3056374440348870899
+      Dungeon Mage Sheet_10: -8128795841589147441
+      Dungeon Mage Sheet_11: 7485130275749269007
+      Dungeon Mage Sheet_12: 3515999990536051540
+      Dungeon Mage Sheet_2: -6755275755077554890
+      Dungeon Mage Sheet_3: -3824909372670241353
+      Dungeon Mage Sheet_4: -8973400255493927643
+      Dungeon Mage Sheet_5: 7885934181162903261
+      Dungeon Mage Sheet_6: 2002939413521723222
+      Dungeon Mage Sheet_7: 8697294554064191621
+      Dungeon Mage Sheet_8: -198251777573082852
+      Dungeon Mage Sheet_9: 6129391615671324839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

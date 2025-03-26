@@ -103,7 +103,16 @@ public class BatMovement : EntityMovement
 
     private void FlipSprite(float direction)
     {
-        sr.flipX = !sr.flipX;
+        //sr.flipX = !sr.flipX;
+        //if ((direction > 0.1f && sr.flipX) || (direction < -0.1f && !sr.flipX))
+        //{
+        //    sr.flipX = !sr.flipX;
+        //}
+
+        if ((direction > 0.1f && !sr.flipX) || (direction < -0.1f && sr.flipX))
+        {
+            sr.flipX = !sr.flipX;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
