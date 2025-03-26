@@ -8,6 +8,7 @@ public class SkeletonMovement : EntityMovement
 
     [SerializeField] private float chaseSpeed = 2f;
     [SerializeField] private float approachSpeed = 1.5f;
+    public float backOffSpeed = 0.75f;
     private bool canMove = true;
 
     private void Start()
@@ -23,6 +24,14 @@ public class SkeletonMovement : EntityMovement
             rb.linearVelocity = Vector2.zero;
             return;
         }
+    }
+
+    public void NoticedPlayer()
+    {
+        if (!canMove) return;
+        Vector2 direction = (player.position - transform.position).normalized;
+        rb.linearVelocity = direction * 0;
+        FlipSprite(direction);
     }
 
     public void ChasePlayer()
@@ -69,7 +78,7 @@ public class SkeletonMovement : EntityMovement
             direction.x -= 1f;
 
         }
-        rb.linearVelocity = direction * (approachSpeed/2);
+        rb.linearVelocity = direction * (backOffSpeed);
         FlipSprite(-direction);
     }
 

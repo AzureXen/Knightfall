@@ -14,8 +14,12 @@ public class SkeletonActions : MonoBehaviour
     [SerializeField] private float detectionRange = 10f;  // When Skeleton starts chasing
     [SerializeField] private float approachRange = 3f;   // When Skeleton starts slowing down
     [SerializeField] private float attackRange = 1f;   // When Skeleton should stop moving to attack
-    
-    private Boolean isSpotted = false;
+
+    public GameObject spawnCircle;
+    private GameObject spawnInstance;
+    private Boolean spawned = false;
+
+    public Boolean isSpotted = false;
     public enum SkeletonState { 
         IDLE, 
         CHASE, 
@@ -42,7 +46,13 @@ public class SkeletonActions : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (canDecide && !health.isDead)
+        if (!spawned)
+        {
+            StartCoroutine(SpawnState());
+            spawned = true;
+        }
+
+        if (canDecide && !health.isDead && spawned)
         {
             StartCoroutine(DecideNextAction(distance));
         }
@@ -70,6 +80,10 @@ public class SkeletonActions : MonoBehaviour
         {
             actionCoroutine = StartCoroutine(IdleState());
         }
+        if (!isSpotted && distance <= detectionRange)
+        {
+            actionCoroutine = StartCoroutine(NoticedState());
+        }
         else if (distance > approachRange && (distance <= detectionRange || isSpotted) && skeletonAttack.cooldownTimer == 0)
         {
             actionCoroutine = StartCoroutine(ChaseState());
@@ -89,6 +103,21 @@ public class SkeletonActions : MonoBehaviour
 
     }
 
+    private IEnumerator SpawnState()
+    {
+        canDecide = false;
+        skeletonMovement.StopMoving();
+        spawnInstance = Instantiate(spawnCircle, transform.position, Quaternion.identity);
+        spawnInstance.transform.position += new Vector3(0, -1f, 0);
+
+        spawnInstance.transform.parent = null;
+
+        yield return new WaitForSeconds(1f);
+
+        Destroy(spawnInstance);
+
+        canDecide = true;
+    }
     private IEnumerator IdleState()
     {
         canDecide = false;
@@ -99,10 +128,20 @@ public class SkeletonActions : MonoBehaviour
         canDecide = true;
     }
 
+    private IEnumerator NoticedState()
+    {
+        canDecide = false;
+        currentState = SkeletonState.IDLE;
+        skeletonMovement.NoticedPlayer();
+        yield return new WaitForSeconds(1f);
+        isSpotted = true;
+
+        canDecide = true;
+    }
+
     private IEnumerator ChaseState()
     {
         canDecide = false;
-        isSpotted = true;
         currentState = SkeletonState.CHASE;
         skeletonMovement.ChasePlayer();
         yield return new WaitForSeconds(0.1f);
@@ -151,6 +190,7 @@ public class SkeletonActions : MonoBehaviour
         canDecide = false;
         currentState = SkeletonState.DEAD;
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         skeletonMovement.StopMoving();
         yield return null;
     }

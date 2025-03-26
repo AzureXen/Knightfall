@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SkeletonManager : EntityManager
 {
-    private SkeletonAttack skeletonAttack;
-
     [SerializeField] private float stunDuration;
 
     public override void Start()
@@ -19,7 +17,6 @@ public class SkeletonManager : EntityManager
         EntityName = "Skeleton";
         defaultColor = new Color(1, 1, 1, 1);
 
-        skeletonAttack = GetComponent<SkeletonAttack>();
     }
 
     void Update()
