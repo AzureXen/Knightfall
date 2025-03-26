@@ -31,6 +31,8 @@ public class RoninFlashSlash : MonoBehaviour
 
     [SerializeField] private float followPlayerDuration = 0.5f;
     [SerializeField] private float delayAfterFollowDuration = 0.5f;
+
+    public Boolean isAttacking = false;
     private void Start()
     {
         roninSFX = GetComponent<RoninSFX>();
@@ -80,6 +82,7 @@ public class RoninFlashSlash : MonoBehaviour
     {
         try
         {
+            isAttacking = true;
             roninAnimator.canChangeDirection = true;
             roninAction.ChangeAnimationState("RoninUnsheathe1");
             if (attackInstance != null)
@@ -155,8 +158,8 @@ public class RoninFlashSlash : MonoBehaviour
                 yield return null;
             }
 
-            roninAction.ChangeAnimationState("RoninUnsheathe2Special");
-            roninSFX.playAttackWarning(0);
+            roninAction.ChangeAnimationState("RoninFlashSlashWarning");
+            roninSFX.playAttackWarning(2);
             roninAnimator.canChangeDirection = false;
             yield return new WaitForSeconds(delayAfterFollowDuration);
 
@@ -197,6 +200,7 @@ public class RoninFlashSlash : MonoBehaviour
             {
                 Destroy(attackInstance);
             }
+            isAttacking = false;
         }
     }
 

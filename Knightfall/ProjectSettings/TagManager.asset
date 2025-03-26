@@ -9,6 +9,7 @@ TagManager:
   - BGM
   - SceneController
   - Wall
+  - Map
   layers:
   - Default
   - TransparentFX

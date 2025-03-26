@@ -18,7 +18,7 @@ public class EntityManager : MonoBehaviour
 
     public float takeDamageCooldown = 0.2f;
     protected Coroutine IFrameCoroutine;
-    protected Boolean canDamage = true;
+    public Boolean canDamage = true;
 
     float knockbackDuration = 2f;
     protected float knockbackTimer = 0f;
