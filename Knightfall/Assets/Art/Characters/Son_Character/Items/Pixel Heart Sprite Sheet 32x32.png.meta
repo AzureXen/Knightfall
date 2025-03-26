@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 5b007281c34b2ad488073474a7869d7e
+guid: 0127cabb536cb4f4a80b4c97f444a953
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7117931007860907474
-    second: hm_0
+      213: 9139294957729004389
+    second: Pixel Heart Sprite Sheet 32x32_0
+  - first:
+      213: -7234348896261954332
+    second: Pixel Heart Sprite Sheet 32x32_1
+  - first:
+      213: 4458994651616342869
+    second: Pixel Heart Sprite Sheet 32x32_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hm_0
+      name: Pixel Heart Sprite Sheet 32x32_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 210
-        height: 234
+        x: 1
+        y: 3
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2266b4f577083d90800000000000000
-      internalID: -7117931007860907474
+      spriteID: 56bb4fc875c45de70800000000000000
+      internalID: 9139294957729004389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Heart Sprite Sheet 32x32_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e42111120e6a9b90800000000000000
+      internalID: -7234348896261954332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Heart Sprite Sheet 32x32_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55375f8c20881ed30800000000000000
+      internalID: 4458994651616342869
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      hm_0: -7117931007860907474
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

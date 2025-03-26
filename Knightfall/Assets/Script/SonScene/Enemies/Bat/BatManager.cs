@@ -5,12 +5,15 @@ public class BatManager : EntityManager
 {
     [SerializeField] private Boolean touchDamageEnabled = true;
     public int touchDamage = 5;
-    public int touchKnockbackForce = 5;
-    public float touchKnockbackDuration = 1.5f;
+    public float touchKnockbackForce = 0.5f;
+    public float touchKnockbackDuration = 0.5f;
+
+    //private EnemyHealth batHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
-        entityHealth = GetComponent<Health>();
+        entityHealth = GetComponent<EnemyHealth>();
+        //batHealth = GetComponent<EnemyHealth>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         entityMovement = GetComponent<BatMovement>();
