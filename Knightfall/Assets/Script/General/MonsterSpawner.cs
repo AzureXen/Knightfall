@@ -8,7 +8,7 @@ public class MonsterSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public Transform bossSpawnPoint;
     public GameObject bossPrefab;
-    public int enemiesPerWave = 10;
+    public int enemiesPerWave = 10; 
     public float timeBetweenWaves = 15f;
     public float spawnInterval = 1f;
     private int waveNumber = 1;

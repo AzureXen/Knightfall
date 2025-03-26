@@ -8,7 +8,7 @@ public class Potion : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            HealthGauge playerHealth = collision.GetComponent<HealthGauge>();
+            Health playerHealth = collision.GetComponent<Health>();
             if (playerHealth != null)
             {
                 playerHealth.Heal(healAmount);

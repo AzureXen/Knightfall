@@ -9,6 +9,7 @@ TagManager:
   - BGM
   - SceneController
   - Wall
+  - Map
   - EnemyBullet
   - SceneTrigger
   layers:

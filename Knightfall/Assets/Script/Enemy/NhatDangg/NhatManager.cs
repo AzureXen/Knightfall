@@ -58,6 +58,7 @@ public class NhatManager : EntityManager
         {
             EntityManager targetManager = target.GetComponent<EntityManager>();
             targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
+
         }
     }
 }
