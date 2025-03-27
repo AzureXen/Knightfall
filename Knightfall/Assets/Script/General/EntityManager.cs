@@ -67,6 +67,13 @@ public class EntityManager : MonoBehaviour
         }
         return false;
     }
+    public virtual void TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration)
+    {
+        if (canDamage)
+        {
+            TakeHitKnockback(damage, target, force, knockBackDuration);
+        }
+    }
     public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
         if (canDamage)
