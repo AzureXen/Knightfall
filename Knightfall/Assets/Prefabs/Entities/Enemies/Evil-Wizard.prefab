@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   takeDamageCooldown: 0.2
+  canDamage: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
   touchDamageEnabled: 1
@@ -321,6 +322,8 @@ MonoBehaviour:
   attackCooldown: 1
   attackRange: 12
   healthImage: {fileID: 8880412253104006620}
+  audioSource: {fileID: 0}
+  fireballSFX: {fileID: 8300000, guid: ad2bfb49e59ab334c94c4cbdec77533d, type: 3}
 --- !u!114 &8147739583330765026
 MonoBehaviour:
   m_ObjectHideFlags: 0

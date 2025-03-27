@@ -12,7 +12,10 @@ public class FireBall : BulletScript
     {
         damage = monsterDmg;
         knockbackForce = monsterKnockbackForce;
-        Destroy(gameObject, 5f);
+        if(gameObject != null)
+        {
+            Destroy(gameObject, 5f);
+        }
     }
 
     public void SetDirection(Vector2 dir)
