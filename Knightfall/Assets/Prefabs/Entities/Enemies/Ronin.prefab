@@ -299,7 +299,7 @@ MonoBehaviour:
   isDefeated: 0
   distanceFromPlayer: 0
   currentAction: 0
-  attackCooldown: 5
+  attackCooldown: 4
   canDecide: 1
   parryStateTimer: 0
 --- !u!114 &617716884915444814
