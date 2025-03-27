@@ -298,9 +298,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1330312951042407287, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 804.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330312951042407287, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4380428854258679886, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
       propertyPath: m_Name
       value: EndGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516262860005465858, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_text
+      value: To be continued...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516262860005465858, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_fontSize
+      value: 67.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516262860005465858, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 67.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516262860005465858, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516262860005465858, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7927066482158923578, guid: a95523c9351868d47b4ad72ae849e011, type: 3}
       propertyPath: m_Pivot.x
