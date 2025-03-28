@@ -2,14 +2,18 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(Health), typeof(SpriteRenderer))]
+[RequireComponent(typeof(AudioSource))]
 public class BanditAnimatorController : MonoBehaviour
 {
     public float attackRange = 1.2f;
     public float attackCooldown = 2f;
     public int attackDamage = 10;
     public float damageDelay = 0.3f;
-
     public float stopDistanceFactor = 0.8f;
+
+    [Header("Voice Clips")]
+    public AudioClip attackVoiceClip;
+    public AudioClip hurtVoiceClip;
 
     private Animator animator;
     private Health health;
@@ -17,6 +21,7 @@ public class BanditAnimatorController : MonoBehaviour
     private Health playerHealth;
     private SpriteRenderer sr;
     private NhatMovement movement;
+    private AudioSource audioSource;
 
     private bool isAttacking = false;
     private bool isDead = false;
@@ -29,6 +34,7 @@ public class BanditAnimatorController : MonoBehaviour
         health = GetComponent<Health>();
         sr = GetComponent<SpriteRenderer>();
         movement = GetComponent<NhatMovement>();
+        audioSource = GetComponent<AudioSource>();
         lastHealth = health.health;
 
         StartCoroutine(FindPlayer());
@@ -48,27 +54,28 @@ public class BanditAnimatorController : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // === Flip hướng ===
+        // Flip sprite
         Vector3 scale = transform.localScale;
         scale.x = (player.position.x > transform.position.x) ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
         transform.localScale = scale;
 
-        // === Hit animation ===
+        // Hit animation + voice
         if (health.health < lastHealth)
         {
             animator.SetTrigger("Hurt");
+            PlayVoice(hurtVoiceClip);
             lastHealth = health.health;
         }
 
-        // === Dừng lại nếu gần ===
+        // Stop if close
         float stopDistance = attackRange * stopDistanceFactor;
         bool shouldStop = distance <= stopDistance;
         movement.canMove = !shouldStop && !isAttacking;
 
-        // === Idle / Run ===
+        // Idle / Run
         animator.SetInteger("AnimState", shouldStop ? 0 : 2);
 
-        // === Tấn công nếu trong phạm vi ===
+        // Attack
         if (!isAttacking && distance <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
             StartCoroutine(Attack());
@@ -81,6 +88,8 @@ public class BanditAnimatorController : MonoBehaviour
         animator.SetTrigger("Attack");
         lastAttackTime = Time.time;
 
+        PlayVoice(attackVoiceClip);
+
         yield return new WaitForSeconds(damageDelay);
 
         if (player != null && Vector2.Distance(transform.position, player.position) <= attackRange + 0.2f)
@@ -89,6 +98,14 @@ public class BanditAnimatorController : MonoBehaviour
         }
 
         isAttacking = false;
+    }
+
+    private void PlayVoice(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 
     IEnumerator DestroyAfterDeath()
