@@ -16,7 +16,7 @@ public class NhatBullet : MonoBehaviour
         {
             Debug.Log("Đạn chạm vào Player!"); // Kiểm tra xem có chạm chưa
 
-            HealthGauge playerHealth = collision.GetComponent<HealthGauge>();
+            Health playerHealth = collision.GetComponent<Health>();
             if (playerHealth != null)
             {
                 Debug.Log("Player nhận sát thương: " + damage);

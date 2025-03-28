@@ -24,7 +24,8 @@ public class UIManager : MonoBehaviour
 
     public void OnQuitPress()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
     public void OnPausePress()
     {

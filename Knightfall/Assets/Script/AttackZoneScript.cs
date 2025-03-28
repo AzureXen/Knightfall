@@ -30,14 +30,25 @@ public class AttackZoneScript : MonoBehaviour
     // Only damage player once.
     private Boolean damagedPlayer = false;
 
+    private Color originalColor;
+    private SpriteRenderer sr;
+
     private PlayerManager playerManager;
     private void Start()
     {
         playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
         damageSourcePosition = -(transform.position + transform.up * (transform.localScale.y));
+        sr = GetComponent<SpriteRenderer>();
+        originalColor = sr.color;
+
     }
     private void Update()
     {
+        if(!showHitbox)
+        {
+            sr.color = new Color(0,0,0,0);
+        }
+        else sr.color = originalColor;
         if (hitBoxActive && showHitbox)
         {
             attackShow.SetActive(true);

@@ -11,7 +11,10 @@ TagManager:
   - BGM
   - SceneController
   - Wall
+  - Map
   - EnemyBullet
+  - SceneTrigger
+  - SceneManager
   layers:
   - Default
   - TransparentFX

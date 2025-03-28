@@ -13,6 +13,10 @@ namespace Assets.Script.Enemy.FlyingEye
         [SerializeField] private float attackRange = 10f;
         [SerializeField] private float fireRate = 2f;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
+        private Health health;
+
+        [SerializeField] private float healChance = 0.3f; 
+        [SerializeField] private int healAmount = 20;
         public override void Start()
         {
             entityHealth = GetComponent<Health>();
@@ -25,7 +29,10 @@ namespace Assets.Script.Enemy.FlyingEye
             EntityName = "FlyingEye";
             defaultColor = new Color(1, 1, 1, 1);
             animator = GetComponent<Animator>();
+            Health health = GetComponent<Health>();
         }
+
+        
 
         // Update is called once per frame
         private void OnCollisionStay2D(Collision2D collision)
@@ -37,5 +44,6 @@ namespace Assets.Script.Enemy.FlyingEye
                 targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
             }
         }
+
     }
 }
