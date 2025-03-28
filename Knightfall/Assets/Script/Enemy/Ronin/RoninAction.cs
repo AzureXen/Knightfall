@@ -308,8 +308,8 @@ public class RoninAction : MonoBehaviour
 
             currentAction = RoninActions.RETRIBUTION_SLASH;
             ChangeAnimationState(RONIN_RETRIBUTIONSLASH_WARNING);
-            roninSFX.playAttackWarning(2);
-            yield return new WaitForSeconds(1f);
+            roninSFX.playAttackWarning(3);
+            yield return new WaitForSeconds(0.5f);
 
             ChangeAnimationState(RONIN_ATTACK_2);
             roninSFX.playRetributionSlash();
@@ -370,7 +370,22 @@ public class RoninAction : MonoBehaviour
             }
             ActionCoroutine = StartCoroutine(DeathScene());
         }
+        // OPEN GATE
         openGate();
+        // CHANGE BGM
+        RoninBGM roninBGM = GetComponent<RoninBGM>();
+        if (roninBGM != null)
+        {
+            roninBGM.playBattleEndBGM();
+        }
+        else Debug.Log("Cannot find roninBGM.");
+        // DISABLE RONIN'S HEALTH / STAMINA UI
+        GameObject roninCanvasInstance = roninManager.roninCanvasInstance;
+        if (roninCanvasInstance != null)
+        {
+            roninCanvasInstance.SetActive(false);
+        }
+        else Debug.Log("RoninAction: Cannot find roninCanvasInstance");
     }
 
     IEnumerator DeathScene()

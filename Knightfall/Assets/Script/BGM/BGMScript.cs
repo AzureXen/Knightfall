@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BGMScript : MonoBehaviour
 {
-    [SerializeField] private AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField] private Coroutine changeAudioCoroutine;
     [SerializeField] private float audioChangeDelay;
     [SerializeField] private float audioChangeDelayTimer;

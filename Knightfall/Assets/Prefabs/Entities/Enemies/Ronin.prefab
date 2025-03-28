@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1722deff6c06e49bcfbb382f32dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  health: 300
+  maxHealth: 275
+  health: 275
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
 BoxCollider2D:
@@ -299,7 +299,7 @@ MonoBehaviour:
   isDefeated: 0
   distanceFromPlayer: 0
   currentAction: 0
-  attackCooldown: 4
+  attackCooldown: 3.5
   canDecide: 1
   parryStateTimer: 0
 --- !u!114 &617716884915444814
@@ -321,11 +321,12 @@ MonoBehaviour:
   knockbackDuration: 0.3
   flashSpeed: 100
   flashSlashRange: 9
+  flashSlashWidth: 1.15
   attackTransform: {fileID: 2611350318778995394}
   attackCooldown: 9
   attackCoolDownTimer: 0
   followPlayerDuration: 0.75
-  delayAfterFollowDuration: 0.5
+  delayAfterFollowDuration: 0.3
   isAttacking: 0
 --- !u!114 &5570917127877376178
 MonoBehaviour:
@@ -368,9 +369,9 @@ MonoBehaviour:
   knockbackForce: 5
   knockbackDuration: 0.2
   followPlayerDuration: 0.5
-  delayAfterFollowDuration: 0.7
-  attackCooldown: 15
-  attackCoolDownTimer: 15
+  delayAfterFollowDuration: 0.35
+  attackCooldown: 12
+  attackCoolDownTimer: 12
   attackTransform: {fileID: 2611350318778995394}
   isAttacking: 0
 --- !u!114 &6287489972011232366
@@ -515,6 +516,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bdf83334ffd0bcc4caeca27290993e74, type: 3}
   - {fileID: 8300000, guid: caf790ce97d3ca94d9a4a123ce8739de, type: 3}
   - {fileID: 8300000, guid: acc30ccfd83a2c1478b23a9c0999e4cf, type: 3}
+  - {fileID: 8300000, guid: 30add8cfe3da75a45abb15abb2f37592, type: 3}
   retributionSlashClips:
   - {fileID: 8300000, guid: 3940b6e8cc888d547b64f17b32ac3daf, type: 3}
   severanceWarningClips: []
@@ -535,6 +537,7 @@ MonoBehaviour:
   RoninBGMClips:
   - {fileID: 8300000, guid: 031ef5a690e769e429475d7069d8ab88, type: 3}
   - {fileID: 8300000, guid: 58cc1b9d1f5750b4c8a69801640cc544, type: 3}
+  - {fileID: 8300000, guid: fffa3deb76983e549b93c6cf13a59143, type: 3}
 --- !u!1 &4782720670287835851
 GameObject:
   m_ObjectHideFlags: 0

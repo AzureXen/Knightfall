@@ -26,7 +26,7 @@ public class RoninManager : EntityManager
 
     // for UI
     [SerializeField] private GameObject RoninCanvasPrefab;
-    private GameObject roninCanvasInstance = null;
+    public GameObject roninCanvasInstance = null;
     private RoninCanvasScript roninCanvasScript = null;
 
 
