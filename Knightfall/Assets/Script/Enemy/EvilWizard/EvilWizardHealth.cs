@@ -3,6 +3,12 @@ using UnityEngine;
 
 public class EvilWizardHealth : Health
 {
+    public GameObject changeSceneArea;
+    private void Start()
+    {
+        KhangSceneManager sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<KhangSceneManager>();
+        changeSceneArea = sceneManager.sceneTrigger.gameObject;
+    }
     public override void Update()
     {
         if (health <= 0)
@@ -12,8 +18,7 @@ public class EvilWizardHealth : Health
     }
     IEnumerator onDeath()
     {
-        GameObject sceneTrigger = GameObject.FindGameObjectWithTag("SceneTrigger");
-        sceneTrigger.SetActive(true);
+        changeSceneArea.SetActive(true);
         yield return null;
         Destroy(gameObject);
     }
