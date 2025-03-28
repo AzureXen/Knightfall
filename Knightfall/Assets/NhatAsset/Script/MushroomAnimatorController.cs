@@ -17,12 +17,17 @@ public class MushroomAnimatorController : MonoBehaviour
     public Color angryColor = new Color(0.8f, 0.2f, 0.2f, 1f); // đỏ đậm
     public float speedMultiplier = 1.5f;
 
+    [Header("Voice Lines")]
+    public AudioClip attackVoice;
+    public AudioClip hurtVoice;
+
     private Animator animator;
     private Health health;
     private Transform player;
     private Health playerHealth;
     private SpriteRenderer sr;
     private NhatMovement movement;
+    private AudioSource audioSource;
 
     private bool isAttacking = false;
     private bool isDead = false;
@@ -39,6 +44,7 @@ public class MushroomAnimatorController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         movement = GetComponent<NhatMovement>();
         lastHealth = health.health;
+        audioSource = GetComponent<AudioSource>();
 
         StartCoroutine(FindPlayer());
     }
@@ -70,6 +76,10 @@ public class MushroomAnimatorController : MonoBehaviour
         if (health.health < lastHealth)
         {
             animator.SetTrigger("hit");
+
+            if (hurtVoice != null && audioSource != null)
+                audioSource.PlayOneShot(hurtVoice);
+
             lastHealth = health.health;
         }
 
@@ -104,6 +114,8 @@ public class MushroomAnimatorController : MonoBehaviour
     {
         isAttacking = true;
         animator.SetTrigger("attack");
+        if (attackVoice != null && audioSource != null)
+            audioSource.PlayOneShot(attackVoice);
         lastAttackTime = Time.time;
 
         yield return new WaitForSeconds(damageDelay);
