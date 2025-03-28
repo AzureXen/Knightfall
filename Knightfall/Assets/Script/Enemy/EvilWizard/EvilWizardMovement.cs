@@ -14,6 +14,7 @@ public class EvilWizardMovement : EntityMovement
     private SpriteRenderer spriteRenderer;
     private float lastXPosition;
     private bool isFacingRight = true;
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class EvilWizardMovement : EntityMovement
         animator = GetComponent<Animator>(); 
         spriteRenderer = GetComponent<SpriteRenderer>();
         lastXPosition = transform.position.x;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -40,13 +42,13 @@ public class EvilWizardMovement : EntityMovement
             if (distance > minDistance + 0.5f)
             {
                 Vector3 moveTo = Vector3.Lerp(transform.position, playerPosition, Time.deltaTime * speed);
-                transform.position = moveTo;
+                rb.MovePosition(moveTo);
                 shouldMove = true;
             }
             else if (distance < minDistance)
             {
                 Vector3 moveAway = transform.position - direction.normalized * Time.deltaTime * speed;
-                transform.position = moveAway;
+                rb.MovePosition(moveAway);
                 shouldMove = true;
             }
         }

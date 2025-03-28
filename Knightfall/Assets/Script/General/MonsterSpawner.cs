@@ -21,7 +21,7 @@ public class MonsterSpawner : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
-        while (waveNumber <= maxWave)
+        while (waveNumber <= maxWave - 1)
         {
 
             for (int i = 0; i < enemiesPerWave; i++)

@@ -92,6 +92,13 @@ public class RoninAction : MonoBehaviour
     }
     private void Update()
     {
+        if (player == null)
+        {
+            if(currentAction!= RoninActions.IDLE)
+            StopCurrentAction();
+            canDecide = false;
+            currentAction = RoninActions.IDLE;
+        }
         // FOR DEATH SCENE
         if (roninHealth != null)
         {

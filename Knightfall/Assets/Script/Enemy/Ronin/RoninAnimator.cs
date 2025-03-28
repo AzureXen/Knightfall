@@ -26,12 +26,15 @@ public class RoninAnimator : MonoBehaviour
     }
     private void UpdateDirection()
     {
-        Vector3 playerPos = player.transform.position;
-        Vector3 playerDir = playerPos - transform.position;
-        if(playerDir.x  > 0)
+        if(player!=null)
         {
-            sr.flipX = false;
+            Vector3 playerPos = player.transform.position;
+            Vector3 playerDir = playerPos - transform.position;
+            if (playerDir.x > 0)
+            {
+                sr.flipX = false;
+            }
+            else sr.flipX = true;
         }
-        else sr.flipX=true;
     }
 }

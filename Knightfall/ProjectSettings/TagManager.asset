@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - Map
   - EnemyBullet
+  - SceneTrigger
   layers:
   - Default
   - TransparentFX
