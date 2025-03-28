@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Khang.unity
     guid: 18a34b65e8ec33b4381c16b586d91f58
   - enabled: 1
+    path: Assets/Scenes/NhatDang.unity
+    guid: a3c27f5282fac2f41af3995b17c5d82b
+  - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 429dc9ac14acf754592f66aa169108d3
   m_configObjects:
