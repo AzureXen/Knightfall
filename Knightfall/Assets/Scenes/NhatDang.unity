@@ -1989,7 +1989,7 @@ Transform:
   m_GameObject: {fileID: 1923438561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22368,12 +22368,20 @@ PrefabInstance:
       value: BOSS HEAVY BANDIT
       objectReference: {fileID: 0}
     - target: {fileID: 6146160315303058178, guid: dff84cb0bc0faf44ea5147c7bb5be40e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.7898
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146160315303058178, guid: dff84cb0bc0faf44ea5147c7bb5be40e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.8279
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146160315303058178, guid: dff84cb0bc0faf44ea5147c7bb5be40e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -8.71
       objectReference: {fileID: 0}
     - target: {fileID: 6146160315303058178, guid: dff84cb0bc0faf44ea5147c7bb5be40e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.69
+      value: 28.46
       objectReference: {fileID: 0}
     - target: {fileID: 6146160315303058178, guid: dff84cb0bc0faf44ea5147c7bb5be40e, type: 3}
       propertyPath: m_LocalPosition.z
