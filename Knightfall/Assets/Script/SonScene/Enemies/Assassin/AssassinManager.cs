@@ -69,15 +69,15 @@ public class AssassinManager : EntityManager
             nextAttackTime = Time.time + attackCooldown;
         }
 
-        // Enable movement when player is within chase range
-        if (distanceToPlayer < maxChaseRange)
-        {
-            movement.canMove = true; // Chase or attack
-        }
-        else if (!movement.isPatrolling)
-        {
-            movement.canMove = true; // Continue patrolling when no player is detected
-        }
+        //// Enable movement when player is within chase range
+        //if (distanceToPlayer < maxChaseRange)
+        //{
+        //    movement.canMove = true; // Chase or attack
+        //}
+        //else if (!movement.isPatrolling)
+        //{
+        //    movement.canMove = true; // Continue patrolling when no player is detected
+        //}
 
 
         //if (Time.time >= nextAttackTime && movement.player != null)
@@ -125,7 +125,7 @@ public class AssassinManager : EntityManager
     private IEnumerator ShootAtPlayer()
     {
         //isAttacking = true;
-        animator.SetTrigger("Shoot");
+        //animator.SetTrigger("Shoot");
 
         //yield return new WaitForSeconds(0.5f); // Animation delay
 

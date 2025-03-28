@@ -10,6 +10,8 @@ public class EnemyHealth : Health  // Inherit from Health
 
     public GameObject heartPrefab;
 
+    public event Action OnDeath;
+
     public override void Start()
     {
         base.Start(); // Call the base class Start method
@@ -27,7 +29,8 @@ public class EnemyHealth : Health  // Inherit from Health
     {
         if (health <= 0)
         {
-            DropHeart(); // Drop a heart before destroying the object
+            OnDeath?.Invoke();
+            DropHeart();
             Destroy(gameObject);
         }
     }
@@ -35,26 +38,24 @@ public class EnemyHealth : Health  // Inherit from Health
 
     public override void TakeDamage(int amount)
     {
-        base.TakeDamage(amount); // Call the base class TakeDamage method
+        base.TakeDamage(amount);
 
-        // Ensure health does not go below 0
         health = Mathf.Clamp(health, 0, maxHealth);
 
-        // Update health bar if available
         if (healthBar != null)
         {
             healthBar.value = health;
         }
 
-        // 🛠️ Create a separate pop-up for EnemyHealth
+
         if (enemyPopUpDamage != null)
         {
             GameObject popUpText = Instantiate(enemyPopUpDamage, transform.position, Quaternion.identity);
-            popUpText.transform.localScale = Vector3.one * 2f;  // Make it bigger
+            popUpText.transform.localScale = Vector3.one * 2f;
 
             TextMeshPro damageDisplayMesh = popUpText.transform.GetChild(0).GetComponent<TextMeshPro>();
             damageDisplayMesh.text = amount.ToString();
-            damageDisplayMesh.color = Color.red; // Make it red for enemies
+            damageDisplayMesh.color = Color.red;
         }
     }
 

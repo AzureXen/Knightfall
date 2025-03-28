@@ -63,13 +63,11 @@ public class AssassinMovement : EntityMovement
             else
             {
                 isPatrolling = true;
-                Debug.Log("patrol when player is detect");
                 PatrolBetweenPoints();
             }
         }
         else if (canMove)
         {
-            Debug.Log("patrol when player is not detect");
             // If no player is found yet, still patrol
             PatrolBetweenPoints();
         }

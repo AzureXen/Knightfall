@@ -1,40 +1,46 @@
 fileFormatVersion: 2
-guid: 577f9f16f5e4474419ef64c80b37edc0
+guid: aa98f06461a82224aa274aacfb92de4f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8905037592823372644
-    second: Idle_Fly_0
+      213: -2190868109440747367
+    second: Dungeon Mage Sheet_0
   - first:
-      213: -7819823458878759010
-    second: Idle_Fly_1
+      213: 3056374440348870899
+    second: Dungeon Mage Sheet_1
   - first:
-      213: 734599505901039225
-    second: Idle_Fly_2
+      213: -6755275755077554890
+    second: Dungeon Mage Sheet_2
   - first:
-      213: -1950326904031400717
-    second: Idle_Fly_3
+      213: -3824909372670241353
+    second: Dungeon Mage Sheet_3
   - first:
-      213: -3316151058139890842
-    second: Idle_Fly_4
+      213: -8973400255493927643
+    second: Dungeon Mage Sheet_4
   - first:
-      213: 2966102858547845924
-    second: Idle_Fly_5
+      213: 7885934181162903261
+    second: Dungeon Mage Sheet_5
   - first:
-      213: -922994667709105267
-    second: Idle_Fly_6
+      213: 2002939413521723222
+    second: Dungeon Mage Sheet_6
   - first:
-      213: 4727295099956454634
-    second: Idle_Fly_7
+      213: 8697294554064191621
+    second: Dungeon Mage Sheet_7
   - first:
-      213: 2592569028700690317
-    second: Idle_Fly_8
+      213: -198251777573082852
+    second: Dungeon Mage Sheet_8
   - first:
-      213: -5313285693838174223
-    second: Idle_Fly_9
+      213: 6129391615671324839
+    second: Dungeon Mage Sheet_9
   - first:
-      213: -3314129233360000964
-    second: Idle_Fly_10
+      213: -8128795841589147441
+    second: Dungeon Mage Sheet_10
+  - first:
+      213: 7485130275749269007
+    second: Dungeon Mage Sheet_11
+  - first:
+      213: 3515999990536051540
+    second: Dungeon Mage Sheet_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,122 +149,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_Fly_0
+      name: Dungeon Mage Sheet_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 45
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46b9cbf728c059b70800000000000000
-      internalID: 8905037592823372644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 30
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9fd34fcef76a7390800000000000000
-      internalID: -7819823458878759010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_2
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 44
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 97ea869cb52d13a00800000000000000
-      internalID: 734599505901039225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_3
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 30
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fc2259930c0fe4e0800000000000000
-      internalID: -1950326904031400717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_4
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 43
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 66b390eae2aaaf1d0800000000000000
-      internalID: -3316151058139890842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_5
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 28
-        width: 18
+        x: 8
+        y: 95
+        width: 15
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -268,107 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42bd303b5d6b92920800000000000000
-      internalID: 2966102858547845924
+      spriteID: 9987d0bef097891e0800000000000000
+      internalID: -2190868109440747367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_Fly_6
+      name: Dungeon Mage Sheet_1
       rect:
         serializedVersion: 2
-        x: 324
-        y: 40
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8b7e9d6d3dd033f0800000000000000
-      internalID: -922994667709105267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_7
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 29
-        width: 18
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae4695dd8d9ba9140800000000000000
-      internalID: 4727295099956454634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_8
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 32
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d87526babc7aaf320800000000000000
-      internalID: 2592569028700690317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_9
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 46
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f75c9cffca6346b0800000000000000
-      internalID: -5313285693838174223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Fly_10
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 31
-        width: 18
+        x: 39
+        y: 95
+        width: 17
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -378,8 +186,250 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c38e6d17509d102d0800000000000000
-      internalID: -3314129233360000964
+      spriteID: 3f8e3913c5c6a6a20800000000000000
+      internalID: 3056374440348870899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 95
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d2bc2ed707042a0800000000000000
+      internalID: -6755275755077554890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b59de7d0313beac0800000000000000
+      internalID: -3824909372670241353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d82efb204187380800000000000000
+      internalID: -8973400255493927643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 63
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd663563b57707d60800000000000000
+      internalID: 7885934181162903261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f6799d8cedbcb10800000000000000
+      internalID: 2002939413521723222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 63
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5808fe1115ff2b870800000000000000
+      internalID: 8697294554064191621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 31
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19aaa50f0baf3df0800000000000000
+      internalID: -198251777573082852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 31
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0d8551339ff0550800000000000000
+      internalID: 6129391615671324839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc808621047b03f80800000000000000
+      internalID: -8128795841589147441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e8e8fe35680e760800000000000000
+      internalID: 7485130275749269007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Mage Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b9d22ec575bc030800000000000000
+      internalID: 3515999990536051540
       vertices: []
       indices: 
       edges: []
@@ -398,17 +448,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Idle_Fly_0: 8905037592823372644
-      Idle_Fly_1: -7819823458878759010
-      Idle_Fly_10: -3314129233360000964
-      Idle_Fly_2: 734599505901039225
-      Idle_Fly_3: -1950326904031400717
-      Idle_Fly_4: -3316151058139890842
-      Idle_Fly_5: 2966102858547845924
-      Idle_Fly_6: -922994667709105267
-      Idle_Fly_7: 4727295099956454634
-      Idle_Fly_8: 2592569028700690317
-      Idle_Fly_9: -5313285693838174223
+      Dungeon Mage Sheet_0: -2190868109440747367
+      Dungeon Mage Sheet_1: 3056374440348870899
+      Dungeon Mage Sheet_10: -8128795841589147441
+      Dungeon Mage Sheet_11: 7485130275749269007
+      Dungeon Mage Sheet_12: 3515999990536051540
+      Dungeon Mage Sheet_2: -6755275755077554890
+      Dungeon Mage Sheet_3: -3824909372670241353
+      Dungeon Mage Sheet_4: -8973400255493927643
+      Dungeon Mage Sheet_5: 7885934181162903261
+      Dungeon Mage Sheet_6: 2002939413521723222
+      Dungeon Mage Sheet_7: 8697294554064191621
+      Dungeon Mage Sheet_8: -198251777573082852
+      Dungeon Mage Sheet_9: 6129391615671324839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
