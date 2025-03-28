@@ -12,6 +12,7 @@ TagManager:
   - Map
   - EnemyBullet
   - SceneTrigger
+  - SceneManager
   layers:
   - Default
   - TransparentFX

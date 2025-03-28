@@ -15,6 +15,8 @@ public class EvilWizardManager : EntityManager
     public GameObject magicBlastPrefab;
     public Transform fireballSpawnPoint;
 
+    public AudioSource audioSource; 
+    public AudioClip fireballSound;
 
     public float attackCooldown = 1f;
     private float attackTimer = 0f;
@@ -38,6 +40,12 @@ public class EvilWizardManager : EntityManager
         EntityName = "EvilWizard";
         defaultColor = new Color(1, 1, 1, 1);
         animator = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     private void Update()
@@ -89,6 +97,12 @@ public class EvilWizardManager : EntityManager
             }
         }
 
+        if (fireballSound != null && audioSource != null)
+        {
+            Debug.Log("Sound");
+            audioSource.PlayOneShot(fireballSound);
+        }
+
         EndAttack();
     }
 
@@ -102,6 +116,13 @@ public class EvilWizardManager : EntityManager
             SpawnFireball(Quaternion.Euler(0, 0, 20) * direction);
             SpawnFireball(Quaternion.Euler(0, 0, -20) * direction);
         }
+
+        if (fireballSound != null && audioSource != null)
+        {
+            Debug.Log("Sound");
+            audioSource.PlayOneShot(fireballSound);
+        }
+
         EndAttack();
     }
 
@@ -122,6 +143,13 @@ public class EvilWizardManager : EntityManager
         {
             Instantiate(magicBlastPrefab, movement.player.transform.position, Quaternion.identity);
         }
+
+        if (fireballSound != null && audioSource != null)
+        {
+            Debug.Log("Sound");
+            audioSource.PlayOneShot(fireballSound);
+        }
+
         EndAttack();
     }
 

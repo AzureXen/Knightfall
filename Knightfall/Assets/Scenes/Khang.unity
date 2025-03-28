@@ -159,10 +159,10 @@ MonoBehaviour:
   - {fileID: 1153541205}
   bossSpawnPoint: {fileID: 1887557624}
   bossPrefab: {fileID: 3562037426641334085, guid: 4e10b5bfb129b3243900df133f30b0d9, type: 3}
-  enemiesPerWave: 1
+  enemiesPerWave: 8
   timeBetweenWaves: 15
   spawnInterval: 1
-  maxWave: 2
+  maxWave: 3
 --- !u!4 &532144794
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +307,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532144794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &899665936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899665937}
+  - component: {fileID: 899665938}
+  m_Layer: 0
+  m_Name: KhangSceneManager
+  m_TagString: SceneManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899665937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899665936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.393597, y: -21.071388, z: -9.918909}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &899665938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899665936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6445b0e1bc4c0d746a71dad8c02e3649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneTrigger: {fileID: 0}
 --- !u!1 &1035549801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7226,7 +7271,7 @@ GameObject:
   - component: {fileID: 1992680050}
   m_Layer: 0
   m_Name: SceneTrigger
-  m_TagString: Untagged
+  m_TagString: SceneTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20361,3 +20406,4 @@ SceneRoots:
   - {fileID: 1949080330276789138}
   - {fileID: 1931227711}
   - {fileID: 1992680053}
+  - {fileID: 899665937}
