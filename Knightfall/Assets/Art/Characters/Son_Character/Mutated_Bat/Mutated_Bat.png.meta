@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: e1ee886fc868eaf45b0ca114ae162e61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2873296708550300654
+    second: Mutated_Bat_0
+  - first:
+      213: -8579032258260877328
+    second: Mutated_Bat_1
+  - first:
+      213: -5914553755611341267
+    second: Mutated_Bat_2
+  - first:
+      213: 7985938052144516792
+    second: Mutated_Bat_3
+  - first:
+      213: -7055905093545645237
+    second: Mutated_Bat_4
+  - first:
+      213: -8238299767536379913
+    second: Mutated_Bat_5
+  - first:
+      213: 5989709913947875953
+    second: Mutated_Bat_6
+  - first:
+      213: 1922376943634445860
+    second: Mutated_Bat_7
+  - first:
+      213: -5916889700930116180
+    second: Mutated_Bat_8
+  - first:
+      213: -1797386114465071502
+    second: Mutated_Bat_9
+  - first:
+      213: -527855813634314355
+    second: Mutated_Bat_10
+  - first:
+      213: -2853596445743340822
+    second: Mutated_Bat_11
+  - first:
+      213: 3159623649091625245
+    second: Mutated_Bat_12
+  - first:
+      213: 2000657907088895853
+    second: Mutated_Bat_13
+  - first:
+      213: 4100825004513433849
+    second: Mutated_Bat_14
+  - first:
+      213: 4832951612145271931
+    second: Mutated_Bat_15
+  - first:
+      213: -2814920726369655381
+    second: Mutated_Bat_16
+  - first:
+      213: -8836567079989348112
+    second: Mutated_Bat_17
+  - first:
+      213: -2769111248902746902
+    second: Mutated_Bat_18
+  - first:
+      213: -6958186123798439199
+    second: Mutated_Bat_19
+  - first:
+      213: 9119147158964660699
+    second: Mutated_Bat_20
+  - first:
+      213: 2010956773265583993
+    second: Mutated_Bat_21
+  - first:
+      213: 5800769471857382545
+    second: Mutated_Bat_22
+  - first:
+      213: 5355603373829863847
+    second: Mutated_Bat_23
+  - first:
+      213: 6221236372726596403
+    second: Mutated_Bat_24
+  - first:
+      213: -7918553902861873209
+    second: Mutated_Bat_25
+  - first:
+      213: 5083475784041014236
+    second: Mutated_Bat_26
+  - first:
+      213: 3630428394926832082
+    second: Mutated_Bat_27
+  - first:
+      213: -8707003719570543912
+    second: Mutated_Bat_28
+  - first:
+      213: 4721863541694655863
+    second: Mutated_Bat_29
+  - first:
+      213: 7875723017614318838
+    second: Mutated_Bat_30
+  - first:
+      213: 5316684238104057987
+    second: Mutated_Bat_31
+  - first:
+      213: 100814685921221405
+    second: Mutated_Bat_32
+  - first:
+      213: -8442213905389237931
+    second: Mutated_Bat_33
+  - first:
+      213: 1261190598095654037
+    second: Mutated_Bat_34
+  - first:
+      213: 1570842744076272688
+    second: Mutated_Bat_35
+  - first:
+      213: 4552313268293500487
+    second: Mutated_Bat_36
+  - first:
+      213: 7262432532403833252
+    second: Mutated_Bat_37
+  - first:
+      213: -7496385238595601471
+    second: Mutated_Bat_38
+  - first:
+      213: -1515462184392462906
+    second: Mutated_Bat_39
+  - first:
+      213: 8309993464158688974
+    second: Mutated_Bat_40
+  - first:
+      213: -6183264258283110397
+    second: Mutated_Bat_41
+  - first:
+      213: 1290507657248103753
+    second: Mutated_Bat_42
+  - first:
+      213: -9172900437376389780
+    second: Mutated_Bat_43
+  - first:
+      213: -3132995648877961414
+    second: Mutated_Bat_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mutated_Bat_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 125
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c6f80fddfff18d0800000000000000
+      internalID: -2873296708550300654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 110
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff3eb16d9721f880800000000000000
+      internalID: -8579032258260877328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 124
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e55d722b84beda0800000000000000
+      internalID: -5914553755611341267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 110
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be495cd850c3de60800000000000000
+      internalID: 7985938052144516792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 123
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ba75283b3641e90800000000000000
+      internalID: -7055905093545645237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 108
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f79fc2820eabad80800000000000000
+      internalID: -8238299767536379913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 120
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aaf709e69bf1350800000000000000
+      internalID: 5989709913947875953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 109
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4267bb125a7adaa10800000000000000
+      internalID: 1922376943634445860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 112
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5a4e08a2cf2eda0800000000000000
+      internalID: -5916889700930116180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_9
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 126
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ef6131ad66e07e0800000000000000
+      internalID: -1797386114465071502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_10
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 111
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fa3b72fedaca8f0800000000000000
+      internalID: -527855813634314355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_11
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 19
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2a62fc62df568d0800000000000000
+      internalID: -2853596445743340822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_12
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 22
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11a70ce7fc39db20800000000000000
+      internalID: 3159623649091625245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_13
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 57
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f2c1d34c3c3cb10800000000000000
+      internalID: 2000657907088895853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 41
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f810105d9e09e830800000000000000
+      internalID: 4100825004513433849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_15
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 56
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74029a92e7121340800000000000000
+      internalID: 4832951612145271931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_16
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 63
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba52ad173846fe8d0800000000000000
+      internalID: -2814920726369655381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 62
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8f2531f053e5580800000000000000
+      internalID: -8836567079989348112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_18
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 67
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec0d919df32299d0800000000000000
+      internalID: -2769111248902746902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_19
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 60
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea11f1269e8f6f90800000000000000
+      internalID: -6958186123798439199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_20
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 51
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9e9989608bd8e70800000000000000
+      internalID: 9119147158964660699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_21
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 35
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f2921e78a58eb10800000000000000
+      internalID: 2010956773265583993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_22
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 49
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1945df1d919708050800000000000000
+      internalID: 5800769471857382545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_23
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 34
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9330fa4ece25a40800000000000000
+      internalID: 5355603373829863847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 49
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333cb1cf485465650800000000000000
+      internalID: 6221236372726596403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf822dfd25ab1290800000000000000
+      internalID: -7918553902861873209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_26
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 50
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3a01cca422c8640800000000000000
+      internalID: 5083475784041014236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 32
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9fa1ee36fd16230800000000000000
+      internalID: 3630428394926832082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_28
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 40
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da2efcaf328a2780800000000000000
+      internalID: -8707003719570543912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_29
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 43
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77de398afdd678140800000000000000
+      internalID: 4721863541694655863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_30
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 49
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcd44e6b503c4d60800000000000000
+      internalID: 7875723017614318838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_31
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 40
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3885c134528a8c940800000000000000
+      internalID: 5316684238104057987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_32
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 38
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b1a763c6a266100800000000000000
+      internalID: 100814685921221405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_33
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 39
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559496b8e2b37da80800000000000000
+      internalID: -8442213905389237931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_34
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 29
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ccd89ba26a08110800000000000000
+      internalID: 1261190598095654037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_35
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 38
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0348aae2721ccc510800000000000000
+      internalID: 1570842744076272688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_36
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 42
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e7eee5cc01d2f30800000000000000
+      internalID: 4552313268293500487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_37
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 17
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9cb2309e759c460800000000000000
+      internalID: 7262432532403833252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_38
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 35
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbf602d75d77f790800000000000000
+      internalID: -7496385238595601471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_39
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 34
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdefbc2c2ff7fae0800000000000000
+      internalID: -1515462184392462906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_40
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 28
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec61ff40707035370800000000000000
+      internalID: 8309993464158688974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_41
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 26
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3008aacdae1a03aa0800000000000000
+      internalID: -6183264258283110397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_42
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 23
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94dd13a70edc8e110800000000000000
+      internalID: 1290507657248103753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_43
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 16
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6da72ef6af43b080800000000000000
+      internalID: -9172900437376389780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mutated_Bat_44
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 13
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3fd8c18e0d5584d0800000000000000
+      internalID: -3132995648877961414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mutated_Bat_0: -2873296708550300654
+      Mutated_Bat_1: -8579032258260877328
+      Mutated_Bat_10: -527855813634314355
+      Mutated_Bat_11: -2853596445743340822
+      Mutated_Bat_12: 3159623649091625245
+      Mutated_Bat_13: 2000657907088895853
+      Mutated_Bat_14: 4100825004513433849
+      Mutated_Bat_15: 4832951612145271931
+      Mutated_Bat_16: -2814920726369655381
+      Mutated_Bat_17: -8836567079989348112
+      Mutated_Bat_18: -2769111248902746902
+      Mutated_Bat_19: -6958186123798439199
+      Mutated_Bat_2: -5914553755611341267
+      Mutated_Bat_20: 9119147158964660699
+      Mutated_Bat_21: 2010956773265583993
+      Mutated_Bat_22: 5800769471857382545
+      Mutated_Bat_23: 5355603373829863847
+      Mutated_Bat_24: 6221236372726596403
+      Mutated_Bat_25: -7918553902861873209
+      Mutated_Bat_26: 5083475784041014236
+      Mutated_Bat_27: 3630428394926832082
+      Mutated_Bat_28: -8707003719570543912
+      Mutated_Bat_29: 4721863541694655863
+      Mutated_Bat_3: 7985938052144516792
+      Mutated_Bat_30: 7875723017614318838
+      Mutated_Bat_31: 5316684238104057987
+      Mutated_Bat_32: 100814685921221405
+      Mutated_Bat_33: -8442213905389237931
+      Mutated_Bat_34: 1261190598095654037
+      Mutated_Bat_35: 1570842744076272688
+      Mutated_Bat_36: 4552313268293500487
+      Mutated_Bat_37: 7262432532403833252
+      Mutated_Bat_38: -7496385238595601471
+      Mutated_Bat_39: -1515462184392462906
+      Mutated_Bat_4: -7055905093545645237
+      Mutated_Bat_40: 8309993464158688974
+      Mutated_Bat_41: -6183264258283110397
+      Mutated_Bat_42: 1290507657248103753
+      Mutated_Bat_43: -9172900437376389780
+      Mutated_Bat_44: -3132995648877961414
+      Mutated_Bat_5: -8238299767536379913
+      Mutated_Bat_6: 5989709913947875953
+      Mutated_Bat_7: 1922376943634445860
+      Mutated_Bat_8: -5916889700930116180
+      Mutated_Bat_9: -1797386114465071502
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

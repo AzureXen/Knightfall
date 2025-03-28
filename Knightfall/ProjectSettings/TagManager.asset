@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Stair
+  - StairHandRail
   - BGM
   - SceneController
   - Wall
@@ -26,6 +28,10 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - Ground
+  - Floor1
+  - Floor2
   - PostProcessing
   - 
   - 
@@ -50,9 +56,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 4126335567
+  - name: Floor1
+    uniqueID: 3111216959
     locked: 0
+  - name: Floor2
+    uniqueID: 540790365
   - name: Foreground
     uniqueID: 3264982367
     locked: 0
