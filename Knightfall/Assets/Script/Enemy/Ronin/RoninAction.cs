@@ -12,12 +12,14 @@ public class RoninAction : MonoBehaviour
     private string RONIN_RUN = "RoninRun";
     private string RONIN_RUN_SLOW = "RoninRunSlow";
     private string RONIN_ATTACK_1 = "RoninAttack1";
+    private string RONIN_ATTACK_1_END_SPECIAL = "RoninAttack1EndSpecial";
     private string RONIN_ATTACK_1_QUICK = "RoninAttack1Quick";
     private string RONIN_ATTACK_2 = "RoninAttack2";
     private string RONIN_ATTACK_COMBO = "RoninAttackCombo";
     private string RONIN_DEATH = "RoninDeath";
     private string RONIN_UNSHEATHE_1 = "RoninUnsheathe1";
     private string RONIN_UNSHEATHE_2 = "RoninUnsheathe2";
+    private string RONIN_UNSHEATHE_2_SPECIAL = "RoninUnsheathe2Special";
     private string RONIN_STUNNED = "RoninStunned";
     private string RONIN_KNEEL = "RoninKneel";
 
@@ -39,6 +41,7 @@ public class RoninAction : MonoBehaviour
         FLASHSLASH,
         PARRY,
         ABSOLUTE_DEFENSE,
+        RETRIBUTION_SLASH,
         SUPERPARRY,
         STUNNED,
     }
@@ -50,8 +53,11 @@ public class RoninAction : MonoBehaviour
 
     private RoninMovement roninMovement;
     private RoninManager roninManager;
+    RoninSFX roninSFX;
     private RoninFlashSlash roninFlashSlash;
     private float flashSlashCooldown;
+
+    private RoninRetributionSlash roninRetributionSlash;
 
     private float stunTimer;
 
@@ -65,15 +71,20 @@ public class RoninAction : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentAction = RoninActions.STARTING_IDLE;
         roninFlashSlash = GetComponent<RoninFlashSlash>();
+        roninRetributionSlash = GetComponent<RoninRetributionSlash>();
         roninMovement = GetComponent<RoninMovement>();
         roninManager = GetComponent<RoninManager>();
+        roninSFX = GetComponent<RoninSFX>();
         am = GetComponent<Animator>();
         ChangeAnimationState(RONIN_KNEEL);
     }
     private void Update()
     {
         parryStateTimer = roninManager.parryStateTimer;
-        distanceFromPlayer = Vector3.Distance(transform.position, player.position);
+        if (player != null)
+        {
+            distanceFromPlayer = Vector3.Distance(transform.position, player.position);
+        }
         flashSlashCooldown = roninFlashSlash.attackCoolDownTimer;
 
         // If Ronin is attacking, he cannot parry.
@@ -209,7 +220,7 @@ public class RoninAction : MonoBehaviour
     }
     public void EnterAbsoluteDefense()
     {
-        if (ActionCoroutine != null)
+        if (ActionCoroutine != null && currentAction != RoninActions.ABSOLUTE_DEFENSE)
         {
             StopCurrentAction();
         }
@@ -231,6 +242,47 @@ public class RoninAction : MonoBehaviour
             ChangeAnimationState(RONIN_IDLE);
         }
     }
+
+
+    public void EnterAbsoluteDefenseRetribtion()
+    {
+        if (ActionCoroutine != null && currentAction != RoninActions.ABSOLUTE_DEFENSE && currentAction != RoninActions.RETRIBUTION_SLASH)
+        {
+            StopCurrentAction();
+        }
+        ActionCoroutine = StartCoroutine(AbsoluteDefenseRetribution());
+    }
+
+    private IEnumerator AbsoluteDefenseRetribution()
+    {
+        try
+        {
+            canDecide = false;
+            currentAction = RoninActions.ABSOLUTE_DEFENSE;
+            ChangeAnimationState(RONIN_ATTACK_1_QUICK);
+            yield return new WaitForSeconds(0.5f);
+
+            currentAction = RoninActions.RETRIBUTION_SLASH;
+            ChangeAnimationState(RONIN_ATTACK_1_END_SPECIAL);
+            roninSFX.playAttackWarning(1);
+            yield return new WaitForSeconds(1f);
+
+            ChangeAnimationState(RONIN_ATTACK_2);
+            roninSFX.playerRetributionSlash();
+            yield return new WaitForSeconds(0.35f);
+
+            roninRetributionSlash.Attack();
+            roninManager.curRetributionStacks--;
+            yield return new WaitForSeconds(1.5f);
+        }
+        finally
+        {
+            canDecide = true;
+            currentAction = RoninActions.IDLE;
+            ChangeAnimationState(RONIN_IDLE);
+        }
+    }
+
     private IEnumerator Stun(float duration)
     {
         try

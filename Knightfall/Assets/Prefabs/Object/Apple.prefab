@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4795392856976311850}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1227522643
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5617571255654614307, guid: ad9cf4dab61bce044b2d681ef12d3472, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89790eacff4283d4e8bc27e4054d1415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appleSprite: {fileID: -5617571255654614307, guid: ad9cf4dab61bce044b2d681ef12d3472, type: 3}
 --- !u!50 &5675954275899359987
 Rigidbody2D:
   serializedVersion: 5

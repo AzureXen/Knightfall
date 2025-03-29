@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 4278970029570211888}
   - component: {fileID: 4074364276650737111}
   - component: {fileID: 6514825574535031309}
+  - component: {fileID: 612093012790148225}
+  - component: {fileID: 5397574565518285190}
   m_Layer: 7
   m_Name: Slime
   m_TagString: Enemy
@@ -81,7 +83,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 368543389579951487, guid: 48c00e89617d74f4c955fa300e46f67f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   health: 50
+  defaultHealth: 50
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
 BoxCollider2D:
@@ -170,7 +173,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -232,9 +235,11 @@ MonoBehaviour:
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
   touchDamageEnabled: 1
-  touchDamage: 5
+  touchDamage: 20
   touchKnockbackForce: 4
   touchKnockbackDuration: 1
+  hasKey: 0
+  keyPrefab: {fileID: 0}
 --- !u!114 &6514825574535031309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,3 +256,39 @@ MonoBehaviour:
   moveSpeed: 2
   canMove: 1
   moveDir: {x: 0, y: 0}
+  potionDetectionRadius: 8
+  detectionRange: 5
+  isAbnormal: 0
+  slimePrefab: {fileID: 1344780703779386018}
+--- !u!114 &612093012790148225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344780703779386018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc43bc1cd10138459ba8e5ae27fdf57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMultiplier: 3
+  effectDuration: 5
+  player: {fileID: 0}
+  isBoostActive: 0
+  bulletPrefab: {fileID: 0}
+--- !u!114 &5397574565518285190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344780703779386018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4884edbb3198b9b42a9ae67cbfd858ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healAmount: 0
+  healthMultiplier: 2
+  sizeMultiplier: 1.5

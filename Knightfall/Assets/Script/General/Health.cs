@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
     public int health = 100;
-
+    public int defaultHealth = 100;
     // used to instantiate
     public GameObject popUpDamage;
     // used to make the text follow

@@ -19,6 +19,34 @@ public class PlayerManager : EntityManager
         yield return new WaitForSeconds(0.7f);
     }
 
+    public void StartFlashing()
+    {
+        if (flashCoroutine == null)
+        {
+            flashCoroutine = StartCoroutine(base.FlashRed());
+        }
+    }
+
+    public void FlashGreenTwice()
+    {
+        StartCoroutine(FlashGreenCoroutine());
+    }
+
+    private IEnumerator FlashGreenCoroutine()
+    {
+        Color flashColor = new Color(0f, 1f, 0f); 
+        float flashDuration = 0.1f; 
+
+        for (int i = 0; i < 2; i++) 
+        {
+            sr.color = flashColor; 
+            yield return new WaitForSeconds(flashDuration);
+            sr.color = defaultColor; 
+            yield return new WaitForSeconds(flashDuration); 
+        }
+    }
+
+
 }
 
 /*

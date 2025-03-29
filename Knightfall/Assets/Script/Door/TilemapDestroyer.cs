@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Script.Enemy.Slime;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -7,14 +8,19 @@ namespace Assets
     public class TilemapDestroyer : MonoBehaviour
     {
         public Tilemap tilemap;
-        public GameObject[] lootPrefabs; // Array of possible loot (items or monsters)
+        public GameObject[] lootPrefabs;  // Regular loot items
+        public GameObject keyPrefab;      // The key object
+        public GameObject slimePrefab;    // The Slime enemy to spawn
+
+        public Vector3Int keyTilePosition;         // Tile where the key is located
+        public Vector3Int indestructibleTilePosition; // Tile where the slime spawns
+
+        private bool keyDestroyed = false;  // Track if the key tile has been destroyed
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            // Check if hit by player's sword
             if (collision.CompareTag("PlayerSword"))
             {
-                // Get bounds of the sword collider
                 Bounds swordBounds = collision.bounds;
                 DestroyTilesInBounds(swordBounds);
             }
@@ -22,7 +28,6 @@ namespace Assets
 
         private void DestroyTilesInBounds(Bounds bounds)
         {
-            // Convert bounds to tilemap grid positions
             Vector3Int minTile = tilemap.WorldToCell(bounds.min);
             Vector3Int maxTile = tilemap.WorldToCell(bounds.max);
 
@@ -34,9 +39,21 @@ namespace Assets
 
                     if (tilemap.HasTile(tilePosition))
                     {
-                        Debug.Log("Box destroyed at " + tilePosition);
-                        tilemap.SetTile(tilePosition, null);
-                        DropRandomLoot(tilePosition);
+                        if (tilePosition == keyTilePosition)
+                        {
+                            DropKey(tilePosition);
+                            keyDestroyed = true; // Mark key as destroyed
+                            Debug.Log("Key tile destroyed at " + tilePosition);
+
+                            // Spawn slime immediately after key is dropped
+                            SpawnSlime(indestructibleTilePosition);
+                        }
+                        else
+                        {
+                            Debug.Log("Box destroyed at " + tilePosition);
+                            tilemap.SetTile(tilePosition, null);
+                            DropRandomLoot(tilePosition);
+                        }
                     }
                 }
             }
@@ -54,6 +71,33 @@ namespace Assets
                     Vector3 spawnPosition = tilemap.GetCellCenterWorld(tilePosition);
                     Instantiate(lootToSpawn, spawnPosition, Quaternion.identity);
                 }
+            }
+        }
+
+        private void DropKey(Vector3Int tilePosition)
+        {
+            if (keyPrefab != null)
+            {
+                Vector3 spawnPosition = tilemap.GetCellCenterWorld(tilePosition);
+                Instantiate(keyPrefab, spawnPosition, Quaternion.identity);
+                tilemap.SetTile(tilePosition, null); // Remove key tile
+                Debug.Log("Key dropped at " + tilePosition);
+            }
+        }
+
+        private void SpawnSlime(Vector3Int tilePosition)
+        {
+            if (slimePrefab != null)
+            {
+                GameObject spawnedSlime = Instantiate(slimePrefab, tilePosition, Quaternion.identity);
+                tilemap.SetTile(tilePosition, null);
+                SlimeMovement slimeMovement = spawnedSlime.GetComponent<SlimeMovement>();
+                if (slimeMovement != null)
+                {
+                    slimeMovement.isAbnormal = true;
+                }
+
+                Debug.Log("Abnormal Slime spawned and moving toward the key.");
             }
         }
     }

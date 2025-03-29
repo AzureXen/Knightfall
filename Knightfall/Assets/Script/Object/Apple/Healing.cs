@@ -27,7 +27,7 @@ namespace Assets.Script.Object.Apple
             if (enemy != null)
             {
                 enemyHealth = enemy.GetComponent<Health>();
-                slimeManager = enemy.GetComponent<SlimeManager>(); // For future use
+                slimeManager = enemy.GetComponent<SlimeManager>(); 
             }
         }
 
@@ -50,7 +50,7 @@ namespace Assets.Script.Object.Apple
                 enemyHealth.health = Mathf.Min(enemyHealth.maxHealth / 2 + enemyHealth.health, enemyHealth.maxHealth);
 
                 // Increase enemy size
-                enemyHealth.transform.localScale *= sizeMultiplier;
+                slimeManager.SizeInflate(sizeMultiplier);
             }
         }
     }

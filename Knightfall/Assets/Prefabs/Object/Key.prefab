@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3781656838671310289}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1227522643
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8061387028894466533, guid: ed1c3ce12865b81468407dab350237a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,7 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ef4303e8e64f34d970c325f2e690eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  door: {fileID: 1241649511425262902, guid: 7e8ef7cc721ea6f46a8f23338c0ea35f, type: 3}
+  keySprite: {fileID: -8061387028894466533, guid: ed1c3ce12865b81468407dab350237a5, type: 3}
 --- !u!50 &3771225203587338928
 Rigidbody2D:
   serializedVersion: 5

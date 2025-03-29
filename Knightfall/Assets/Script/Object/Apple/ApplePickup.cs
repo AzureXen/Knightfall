@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Assets.Script.Potion;
+using Assets.Script.Visual.UI;
 using UnityEngine;
 
 namespace Assets.Script.Object.Apple
@@ -12,14 +14,18 @@ namespace Assets.Script.Object.Apple
     {
         private bool isInRange = false;
         private Healing Healing;
+        private InventorySystem inventory;
+        private PlayerManager playerManager;
+        public Sprite appleSprite;
 
-    private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") || other.CompareTag("Enemy"))
         {
             isInRange = true;
             Healing = other.GetComponentInChildren<Healing>();
-
+            inventory = other.GetComponent<InventorySystem>(); 
+            playerManager = other.GetComponent<PlayerManager>();
             if (other.CompareTag("Enemy"))
             {
                 Healing = other.GetComponent<Healing>();
@@ -56,14 +62,30 @@ namespace Assets.Script.Object.Apple
         Destroy(gameObject);
     }
 
-    private void PickupApple()
+        private void PickupApple()
+{
+    if (inventory != null && appleSprite != null && Healing != null)
     {
-        if (Healing != null)
+        Healing healingRef = Healing; // Store Healing reference
+        PlayerManager playerRef = playerManager; // Store PlayerManager reference
+
+        inventory.AddItem("Apple", appleSprite, () =>
         {
-            Healing.Heal();
-        }
+            if (healingRef != null)
+            {
+                healingRef.Heal();
+            }
+
+            if (playerRef != null)
+            {
+                playerRef.FlashGreenTwice();
+            }
+        });
 
         Destroy(gameObject);
     }
 }
+
+
+    }
 }

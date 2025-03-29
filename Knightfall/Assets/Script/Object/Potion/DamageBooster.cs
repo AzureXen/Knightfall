@@ -9,11 +9,13 @@ namespace Assets.Script.Potion
         public float damageMultiplier = 2f;  // Multiplier for increased damage
         public float effectDuration = 5f;    // Duration of the effect in seconds
 
+        public GameObject player;
         private PlayerSword playerSword;
         private int originalDamage;
-        private bool isBoostActive = false;
+        public bool isBoostActive = false;
 
-        public GameObject bulletPrefab; 
+        public GameObject bulletPrefab;
+        private PlayerBullet bulletComponent;
         private int originalBulletDamage;
 
         private SlimeManager slimeManager;
@@ -21,7 +23,6 @@ namespace Assets.Script.Potion
 
         void Start()
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
             GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
             if (enemy != null)
             {
@@ -37,7 +38,7 @@ namespace Assets.Script.Potion
             }
             if (player != null)
             {
-                playerSword = player.GetComponentInChildren<PlayerSword>();
+                playerSword = player.GetComponent<PlayerSword>();
 
                 if (playerSword != null)
                 {
@@ -48,15 +49,12 @@ namespace Assets.Script.Potion
                     Debug.LogError("PlayerSword not found in Player's children!");
                 }
             }
-            else
-            {
-                Debug.LogError("Player GameObject not found! Make sure it has the 'Player' tag.");
-            }
+
 
             // Store bullet original damage (only if prefab is assigned)
             if (bulletPrefab != null)
             {
-                PlayerBullet bulletComponent = bulletPrefab.GetComponent<PlayerBullet>();
+                bulletComponent = bulletPrefab.GetComponent<PlayerBullet>();
                 if (bulletComponent != null)
                 {
                     originalBulletDamage = bulletComponent.damage;
@@ -88,7 +86,7 @@ namespace Assets.Script.Potion
         {
             isBoostActive = true;
             slimeManager.touchDamage = Mathf.RoundToInt(enemyOriginDmg * damageMultiplier);
-            slimeManager.SetSlimeColor(Color.red);
+            slimeManager.SetSlimeColor(new Color(255f / 255f, 100f / 255f, 50f / 255f));
             yield return new WaitForSeconds(effectDuration);
             slimeManager.touchDamage = enemyOriginDmg;
             slimeManager.ResetColor();
@@ -99,16 +97,7 @@ namespace Assets.Script.Potion
         {
             isBoostActive = true;
             playerSword.meleeDamage = Mathf.RoundToInt(originalDamage * damageMultiplier);
-
-            // Boost bullet damage for future spawned bullets
-            if (bulletPrefab != null)
-            {
-                PlayerBullet bulletComponent = bulletPrefab.GetComponent<PlayerBullet>();
-                if (bulletComponent != null)
-                {
-                    bulletComponent.damage = Mathf.RoundToInt(originalBulletDamage * damageMultiplier);
-                }
-            }
+            bulletComponent.damage = Mathf.RoundToInt(originalBulletDamage * damageMultiplier);
 
             Debug.Log("Damage Boosted: Sword = " + playerSword.meleeDamage + ", Bullet = " + bulletPrefab.GetComponent<PlayerBullet>().damage);
 
@@ -116,15 +105,8 @@ namespace Assets.Script.Potion
 
             // Revert back to normal damage
             playerSword.meleeDamage = originalDamage;
-
-            if (bulletPrefab != null)
-            {
-                PlayerBullet bulletComponent = bulletPrefab.GetComponent<PlayerBullet>();
-                if (bulletComponent != null)
-                {
-                    bulletComponent.damage = originalBulletDamage;
-                }
-            }
+            bulletComponent.damage = originalBulletDamage;
+            
 
             isBoostActive = false;
             Debug.Log("Damage boost expired. Back to normal.");

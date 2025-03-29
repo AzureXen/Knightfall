@@ -20,6 +20,7 @@ public class RangedDamageHitboxScript : MonoBehaviour
 
     private Transform player;
     private PlayerManager playerManager;
+    private Rigidbody2D rb2;
     private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +28,7 @@ public class RangedDamageHitboxScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
         damageSourcePosition = (transform.position + transform.right * (transform.localScale.x));
+        rb2 = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -49,6 +51,7 @@ public class RangedDamageHitboxScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerIsInHitbox = true;
+            rb2.linearVelocity = Vector2.zero;
             animator.SetTrigger("Impact");
         }
     }

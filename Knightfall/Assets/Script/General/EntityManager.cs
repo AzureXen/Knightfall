@@ -57,13 +57,15 @@ public class EntityManager : MonoBehaviour
 
 
 
-    public virtual void TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration, BulletScript bullet)
+    public virtual Boolean TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration, BulletScript bullet)
     {
         if (canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
             bullet.DestroyBullet();
+            return true;
         }
+        return false;
     }
     public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {

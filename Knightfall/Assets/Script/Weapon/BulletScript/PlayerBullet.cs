@@ -10,11 +10,23 @@ public class PlayerBullet : BulletScript
     public float splitRotateForce = 25f;
     public float destroyTime = 2f;
     public float fadeDuration = 1f;
+    public PlayerSFX playerSFX;
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        // The BulletScript I made was for player itself.
-        base.OnTriggerEnter2D(collision);
+        Boolean successHit = false; 
+        if (collision.CompareTag("Enemy"))
+        {
+            EntityManager enemyManager = collision.gameObject.GetComponent<EntityManager>();
+            if (enemyManager != null)
+            {
+                successHit = enemyManager.TakeRangedHit(damage, transform.position, knockbackForce, knockbackDuration, this);
+            }
+            if (successHit && playerSFX!=null)
+            {
+                playerSFX.playArrowHit();
+            }
+        }
     }
     public override void BreakBullet()
     {

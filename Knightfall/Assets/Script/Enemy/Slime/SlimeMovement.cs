@@ -5,7 +5,7 @@ namespace Assets.Script.Enemy.Slime
 {
     public class SlimeMovement : EntityMovement
     {
-        [SerializeField] public GameObject player;
+        public GameObject player;
         [SerializeField] private float moveSpeed = 2f;
         public bool canMove = true;
         [HideInInspector] public Vector2 moveDir;
@@ -14,30 +14,58 @@ namespace Assets.Script.Enemy.Slime
         public float detectionRange = 5f;
 
         private GameObject targetPotion;
-        private bool playerDetected = false;
+        private bool playerDetected = false;    
+
+        // Abnormal slime properties
+        public bool isAbnormal = false;
+        private GameObject keyObject;
+        private Vector3 escapePosition;
+        [SerializeField] private GameObject slimePrefab;
+
 
         void Start()
         {
             StartCoroutine(FindPlayer());
+
+            if (isAbnormal)
+            {
+                StartCoroutine(FindKey());
+                escapePosition = new Vector3(15, -15, 0);
+            }
         }
 
         void FixedUpdate()
         {
+            if (isAbnormal)
+            {
+                if (keyObject != null)
+                {
+                    // Instantly move to the key
+                    transform.position = keyObject.transform.position;
+                    Destroy(keyObject); 
+
+                    // Optional: Add a small delay before dashing away
+                    StartCoroutine(DashToEscape());
+                    SpawnNewSlime();
+                    return;
+                }
+            }
+
             FindClosestPotion();
 
             if (canMove)
             {
                 if (playerDetected)
                 {
-                    MoveTowards(player.transform.position); // Keep chasing the player once detected
+                    MoveTowards(player.transform.position);
                 }
                 else if (targetPotion != null)
                 {
-                    MoveTowards(targetPotion.transform.position); // Move to the potion if no player is detected
+                    MoveTowards(targetPotion.transform.position);
                 }
                 else if (player != null && Vector2.Distance(transform.position, player.transform.position) <= detectionRange)
                 {
-                    playerDetected = true; // Detect player and lock onto them
+                    playerDetected = true;
                 }
                 else
                 {
@@ -45,6 +73,37 @@ namespace Assets.Script.Enemy.Slime
                 }
             }
         }
+
+        private IEnumerator DashToEscape()
+        {
+            SlimeManager slimeManager = GetComponent<SlimeManager>();
+
+            if (slimeManager != null)
+            {
+                slimeManager.SetInvincible(true); // Enable invincibility
+            }
+
+            yield return new WaitForSeconds(1f); // Small delay before dashing away
+            moveSpeed *= 6f; // Increase speed
+
+            while (Vector2.Distance(transform.position, escapePosition) > 0.1f)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, escapePosition, moveSpeed * Time.deltaTime);
+                yield return null; // Wait until next frame
+            }
+
+            if (slimeManager != null)
+            {
+                slimeManager.SetInvincible(false); // Disable invincibility after dashing
+            }
+
+            Destroy(gameObject);
+            
+        }
+
+
+
+
 
         private void MoveTowards(Vector2 targetPosition)
         {
@@ -57,6 +116,16 @@ namespace Assets.Script.Enemy.Slime
             while (player == null)
             {
                 player = GameObject.FindGameObjectWithTag("Player");
+                yield return null;
+            }
+        }
+
+        private IEnumerator FindKey()
+        {
+            while (keyObject == null)
+            {
+                yield return new WaitForSeconds(0.8f);
+                keyObject = GameObject.FindGameObjectWithTag("Key");
                 yield return null;
             }
         }
@@ -102,5 +171,35 @@ namespace Assets.Script.Enemy.Slime
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, detectionRange);
         }
+        private void SpawnNewSlime()
+        {
+            if (slimePrefab == null)
+            {
+                Debug.LogError("Slime prefab is not assigned!");
+                return;
+            }
+
+            Vector3 spawnPosition = new Vector3(45, 15, 0);
+            GameObject newSlime = Instantiate(slimePrefab, spawnPosition, Quaternion.identity);
+
+            SlimeManager newSlimeManager = newSlime.GetComponent<SlimeManager>();
+            SlimeMovement newSlimeScript = newSlime.GetComponent<SlimeMovement>();
+
+            if (newSlimeManager != null && newSlimeScript != null)
+            {
+                newSlimeManager.SetInvincible(false);
+                newSlimeManager.hasKey = true;
+                newSlimeScript.isAbnormal = false;
+                newSlimeScript.canMove = true;
+
+                // Manually trigger initialization if Awake() didn't run correctly
+                newSlimeManager.Awake();
+                newSlimeScript.Start();
+            }
+
+            newSlime.SetActive(true);
+        }
+
+
     }
 }
