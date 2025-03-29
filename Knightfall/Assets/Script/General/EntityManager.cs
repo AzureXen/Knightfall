@@ -18,7 +18,7 @@ public class EntityManager : MonoBehaviour
 
     public float takeDamageCooldown = 0.2f;
     protected Coroutine IFrameCoroutine;
-    protected Boolean canDamage = true;
+    public Boolean canDamage = true;
 
     float knockbackDuration = 2f;
     protected float knockbackTimer = 0f;
@@ -66,6 +66,13 @@ public class EntityManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public virtual void TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration)
+    {
+        if (canDamage)
+        {
+            TakeHitKnockback(damage, target, force, knockBackDuration);
+        }
     }
     public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {

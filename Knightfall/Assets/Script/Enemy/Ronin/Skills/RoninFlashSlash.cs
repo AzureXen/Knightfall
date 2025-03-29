@@ -20,6 +20,7 @@ public class RoninFlashSlash : MonoBehaviour
 
     public float flashSpeed = 5f;
     public float flashSlashRange = 5f;
+    public float flashSlashWidth = 1f;
 
     public Transform attackTransform;
 
@@ -31,6 +32,8 @@ public class RoninFlashSlash : MonoBehaviour
 
     [SerializeField] private float followPlayerDuration = 0.5f;
     [SerializeField] private float delayAfterFollowDuration = 0.5f;
+
+    public Boolean isAttacking = false;
     private void Start()
     {
         roninSFX = GetComponent<RoninSFX>();
@@ -80,6 +83,7 @@ public class RoninFlashSlash : MonoBehaviour
     {
         try
         {
+            isAttacking = true;
             roninAnimator.canChangeDirection = true;
             roninAction.ChangeAnimationState("RoninUnsheathe1");
             if (attackInstance != null)
@@ -89,7 +93,7 @@ public class RoninFlashSlash : MonoBehaviour
             //Vector3 attackPos = new Vector3(transform.position.x, transform.position.y * 4f, transform.position.z);
 
             attackInstance = Instantiate(attackZone, transform.position, Quaternion.identity, attackTransform);
-            attackInstance.transform.localScale = new Vector3(1, flashSlashRange, 1);
+            attackInstance.transform.localScale = new Vector3(flashSlashWidth, flashSlashRange, flashSlashWidth);
             attackInstance.transform.position += new Vector3(0f, (attackInstance.transform.localScale.y / 2 + flashSlashRange * 0.15f), 0f);
 
             // Later on, we'll be reducing the attack length if it detects a wall, so we'll store the original length
@@ -141,13 +145,13 @@ public class RoninFlashSlash : MonoBehaviour
                     Debug.DrawRay(hit.point, Vector3.right * 0.1f, Color.green, 0.1f);
                     Debug.DrawRay(hit.point, Vector3.up * 0.1f, Color.green, 0.1f);
 
-                    attackInstance.transform.localScale = new Vector3(1, distanceToWall, 1);
+                    attackInstance.transform.localScale = new Vector3(flashSlashWidth, distanceToWall, flashSlashWidth);
                     attackInstance.transform.position = attackTransform.position + (attackDirection * distanceToWall / 2);
                     Debug.DrawRay(raycastStart, attackDirection * distanceToWall, Color.red);
                 }
                 else
                 {
-                    attackInstance.transform.localScale = new Vector3(1, raycastDistance, 1);
+                    attackInstance.transform.localScale = new Vector3(flashSlashWidth, raycastDistance, flashSlashWidth);
                     attackInstance.transform.position = attackTransform.position + (attackDirection * raycastDistance / 2);
                     Debug.DrawRay(raycastStart, attackDirection * raycastDistance, Color.red);
                 }
@@ -155,7 +159,8 @@ public class RoninFlashSlash : MonoBehaviour
                 yield return null;
             }
 
-            roninAction.ChangeAnimationState("RoninUnsheathe2");
+            roninAction.ChangeAnimationState("RoninFlashSlashWarning");
+            roninSFX.playAttackWarning(2);
             roninAnimator.canChangeDirection = false;
             yield return new WaitForSeconds(delayAfterFollowDuration);
 
@@ -196,6 +201,7 @@ public class RoninFlashSlash : MonoBehaviour
             {
                 Destroy(attackInstance);
             }
+            isAttacking = false;
         }
     }
 

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using TMPro;
 using UnityEngine;
 
@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
     }
     public virtual void FixedUpdate()
     {
-        if(popUpText != null)
+        if (popUpText != null)
         {
             popUpText.transform.position = transform.position;
         }
@@ -42,4 +42,14 @@ public class Health : MonoBehaviour
             damageDisplayMesh.color = Color.blue;
         }
     }
+
+    public void Heal(int amount)
+    {
+        health += amount;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+    }
+
 }

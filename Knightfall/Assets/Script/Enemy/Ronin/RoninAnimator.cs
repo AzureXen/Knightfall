@@ -10,7 +10,6 @@ public class RoninAnimator : MonoBehaviour
     private SpriteRenderer sr;
     // canChangeDirection: Ronin's sprite will flip based on position of player, making him look at player.
     public Boolean canChangeDirection { get; set; } = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -27,12 +26,15 @@ public class RoninAnimator : MonoBehaviour
     }
     private void UpdateDirection()
     {
-        Vector3 playerPos = player.transform.position;
-        Vector3 playerDir = playerPos - transform.position;
-        if(playerDir.x  > 0)
+        if(player!=null)
         {
-            sr.flipX = false;
+            Vector3 playerPos = player.transform.position;
+            Vector3 playerDir = playerPos - transform.position;
+            if (playerDir.x > 0)
+            {
+                sr.flipX = false;
+            }
+            else sr.flipX = true;
         }
-        else sr.flipX=true;
     }
 }

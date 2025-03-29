@@ -12,6 +12,10 @@ public class FireBall : BulletScript
     {
         damage = monsterDmg;
         knockbackForce = monsterKnockbackForce;
+        if(gameObject != null)
+        {
+            Destroy(gameObject, 5f);
+        }
     }
 
     public void SetDirection(Vector2 dir)
@@ -35,7 +39,6 @@ public class FireBall : BulletScript
             {
                 player.TakeRangedHit(damage, transform.position, knockbackForce, touchKnockbackDuration, this);
             }
-            Destroy(gameObject);
         }
     }
 }

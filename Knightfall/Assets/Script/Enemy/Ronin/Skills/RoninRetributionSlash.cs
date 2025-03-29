@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class RoninRetributionSlash : MonoBehaviour
 {
+    private RoninAction roninAction;
+
     public float rebtributionSlashLength;
 
     public GameObject retributionSlashPrefab;
@@ -22,6 +24,7 @@ public class RoninRetributionSlash : MonoBehaviour
 
     private void Start()
     {
+        roninAction = GetComponent<RoninAction>();
         StartCoroutine(FindPlayer());
     }
     private void Update()
