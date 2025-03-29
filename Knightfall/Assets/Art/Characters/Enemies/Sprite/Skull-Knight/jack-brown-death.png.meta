@@ -1,0 +1,1188 @@
+fileFormatVersion: 2
+guid: eec426fc33e9cba49ad7efc351340f91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5446229033817211768
+    second: jack-brown-death_0
+  - first:
+      213: -1098290366433821395
+    second: jack-brown-death_1
+  - first:
+      213: -6690762541288756189
+    second: jack-brown-death_2
+  - first:
+      213: 8923563151319412725
+    second: jack-brown-death_3
+  - first:
+      213: -2175145082566855569
+    second: jack-brown-death_4
+  - first:
+      213: -5016228659700313345
+    second: jack-brown-death_5
+  - first:
+      213: -3818196331551766616
+    second: jack-brown-death_6
+  - first:
+      213: -483202504382410846
+    second: jack-brown-death_7
+  - first:
+      213: -2918631878508476171
+    second: jack-brown-death_8
+  - first:
+      213: 1206459122999108311
+    second: jack-brown-death_9
+  - first:
+      213: 5133949084686366776
+    second: jack-brown-death_10
+  - first:
+      213: 7020342712773159844
+    second: jack-brown-death_11
+  - first:
+      213: -671862455348836913
+    second: jack-brown-death_12
+  - first:
+      213: 1197457068780461387
+    second: jack-brown-death_13
+  - first:
+      213: -3309741928663462452
+    second: jack-brown-death_14
+  - first:
+      213: -3085840092729002072
+    second: jack-brown-death_15
+  - first:
+      213: 8112290967303777528
+    second: jack-brown-death_16
+  - first:
+      213: -2347559266680957892
+    second: jack-brown-death_17
+  - first:
+      213: 4005256097458905012
+    second: jack-brown-death_18
+  - first:
+      213: -3024617867763232879
+    second: jack-brown-death_19
+  - first:
+      213: -674653983854258762
+    second: jack-brown-death_20
+  - first:
+      213: -1929068455276235783
+    second: jack-brown-death_21
+  - first:
+      213: 2943171512708207803
+    second: jack-brown-death_22
+  - first:
+      213: 1822929208453545995
+    second: jack-brown-death_23
+  - first:
+      213: -448696647539123795
+    second: jack-brown-death_24
+  - first:
+      213: -451110986736926088
+    second: jack-brown-death_25
+  - first:
+      213: 5808263964893585757
+    second: jack-brown-death_26
+  - first:
+      213: 7713354096248253781
+    second: jack-brown-death_27
+  - first:
+      213: 2210209203406917410
+    second: jack-brown-death_28
+  - first:
+      213: -8333454590871820075
+    second: jack-brown-death_29
+  - first:
+      213: 9016517074249611691
+    second: jack-brown-death_30
+  - first:
+      213: 5841008662239408232
+    second: jack-brown-death_31
+  - first:
+      213: -5048240483766789084
+    second: jack-brown-death_32
+  - first:
+      213: 4535306911519205955
+    second: jack-brown-death_33
+  - first:
+      213: 3387788190211027044
+    second: jack-brown-death_34
+  - first:
+      213: 4658878174812812009
+    second: jack-brown-death_35
+  - first:
+      213: -3946946409190397191
+    second: jack-brown-death_36
+  - first:
+      213: 6134073366743872242
+    second: jack-brown-death_37
+  - first:
+      213: 7593628203358245525
+    second: jack-brown-death_38
+  - first:
+      213: 7129874389276997867
+    second: jack-brown-death_39
+  - first:
+      213: -6073797416854666174
+    second: jack-brown-death_40
+  - first:
+      213: -6182279593986614261
+    second: jack-brown-death_41
+  - first:
+      213: -4514998970390801748
+    second: jack-brown-death_42
+  - first:
+      213: -4565832313082690808
+    second: jack-brown-death_43
+  - first:
+      213: -3387951920140338946
+    second: jack-brown-death_44
+  - first:
+      213: -5753186073446522853
+    second: jack-brown-death_45
+  - first:
+      213: -922034040650262687
+    second: jack-brown-death_46
+  - first:
+      213: -2319610724909028074
+    second: jack-brown-death_47
+  - first:
+      213: 1668689105306894393
+    second: jack-brown-death_48
+  - first:
+      213: 3511384143159488529
+    second: jack-brown-death_49
+  - first:
+      213: 1673177125880795291
+    second: jack-brown-death_50
+  - first:
+      213: 1633701741843695395
+    second: jack-brown-death_51
+  - first:
+      213: -2644984056542671949
+    second: jack-brown-death_52
+  - first:
+      213: 7929801619897744858
+    second: jack-brown-death_53
+  - first:
+      213: 3402992579794778725
+    second: jack-brown-death_54
+  - first:
+      213: 766905107493634365
+    second: jack-brown-death_55
+  - first:
+      213: 3240143012193417512
+    second: jack-brown-death_56
+  - first:
+      213: 2149215196418102151
+    second: jack-brown-death_57
+  - first:
+      213: 8994155930623178841
+    second: jack-brown-death_58
+  - first:
+      213: 6854655428494755281
+    second: jack-brown-death_59
+  - first:
+      213: 1060771001852626094
+    second: jack-brown-death_60
+  - first:
+      213: 9194455654089802631
+    second: jack-brown-death_61
+  - first:
+      213: -3381975873836369766
+    second: jack-brown-death_62
+  - first:
+      213: 2106420649909638016
+    second: jack-brown-death_63
+  - first:
+      213: 8711816505314231891
+    second: jack-brown-death_64
+  - first:
+      213: 6789140417841565699
+    second: jack-brown-death_65
+  - first:
+      213: 5533308094629573814
+    second: jack-brown-death_66
+  - first:
+      213: 5121154214589452324
+    second: jack-brown-death_67
+  - first:
+      213: -4526192343595303387
+    second: jack-brown-death_68
+  - first:
+      213: 2592364880337634710
+    second: jack-brown-death_69
+  - first:
+      213: -3878377428566149239
+    second: jack-brown-death_70
+  - first:
+      213: -4655644440546572590
+    second: jack-brown-death_71
+  - first:
+      213: -640175811965187542
+    second: jack-brown-death_72
+  - first:
+      213: 10445919287678737
+    second: jack-brown-death_73
+  - first:
+      213: -3151172494432732349
+    second: jack-brown-death_74
+  - first:
+      213: 2625922225822589627
+    second: jack-brown-death_75
+  - first:
+      213: -8722460683824311125
+    second: jack-brown-death_76
+  - first:
+      213: -2489064221707760182
+    second: jack-brown-death_77
+  - first:
+      213: 6380095672366975445
+    second: jack-brown-death_78
+  - first:
+      213: 8682185153051196965
+    second: jack-brown-death_79
+  - first:
+      213: -4006927199734079805
+    second: jack-brown-death_80
+  - first:
+      213: -837905856013377346
+    second: jack-brown-death_81
+  - first:
+      213: -7208508059159286735
+    second: jack-brown-death_82
+  - first:
+      213: -4352308001538430930
+    second: jack-brown-death_83
+  - first:
+      213: 2088684339988530880
+    second: jack-brown-death_84
+  - first:
+      213: -4457092259695390841
+    second: jack-brown-death_85
+  - first:
+      213: -49819203040992655
+    second: jack-brown-death_86
+  - first:
+      213: 8729681980008677296
+    second: jack-brown-death_87
+  - first:
+      213: 6643533231544923185
+    second: jack-brown-death_88
+  - first:
+      213: -707022698982219939
+    second: jack-brown-death_89
+  - first:
+      213: 3232113110186081081
+    second: jack-brown-death_90
+  - first:
+      213: 7496676674259999382
+    second: jack-brown-death_91
+  - first:
+      213: 825776926655592219
+    second: jack-brown-death_92
+  - first:
+      213: -3341249784089857150
+    second: jack-brown-death_93
+  - first:
+      213: 3818844816463379947
+    second: jack-brown-death_94
+  - first:
+      213: 7936444107955644846
+    second: jack-brown-death_95
+  - first:
+      213: 7135858670769577173
+    second: jack-brown-death_96
+  - first:
+      213: 6396941706272882784
+    second: jack-brown-death_97
+  - first:
+      213: -2105077486933135505
+    second: jack-brown-death_98
+  - first:
+      213: 4605278158612129006
+    second: jack-brown-death_99
+  - first:
+      213: 143755401210850896
+    second: jack-brown-death_100
+  - first:
+      213: -3870091911695548153
+    second: jack-brown-death_101
+  - first:
+      213: 2886317685686926878
+    second: jack-brown-death_102
+  - first:
+      213: -148363148990428287
+    second: jack-brown-death_103
+  - first:
+      213: 2896840067255756669
+    second: jack-brown-death_104
+  - first:
+      213: 6998992955636343678
+    second: jack-brown-death_105
+  - first:
+      213: -4318094888666799889
+    second: jack-brown-death_106
+  - first:
+      213: 3488526677381219795
+    second: jack-brown-death_107
+  - first:
+      213: 8184421253978920803
+    second: jack-brown-death_108
+  - first:
+      213: -4721374272871076469
+    second: jack-brown-death_109
+  - first:
+      213: -2711698523924786672
+    second: jack-brown-death_110
+  - first:
+      213: 5413726511154951352
+    second: jack-brown-death_111
+  - first:
+      213: -6024506498636813857
+    second: jack-brown-death_112
+  - first:
+      213: 3004904609248963982
+    second: jack-brown-death_113
+  - first:
+      213: 8619462061356679593
+    second: jack-brown-death_114
+  - first:
+      213: 6333294880465019332
+    second: jack-brown-death_115
+  - first:
+      213: 2536804004478100341
+    second: jack-brown-death_116
+  - first:
+      213: 3607962695377400890
+    second: jack-brown-death_117
+  - first:
+      213: 5927297043996859800
+    second: jack-brown-death_118
+  - first:
+      213: -1520327359983796122
+    second: jack-brown-death_119
+  - first:
+      213: 8520919158430794728
+    second: jack-brown-death_120
+  - first:
+      213: -4272134815207448600
+    second: jack-brown-death_121
+  - first:
+      213: -856542905825794149
+    second: jack-brown-death_122
+  - first:
+      213: -6288664633909031169
+    second: jack-brown-death_123
+  - first:
+      213: -6673391968524563748
+    second: jack-brown-death_124
+  - first:
+      213: -4414301683647555917
+    second: jack-brown-death_125
+  - first:
+      213: 7180900278484462721
+    second: jack-brown-death_126
+  - first:
+      213: 9052993135712475311
+    second: jack-brown-death_127
+  - first:
+      213: 7634777224348022145
+    second: jack-brown-death_128
+  - first:
+      213: 4359804181714806010
+    second: jack-brown-death_129
+  - first:
+      213: -2650047057782462359
+    second: jack-brown-death_130
+  - first:
+      213: 1242426232755632086
+    second: jack-brown-death_131
+  - first:
+      213: -3883149649932860122
+    second: jack-brown-death_132
+  - first:
+      213: -6834971523472307275
+    second: jack-brown-death_133
+  - first:
+      213: -8449634882416798403
+    second: jack-brown-death_134
+  - first:
+      213: 649130906946999915
+    second: jack-brown-death_135
+  - first:
+      213: 7546127794369891147
+    second: jack-brown-death_136
+  - first:
+      213: 6751625478852075444
+    second: jack-brown-death_137
+  - first:
+      213: 1676197913818318109
+    second: jack-brown-death_138
+  - first:
+      213: -986620482338645369
+    second: jack-brown-death_139
+  - first:
+      213: -7587203599562322677
+    second: jack-brown-death_140
+  - first:
+      213: 5928008800070099757
+    second: jack-brown-death_141
+  - first:
+      213: 7721396461060251511
+    second: jack-brown-death_142
+  - first:
+      213: 4176294543352646338
+    second: jack-brown-death_143
+  - first:
+      213: -8098629658344248100
+    second: jack-brown-death_144
+  - first:
+      213: -1414942964707546239
+    second: jack-brown-death_145
+  - first:
+      213: -5691798922449948636
+    second: jack-brown-death_146
+  - first:
+      213: -1497392609138990025
+    second: jack-brown-death_147
+  - first:
+      213: -7229623707908176574
+    second: jack-brown-death_148
+  - first:
+      213: -202500966018545926
+    second: jack-brown-death_149
+  - first:
+      213: 6420335949616617206
+    second: jack-brown-death_150
+  - first:
+      213: 3391297781005646130
+    second: jack-brown-death_151
+  - first:
+      213: 4760405604496758750
+    second: jack-brown-death_152
+  - first:
+      213: -7555507555366379250
+    second: jack-brown-death_153
+  - first:
+      213: 3953788002872690899
+    second: jack-brown-death_154
+  - first:
+      213: -3555520282802812995
+    second: jack-brown-death_155
+  - first:
+      213: 3998162356269702186
+    second: jack-brown-death_156
+  - first:
+      213: 68676047410141406
+    second: jack-brown-death_157
+  - first:
+      213: -7848427267243030358
+    second: jack-brown-death_158
+  - first:
+      213: 8156965814215736136
+    second: jack-brown-death_159
+  - first:
+      213: -3350643368921050145
+    second: jack-brown-death_160
+  - first:
+      213: 9063096218114122490
+    second: jack-brown-death_161
+  - first:
+      213: -8638996663103910510
+    second: jack-brown-death_162
+  - first:
+      213: -4085817749755742330
+    second: jack-brown-death_163
+  - first:
+      213: -9013589610559254034
+    second: jack-brown-death_164
+  - first:
+      213: 7823135601406971250
+    second: jack-brown-death_165
+  - first:
+      213: -8996545661223532242
+    second: jack-brown-death_166
+  - first:
+      213: -8857622564111896412
+    second: jack-brown-death_167
+  - first:
+      213: -950433907244369951
+    second: jack-brown-death_168
+  - first:
+      213: -6651309432306536349
+    second: jack-brown-death_169
+  - first:
+      213: -3059859906127953045
+    second: jack-brown-death_170
+  - first:
+      213: -1891366341251690381
+    second: jack-brown-death_171
+  - first:
+      213: -3904685871048534158
+    second: jack-brown-death_172
+  - first:
+      213: 4275696515477349186
+    second: jack-brown-death_173
+  - first:
+      213: 6026491920939411513
+    second: jack-brown-death_174
+  - first:
+      213: -942327956798848603
+    second: jack-brown-death_175
+  - first:
+      213: -5027956186505084604
+    second: jack-brown-death_176
+  - first:
+      213: 1524110571958846897
+    second: jack-brown-death_177
+  - first:
+      213: 4810214666452946211
+    second: jack-brown-death_178
+  - first:
+      213: 4392212258919488810
+    second: jack-brown-death_179
+  - first:
+      213: -2843387624053288771
+    second: jack-brown-death_180
+  - first:
+      213: 327574851140522208
+    second: jack-brown-death_181
+  - first:
+      213: 5187704851080846118
+    second: jack-brown-death_182
+  - first:
+      213: -4027871917435664940
+    second: jack-brown-death_183
+  - first:
+      213: 2793725065821791819
+    second: jack-brown-death_184
+  - first:
+      213: 7103887657571819485
+    second: jack-brown-death_185
+  - first:
+      213: 32317474583400831
+    second: jack-brown-death_186
+  - first:
+      213: 8939164752958166576
+    second: jack-brown-death_187
+  - first:
+      213: 588712303382981981
+    second: jack-brown-death_188
+  - first:
+      213: -5812067469191118273
+    second: jack-brown-death_189
+  - first:
+      213: 7672364451524680023
+    second: jack-brown-death_190
+  - first:
+      213: -3851513063758629176
+    second: jack-brown-death_191
+  - first:
+      213: 5948498190350052254
+    second: jack-brown-death_192
+  - first:
+      213: 3907257729458861219
+    second: jack-brown-death_193
+  - first:
+      213: 9152342446537478815
+    second: jack-brown-death_194
+  - first:
+      213: 7092466693823802629
+    second: jack-brown-death_195
+  - first:
+      213: 1877360008656409862
+    second: jack-brown-death_196
+  - first:
+      213: 3860480415870815138
+    second: jack-brown-death_197
+  - first:
+      213: 6132717611206670728
+    second: jack-brown-death_198
+  - first:
+      213: 3891008388671573584
+    second: jack-brown-death_199
+  - first:
+      213: -7568602882605692520
+    second: jack-brown-death_200
+  - first:
+      213: -1883989843835933694
+    second: jack-brown-death_201
+  - first:
+      213: 1254785853260929988
+    second: jack-brown-death_202
+  - first:
+      213: -4115632949669268896
+    second: jack-brown-death_203
+  - first:
+      213: -3599969361168381468
+    second: jack-brown-death_204
+  - first:
+      213: -1121837340024864023
+    second: jack-brown-death_205
+  - first:
+      213: 2788671049178245902
+    second: jack-brown-death_206
+  - first:
+      213: 1502430548348998754
+    second: jack-brown-death_207
+  - first:
+      213: -8237293673019442059
+    second: jack-brown-death_208
+  - first:
+      213: -8142409107240902218
+    second: jack-brown-death_209
+  - first:
+      213: -8525483555756524728
+    second: jack-brown-death_210
+  - first:
+      213: 2560181976375323267
+    second: jack-brown-death_211
+  - first:
+      213: 5593998977305108109
+    second: jack-brown-death_212
+  - first:
+      213: -5028250071679291524
+    second: jack-brown-death_213
+  - first:
+      213: 854759869830885459
+    second: jack-brown-death_214
+  - first:
+      213: -4348746883532814109
+    second: jack-brown-death_215
+  - first:
+      213: 1105391660944374919
+    second: jack-brown-death_216
+  - first:
+      213: 908285183097125026
+    second: jack-brown-death_217
+  - first:
+      213: 4180710326940143094
+    second: jack-brown-death_218
+  - first:
+      213: -5817264027545135108
+    second: jack-brown-death_219
+  - first:
+      213: -802340067608944034
+    second: jack-brown-death_220
+  - first:
+      213: -546013426482628752
+    second: jack-brown-death_221
+  - first:
+      213: 1858975319574763204
+    second: jack-brown-death_222
+  - first:
+      213: 9115412742717682434
+    second: jack-brown-death_223
+  - first:
+      213: -3135638302976852620
+    second: jack-brown-death_224
+  - first:
+      213: 5131652745104098734
+    second: jack-brown-death_225
+  - first:
+      213: -1127719901710320869
+    second: jack-brown-death_226
+  - first:
+      213: -2797569025458826444
+    second: jack-brown-death_227
+  - first:
+      213: -2190766027298586763
+    second: jack-brown-death_228
+  - first:
+      213: -8719225739214251708
+    second: jack-brown-death_229
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jack-brown-death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cf7e19c8b1b64b0800000000000000
+      internalID: -5446229033817211768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2250
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d7a701bb612c0f0800000000000000
+      internalID: -1098290366433821395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_2
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2250
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c6ef9fae2a523a0800000000000000
+      internalID: -6690762541288756189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_3
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2250
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffa825386dd6db70800000000000000
+      internalID: 8923563151319412725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f643aa2621550d1e0800000000000000
+      internalID: -2175145082566855569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2dd627c96c26ab0800000000000000
+      internalID: -5016228659700313345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1500
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a748278aaa030bc0800000000000000
+      internalID: -3818196331551766616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_7
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1500
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af05b3e1e15b49f0800000000000000
+      internalID: -483202504382410846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f80f5325cfee77d0800000000000000
+      internalID: -2918631878508476171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 750
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d224662e243eb010800000000000000
+      internalID: 1206459122999108311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 750
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8383cafdd737f3740800000000000000
+      internalID: 5133949084686366776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_11
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 750
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aba85c70844d6160800000000000000
+      internalID: 7020342712773159844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5c20318a01da6f0800000000000000
+      internalID: -671862455348836913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d90721cd83e9010800000000000000
+      internalID: 1197457068780461387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd4ccb604f6112d0800000000000000
+      internalID: -3309741928663462452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-death_15
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 1200
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7ba3ff8c4ec25d0800000000000000
+      internalID: -3085840092729002072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6b92a7bff4b3da1498be9ae8a12a5757
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jack-brown-death_0: -5446229033817211768
+      jack-brown-death_1: -1098290366433821395
+      jack-brown-death_10: 5133949084686366776
+      jack-brown-death_11: 7020342712773159844
+      jack-brown-death_12: -671862455348836913
+      jack-brown-death_13: 1197457068780461387
+      jack-brown-death_14: -3309741928663462452
+      jack-brown-death_15: -3085840092729002072
+      jack-brown-death_2: -6690762541288756189
+      jack-brown-death_3: 8923563151319412725
+      jack-brown-death_4: -2175145082566855569
+      jack-brown-death_5: -5016228659700313345
+      jack-brown-death_6: -3818196331551766616
+      jack-brown-death_7: -483202504382410846
+      jack-brown-death_8: -2918631878508476171
+      jack-brown-death_9: 1206459122999108311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

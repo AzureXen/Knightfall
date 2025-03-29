@@ -6,6 +6,9 @@ using UnityEngine;
 public class UndeadHealth : Health
 {
     public float delayDestroyObject = 1f;
+
+    public GameObject expOrbPrefab;
+
     public Boolean isDead = false;
     private Boolean isInterupted = false;
 
@@ -53,7 +56,8 @@ public class UndeadHealth : Health
         {
             health -= amount;
             isInterupted = true;
-            animator.SetTrigger("Hurt");
+            if (health>0) animator.SetTrigger("Hurt");
+            VanSoundManager.PlaySound(SoundType.UNDEADHURT, 0.4f);
             TextpopUp = Instantiate(popUpDamagePixel, transform.position, Quaternion.identity) as GameObject;
             TextMeshPro damageDisplayMesh = TextpopUp.transform.GetChild(0).GetComponent<TextMeshPro>();
             damageDisplayMesh.outlineColor = Color.black;
@@ -77,8 +81,25 @@ public class UndeadHealth : Health
     private IEnumerator Die(float delay)
     {
         // Optionally, trigger a death animation here
-        animator.SetTrigger("Dead");
-        yield return new WaitForSeconds(delay); // Wait 2 seconds before destroying
+        if (health <= 0 && !isDead)
+        {
+            animator.SetTrigger("Dead");
+            VanSoundManager.PlaySound(SoundType.UDEADDEAD, 1f);
+        }
+        yield return new WaitForSeconds(delay);
+        DropExpOrb();
         Destroy(gameObject);
+    }
+
+    private void DropExpOrb()
+    {
+        if (expOrbPrefab != null)
+        {
+            Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            Debug.LogWarning("Exp Orb Prefab is not defined!");
+        }
     }
 }

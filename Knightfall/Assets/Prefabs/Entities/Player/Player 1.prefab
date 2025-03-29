@@ -234,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6786636156560168459}
   - component: {fileID: 5582966858010730386}
+  - component: {fileID: 4563272628223599261}
   m_Layer: 0
   m_Name: SwordHandler
   m_TagString: Untagged
@@ -277,6 +278,21 @@ MonoBehaviour:
   isAttacking: 0
   attackCooldown: 0.6
   hitbox: {fileID: 3431359631083376709}
+--- !u!114 &4563272628223599261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817450286293637627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc43bc1cd10138459ba8e5ae27fdf57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMultiplier: 2
+  effectDuration: 5
+  bulletPrefab: {fileID: 4799751954020987770, guid: bdd0d334d93e4dd4ba93fbdd7d138b1b, type: 3}
 --- !u!1 &2686401966820960759
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,6 +719,8 @@ GameObject:
   - component: {fileID: 8410539355929908391}
   - component: {fileID: 4645628983760433983}
   - component: {fileID: 7018546504864651045}
+  - component: {fileID: -7353952361857584069}
+  - component: {fileID: 6268154625415102013}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Player
@@ -842,7 +860,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.029824436, y: 0.046393633}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -852,7 +870,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.56, y: 1.16}
+  m_Size: {x: 1.2824162, y: 1.3853407}
   m_EdgeRadius: 0
 --- !u!114 &7879818233363166254
 MonoBehaviour:
@@ -869,6 +887,7 @@ MonoBehaviour:
   canMove: 0
   moveSpeed: 4
   sprintSpeed: 8
+  speedBoost: 1
   dodgeSpeed: 12
   moveDir: {x: 0, y: 0}
   maxStamina: 120
@@ -946,6 +965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   health: 100
+  defaultHealth: 100
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!114 &4645628983760433983
 MonoBehaviour:
@@ -1073,3 +1093,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7353952361857584069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063268744978135184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc43bc1cd10138459ba8e5ae27fdf57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMultiplier: 2
+  effectDuration: 5
+  bulletPrefab: {fileID: 4799751954020987770, guid: bdd0d334d93e4dd4ba93fbdd7d138b1b, type: 3}
+--- !u!114 &6268154625415102013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063268744978135184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4884edbb3198b9b42a9ae67cbfd858ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healAmount: 20
+  healthMultiplier: 2
+  sizeMultiplier: 1.5

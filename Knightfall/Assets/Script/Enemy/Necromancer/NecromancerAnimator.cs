@@ -41,7 +41,7 @@ public class NecromancerAnimator : MonoBehaviour
             if (necromancerActions.currentState == NecromancerActions.NecromancerState.BACKOFF && !necromancerAttack.NecroIsAttacking && !necromancerAttack.NecroIsSummoning)
             {
                 animator.SetBool("isWalking", true);
-                animator.SetFloat("walkSpeed", -0.8f);
+                animator.SetFloat("walkSpeed", -0.2f);
             }
 
             if (necromancerActions.currentState == NecromancerActions.NecromancerState.DEAD)

@@ -1,0 +1,489 @@
+fileFormatVersion: 2
+guid: 80aa18978e168be4db087beffeb30b58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2746504299828241425
+    second: FlamePillarSheet_0
+  - first:
+      213: 3743135345934935750
+    second: FlamePillarSheet_1
+  - first:
+      213: -2560419013545536557
+    second: FlamePillarSheet_2
+  - first:
+      213: 3996038068619553403
+    second: FlamePillarSheet_3
+  - first:
+      213: -4282753333962620172
+    second: FlamePillarSheet_4
+  - first:
+      213: -1017617327566195815
+    second: FlamePillarSheet_5
+  - first:
+      213: 1745207290619037788
+    second: FlamePillarSheet_6
+  - first:
+      213: 3538198351641672770
+    second: FlamePillarSheet_7
+  - first:
+      213: 786912963951285342
+    second: FlamePillarSheet_8
+  - first:
+      213: 6326325682851733919
+    second: FlamePillarSheet_9
+  - first:
+      213: 2373181454481178100
+    second: FlamePillarSheet_10
+  - first:
+      213: 3342851971780961862
+    second: FlamePillarSheet_11
+  - first:
+      213: 5926039410102387341
+    second: FlamePillarSheet_12
+  - first:
+      213: -8056584120983132662
+    second: FlamePillarSheet_13
+  - first:
+      213: 6306947460611386260
+    second: FlamePillarSheet_14
+  - first:
+      213: 627571622041269514
+    second: FlamePillarSheet_15
+  - first:
+      213: 7445822341934423393
+    second: FlamePillarSheet_16
+  - first:
+      213: 2917809937873595965
+    second: FlamePillarSheet_17
+  - first:
+      213: 3663099301520154622
+    second: FlamePillarSheet_18
+  - first:
+      213: 1280446919654782223
+    second: FlamePillarSheet_19
+  - first:
+      213: -4068712692264117786
+    second: FlamePillarSheet_20
+  - first:
+      213: -6895179169451907539
+    second: FlamePillarSheet_21
+  - first:
+      213: -8917131827577622069
+    second: FlamePillarSheet_22
+  - first:
+      213: -5228293730240882247
+    second: FlamePillarSheet_23
+  - first:
+      213: 4372468299542900925
+    second: FlamePillarSheet_24
+  - first:
+      213: 46693871011191501
+    second: FlamePillarSheet_25
+  - first:
+      213: -963907987763968899
+    second: FlamePillarSheet_26
+  - first:
+      213: -3300417724488454336
+    second: FlamePillarSheet_27
+  - first:
+      213: 638451711497889631
+    second: FlamePillarSheet_28
+  - first:
+      213: 5686157685367700496
+    second: FlamePillarSheet_29
+  - first:
+      213: -4475556547112338457
+    second: FlamePillarSheet_30
+  - first:
+      213: -7188521349400195711
+    second: FlamePillarSheet_31
+  - first:
+      213: 223233076601265335
+    second: FlamePillarSheet_32
+  - first:
+      213: 7725336687740579182
+    second: FlamePillarSheet_33
+  - first:
+      213: -6491129365344902282
+    second: FlamePillarSheet_34
+  - first:
+      213: 290954082263360910
+    second: FlamePillarSheet_35
+  - first:
+      213: -2807723883480897301
+    second: FlamePillarSheet_36
+  - first:
+      213: 2235498987598932301
+    second: FlamePillarSheet_37
+  - first:
+      213: 4962282886255163658
+    second: FlamePillarSheet_38
+  - first:
+      213: -2399235241416875048
+    second: FlamePillarSheet_39
+  - first:
+      213: -4082764346668623189
+    second: FlamePillarSheet_40
+  - first:
+      213: -7695465306160010869
+    second: FlamePillarSheet_41
+  - first:
+      213: 7875119026691559683
+    second: FlamePillarSheet_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlamePillarSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114685deb1b8d1620800000000000000
+      internalID: 2746504299828241425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c629a0e3c942f330800000000000000
+      internalID: 3743135345934935750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3567d0970977cd0800000000000000
+      internalID: -2560419013545536557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7aa1059377c47730800000000000000
+      internalID: 3996038068619553403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2c984a88a9094c0800000000000000
+      internalID: -4282753333962620172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9937221ae62b0e1f0800000000000000
+      internalID: -1017617327566195815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5805c8c8c8383810800000000000000
+      internalID: 1745207290619037788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c797697a43a1130800000000000000
+      internalID: 3538198351641672770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e545775eb2dabea00800000000000000
+      internalID: 786912963951285342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePillarSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91eec3b0bf9bc750800000000000000
+      internalID: 6326325682851733919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: db181d2e4df21d94da40c4990496d67a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlamePillarSheet_0: 2746504299828241425
+      FlamePillarSheet_1: 3743135345934935750
+      FlamePillarSheet_2: -2560419013545536557
+      FlamePillarSheet_3: 3996038068619553403
+      FlamePillarSheet_4: -4282753333962620172
+      FlamePillarSheet_5: -1017617327566195815
+      FlamePillarSheet_6: 1745207290619037788
+      FlamePillarSheet_7: 3538198351641672770
+      FlamePillarSheet_8: 786912963951285342
+      FlamePillarSheet_9: 6326325682851733919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

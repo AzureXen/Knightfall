@@ -1,30 +1,57 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 
 public class HolySmiteHitbox : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private float knockbackForce;
-    [SerializeField] float knockbackDuration;
-    private PlayerManager player;
+    [SerializeField] private float knockbackDuration;
+    [SerializeField] private float damageInterval = 0.3f; // Time between damage ticks
 
-    private HashSet<GameObject> hitEnemies = new HashSet<GameObject>();
+    private PlayerManager player;
+    private HashSet<GameObject> activeEnemies = new HashSet<GameObject>(); // Track enemies inside
+    private Dictionary<GameObject, Coroutine> damageCoroutines = new Dictionary<GameObject, Coroutine>(); // Track ongoing damage
+
     private void OnEnable()
     {
-        hitEnemies.Clear();
+        activeEnemies.Clear();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
     }
 
-    // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && !hitEnemies.Contains(collision.gameObject))
+        if (collision.CompareTag("Enemy") && !activeEnemies.Contains(collision.gameObject))
         {
-            EntityManager target = collision.GetComponent<EntityManager>();
+            activeEnemies.Add(collision.gameObject);
+            Coroutine damageCoroutine = StartCoroutine(DamageEnemyOverTime(collision.gameObject));
+            damageCoroutines[collision.gameObject] = damageCoroutine;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy") && activeEnemies.Contains(collision.gameObject))
+        {
+            activeEnemies.Remove(collision.gameObject);
+
+            // Stop damage coroutine if enemy leaves
+            if (damageCoroutines.TryGetValue(collision.gameObject, out Coroutine damageCoroutine))
+            {
+                StopCoroutine(damageCoroutine);
+                damageCoroutines.Remove(collision.gameObject);
+            }
+        }
+    }
+
+    private IEnumerator DamageEnemyOverTime(GameObject enemy)
+    {
+        EntityManager target = enemy.GetComponent<EntityManager>();
+
+        while (activeEnemies.Contains(enemy))
+        {
             target.TakeMeleeHit(damage, transform.position, knockbackForce, knockbackDuration, player);
-            hitEnemies.Add(collision.gameObject);
+            yield return new WaitForSeconds(damageInterval);
         }
     }
 }

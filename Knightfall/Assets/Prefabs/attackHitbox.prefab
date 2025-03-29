@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4373816247395710808}
   - component: {fileID: 2750159129276236417}
-  - component: {fileID: 1369772094210682361}
   - component: {fileID: 8660291162160201730}
+  - component: {fileID: 8829650001741175329}
   m_Layer: 0
   m_Name: attackHitbox
   m_TagString: Untagged
@@ -89,24 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1369772094210682361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4373029961819526087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 543dab8f3c7c7554cb390b9ee99c86ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  damageSourcePosition: {x: 0, y: 0, z: 0}
-  knockbackForce: 1
-  knockbackDuration: 0.8
-  showHitbox: 1
-  attackHitbox: {fileID: 4373029961819526087}
 --- !u!70 &8660291162160201730
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +126,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.18102145, y: 0.1523038}
   m_Direction: 0
+--- !u!114 &8829650001741175329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4373029961819526087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543dab8f3c7c7554cb390b9ee99c86ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  damageSourcePosition: {x: 0, y: 0, z: 0}
+  knockbackForce: 5
+  knockbackDuration: 1
+  showHitbox: 1
+  attackHitbox: {fileID: 4373029961819526087}
+  playerIsInHitbox: 0

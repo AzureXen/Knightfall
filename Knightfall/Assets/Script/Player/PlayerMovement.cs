@@ -10,6 +10,7 @@ public class PlayerMovement : EntityMovement
     [SerializeField] private Boolean canMove;
     public float moveSpeed;
     public float sprintSpeed;
+    public float speedBoost = 1f;
     public float dodgeSpeed;
     Rigidbody2D rb;
     [HideInInspector] public Vector2 moveDir;
@@ -99,7 +100,7 @@ public class PlayerMovement : EntityMovement
 
         if (isRunning)
         {
-            rb.linearVelocity = moveDir * sprintSpeed;
+            rb.linearVelocity = moveDir * sprintSpeed * speedBoost;
             if (stamina > 0)
             {
                 stamina -= sprintCostPerSecond * Time.deltaTime;
@@ -108,7 +109,7 @@ public class PlayerMovement : EntityMovement
         }
         else
         {
-            rb.linearVelocity = moveDir * moveSpeed;
+            rb.linearVelocity = moveDir * moveSpeed * speedBoost;
         }
     }
 
