@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class NhatAttack : MonoBehaviour
 {
-    public GameObject bulletPrefab; // Prefab vi�n ??n
-    public Transform firePoint; // ?i?m xu?t ph�t vi�n ??n
-    public float bulletSpeed = 5f; // T?c ?? ??n
-    public float fireRate = 1.5f; // Th?i gian gi?a m?i l?n b?n
+    public GameObject bulletPrefab; 
+    public Transform firePoint; 
+    public float bulletSpeed = 5f; 
+    public float fireRate = 1.5f; 
     private float nextFireTime;
 
     private GameObject player;

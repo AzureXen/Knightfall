@@ -2,8 +2,8 @@
 
 public class NhatBullet : MonoBehaviour
 {
-    public int damage = 15; // Sát thương của viên đạn
-    public float lifetime = 3f; // Tự hủy sau 3 giây
+    public int damage = 15; 
+    public float lifetime = 3f; 
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class NhatBullet : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Đạn chạm vào Player!"); // Kiểm tra xem có chạm chưa
+            Debug.Log("Đạn chạm vào Player!"); 
 
             Health playerHealth = collision.GetComponent<Health>();
             if (playerHealth != null)
