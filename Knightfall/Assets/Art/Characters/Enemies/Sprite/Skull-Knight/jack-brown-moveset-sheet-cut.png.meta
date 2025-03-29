@@ -1,0 +1,1176 @@
+fileFormatVersion: 2
+guid: fd7d739b0747947459ad382c050063d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8478548825028211321
+    second: jack-brown-moveset-sheet-cut_0
+  - first:
+      213: 8056091690007044850
+    second: jack-brown-moveset-sheet-cut_1
+  - first:
+      213: -1247090734737719042
+    second: jack-brown-moveset-sheet-cut_2
+  - first:
+      213: 8501055558720589267
+    second: jack-brown-moveset-sheet-cut_3
+  - first:
+      213: -8443740702824339115
+    second: jack-brown-moveset-sheet-cut_4
+  - first:
+      213: 2093282318844581089
+    second: jack-brown-moveset-sheet-cut_5
+  - first:
+      213: -6769485955778127531
+    second: jack-brown-moveset-sheet-cut_6
+  - first:
+      213: -1329664305706097526
+    second: jack-brown-moveset-sheet-cut_7
+  - first:
+      213: 2345565099010328996
+    second: jack-brown-moveset-sheet-cut_8
+  - first:
+      213: -4895675136202319114
+    second: jack-brown-moveset-sheet-cut_9
+  - first:
+      213: -4997248194890621891
+    second: jack-brown-moveset-sheet-cut_10
+  - first:
+      213: 5766717091681391309
+    second: jack-brown-moveset-sheet-cut_11
+  - first:
+      213: 5975027633501710253
+    second: jack-brown-moveset-sheet-cut_12
+  - first:
+      213: -3910622570393011051
+    second: jack-brown-moveset-sheet-cut_13
+  - first:
+      213: -4389404515507411298
+    second: jack-brown-moveset-sheet-cut_14
+  - first:
+      213: -8090280548949044795
+    second: jack-brown-moveset-sheet-cut_15
+  - first:
+      213: 8530960846590605052
+    second: jack-brown-moveset-sheet-cut_16
+  - first:
+      213: -1700598210698146797
+    second: jack-brown-moveset-sheet-cut_17
+  - first:
+      213: -7478275835181112941
+    second: jack-brown-moveset-sheet-cut_18
+  - first:
+      213: -1899071197140548162
+    second: jack-brown-moveset-sheet-cut_19
+  - first:
+      213: -7532537525677159486
+    second: jack-brown-moveset-sheet-cut_20
+  - first:
+      213: -8055121319819332893
+    second: jack-brown-moveset-sheet-cut_21
+  - first:
+      213: 8291191038848598337
+    second: jack-brown-moveset-sheet-cut_22
+  - first:
+      213: -7162160130812103656
+    second: jack-brown-moveset-sheet-cut_23
+  - first:
+      213: -8723902331013779819
+    second: jack-brown-moveset-sheet-cut_24
+  - first:
+      213: 6345402523355576004
+    second: jack-brown-moveset-sheet-cut_25
+  - first:
+      213: 5310021800224373376
+    second: jack-brown-moveset-sheet-cut_26
+  - first:
+      213: 5875964209799809157
+    second: jack-brown-moveset-sheet-cut_27
+  - first:
+      213: -2134918254032677060
+    second: jack-brown-moveset-sheet-cut_28
+  - first:
+      213: -8878788202124723702
+    second: jack-brown-moveset-sheet-cut_29
+  - first:
+      213: -7792548442247958597
+    second: jack-brown-moveset-sheet-cut_30
+  - first:
+      213: 5779585187614904050
+    second: jack-brown-moveset-sheet-cut_31
+  - first:
+      213: 7494452321813845928
+    second: jack-brown-moveset-sheet-cut_32
+  - first:
+      213: 8165482784353761307
+    second: jack-brown-moveset-sheet-cut_33
+  - first:
+      213: 5287554361262283579
+    second: jack-brown-moveset-sheet-cut_34
+  - first:
+      213: 7101264979867775080
+    second: jack-brown-moveset-sheet-cut_35
+  - first:
+      213: 8192102994130029773
+    second: jack-brown-moveset-sheet-cut_36
+  - first:
+      213: 6910949738095864472
+    second: jack-brown-moveset-sheet-cut_37
+  - first:
+      213: 726069319619408718
+    second: jack-brown-moveset-sheet-cut_38
+  - first:
+      213: 1365499831675821884
+    second: jack-brown-moveset-sheet-cut_39
+  - first:
+      213: 3944970182367502139
+    second: jack-brown-moveset-sheet-cut_40
+  - first:
+      213: 7190721391414137070
+    second: jack-brown-moveset-sheet-cut_41
+  - first:
+      213: -2697208466752794760
+    second: jack-brown-moveset-sheet-cut_42
+  - first:
+      213: -5228459349840787397
+    second: jack-brown-moveset-sheet-cut_43
+  - first:
+      213: -3599423571590226405
+    second: jack-brown-moveset-sheet-cut_44
+  - first:
+      213: -3985594432916180668
+    second: jack-brown-moveset-sheet-cut_45
+  - first:
+      213: -7470491967565830284
+    second: jack-brown-moveset-sheet-cut_46
+  - first:
+      213: -2984671271063622977
+    second: jack-brown-moveset-sheet-cut_47
+  - first:
+      213: 1853035388609936900
+    second: jack-brown-moveset-sheet-cut_48
+  - first:
+      213: -6470407960111149572
+    second: jack-brown-moveset-sheet-cut_49
+  - first:
+      213: 2547139243753735426
+    second: jack-brown-moveset-sheet-cut_50
+  - first:
+      213: -4148715072125839318
+    second: jack-brown-moveset-sheet-cut_51
+  - first:
+      213: 926795563592547581
+    second: jack-brown-moveset-sheet-cut_52
+  - first:
+      213: -2858681294886429143
+    second: jack-brown-moveset-sheet-cut_53
+  - first:
+      213: 80913601887138693
+    second: jack-brown-moveset-sheet-cut_54
+  - first:
+      213: 3135624540155223078
+    second: jack-brown-moveset-sheet-cut_55
+  - first:
+      213: -8244066945638217171
+    second: jack-brown-moveset-sheet-cut_56
+  - first:
+      213: 6324993789538500465
+    second: jack-brown-moveset-sheet-cut_57
+  - first:
+      213: 453493405616626683
+    second: jack-brown-moveset-sheet-cut_58
+  - first:
+      213: 6026543355079969200
+    second: jack-brown-moveset-sheet-cut_59
+  - first:
+      213: -5172413867005967215
+    second: jack-brown-moveset-sheet-cut_60
+  - first:
+      213: -5443392484785455502
+    second: jack-brown-moveset-sheet-cut_61
+  - first:
+      213: 3768352638550287642
+    second: jack-brown-moveset-sheet-cut_62
+  - first:
+      213: -222344757170339631
+    second: jack-brown-moveset-sheet-cut_63
+  - first:
+      213: 656803718732608357
+    second: jack-brown-moveset-sheet-cut_64
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972bc9e2c3bd9a570800000000000000
+      internalID: 8478548825028211321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2a8d485bcfccf60800000000000000
+      internalID: 8056091690007044850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef00749859171bee0800000000000000
+      internalID: -1247090734737719042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd86697df0d9f570800000000000000
+      internalID: 8501055558720589267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559e5a0519ec1da80800000000000000
+      internalID: -8443740702824339115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e45655ad25dc0d10800000000000000
+      internalID: 2093282318844581089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55959d5b364fd02a0800000000000000
+      internalID: -6769485955778127531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a842fdbdb551c8de0800000000000000
+      internalID: -1329664305706097526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9801cb70f1d8020800000000000000
+      internalID: 2345565099010328996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fad2fae6611f0cb0800000000000000
+      internalID: -4895675136202319114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c15194e3536aab0800000000000000
+      internalID: -4997248194890621891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_11
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2d7d934ae770050800000000000000
+      internalID: 5766717091681391309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da72302c9ff8be250800000000000000
+      internalID: 5975027633501710253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c7919dd7daab9c0800000000000000
+      internalID: -3910622570393011051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e966fa569d3b513c0800000000000000
+      internalID: -4389404515507411298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1d3a274bc89bf80800000000000000
+      internalID: -8090280548949044795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_16
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf67cc5e0bf046670800000000000000
+      internalID: 8530960846590605052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_17
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3000
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c0ca100f24668e0800000000000000
+      internalID: -1700598210698146797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39164afdfb3d73890800000000000000
+      internalID: -7478275835181112941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb50343dec425a5e0800000000000000
+      internalID: -1899071197140548162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb86bc870d077790800000000000000
+      internalID: -7532537525677159486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_21
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e23e7566d5763090800000000000000
+      internalID: -8055121319819332893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_22
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141097b325a301370800000000000000
+      internalID: 8291191038848598337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_23
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2250
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814ba7ace45ea9c90800000000000000
+      internalID: -7162160130812103656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ea8b81d097ee680800000000000000
+      internalID: -8723902331013779819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6f971c9f56f0850800000000000000
+      internalID: 6345402523355576004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_26
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a34ff81bcf0b940800000000000000
+      internalID: 5310021800224373376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588c60e015e9b8150800000000000000
+      internalID: 5875964209799809157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3792e3c82f3f52e0800000000000000
+      internalID: -2134918254032677060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_29
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1500
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a3d680c2538c480800000000000000
+      internalID: -8878788202124723702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf69cc7a7e4bd390800000000000000
+      internalID: -7792548442247958597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_31
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe45e84b16353050800000000000000
+      internalID: 5779585187614904050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_32
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7d0dbeda4a10860800000000000000
+      internalID: 7494452321813845928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1839fc645f915170800000000000000
+      internalID: 8165482784353761307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_34
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b1b994daa216940800000000000000
+      internalID: 5287554361262283579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_35
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 750
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860b0f400e2cc8260800000000000000
+      internalID: 7101264979867775080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-moveset-sheet-cut_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccc880054230b170800000000000000
+      internalID: 8192102994130029773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 97acd914817c3fd49b9bc881d6670760
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jack-brown-moveset-sheet-cut_0: 8478548825028211321
+      jack-brown-moveset-sheet-cut_1: 8056091690007044850
+      jack-brown-moveset-sheet-cut_10: -4997248194890621891
+      jack-brown-moveset-sheet-cut_11: 5766717091681391309
+      jack-brown-moveset-sheet-cut_12: 5975027633501710253
+      jack-brown-moveset-sheet-cut_13: -3910622570393011051
+      jack-brown-moveset-sheet-cut_14: -4389404515507411298
+      jack-brown-moveset-sheet-cut_15: -8090280548949044795
+      jack-brown-moveset-sheet-cut_16: 8530960846590605052
+      jack-brown-moveset-sheet-cut_17: -1700598210698146797
+      jack-brown-moveset-sheet-cut_18: -7478275835181112941
+      jack-brown-moveset-sheet-cut_19: -1899071197140548162
+      jack-brown-moveset-sheet-cut_2: -1247090734737719042
+      jack-brown-moveset-sheet-cut_20: -7532537525677159486
+      jack-brown-moveset-sheet-cut_21: -8055121319819332893
+      jack-brown-moveset-sheet-cut_22: 8291191038848598337
+      jack-brown-moveset-sheet-cut_23: -7162160130812103656
+      jack-brown-moveset-sheet-cut_24: -8723902331013779819
+      jack-brown-moveset-sheet-cut_25: 6345402523355576004
+      jack-brown-moveset-sheet-cut_26: 5310021800224373376
+      jack-brown-moveset-sheet-cut_27: 5875964209799809157
+      jack-brown-moveset-sheet-cut_28: -2134918254032677060
+      jack-brown-moveset-sheet-cut_29: -8878788202124723702
+      jack-brown-moveset-sheet-cut_3: 8501055558720589267
+      jack-brown-moveset-sheet-cut_30: -7792548442247958597
+      jack-brown-moveset-sheet-cut_31: 5779585187614904050
+      jack-brown-moveset-sheet-cut_32: 7494452321813845928
+      jack-brown-moveset-sheet-cut_33: 8165482784353761307
+      jack-brown-moveset-sheet-cut_34: 5287554361262283579
+      jack-brown-moveset-sheet-cut_35: 7101264979867775080
+      jack-brown-moveset-sheet-cut_36: 8192102994130029773
+      jack-brown-moveset-sheet-cut_4: -8443740702824339115
+      jack-brown-moveset-sheet-cut_5: 2093282318844581089
+      jack-brown-moveset-sheet-cut_6: -6769485955778127531
+      jack-brown-moveset-sheet-cut_7: -1329664305706097526
+      jack-brown-moveset-sheet-cut_8: 2345565099010328996
+      jack-brown-moveset-sheet-cut_9: -4895675136202319114
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

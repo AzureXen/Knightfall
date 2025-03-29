@@ -1,80 +1,162 @@
-using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
-public class WaveSystem : MonoBehaviour {
-    [SerializeField] private WaveSystemTrigger trigger;
+public class WaveSystem : MonoBehaviour
+{
+    [SerializeField] private GameObject door;
 
-    public Transform spawnPos;
-    private Transform playerPos;
+    [SerializeField] private Transform spawnPos;
+    [SerializeField] private GameObject Skeleton;
+    [SerializeField] private GameObject Necromancer;
+    [SerializeField] private GameObject Skull;
+    [SerializeField] private WaveSystemTrigger waveTrigger;
 
-    public GameObject Skeleton;
-    public GameObject Necromancer;
-
-    private GameObject spawnInstance;
-
-    private Coroutine waveCoroutine;
+    [SerializeField] private GameObject skullKnightPrefab; // Final boss
+    [SerializeField] private GameObject waveState;
 
     private int wave = 0;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        trigger.OnPlayerEnterTrigger += ColliderTrigger_OnPlayerEnterTrigger;
+    private int baseSkeletonCount = 6;
+    private int baseNecromancerCount = 4;
+    private int baseSkullCount = 10;
+    private float spawnInterval = 2f;
+    private int baseSpawnBatchSize = 10;
 
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+    private int remainingSkeletons;
+    private int remainingNecromancers;
+    private int remainingSkulls;
+    private int spawnBatchSize;
+    private bool isSpawning = false;
+    private bool hasStarted = false;
+    private bool finalBossSpawned = false;
+
+    private void Start()
+    {
+        if (waveTrigger != null)
+        {
+            waveTrigger.OnPlayerEnterTrigger += (sender, args) => StartCoroutine(WaveBreak());
+        }
     }
 
-    private void ColliderTrigger_OnPlayerEnterTrigger(object senderm, System.EventArgs e)
+    private IEnumerator WaveBreak()
     {
-        if (wave == 0) { StartBattle(); }
-        if (wave == 1) { StartBattle2(); }
-        if (wave == 2) { StartBattle3(); }
+        if (hasStarted) yield break;
+        hasStarted = true;
+
+        door.SetActive(true);
+        VanSoundManager.StopBGM();
+        VanSoundManager.PlayBGM(SoundType.WAVEBATTLEBGM, 0.4f);
+
+        while (wave < 3) // Stops after 3 waves
+        {
+            StartCoroutine(WaveCount(wave));
+            yield return new WaitForSeconds(2f); // 2-second break before each wave starts
+            StartNextWave();
+            yield return new WaitUntil(() => !isSpawning && GameObject.FindGameObjectsWithTag("Enemy").Length == 0);
+        }
+
+        // After all waves, spawn the Final Boss
+        if (wave == 3 && !finalBossSpawned)
+        {
+            SpawnFinalBoss();
+            StartCoroutine(BossWave());
+            StartCoroutine(DoorOpen());
+        }
     }
 
-    private void StartBattle()
+    private void StartNextWave()
     {
-        spawnInstance = Instantiate(Skeleton, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance.transform.position += new Vector3(20, 20, 1);
-
-        SkeletonActions skeletonActions = spawnInstance.GetComponent<SkeletonActions>();
-        SkeletonMovement skeletonMovement = spawnInstance.GetComponent<SkeletonMovement>();
-
-        skeletonActions.isSpotted = true;
-        skeletonMovement.backOffSpeed = 0.1f;
-
-        spawnInstance.transform.parent = null;
-
         wave++;
+        remainingSkeletons = baseSkeletonCount * (int)Mathf.Pow(4, wave - 1);
+        remainingNecromancers = baseNecromancerCount * (int)Mathf.Pow(2, wave - 1);
+        remainingSkulls = baseSkullCount * (int)Mathf.Pow(4, wave - 1);
+        spawnBatchSize = baseSpawnBatchSize + (wave - 1) * 5;
+
+        isSpawning = true;
+        InvokeRepeating(nameof(SpawnBurst), 0f, spawnInterval);
     }
 
-    private void StartBattle2()
+    private void SpawnBurst()
     {
-        spawnInstance = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance.transform.position += new Vector3(0, 20, 1);
+        if (remainingSkeletons <= 0 && remainingNecromancers <= 0 && remainingSkulls <= 0)
+        {
+            CancelInvoke(nameof(SpawnBurst)); // Stop spawning
+            isSpawning = false;
+            return;
+        }
 
-        NecromancerActions necromancerActions = spawnInstance.GetComponent<NecromancerActions>();
-        NecromancerMovement necromancerMovement = spawnInstance.GetComponent<NecromancerMovement>();
+        for (int i = 0; i < spawnBatchSize; i++)
+        {
+            int enemyType = Random.Range(0, 3); // 0 = Skeleton, 1 = Necromancer, 2 = Skull
 
-        necromancerActions.isSpotted = true;
-        necromancerMovement.backOffSpeed = 0.1f;
-
-        spawnInstance.transform.parent = null;
-
-        wave++;
+            if (enemyType == 0 && remainingSkeletons > 0)
+            {
+                SpawnEnemy(Skeleton);
+                remainingSkeletons--;
+            }
+            else if (enemyType == 1 && remainingNecromancers > 0)
+            {
+                SpawnEnemy(Necromancer);
+                remainingNecromancers--;
+            }
+            else if (enemyType == 2 && remainingSkulls > 0)
+            {
+                SpawnEnemy(Skull);
+                remainingSkulls--;
+            }
+        }
     }
 
-    private void StartBattle3()
+    private void SpawnEnemy(GameObject enemyPrefab)
     {
-        spawnInstance = Instantiate(Necromancer, transform.position, Quaternion.identity, spawnPos);
-        spawnInstance.transform.position = new Vector3(0, -20, 1);
+        Vector3 spawnPosition = spawnPos.position + new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
+        GameObject spawnInstance = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+    }
 
-        //NecromancerActions necromancerActions = spawnInstance.GetComponent<NecromancerActions>();
-        NecromancerMovement necromancerMovement = spawnInstance.GetComponent<NecromancerMovement>();
+    private void SpawnFinalBoss()
+    {
+        finalBossSpawned = true;
+        VanSoundManager.PlaySound(SoundType.BOSSSPAWNS);
+        skullKnightPrefab.SetActive(true);
+        UndeadBossHealth bossHealth = skullKnightPrefab.GetComponent<UndeadBossHealth>();
+        if (bossHealth != null)
+        {
+            bossHealth.OnDeath += OnFinalBossDefeated; // Subscribe to event
+            VanSoundManager.StopBGM();
+            VanSoundManager.PlayBGM(SoundType.BOSSBGM, 0.4f);
+        }
+    }
 
-        //necromancerActions.isSpotted = true;
-        necromancerMovement.backOffSpeed = 0.1f;
+    private void OnFinalBossDefeated()
+    {
+        StartCoroutine(DoorOpen());
+    }
 
-        spawnInstance.transform.parent = null;
+    private IEnumerator DoorOpen()
+    {
+        yield return new WaitUntil(() => GameObject.FindGameObjectsWithTag("Enemy").Length == 0);
 
-        wave=0;
+        VanSoundManager.StopBGM();
+        VanSoundManager.PlayBGM(SoundType.OPENINGBGM, 0.4f);
+        Animator doorAni = door.GetComponent<Animator>();
+        doorAni.SetTrigger("open");
+        yield return new WaitForSeconds(2f);
+        door.SetActive(false);
+    }
+
+    private IEnumerator WaveCount(int waveCount)
+    {
+        TextMeshProUGUI textMeshPro = waveState.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        textMeshPro.text = "Wave " + (waveCount + 1).ToString();
+        yield return new WaitForSeconds(1.5f);
+        textMeshPro.text = null;
+    }
+
+    private IEnumerator BossWave()
+    {
+        TextMeshProUGUI textMeshPro = waveState.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        textMeshPro.text = "FINAL BOSS";
+        yield return new WaitForSeconds(1.5f);
+        textMeshPro.text = null;
     }
 }

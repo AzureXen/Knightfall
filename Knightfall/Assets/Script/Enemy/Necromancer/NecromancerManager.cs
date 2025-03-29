@@ -15,7 +15,7 @@ public class NecromancerManager : EntityManager
 
     public override void Start()
     {
-        entityHealth = GetComponent<Health>();
+        entityHealth = GetComponent<UndeadHealth>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         entityMovement = GetComponent<NecromancerMovement>();

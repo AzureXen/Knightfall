@@ -1,0 +1,874 @@
+fileFormatVersion: 2
+guid: 5d74edbb399f682449cb5bbb299260c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4572360058441674360
+    second: Flame-Buff-Sheet_0
+  - first:
+      213: 3423746275886053742
+    second: Flame-Buff-Sheet_1
+  - first:
+      213: 5400062999827773602
+    second: Flame-Buff-Sheet_2
+  - first:
+      213: 5829184175985144166
+    second: Flame-Buff-Sheet_3
+  - first:
+      213: -8849353526457685177
+    second: Flame-Buff-Sheet_4
+  - first:
+      213: -8331175210261817964
+    second: Flame-Buff-Sheet_5
+  - first:
+      213: -8836300612199413614
+    second: Flame-Buff-Sheet_6
+  - first:
+      213: 7350569933075206375
+    second: Flame-Buff-Sheet_7
+  - first:
+      213: -7375887290646992225
+    second: Flame-Buff-Sheet_8
+  - first:
+      213: 3209194007695517980
+    second: Flame-Buff-Sheet_9
+  - first:
+      213: -5151219769809310977
+    second: Flame-Buff-Sheet_10
+  - first:
+      213: 3979559034913377297
+    second: Flame-Buff-Sheet_11
+  - first:
+      213: -4699778104991222247
+    second: Flame-Buff-Sheet_12
+  - first:
+      213: -4077508963178175166
+    second: Flame-Buff-Sheet_13
+  - first:
+      213: 1586041732682577363
+    second: Flame-Buff-Sheet_14
+  - first:
+      213: -6755298998947347836
+    second: Flame-Buff-Sheet_15
+  - first:
+      213: -8731506923041695673
+    second: Flame-Buff-Sheet_16
+  - first:
+      213: 1632634206386468467
+    second: Flame-Buff-Sheet_17
+  - first:
+      213: -7292772465363826523
+    second: Flame-Buff-Sheet_18
+  - first:
+      213: -2963991577867458666
+    second: Flame-Buff-Sheet_19
+  - first:
+      213: 551731109934380834
+    second: Flame-Buff-Sheet_20
+  - first:
+      213: 5700324831739930237
+    second: Flame-Buff-Sheet_21
+  - first:
+      213: 1314078489522413974
+    second: Flame-Buff-Sheet_22
+  - first:
+      213: 9060556062830018679
+    second: Flame-Buff-Sheet_23
+  - first:
+      213: -4586292729928344442
+    second: Flame-Buff-Sheet_24
+  - first:
+      213: -5301658805966342678
+    second: Flame-Buff-Sheet_25
+  - first:
+      213: 7465582788334628379
+    second: Flame-Buff-Sheet_26
+  - first:
+      213: -1506739603850584956
+    second: Flame-Buff-Sheet_27
+  - first:
+      213: 9194639697556896787
+    second: Flame-Buff-Sheet_28
+  - first:
+      213: 7379153175911888913
+    second: Flame-Buff-Sheet_29
+  - first:
+      213: 7363460862320514693
+    second: Flame-Buff-Sheet_30
+  - first:
+      213: 2140242431529834670
+    second: Flame-Buff-Sheet_31
+  - first:
+      213: 6322812724123833427
+    second: Flame-Buff-Sheet_32
+  - first:
+      213: -4660607185310080071
+    second: Flame-Buff-Sheet_33
+  - first:
+      213: 7541264970457268972
+    second: Flame-Buff-Sheet_34
+  - first:
+      213: -6004580285835038113
+    second: Flame-Buff-Sheet_35
+  - first:
+      213: 4546093568057142472
+    second: Flame-Buff-Sheet_36
+  - first:
+      213: 2727002101077116171
+    second: Flame-Buff-Sheet_37
+  - first:
+      213: -7745763844176707271
+    second: Flame-Buff-Sheet_38
+  - first:
+      213: -8051630492703163869
+    second: Flame-Buff-Sheet_39
+  - first:
+      213: 1507225858752562875
+    second: Flame-Buff-Sheet_40
+  - first:
+      213: -7603291454548065614
+    second: Flame-Buff-Sheet_41
+  - first:
+      213: 3278205333665309675
+    second: Flame-Buff-Sheet_42
+  - first:
+      213: -846967491591685410
+    second: Flame-Buff-Sheet_43
+  - first:
+      213: 373810216263385980
+    second: Flame-Buff-Sheet_44
+  - first:
+      213: 5763262879258569958
+    second: Flame-Buff-Sheet_45
+  - first:
+      213: -7011421434388554928
+    second: Flame-Buff-Sheet_46
+  - first:
+      213: 5833324384468611977
+    second: Flame-Buff-Sheet_47
+  - first:
+      213: 309276584018070940
+    second: Flame-Buff-Sheet_48
+  - first:
+      213: 5184082404407914356
+    second: Flame-Buff-Sheet_49
+  - first:
+      213: -543951365840144636
+    second: Flame-Buff-Sheet_50
+  - first:
+      213: 1840367428548184711
+    second: Flame-Buff-Sheet_51
+  - first:
+      213: 1691225537115704948
+    second: Flame-Buff-Sheet_52
+  - first:
+      213: 3689295119587080063
+    second: Flame-Buff-Sheet_53
+  - first:
+      213: 8852896335156382649
+    second: Flame-Buff-Sheet_54
+  - first:
+      213: -9117435619731642577
+    second: Flame-Buff-Sheet_55
+  - first:
+      213: -3014160703480553817
+    second: Flame-Buff-Sheet_56
+  - first:
+      213: 6862098877339429593
+    second: Flame-Buff-Sheet_57
+  - first:
+      213: 3534929339668641855
+    second: Flame-Buff-Sheet_58
+  - first:
+      213: 4632392237903889457
+    second: Flame-Buff-Sheet_59
+  - first:
+      213: 1928168458824984947
+    second: Flame-Buff-Sheet_60
+  - first:
+      213: -8013811729438690881
+    second: Flame-Buff-Sheet_61
+  - first:
+      213: 9144545091167673511
+    second: Flame-Buff-Sheet_62
+  - first:
+      213: 9014036423360344241
+    second: Flame-Buff-Sheet_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 56
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881566390c6bb80c0800000000000000
+      internalID: -4572360058441674360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69314f1917938f20800000000000000
+      internalID: 3423746275886053742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8f67500b0e0fa40800000000000000
+      internalID: 5400062999827773602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6613cebaf1c65e050800000000000000
+      internalID: 5829184175985144166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ba3a38ad7c03580800000000000000
+      internalID: -8849353526457685177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495ddc66948b16c80800000000000000
+      internalID: -8331175210261817964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2988941f8672f5580800000000000000
+      internalID: -8836300612199413614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e05d9db868720660800000000000000
+      internalID: 7350569933075206375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aeaa9969593a990800000000000000
+      internalID: -7375887290646992225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19e00c62f8598c20800000000000000
+      internalID: 3209194007695517980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffaeb8469e03388b0800000000000000
+      internalID: -5151219769809310977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c45be8bdb3a3730800000000000000
+      internalID: 3979559034913377297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916f6d8c6b807ceb0800000000000000
+      internalID: -4699778104991222247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2452b499337c967c0800000000000000
+      internalID: -4077508963178175166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d57d7b7d80c20610800000000000000
+      internalID: 1586041732682577363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48201300a5b5042a0800000000000000
+      internalID: -6755298998947347836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7485c3a07b473d680800000000000000
+      internalID: -8731506923041695673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37631df192848a610800000000000000
+      internalID: 1632634206386468467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a84d3ed41edaca90800000000000000
+      internalID: -7292772465363826523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697e5f32d59cdd6d0800000000000000
+      internalID: -2963991577867458666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227bb23758428a700800000000000000
+      internalID: 551731109934380834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76623c9b3f9b1f40800000000000000
+      internalID: 5700324831739930237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69127f68c6b8c3210800000000000000
+      internalID: 1314078489522413974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame-Buff-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770ce78fbbf8dbd70800000000000000
+      internalID: 9060556062830018679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 63fc3813d9c698947b4f1b7d80b19df0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Flame-Buff-Sheet_0: -4572360058441674360
+      Flame-Buff-Sheet_1: 3423746275886053742
+      Flame-Buff-Sheet_10: -5151219769809310977
+      Flame-Buff-Sheet_11: 3979559034913377297
+      Flame-Buff-Sheet_12: -4699778104991222247
+      Flame-Buff-Sheet_13: -4077508963178175166
+      Flame-Buff-Sheet_14: 1586041732682577363
+      Flame-Buff-Sheet_15: -6755298998947347836
+      Flame-Buff-Sheet_16: -8731506923041695673
+      Flame-Buff-Sheet_17: 1632634206386468467
+      Flame-Buff-Sheet_18: -7292772465363826523
+      Flame-Buff-Sheet_19: -2963991577867458666
+      Flame-Buff-Sheet_2: 5400062999827773602
+      Flame-Buff-Sheet_20: 551731109934380834
+      Flame-Buff-Sheet_21: 5700324831739930237
+      Flame-Buff-Sheet_22: 1314078489522413974
+      Flame-Buff-Sheet_23: 9060556062830018679
+      Flame-Buff-Sheet_3: 5829184175985144166
+      Flame-Buff-Sheet_4: -8849353526457685177
+      Flame-Buff-Sheet_5: -8331175210261817964
+      Flame-Buff-Sheet_6: -8836300612199413614
+      Flame-Buff-Sheet_7: 7350569933075206375
+      Flame-Buff-Sheet_8: -7375887290646992225
+      Flame-Buff-Sheet_9: 3209194007695517980
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

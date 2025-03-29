@@ -78,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2044281619
-  m_SortingLayer: 7
+  m_SortingLayerID: -1907783919
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 8192528919813170734, guid: bc4067b4edf2e2d4b84fd52c2ea0f194, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -173,11 +173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 2
-  m_LightType: 3
+  m_LightType: 2
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.7207546, g: 0.3302038, b: 0, a: 0.28235295}
-  m_Intensity: 200
+  m_Color: {r: 1, g: 0.7636953, b: 0.2471698, a: 0.28235295}
+  m_Intensity: 50
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 000000004fe2f2f55fad9bc2ad7dd5b6b50d6a4a190934d01343d979278f995c
@@ -196,8 +196,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+    m_Center: {x: 0, y: -1.28125, z: 0}
+    m_Extent: {x: 1.5, y: 0.21875, z: 0}
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -225,8 +225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  knockbackForce: 5
-  knockbackDuration: 1
+  knockbackForce: 10
+  knockbackDuration: 2
+  damageInterval: 0.5
 --- !u!1 &8486260335994785362
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,8 +302,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1907783919
-  m_SortingLayer: 6
+  m_SortingLayerID: -1227522643
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1604514794670452967, guid: 89180acd82cc48d449a82cd52833a20c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

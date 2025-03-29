@@ -4,7 +4,7 @@ using UnityEngine;
 public class DamageHitboxScript : MonoBehaviour
 {
     private Boolean hitBoxActive = false;
-    public int damage = 5;
+    public int damage = 10;
     public Vector3 damageSourcePosition = Vector3.zero;
 
     public float knockbackForce = 1f;
@@ -23,7 +23,7 @@ public class DamageHitboxScript : MonoBehaviour
     void Start()
     {
         playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-        damageSourcePosition = (transform.position + transform.right * (transform.localScale.x));
+        damageSourcePosition = (transform.position + -transform.up * (transform.localScale.x));
     }
 
     // Update is called once per frame

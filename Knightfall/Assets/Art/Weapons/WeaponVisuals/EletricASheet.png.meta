@@ -26,6 +26,24 @@ TextureImporter:
   - first:
       213: 3700850454814085154
     second: EletricASheet_7
+  - first:
+      213: 2056871266309379273
+    second: EletricASheet_8
+  - first:
+      213: 1519605681358928341
+    second: EletricASheet_9
+  - first:
+      213: 707288987651782482
+    second: EletricASheet_10
+  - first:
+      213: 1086801661768847792
+    second: EletricASheet_11
+  - first:
+      213: 1884608695081915517
+    second: EletricASheet_12
+  - first:
+      213: 1806690537374399915
+    second: EletricASheet_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +111,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -138,11 +156,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 192
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +178,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 192
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +199,12 @@ TextureImporter:
       name: EletricASheet_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 96
+        y: 96
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +221,12 @@ TextureImporter:
       name: EletricASheet_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 0
         y: 0
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +243,12 @@ TextureImporter:
       name: EletricASheet_4
       rect:
         serializedVersion: 2
-        x: 768
+        x: 192
         y: 0
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,121 +261,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: EletricASheet_5
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61ae3eae46150304fab2c1d76320825a
-      internalID: 2029180495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EletricASheet_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96c31c2bd7f214f4d8e1b574b738edff
-      internalID: 1849739706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EletricASheet_7
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5202518f41d9e3f40917d7cff28ffb96
-      internalID: 1667706050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EletricASheet_8
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54719e1b424173344a3ac43a2e03a328
-      internalID: 1310478691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EletricASheet_9
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c649d996da195704ab841eed2a616e42
-      internalID: -182256039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 236f3996ef0d8dc4dadc403e6fc1b49b
+    spriteID: 625c917b148449e4997c3d1574d056c4
     internalID: 0
     vertices: []
     indices: 
@@ -372,11 +280,6 @@ TextureImporter:
       EletricASheet_2: 1107112146646404118
       EletricASheet_3: -6269680490150466235
       EletricASheet_4: -5930801871044252201
-      EletricASheet_5: 2029180495
-      EletricASheet_6: 1849739706
-      EletricASheet_7: 1667706050
-      EletricASheet_8: 1310478691
-      EletricASheet_9: -182256039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

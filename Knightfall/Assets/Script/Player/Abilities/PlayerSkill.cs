@@ -1,26 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerSkill : MonoBehaviour
 {
     public Boolean isCasting = false;
 
     public GameObject holySkillHitbox;
-    private GameObject holySkillhitboxInstance; private GameObject holySkillhitbox2Instance;
-    private GameObject holySkillhitboxInstance2ndWave; private GameObject holySkillhitbox2Instance2ndWave;
 
     public GameObject thunderSkillHitbox;
-    private GameObject thunderSkillhitboxInstance;
+    public GameObject thunderUltHitbox;
 
-    private int skillFrames = 0;
+    public GameObject flameBeamSkillHitbox;
 
-    public GameObject popUpTextPixel;
-    private GameObject TextpopUp;
     void Update()
     {
 
@@ -35,11 +33,17 @@ public class PlayerSkill : MonoBehaviour
         {
             StartCoroutine(ThunderStrikeAttack(skillDuration, skill));
         }
+        if (skillName == "flame")
+        {
+            StartCoroutine(FlameDevastationAttack(skillDuration, skill));
+        }
+        if (skillName == "storm")
+        {
+            StartCoroutine(ThunderStormUlt(skillDuration, skill));
+        }
     }
     protected IEnumerator HolyBladeAttack(float skillDuration, GameObject skill)
     {
-        ShowSkillText("Holy Smite", Color.Lerp(Color.red, Color.yellow, 0.5f));
-
         Transform hitboxSpawnPos = skill.transform.GetChild(1).transform;
         yield return new WaitForSeconds(1f);
 
@@ -61,8 +65,6 @@ public class PlayerSkill : MonoBehaviour
 
     protected IEnumerator ThunderStrikeAttack(float skillDuration, GameObject skill)
     {
-        ShowSkillText("Thunder Strike", Color.yellow);
-
         Transform hitboxSpawnPos = skill.transform.GetChild(1).transform;
         float speed = 3f;
         float duration = skillDuration - 2; // How long the hitboxes last before getting destroyed
@@ -94,17 +96,60 @@ public class PlayerSkill : MonoBehaviour
             thunderHitboxes.Add(hitbox);
         }
 
-        yield return new WaitForSeconds(duration);
+        PlayerMovement playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerMovement.speedBoost = 1.2f;
+        yield return new WaitForSeconds(4f);
+        playerMovement.speedBoost = 1f;
 
+        yield return new WaitForSeconds(duration -4f);
+        playerMovement.speedBoost = 1f;
         DestroyHitboxes(thunderHitboxes);
     }
 
-    private void ShowSkillText(string text, Color color)
+    protected IEnumerator FlameDevastationAttack(float skillDuration, GameObject skill)
     {
-        GameObject textPopUp = Instantiate(popUpTextPixel, transform.position, Quaternion.identity);
-        TextMeshPro damageDisplayMesh = textPopUp.transform.GetChild(0).GetComponent<TextMeshPro>();
-        damageDisplayMesh.color = color;
-        damageDisplayMesh.text = text;
+        Transform hitboxSpawnPos = skill.transform.GetChild(1).transform;
+        yield return new WaitForSeconds(1f);
+
+        // Define 4 angles for the "X" shape (45-degree increments)
+        float[] angles = { 45f, 135f, -45f, -135f };
+
+        // Define position offsets (2,2,0) in respective directions
+        Vector3[] offsets =
+        {
+            new Vector3(3.5f, -3.5f, 0),
+            new Vector3(3.5f, 3.5f, 0),
+            new Vector3(-3.5f, -3.5f, 0),
+            new Vector3(-3.5f, 3.5f, 0)
+        };
+
+        List<GameObject> flameHitboxes = new List<GameObject>();
+
+        for (int i = 0; i < angles.Length; i++)
+        {
+            GameObject hitbox = Instantiate(flameBeamSkillHitbox, hitboxSpawnPos.position + offsets[i], Quaternion.Euler(0, 0, angles[i]), hitboxSpawnPos);
+
+            hitbox.transform.localScale = new Vector3(1, -2.5f, 1);
+
+            flameHitboxes.Add(hitbox);
+        }
+
+        yield return new WaitForSeconds(skillDuration-2.5f);
+
+        DestroyHitboxes(flameHitboxes);
+    }
+
+    protected IEnumerator ThunderStormUlt(float skillDuration, GameObject skill)
+    {
+        Transform hitboxSpawnPos = skill.transform.GetChild(0).transform;
+        GameObject hitbox = Instantiate(thunderUltHitbox, transform.position, Quaternion.identity, hitboxSpawnPos);
+        
+        hitbox.transform.localScale = new Vector3(2, 2, 1);
+        hitbox.transform.parent = null;
+
+        yield return new WaitForSeconds(skillDuration);
+
+        Destroy(hitbox);
     }
 
     private List<GameObject> SpawnHitboxes(Vector3[] positions, Transform parent, Vector3 size)
@@ -115,7 +160,7 @@ public class PlayerSkill : MonoBehaviour
             GameObject hitbox = Instantiate(holySkillHitbox, transform.position, Quaternion.identity, parent);
             hitbox.transform.position += pos;
             hitbox.transform.localScale = size;
-            //hitbox.transform.parent = null;
+            hitbox.transform.parent = null;
             hitboxes.Add(hitbox);
         }
         return hitboxes;
