@@ -11,6 +11,9 @@ TagManager:
   - BGM
   - SceneController
   - Wall
+  - PlayerSword
+  - Object
+  - Key
   - Map
   - EnemyBullet
   - SceneTrigger

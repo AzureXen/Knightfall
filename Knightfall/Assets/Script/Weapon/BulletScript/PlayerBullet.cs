@@ -14,7 +14,7 @@ public class PlayerBullet : BulletScript
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        Boolean successHit = false;
+        Boolean successHit = false; 
         if (collision.CompareTag("Enemy"))
         {
             EntityManager enemyManager = collision.gameObject.GetComponent<EntityManager>();
