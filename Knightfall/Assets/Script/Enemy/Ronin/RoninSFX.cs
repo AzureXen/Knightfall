@@ -12,8 +12,10 @@ public class RoninSFX : MonoBehaviour
     
 
     public AudioClip[] attackWarningClips;
-
     public AudioClip[] retributionSlashClips;
+
+    public AudioClip[] severanceWarningClips;
+    public AudioClip[] severanceClips;
     private void Start()
     {
         audioSource.volume = 0.6f;
@@ -114,7 +116,7 @@ public class RoninSFX : MonoBehaviour
         }
     }
 
-    public void playerRetributionSlash()
+    public void playRetributionSlash()
     {
         if (retributionSlashClips.Length > 0)
         {
@@ -126,4 +128,30 @@ public class RoninSFX : MonoBehaviour
             Debug.LogWarning("retributionSlashClips is empty.");
         }
     }
+    public void playSeveranceWarning()
+    {
+        if (severanceWarningClips.Length > 0)
+        {
+            int random = UnityEngine.Random.Range(0, severanceWarningClips.Length);
+            audioSource.PlayOneShot(severanceWarningClips[random]);
+        }
+        else
+        {
+            Debug.LogWarning("severanceWarningClips is empty.");
+        }
+    }
+
+    public void playSeverance()
+    {
+        if (severanceClips.Length > 0)
+        {
+            int random = UnityEngine.Random.Range(0, severanceClips.Length);
+            audioSource.PlayOneShot(severanceClips[random], 0.8f);
+        }
+        else
+        {
+            Debug.LogWarning("severanceClips is empty.");
+        }
+    }
+
 }

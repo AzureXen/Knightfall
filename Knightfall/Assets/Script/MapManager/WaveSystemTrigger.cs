@@ -10,6 +10,7 @@ public class WaveSystemTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             OnPlayerEnterTrigger?.Invoke(this, EventArgs.Empty);
+            Destroy(gameObject);
         }
     }
 

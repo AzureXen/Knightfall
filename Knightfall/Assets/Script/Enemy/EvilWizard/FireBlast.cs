@@ -34,7 +34,7 @@ public class FireBlast : BulletScript
             EntityManager player = collision.GetComponent<EntityManager>();
             if (player != null)
             {
-                player.TakeRangedHit(fireDamage, transform.position, 0, 0, this);
+                player.TakeRangedHit(fireDamage, transform.position, 0, 0);
             }
         }
     }

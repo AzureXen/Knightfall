@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class RoninHealth : MonoBehaviour
+public class RoninHealth : Health
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void Update()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Modifiy: Ronin does not get destroyed upon having 0 health
     }
 }

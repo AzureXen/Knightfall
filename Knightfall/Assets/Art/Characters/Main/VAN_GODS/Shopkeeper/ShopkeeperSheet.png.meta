@@ -1,0 +1,878 @@
+fileFormatVersion: 2
+guid: b5ef8b525b5d13641baaca24cb18d301
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -964236970872938295
+    second: ShopkeeperSheet_0
+  - first:
+      213: 3603334652222290638
+    second: ShopkeeperSheet_1
+  - first:
+      213: -2224730758797463057
+    second: ShopkeeperSheet_2
+  - first:
+      213: -4981281375633918200
+    second: ShopkeeperSheet_3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShopkeeperSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2856
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0e1df65975e92f0800000000000000
+      internalID: -964236970872938295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_1
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2856
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecab09066cd910230800000000000000
+      internalID: 3603334652222290638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2856
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1fdf8792b2021e0800000000000000
+      internalID: -2224730758797463057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 2856
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80732171bfeeedab0800000000000000
+      internalID: -4981281375633918200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2448
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff39cafb02f8bd4caad1db85c159776
+      internalID: -2137178406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_5
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2448
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbee3e9d81381342afd9b8be88c0401
+      internalID: -1869461262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2448
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8b9b7fda36c94a9aeddfa5abe9868
+      internalID: -2008694439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 2448
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6239752ad2ddef54d85cbe9eb10f028f
+      internalID: 1659895289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db711dde1c140a44a66069179280e8f
+      internalID: -398948439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2040
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d702db247661641b06d383a2f7cc1f
+      internalID: 638156237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2040
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a2efad4ea673c4b9ae00a0213ce545
+      internalID: -1711187870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 2040
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3075f8cf4e62a84a986668119c6c346
+      internalID: 1017199845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1632
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce3dab72bf2a014582fe5d5f19c0183
+      internalID: -287991564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_13
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1632
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c004cce584f6ae45aa08991ba6c9cf9
+      internalID: 1256279416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1632
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07651b0325beb546a6459fec94bc01c
+      internalID: 1723999575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1632
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca06085e58978a4da8e3df59179f341
+      internalID: 1920661760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97c94001bf8f14468b4923ae2942fa4
+      internalID: 1452784888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1224
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe030e8054dd49840a8bdec6a51bbe64
+      internalID: -1180317204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1224
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c10f7b6febc54418553d0468455520
+      internalID: 1991374252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_19
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1224
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97d0bfcf3d15b74a85bedc0219bc410
+      internalID: 1843751691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3f2dc5d2dcee547a9cc1ccd84212d5
+      internalID: 390359333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_21
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 816
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a675360bff354c877dde420ff6401
+      internalID: -1918465142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 816
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e5da963da47ee49802635394ad067f
+      internalID: -114363915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 816
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde7e65d4a56ad8409f78412fe9be87c
+      internalID: -243944628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fe44783db3b34428bb56978b0f950b
+      internalID: 1473265836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_25
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 408
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a762e4b42509f4f9ad8c92646c3721
+      internalID: -585003131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 408
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374901c2ed2637540aa1143d9947321d
+      internalID: 1495666888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 408
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98099042b36217459aff3f2933611c7
+      internalID: -1540698556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b253a5804d1b9d241828bf08052cd04f
+      internalID: -20156298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_29
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091dc51395896d140ae5be8315164254
+      internalID: 1100683136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301f7354bf11fa7409e498e5e600d27e
+      internalID: 1563585890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopkeeperSheet_31
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 728
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475a6cd926a509e4b8f786f681428e1b
+      internalID: 5798169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8562a81cb8bf10a4890db7e81c8ab116
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShopkeeperSheet_0: -964236970872938295
+      ShopkeeperSheet_1: 3603334652222290638
+      ShopkeeperSheet_10: -1711187870
+      ShopkeeperSheet_11: 1017199845
+      ShopkeeperSheet_12: -287991564
+      ShopkeeperSheet_13: 1256279416
+      ShopkeeperSheet_14: 1723999575
+      ShopkeeperSheet_15: 1920661760
+      ShopkeeperSheet_16: 1452784888
+      ShopkeeperSheet_17: -1180317204
+      ShopkeeperSheet_18: 1991374252
+      ShopkeeperSheet_19: 1843751691
+      ShopkeeperSheet_2: -2224730758797463057
+      ShopkeeperSheet_20: 390359333
+      ShopkeeperSheet_21: -1918465142
+      ShopkeeperSheet_22: -114363915
+      ShopkeeperSheet_23: -243944628
+      ShopkeeperSheet_24: 1473265836
+      ShopkeeperSheet_25: -585003131
+      ShopkeeperSheet_26: 1495666888
+      ShopkeeperSheet_27: -1540698556
+      ShopkeeperSheet_28: -20156298
+      ShopkeeperSheet_29: 1100683136
+      ShopkeeperSheet_3: -4981281375633918200
+      ShopkeeperSheet_30: 1563585890
+      ShopkeeperSheet_31: 5798169
+      ShopkeeperSheet_4: -2137178406
+      ShopkeeperSheet_5: -1869461262
+      ShopkeeperSheet_6: -2008694439
+      ShopkeeperSheet_7: 1659895289
+      ShopkeeperSheet_8: -398948439
+      ShopkeeperSheet_9: 638156237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

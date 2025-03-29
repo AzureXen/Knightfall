@@ -5,23 +5,28 @@ using UnityEngine;
 
 public class RoninAction : MonoBehaviour
 {
+    // FOR DEATH SCENE
+    private Health roninHealth;
+    private int currentHealth;
+    public Boolean isDefeated = false;
 
 
     // FOR ANIMATOR
     private string RONIN_IDLE = "RoninIdle";
     private string RONIN_RUN = "RoninRun";
     private string RONIN_RUN_SLOW = "RoninRunSlow";
-    private string RONIN_ATTACK_1 = "RoninAttack1";
-    private string RONIN_ATTACK_1_END_SPECIAL = "RoninAttack1EndSpecial";
+    //private string RONIN_ATTACK_1 = "RoninAttack1";
+    private string RONIN_RETRIBUTIONSLASH_WARNING = "RoninRetributionSlashWarning";
     private string RONIN_ATTACK_1_QUICK = "RoninAttack1Quick";
     private string RONIN_ATTACK_2 = "RoninAttack2";
-    private string RONIN_ATTACK_COMBO = "RoninAttackCombo";
+    //private string RONIN_ATTACK_COMBO = "RoninAttackCombo";
     private string RONIN_DEATH = "RoninDeath";
-    private string RONIN_UNSHEATHE_1 = "RoninUnsheathe1";
+    //private string RONIN_UNSHEATHE_1 = "RoninUnsheathe1";
     private string RONIN_UNSHEATHE_2 = "RoninUnsheathe2";
-    private string RONIN_UNSHEATHE_2_SPECIAL = "RoninUnsheathe2Special";
+    //private string RONIN_FLASHSHASH_WARNING = "RoninFlashSlashWarning";
     private string RONIN_STUNNED = "RoninStunned";
     private string RONIN_KNEEL = "RoninKneel";
+    //private string RONIN_SEVERANCE_WARNING = "RoninSeveranceWarning";
 
     private RoninAnimator roninAnimator;
     private string currentState;
@@ -39,11 +44,13 @@ public class RoninAction : MonoBehaviour
         CHASE,
         MOVE,
         FLASHSLASH,
+        SEVERANCE,
         PARRY,
         ABSOLUTE_DEFENSE,
         RETRIBUTION_SLASH,
         SUPERPARRY,
         STUNNED,
+        DEFEATED,
     }
     public RoninActions currentAction;
 
@@ -59,6 +66,9 @@ public class RoninAction : MonoBehaviour
 
     private RoninRetributionSlash roninRetributionSlash;
 
+    private RoninSeverance roninSeverance;
+    private float severanceCoolDown;
+
     private float stunTimer;
 
     private Coroutine ActionCoroutine;
@@ -72,20 +82,45 @@ public class RoninAction : MonoBehaviour
         currentAction = RoninActions.STARTING_IDLE;
         roninFlashSlash = GetComponent<RoninFlashSlash>();
         roninRetributionSlash = GetComponent<RoninRetributionSlash>();
+        roninSeverance = GetComponent<RoninSeverance>();
         roninMovement = GetComponent<RoninMovement>();
         roninManager = GetComponent<RoninManager>();
         roninSFX = GetComponent<RoninSFX>();
         am = GetComponent<Animator>();
+        roninHealth = GetComponent<Health>();
         ChangeAnimationState(RONIN_KNEEL);
     }
     private void Update()
     {
+        if (player == null)
+        {
+            if(currentAction!= RoninActions.IDLE)
+            StopCurrentAction();
+            canDecide = false;
+            currentAction = RoninActions.IDLE;
+        }
+        // FOR DEATH SCENE
+        if (roninHealth != null)
+        {
+            currentHealth = roninHealth.health;
+            if (currentHealth <= 0)
+            {
+                isDefeated = true;
+                roninManager.canDamage = false;
+            }
+        }
+        if(isDefeated && currentAction != RoninActions.DEFEATED)
+        {
+            EnterDeath();
+        }
+
         parryStateTimer = roninManager.parryStateTimer;
         if (player != null)
         {
             distanceFromPlayer = Vector3.Distance(transform.position, player.position);
         }
         flashSlashCooldown = roninFlashSlash.attackCoolDownTimer;
+        severanceCoolDown = roninSeverance.attackCoolDownTimer;
 
         // If Ronin is attacking, he cannot parry.
         if (currentAction == RoninActions.IDLE || 
@@ -141,8 +176,14 @@ public class RoninAction : MonoBehaviour
         // if is not on attack cooldown, attempt to attack. Else move.
         if (attackCooldownTimer <= 0) 
         {
-            // Attempted to attack.
-            if(flashSlashCooldown <= 0)
+            // Attempt to attack.
+            if (severanceCoolDown <= 0)
+            {
+                ActionCoroutine = StartCoroutine(Severance());
+                canDecide = true;
+                yield break;
+            }
+            else if (flashSlashCooldown <= 0)
             {
 
                 ActionCoroutine = StartCoroutine(FlashSlash());
@@ -246,11 +287,14 @@ public class RoninAction : MonoBehaviour
 
     public void EnterAbsoluteDefenseRetribtion()
     {
-        if (ActionCoroutine != null && currentAction != RoninActions.ABSOLUTE_DEFENSE && currentAction != RoninActions.RETRIBUTION_SLASH)
+        if(currentAction != RoninActions.ABSOLUTE_DEFENSE && currentAction != RoninActions.RETRIBUTION_SLASH)
         {
-            StopCurrentAction();
+            if (ActionCoroutine != null)
+            {
+                StopCurrentAction();
+            }
+            ActionCoroutine = StartCoroutine(AbsoluteDefenseRetribution());
         }
-        ActionCoroutine = StartCoroutine(AbsoluteDefenseRetribution());
     }
 
     private IEnumerator AbsoluteDefenseRetribution()
@@ -263,12 +307,12 @@ public class RoninAction : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
 
             currentAction = RoninActions.RETRIBUTION_SLASH;
-            ChangeAnimationState(RONIN_ATTACK_1_END_SPECIAL);
-            roninSFX.playAttackWarning(1);
-            yield return new WaitForSeconds(1f);
+            ChangeAnimationState(RONIN_RETRIBUTIONSLASH_WARNING);
+            roninSFX.playAttackWarning(3);
+            yield return new WaitForSeconds(0.5f);
 
             ChangeAnimationState(RONIN_ATTACK_2);
-            roninSFX.playerRetributionSlash();
+            roninSFX.playRetributionSlash();
             yield return new WaitForSeconds(0.35f);
 
             roninRetributionSlash.Attack();
@@ -294,6 +338,11 @@ public class RoninAction : MonoBehaviour
             stunTimer = duration;
             while (stunTimer > 0)
             {
+                if (isDefeated)
+                {
+                    stunTimer = 0;
+                    yield break;
+                }
                 yield return null;
                 if(currentAction != RoninActions.STUNNED)
                 {
@@ -309,6 +358,57 @@ public class RoninAction : MonoBehaviour
             currentAction = RoninActions.IDLE;
         }
     }
+
+
+    public void EnterDeath()
+    {
+        if(currentAction != RoninActions.DEFEATED)
+        {
+            if (ActionCoroutine != null)
+            {
+                StopCurrentAction();
+            }
+            ActionCoroutine = StartCoroutine(DeathScene());
+        }
+        // OPEN GATE
+        openGate();
+        // CHANGE BGM
+        RoninBGM roninBGM = GetComponent<RoninBGM>();
+        if (roninBGM != null)
+        {
+            roninBGM.playBattleEndBGM();
+        }
+        else Debug.Log("Cannot find roninBGM.");
+        // DISABLE RONIN'S HEALTH / STAMINA UI
+        GameObject roninCanvasInstance = roninManager.roninCanvasInstance;
+        if (roninCanvasInstance != null)
+        {
+            roninCanvasInstance.SetActive(false);
+        }
+        else Debug.Log("RoninAction: Cannot find roninCanvasInstance");
+    }
+
+    IEnumerator DeathScene()
+    {   
+        try
+        {
+            roninAnimator.canChangeDirection = false;
+            canDecide = false;
+            ChangeAnimationState(RONIN_DEATH);
+            currentAction = RoninActions.DEFEATED;
+            roninManager.canDamage = false;
+            roninManager.canParry = false;
+            attackCooldownTimer = 9999f;
+            yield return new WaitForSeconds(9999f);
+        }
+        finally
+        {
+            attackCooldownTimer = 1f;
+            ChangeAnimationState(RONIN_IDLE);
+            currentAction = RoninActions.IDLE;
+        }
+    }
+
     IEnumerator FlashSlash()
     {
         try
@@ -333,7 +433,31 @@ public class RoninAction : MonoBehaviour
             currentAction = RoninActions.FLASHSLASH;
             attackCooldownTimer = attackCooldown;
             roninFlashSlash.Attack();
-            yield return new WaitForSeconds(2f);
+            yield return null;
+            while (roninFlashSlash.isAttacking)
+            {
+                yield return null;
+            }
+        }
+        finally
+        {
+            currentAction = RoninActions.IDLE;
+            ActionCoroutine = null;
+        }
+    }
+
+    IEnumerator Severance()
+    {
+        try
+        {
+            currentAction = RoninActions.SEVERANCE;
+            attackCooldownTimer = attackCooldown;
+            roninSeverance.Attack();
+            yield return null;
+            while (roninSeverance.isAttacking)
+            {
+                yield return null;
+            }
         }
         finally
         {
@@ -359,6 +483,20 @@ public class RoninAction : MonoBehaviour
             ChangeAnimationState(RONIN_IDLE);
             currentAction = RoninActions.IDLE;
             ActionCoroutine = null;
+        }
+    }
+
+    void openGate()
+    {
+        GameObject map = GameObject.FindGameObjectWithTag("Map");
+        GameObject spikes = map.transform.Find("Spikes").gameObject;
+        if (spikes != null)
+        {
+            spikes.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Cannot find gate.");
         }
     }
 }

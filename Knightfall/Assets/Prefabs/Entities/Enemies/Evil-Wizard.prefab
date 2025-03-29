@@ -119,9 +119,9 @@ GameObject:
   - component: {fileID: 146300171889290878}
   - component: {fileID: 838240888678780583}
   - component: {fileID: 1858332134386871203}
-  - component: {fileID: 7157913274945549256}
   - component: {fileID: 5752310553350924818}
   - component: {fileID: 8147739583330765026}
+  - component: {fileID: 3063298728817645172}
   m_Layer: 7
   m_Name: Evil-Wizard
   m_TagString: Enemy
@@ -188,7 +188,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3384493420599841878, guid: 5af7f05e4ee9fb54bb12d42cfc146a0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -296,21 +296,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.487064, y: 3.551188}
   m_EdgeRadius: 0
---- !u!114 &7157913274945549256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3562037426641334085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 130
-  health: 130
-  popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!114 &5752310553350924818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   takeDamageCooldown: 0.2
+  canDamage: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
   touchDamageEnabled: 1
@@ -331,10 +317,12 @@ MonoBehaviour:
   touchKnockbackForce: 10
   touchKnockbackDuration: 1.5
   fireballPrefab: {fileID: 4379840461016170728, guid: bdb6bfc884dba8c44a1419e01daff90c, type: 3}
-  magicBlastPrefab: {fileID: 1997507786310864882, guid: 73cd4b85aeab0c94aa153e42180026c6, type: 3}
+  magicBlastPrefab: {fileID: 9185690941245668293, guid: 0539f82615bea08448906eedea975cb8, type: 3}
   fireballSpawnPoint: {fileID: 9098526690119427343}
-  attackCooldown: 2
-  attackRange: 10
+  audioSource: {fileID: 0}
+  fireballSound: {fileID: 8300000, guid: ad2bfb49e59ab334c94c4cbdec77533d, type: 3}
+  attackCooldown: 1
+  attackRange: 20
   healthImage: {fileID: 8880412253104006620}
 --- !u!114 &8147739583330765026
 MonoBehaviour:
@@ -349,9 +337,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 3
+  speed: 5
   minDistance: 5
-  detectionRange: 12
+  detectionRange: 20
+--- !u!114 &3063298728817645172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3562037426641334085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75c560479b34f74d8608b3410ce12aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 130
+  health: 130
+  popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
+  changeSceneArea: {fileID: 0}
 --- !u!1 &4001345750804777303
 GameObject:
   m_ObjectHideFlags: 0

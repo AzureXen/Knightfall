@@ -26,7 +26,7 @@ public class RoninMovement : EntityMovement
 
     private void FixedUpdate()
     {
-        if (!canMove)
+        if (!canMove || player==null)
         {
             rb.linearVelocity = Vector2.zero;
             return;

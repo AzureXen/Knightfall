@@ -12,7 +12,7 @@ public class SuspiciousSquare : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            sc.LoadScene(0);
+            sc.LoadScene("EndGame");
         }
     }
 }

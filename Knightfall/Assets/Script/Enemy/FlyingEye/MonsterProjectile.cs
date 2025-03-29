@@ -11,7 +11,8 @@ public class MonsterProjectile : BulletScript
     protected override void Start()
     {
         damage = monsterDmg;
-        knockbackForce = monsterKnockbackForce; 
+        knockbackForce = monsterKnockbackForce;
+        Destroy(gameObject, 5f);
     }
 
     public void SetDirection(Vector2 dir)

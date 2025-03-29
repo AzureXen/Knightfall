@@ -259,7 +259,7 @@ MonoBehaviour:
   potionDetectionRadius: 8
   detectionRange: 5
   isAbnormal: 0
-  slimePrefab: {fileID: 1344780703779386018}
+  slimePrefab: {fileID: 0}
 --- !u!114 &612093012790148225
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -94,8 +94,10 @@ public class NecromancerAttack : MonoBehaviour
         rangedDamageHitboxScript.knockbackForce = knockbackForce;
         rangedDamageHitboxScript.knockbackDuration = knockbackDuration;
 
+        attackInstance.transform.parent = attackTransform;
+
         yield return new WaitForSeconds(3.2f);
-        attackInstance.transform.parent = null;
+        if(attackInstance) attackInstance.transform.parent = null;
         rangedDamageHitboxScript.EnableDamage();
         Vector3 playerPos = player.transform.position;
         Vector3 attackDir = (attackTransform.position - playerPos).normalized;
@@ -132,7 +134,7 @@ public class NecromancerAttack : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
 
         summonInstance = Instantiate(skeleton, transform.position, Quaternion.identity, attackTransform);
-        summonInstance.transform.position += new Vector3(0, 0.5f, 0);
+        summonInstance.transform.position += new Vector3(0, -2f, 0);
 
         summonInstance.transform.parent = null;
 

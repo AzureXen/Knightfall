@@ -113,7 +113,7 @@ namespace Assets.Script.Enemy.Slime
 
         private IEnumerator FindPlayer()
         {
-            while (player == null)
+            while (player == null && !isAbnormal)
             {
                 player = GameObject.FindGameObjectWithTag("Player");
                 yield return null;

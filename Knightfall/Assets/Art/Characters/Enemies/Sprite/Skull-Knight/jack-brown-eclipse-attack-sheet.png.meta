@@ -1,0 +1,651 @@
+fileFormatVersion: 2
+guid: bd11c18813cbc1b4b8535a1a065afe13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7474199953454200428
+    second: jack-brown-eclipse-attack-sheet_0
+  - first:
+      213: -9076162239979983304
+    second: jack-brown-eclipse-attack-sheet_1
+  - first:
+      213: 5632911224591647606
+    second: jack-brown-eclipse-attack-sheet_2
+  - first:
+      213: 8771232420044072070
+    second: jack-brown-eclipse-attack-sheet_3
+  - first:
+      213: 2821787076015625901
+    second: jack-brown-eclipse-attack-sheet_4
+  - first:
+      213: 4339878630328130107
+    second: jack-brown-eclipse-attack-sheet_5
+  - first:
+      213: 3941474376817645546
+    second: jack-brown-eclipse-attack-sheet_6
+  - first:
+      213: 997531840976791185
+    second: jack-brown-eclipse-attack-sheet_7
+  - first:
+      213: -6246815548281212975
+    second: jack-brown-eclipse-attack-sheet_8
+  - first:
+      213: 5089386254996033888
+    second: jack-brown-eclipse-attack-sheet_9
+  - first:
+      213: -5241046170026804464
+    second: jack-brown-eclipse-attack-sheet_10
+  - first:
+      213: -4086264837948122222
+    second: jack-brown-eclipse-attack-sheet_11
+  - first:
+      213: -4806686058015880188
+    second: jack-brown-eclipse-attack-sheet_12
+  - first:
+      213: -4847619175862488164
+    second: jack-brown-eclipse-attack-sheet_13
+  - first:
+      213: 8936614595456222372
+    second: jack-brown-eclipse-attack-sheet_14
+  - first:
+      213: 1446670092844815459
+    second: jack-brown-eclipse-attack-sheet_15
+  - first:
+      213: -4587212265960351880
+    second: jack-brown-eclipse-attack-sheet_16
+  - first:
+      213: 7832717834449319834
+    second: jack-brown-eclipse-attack-sheet_17
+  - first:
+      213: -1547530918234903387
+    second: jack-brown-eclipse-attack-sheet_18
+  - first:
+      213: -121680487568285197
+    second: jack-brown-eclipse-attack-sheet_19
+  - first:
+      213: 6607156036435190531
+    second: jack-brown-eclipse-attack-sheet_20
+  - first:
+      213: -798996949526987291
+    second: jack-brown-eclipse-attack-sheet_21
+  - first:
+      213: 8662620193814095947
+    second: jack-brown-eclipse-attack-sheet_22
+  - first:
+      213: 5724870444003892223
+    second: jack-brown-eclipse-attack-sheet_23
+  - first:
+      213: 8730098122542898691
+    second: jack-brown-eclipse-attack-sheet_24
+  - first:
+      213: -2207510878667185323
+    second: jack-brown-eclipse-attack-sheet_25
+  - first:
+      213: -863506361217868646
+    second: jack-brown-eclipse-attack-sheet_26
+  - first:
+      213: -7111695805959804619
+    second: jack-brown-eclipse-attack-sheet_27
+  - first:
+      213: -1006450435898203353
+    second: jack-brown-eclipse-attack-sheet_28
+  - first:
+      213: -5895047303524782900
+    second: jack-brown-eclipse-attack-sheet_29
+  - first:
+      213: 6524925420437570841
+    second: jack-brown-eclipse-attack-sheet_30
+  - first:
+      213: -1706610711363337372
+    second: jack-brown-eclipse-attack-sheet_31
+  - first:
+      213: -1886360312622089408
+    second: jack-brown-eclipse-attack-sheet_32
+  - first:
+      213: -3645355324320894635
+    second: jack-brown-eclipse-attack-sheet_33
+  - first:
+      213: 1836845855841759873
+    second: jack-brown-eclipse-attack-sheet_34
+  - first:
+      213: 6909784589383215503
+    second: jack-brown-eclipse-attack-sheet_35
+  - first:
+      213: 604040146072994166
+    second: jack-brown-eclipse-attack-sheet_36
+  - first:
+      213: 6151893445460500841
+    second: jack-brown-eclipse-attack-sheet_37
+  - first:
+      213: 3857755211153589497
+    second: jack-brown-eclipse-attack-sheet_38
+  - first:
+      213: -7906606770143303870
+    second: jack-brown-eclipse-attack-sheet_39
+  - first:
+      213: 247329224258459618
+    second: jack-brown-eclipse-attack-sheet_40
+  - first:
+      213: -6665227693287156672
+    second: jack-brown-eclipse-attack-sheet_41
+  - first:
+      213: 3711220180037067366
+    second: jack-brown-eclipse-attack-sheet_42
+  - first:
+      213: 2587830217223207202
+    second: jack-brown-eclipse-attack-sheet_43
+  - first:
+      213: 1635911532440743418
+    second: jack-brown-eclipse-attack-sheet_44
+  - first:
+      213: 1779300729640152668
+    second: jack-brown-eclipse-attack-sheet_45
+  - first:
+      213: 1211871249270473524
+    second: jack-brown-eclipse-attack-sheet_46
+  - first:
+      213: -6479479806727888277
+    second: jack-brown-eclipse-attack-sheet_47
+  - first:
+      213: 1568619162019619789
+    second: jack-brown-eclipse-attack-sheet_48
+  - first:
+      213: 963344994322978301
+    second: jack-brown-eclipse-attack-sheet_49
+  - first:
+      213: -1349862838421109676
+    second: jack-brown-eclipse-attack-sheet_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 140
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4990f1a0ebe464890800000000000000
+      internalID: -7474199953454200428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83eed22c78efa0280800000000000000
+      internalID: -9076162239979983304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67388111aee1c2e40800000000000000
+      internalID: 5632911224591647606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684ed1ff96da9b970800000000000000
+      internalID: 8771232420044072070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da613b92560092720800000000000000
+      internalID: 2821787076015625901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a5401ee985a3c30800000000000000
+      internalID: 4339878630328130107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae71589101ee2b630800000000000000
+      internalID: 3941474376817645546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19620999ce1f7dd00800000000000000
+      internalID: 997531840976791185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dfaf4b1b5ade49a0800000000000000
+      internalID: -6246815548281212975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0615bcd85d121a640800000000000000
+      internalID: 5089386254996033888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b7120d6401447b0800000000000000
+      internalID: -5241046170026804464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bdee3a7cbaa47c0800000000000000
+      internalID: -4086264837948122222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c04254f783b4db0800000000000000
+      internalID: -4806686058015880188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9338581b0cc9bcb0800000000000000
+      internalID: -4847619175862488164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a44db850ab350c70800000000000000
+      internalID: 8936614595456222372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jack-brown-eclipse-attack-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364523fd8ca931410800000000000000
+      internalID: 1446670092844815459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e3101839e1fdf3f4e8fa48d52b78c6e9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jack-brown-eclipse-attack-sheet_0: -7474199953454200428
+      jack-brown-eclipse-attack-sheet_1: -9076162239979983304
+      jack-brown-eclipse-attack-sheet_10: -5241046170026804464
+      jack-brown-eclipse-attack-sheet_11: -4086264837948122222
+      jack-brown-eclipse-attack-sheet_12: -4806686058015880188
+      jack-brown-eclipse-attack-sheet_13: -4847619175862488164
+      jack-brown-eclipse-attack-sheet_14: 8936614595456222372
+      jack-brown-eclipse-attack-sheet_15: 1446670092844815459
+      jack-brown-eclipse-attack-sheet_2: 5632911224591647606
+      jack-brown-eclipse-attack-sheet_3: 8771232420044072070
+      jack-brown-eclipse-attack-sheet_4: 2821787076015625901
+      jack-brown-eclipse-attack-sheet_5: 4339878630328130107
+      jack-brown-eclipse-attack-sheet_6: 3941474376817645546
+      jack-brown-eclipse-attack-sheet_7: 997531840976791185
+      jack-brown-eclipse-attack-sheet_8: -6246815548281212975
+      jack-brown-eclipse-attack-sheet_9: 5089386254996033888
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

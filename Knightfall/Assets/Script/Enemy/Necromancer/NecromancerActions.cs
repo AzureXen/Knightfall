@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using static RoninAction;
-using static SkeletonActions;
+using static SkeletonHeadActions;
 using static UnityEngine.Rendering.DebugUI;
 
 public class NecromancerActions : MonoBehaviour
@@ -47,7 +47,6 @@ public class NecromancerActions : MonoBehaviour
 
     void Update()
     {
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
         float distance = Vector3.Distance(transform.position, player.position);
 
         if (!spawned)
@@ -73,6 +72,7 @@ public class NecromancerActions : MonoBehaviour
 
     private IEnumerator DecideNextAction(float distance)
     {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), false);
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
@@ -98,6 +98,7 @@ public class NecromancerActions : MonoBehaviour
         }
         else if (distance <= attackRange && necromancerAttack.cooldownTimer == 0)
         {
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
             actionCoroutine = StartCoroutine(AttackState());
         }
         else if (distance <= attackRange && necromancerAttack.cooldownTimer > 0 && !necromancerAttack.NecroIsAttacking && !necromancerAttack.NecroIsSummoning)

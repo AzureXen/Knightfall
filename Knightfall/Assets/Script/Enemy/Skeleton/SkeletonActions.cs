@@ -69,6 +69,7 @@ public class SkeletonActions : MonoBehaviour
 
     private IEnumerator DecideNextAction(float distance)
     {
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), false);
         if (actionCoroutine != null)
         {
             StopCoroutine(actionCoroutine);
@@ -94,6 +95,7 @@ public class SkeletonActions : MonoBehaviour
         }
         else if (distance <= attackRange && skeletonAttack.cooldownTimer == 0)
         {
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"), true);
             actionCoroutine = StartCoroutine(AttackState());
         }
         else if (distance <= attackRange && skeletonAttack.cooldownTimer > 0 && !skeletonAttack.IsAttacking && !skeletonAttack.Is2ndAttacking)

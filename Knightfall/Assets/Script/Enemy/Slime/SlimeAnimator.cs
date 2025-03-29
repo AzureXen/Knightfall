@@ -57,7 +57,7 @@ namespace Assets.Script.Enemy.Slime
         {
             while (player == null)
             {
-                player = sm.player.transform;
+                player = GameObject.FindGameObjectWithTag("Player").transform;
                 yield return null;
             }
         }
