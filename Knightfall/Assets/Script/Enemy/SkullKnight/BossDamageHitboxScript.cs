@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class BossDamageHitboxScript : MonoBehaviour
 {
-    private bool hitBoxActive = false;
+    public bool hitBoxActive = false;
     public int damage = 10;
     public Vector3 damageSourcePosition = Vector3.zero;
 
     public float knockbackForce = 1f;
     public float knockbackDuration = 1f;
 
-    public bool playerIsInHitbox = false;
+    private bool playerIsInHitbox = false;
 
     private bool damagedPlayer = false;
     private PlayerManager playerManager;
@@ -29,7 +29,7 @@ public class BossDamageHitboxScript : MonoBehaviour
         if (playerIsInHitbox && !damagedPlayer && hitBoxActive)
         {
             playerManager.TakeMeleeHit(damage, damageSourcePosition, knockbackForce, knockbackDuration, null);
-            damagedPlayer = true; // Ensure the player is hit only once per activation
+            damagedPlayer = true;
         }
     }
 
@@ -46,6 +46,7 @@ public class BossDamageHitboxScript : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerIsInHitbox = false;
+            damagedPlayer = false;
         }
     }
 

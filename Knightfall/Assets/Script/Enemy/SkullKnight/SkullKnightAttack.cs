@@ -69,14 +69,15 @@ public class SkullKnightAttack : MonoBehaviour
     private IEnumerator AttackCoroutine()
     {
         animator.SetTrigger("attack1");
-        hitboxAnimator.SetTrigger("attack1"); // Trigger attack1 animation
+        hitboxAnimator.SetTrigger("attack1");
         BossDamageHitboxScript damageHitboxScript = hitboxHandler.GetComponent<BossDamageHitboxScript>();
         damageHitboxScript.damage = 10;
-        damageHitboxScript.knockbackForce = 5;
-        damageHitboxScript.knockbackDuration = 2;
+        damageHitboxScript.knockbackForce = 1;
+        damageHitboxScript.knockbackDuration = 0.5f;
         yield return new WaitForSeconds(0.6f);
         VanSoundManager.PlaySound(SoundType.BOSSSLICE);
         yield return new WaitForSeconds(attack1Duration-0.6f);
+        hitboxHandler.SetActive(false);
         IsAttacking = false;
     }
 
@@ -95,14 +96,16 @@ public class SkullKnightAttack : MonoBehaviour
 
     private IEnumerator AttackComboCoroutine()
     {
-        animator.SetTrigger("attack2");
-        hitboxAnimator.SetTrigger("attack2"); // Trigger attack2 animation
+        animator.SetTrigger("attack2"); // Trigger attack2 animation
+        hitboxAnimator.SetTrigger("attack2");
         BossDamageHitboxScript damageHitboxScript = hitboxHandler.GetComponent<BossDamageHitboxScript>();
         damageHitboxScript.damage = 20;
-        damageHitboxScript.knockbackForce = 10;
-        damageHitboxScript.knockbackDuration = 2;
+        damageHitboxScript.knockbackForce = 20;
+        damageHitboxScript.knockbackDuration = 1f;
         yield return new WaitForSeconds(0.4f);
-        yield return new WaitForSeconds(attack2Duration);
+        VanSoundManager.PlaySound(SoundType.BOSSEXPLODE);
+        yield return new WaitForSeconds(attack2Duration-0.4f);
+        
         Is2ndAttacking = false;
     }
 }

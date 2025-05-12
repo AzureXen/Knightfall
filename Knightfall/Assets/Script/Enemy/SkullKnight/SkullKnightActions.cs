@@ -29,7 +29,7 @@ public class SkullKnightActions : MonoBehaviour
 
     private Coroutine actionCoroutine;
     private bool canDecide = true;
-    private bool hasEnteredCombatIdle = false;
+    public bool hasEnteredCombatIdle = false;
 
     void Start()
     {
@@ -82,11 +82,11 @@ public class SkullKnightActions : MonoBehaviour
         {
             actionCoroutine = StartCoroutine(IdleState());
         }
-        else if (distance > 3f) // Chase until close to attack
+        else if (distance > 5f && hasEnteredCombatIdle && !skullKnightAttack.IsAttacking && !skullKnightAttack.Is2ndAttacking) // Chase until close to attack
         {
             actionCoroutine = StartCoroutine(ChaseState());
         }
-        else if (!skullKnightAttack.IsOnCooldown)
+        else if (!skullKnightAttack.IsOnCooldown && hasEnteredCombatIdle)
         {
             actionCoroutine = StartCoroutine(AttackState());
         }
@@ -95,13 +95,16 @@ public class SkullKnightActions : MonoBehaviour
     private IEnumerator SpawnState()
     {
         canDecide = false;
-        skullKnightMovement.DisableMovement();
+        skullKnightMovement.StopMoving();
         spawnInstance = Instantiate(spawnCircle, transform.position, Quaternion.identity);
-        spawnInstance.transform.position = new Vector3(0,-2,0);
+        spawnInstance.transform.position += new Vector3(0,-2,0);
         skullKnightAttack.IsAttacking = false;
-        skullKnightAttack.IsAttacking = false;
+        skullKnightAttack.Is2ndAttacking = false;
         cutScene.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 0;
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 1;
         cutScene.SetActive(false);
         Destroy(spawnInstance);
         canDecide = true;
@@ -110,14 +113,15 @@ public class SkullKnightActions : MonoBehaviour
     private IEnumerator NoticedState()
     {
         canDecide = false;
-        skullKnightMovement.DisableMovement();
+        skullKnightMovement.StopMoving();
         currentState = SkullKnightState.IDLE;
         yield return new WaitForSeconds(2f); // 2s idle before drawing blade
+        skullKnightMovement.NoticedPlayer();
         animator.SetInteger("SwordDrawn", 1);
         yield return new WaitForSeconds(1.6f); // Sword draw time
         currentState = SkullKnightState.COMBATIDLE;
-        skullKnightMovement.NoticedPlayer();
-        yield return new WaitForSeconds(2f);
+        animator.SetInteger("SwordDrawn", 2);
+        yield return new WaitForSeconds(4f);
         hasEnteredCombatIdle = true;
 
         canDecide = true;
@@ -127,6 +131,8 @@ public class SkullKnightActions : MonoBehaviour
     {
         canDecide = false;
         currentState = SkullKnightState.COMBATIDLE;
+        skullKnightMovement.StopMoving();
+        yield return new WaitForSeconds(0.1f);
         skullKnightMovement.DisableMovement();
         yield return new WaitForSeconds(3f);
         canDecide = true;
@@ -135,11 +141,17 @@ public class SkullKnightActions : MonoBehaviour
     private IEnumerator ChaseState()
     {
         canDecide = false;
-        skullKnightMovement.EnableMovement();
-        yield return new WaitForSeconds(0.1f);
         currentState = SkullKnightState.CHASE;
+        yield return new WaitForSeconds(0.5f);
+        skullKnightMovement.EnableMovement();
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Player"), true);
         skullKnightMovement.ChasePlayer();
         yield return new WaitForSeconds(1.3f);
+        skullKnightMovement.StopMoving();
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Player"), false);
+
         canDecide = true;
     }
 
@@ -147,22 +159,22 @@ public class SkullKnightActions : MonoBehaviour
     {
         canDecide = false;
         animator.SetBool("Walk", false);
+        skullKnightMovement.StopMoving();
         yield return new WaitForSeconds(0.2f);
         skullKnightMovement.DisableMovement();
         float roll = UnityEngine.Random.value;
-        if (roll <= 0.8f && !skullKnightAttack.IsOnCooldown)
+        if (roll <= 0.6f && !skullKnightAttack.IsOnCooldown)
         {
             currentState = SkullKnightState.ATTACK;
             skullKnightAttack.Attack();
         }
-        else if (roll > 0.8f && !skullKnightAttack.IsOnCooldown)
+        else if (roll > 0.6f && !skullKnightAttack.IsOnCooldown)
         {
             currentState = SkullKnightState.ATTACK2;
             skullKnightAttack.Attack2();
         }
 
         yield return new WaitForSeconds(2f);
-        skullKnightMovement.EnableMovement();
         canDecide = true;
     }
 

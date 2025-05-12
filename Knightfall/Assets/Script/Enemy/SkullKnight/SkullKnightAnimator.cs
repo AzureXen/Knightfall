@@ -22,10 +22,6 @@ public class SkullKnightAnimator : MonoBehaviour
     void Update()
     {
         if (!deceased) {
-            if (skullKnightActions.currentState == SkullKnightActions.SkullKnightState.COMBATIDLE && !skullKnightAttack.IsAttacking && !skullKnightAttack.Is2ndAttacking)
-            {
-                animator.SetInteger("SwordDrawn", 2);
-            }
             if (skullKnightActions.currentState == SkullKnightActions.SkullKnightState.CHASE && !skullKnightAttack.IsAttacking && !skullKnightAttack.Is2ndAttacking)
             {
                 animator.SetBool("Walk", true);
@@ -33,11 +29,6 @@ public class SkullKnightAnimator : MonoBehaviour
             if (skullKnightActions.currentState != SkullKnightActions.SkullKnightState.CHASE && skullKnightAttack.IsAttacking || skullKnightAttack.Is2ndAttacking)
             {
                 animator.SetBool("Walk", false);
-            }
-            if (skullKnightActions.currentState == SkullKnightActions.SkullKnightState.DEAD)
-            {
-                animator.SetTrigger("Dead");
-                deceased = true;
             }
         }
     }

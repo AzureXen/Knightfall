@@ -54,7 +54,7 @@ public class UndeadBossHealth : Health
             health -= amount;
             VanSoundManager.PlaySound(SoundType.UNDEADHURT, 0.4f);
             TextpopUp = Instantiate(popUpDamagePixel, transform.position, Quaternion.identity) as GameObject;
-            TextpopUp.transform.position += new Vector3(0, 4, 0);
+            TextpopUp.transform.position += new Vector3(0, 8, 0);
             TextMeshPro damageDisplayMesh = TextpopUp.transform.GetChild(0).GetComponent<TextMeshPro>();
             damageDisplayMesh.outlineColor = Color.black;
             damageDisplayMesh.text = amount.ToString();
@@ -68,9 +68,8 @@ public class UndeadBossHealth : Health
     private IEnumerator Die(float delay)
     {
         // Optionally, trigger a death animation here
-        if (health <= 0 && !isDead)
+        if (health <= 0 && isDead)
         {
-            isDead = true;
             animator.SetTrigger("dying");
             yield return new WaitForSeconds(1f);
             animator.SetTrigger("dead");
