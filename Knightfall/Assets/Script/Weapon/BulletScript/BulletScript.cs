@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
     protected Rigidbody2D rb;
     public float force;
     public float despawnTime = 1f;
-    public int damage = 5;
+    public int damage = 10;
     public float knockbackForce = 0f;
     public float knockbackDuration = 1.5f;
     protected virtual void Start()

@@ -2696,7 +2696,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 99b8772a4731ae64d999dcda38f860d6, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c71f0498120378a40807daa738c6b2a3, type: 2}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: d15a4590b8782ff4d84594704e457c46, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 2f72ed6201b24cc4e89fb99bb98d618e, type: 2}
@@ -3203,7 +3203,7 @@ Tilemap:
     m_Data: {fileID: 5852135935505538600, guid: 1a1c1c11935678342b57e574833cc175, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 6580706180292963874, guid: 1a1c1c11935678342b57e574833cc175, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 711061946136450388, guid: 1a1c1c11935678342b57e574833cc175, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -5205570905279116615, guid: 1a1c1c11935678342b57e574833cc175, type: 3}

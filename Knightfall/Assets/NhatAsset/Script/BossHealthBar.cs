@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class BossHealthBar : MonoBehaviour
 {
@@ -68,22 +69,28 @@ public class BossHealthBar : MonoBehaviour
 
     private void HideUI()
     {
-        SetUIVisible(false);
-        gameObject.SetActive(false); // Ẩn thanh máu boss
+        SetUIVisible(false); // Ẩn thanh máu và tên boss
 
-        // ✅ Hiện ảnh STAGE CLEAR
-        if (stageClearImage != null)
-        {
-            Image img = stageClearImage.GetComponent<Image>();
-            if (img != null)
-            {
-                Color c = img.color;
-                c.a = 1f; // hiện ảnh
-                img.color = c;
-            }
+        Debug.Log("Chuyển sang cảnh VAN-SAMA");
 
-        }
-
+        // Dừng game logic lại nếu muốn (không bắt buộc)
         Time.timeScale = 0f;
+
+        // Bắt đầu coroutine chuyển cảnh (dù timescale = 0 vẫn chạy được vì dùng WaitForSecondsRealtime)
+        StartCoroutine(LoadNextScene());
     }
+
+    IEnumerator LoadNextScene()
+    {
+        // ⏳ Delay để người chơi thấy được việc boss đã chết
+        yield return new WaitForSecondsRealtime(1.5f);
+
+        // Trả lại Time.timeScale nếu bạn muốn khôi phục cho scene mới
+        Time.timeScale = 1f;
+
+        // Chuyển cảnh
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Khang");
+    }
+
+
 }

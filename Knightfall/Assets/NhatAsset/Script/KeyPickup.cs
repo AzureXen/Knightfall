@@ -3,7 +3,7 @@ using UnityEngine.Tilemaps;
 
 public class KeyPickup : MonoBehaviour
 {
-    public string doorTilemapName = "SecretDoorTilemap"; // 👈 tên trong hierarchy
+    public string doorTilemapName = "SecretDoorTilemap"; 
     public AudioClip unlockSFX;
     public string unlockMessage = "Đã mở khóa phòng bí mật";
 

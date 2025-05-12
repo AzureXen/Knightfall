@@ -84,7 +84,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 317b8365a4649ab459f6cb58ec8f9f18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05506ba2523f58444940a8ca6db76dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 4
   canMove: 1
   isRanged: 0
 --- !u!114 &6949915961952386239
@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab36e950e33caa4db13d969ac83ebac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  health: 300
+  maxHealth: 500
+  health: 500
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!50 &1108632946863972618
 Rigidbody2D:
@@ -209,8 +209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2
-  attackCooldown: 2
-  attackDamage: 10
+  attackCooldown: 1
+  attackDamage: 15
   damageDelay: 0.3
   stopDistanceFactor: 0.8
   attackVoiceClip: {fileID: 8300000, guid: fc5f87cfa7005304faf9871d1ee85532, type: 3}
