@@ -5,7 +5,6 @@ public class HitBoxVisualAnimator : MonoBehaviour
 {
     Animator am;
     [SerializeField] private PlayerSword ps;
-    [SerializeField] private SwordAnimator swordAnimator;
     SpriteRenderer sr;
 
     private PlayerAnimator animator;
@@ -15,7 +14,6 @@ public class HitBoxVisualAnimator : MonoBehaviour
     {
         am = GetComponent<Animator>();
         if (ps == null) ps = FindFirstObjectByType<PlayerSword>();
-        if (swordAnimator == null) swordAnimator = FindFirstObjectByType<SwordAnimator>();
         sr = GetComponent<SpriteRenderer>();
 
         animator = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAnimator>();
@@ -24,14 +22,26 @@ public class HitBoxVisualAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        am.SetFloat("attackSpeedMultiplier", ps.attackSpeed);
         if (animator.isFlipped) { sr.flipY = true; }
         else { sr.flipY = false; }
 
         if (ps == null) { return; }
 
-        if (ps.isAttacking)
-        {
-            am.SetTrigger("Slash");
-        }
+
+        am.SetBool("isAttacking", ps.isAttacking);
+    }
+
+    public void enableHitbox()
+    {
+        ps.enableHitbox();
+    }
+    public void disableHitbox()
+    {
+        ps.disableHitbox();
+    }
+    public void endAttack()
+    {
+        ps.endAttack();
     }
 }

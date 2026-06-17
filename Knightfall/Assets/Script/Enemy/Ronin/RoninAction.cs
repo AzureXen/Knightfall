@@ -285,7 +285,7 @@ public class RoninAction : MonoBehaviour
     }
 
 
-    public void EnterAbsoluteDefenseRetribtion()
+    public void EnterAbsoluteDefenseRetribution()
     {
         if(currentAction != RoninActions.ABSOLUTE_DEFENSE && currentAction != RoninActions.RETRIBUTION_SLASH)
         {

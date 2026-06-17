@@ -20,7 +20,7 @@ public class EntityManager : MonoBehaviour
     protected Coroutine IFrameCoroutine;
     public Boolean canDamage = true;
 
-    float knockbackDuration = 2f;
+    public float knockbackDuration = 0.5f;
     protected float knockbackTimer = 0f;
     protected Boolean isKnockingBack;
     protected Vector3 knockbackDirection;

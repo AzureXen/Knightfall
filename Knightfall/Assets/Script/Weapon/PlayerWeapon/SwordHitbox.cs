@@ -1,60 +1,69 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections.Generic;
-using System.Collections;
-using System;
+
 public class SwordHitbox : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private float knockbackForce;
-    [SerializeField] float knockbackDuration;
-    [SerializeField] private float hitboxDelay;
+    [SerializeField] private float knockbackDuration;
+    [SerializeField] private float hitboxDelay; 
+
+    public GameObject player;
+
     private PlayerManager playerManager;
     private Collider2D hitboxCollider;
-    public GameObject player;
     private PlayerSFX playerSFX;
+    private HashSet<GameObject> hitEnemies = new HashSet<GameObject>();
 
-    private HashSet<GameObject> hitEnemies = new HashSet<GameObject> ();
-    private void OnEnable()
+    private void Awake()
     {
-        hitEnemies.Clear ();
-        playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-
         hitboxCollider = GetComponent<Collider2D>();
-        if (hitboxCollider != null)
-        {
-            hitboxCollider.enabled = false;
-            StartCoroutine(EnableColliderAfterDelay(hitboxDelay)); // Delay 0.2s to sync with animation
-        }
-    }
-
-    // Coroutine to enable collider after delay
-    private IEnumerator EnableColliderAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        hitboxCollider.enabled = true;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        damage = transform.parent.parent.GetComponent<PlayerSword>().meleeDamage;
-        knockbackForce = transform.parent.parent.GetComponent<PlayerSword>().knockbackForce;
-        knockbackDuration = transform.parent.parent.GetComponent<PlayerSword>().knockbackDuratiton;
+        playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
         playerSFX = player.GetComponent<PlayerSFX>();
     }
 
-    // Update is called once per frame
+    void Start()
+    {
+        var playerSword = transform.parent.parent.GetComponent<PlayerSword>();
+        if (playerSword != null)
+        {
+            damage = playerSword.meleeDamage;
+            knockbackForce = playerSword.knockbackForce;
+            knockbackDuration = playerSword.knockbackDuration; 
+        }
+    }
+
+    private void OnEnable()
+    {
+        hitEnemies.Clear();
+        if (hitboxCollider != null)
+        {
+            hitboxCollider.enabled = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (hitboxCollider != null)
+        {
+            hitboxCollider.enabled = false;
+        }
+        hitEnemies.Clear(); 
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy") && !hitEnemies.Contains(collision.gameObject))
         {
             EntityManager target = collision.GetComponent<EntityManager>();
-            Boolean hitSuccess = target.TakeMeleeHit(damage, transform.position, knockbackForce, knockbackDuration, playerManager);
-            if (hitSuccess)
+            if (target != null)
             {
-                hitEnemies.Add(collision.gameObject);
-                playerSFX.playMeleeHit();
+                bool hitSuccess = target.TakeMeleeHit(damage, transform.position, knockbackForce, knockbackDuration, playerManager);
+                if (hitSuccess)
+                {
+                    hitEnemies.Add(collision.gameObject);
+                    if (playerSFX != null) playerSFX.playMeleeHit();
+                }
             }
         }
     }

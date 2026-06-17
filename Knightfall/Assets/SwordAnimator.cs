@@ -23,14 +23,14 @@ public class SwordAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        am.SetFloat("attackSpeedMultiplier", ps.attackSpeed);
         if (ps == null) { return; }
 
         if (playerAnimator.isFlipped) { sr.flipY = true; }
         else { sr.flipY = false; }
 
-        if (ps.isAttacking)
-        {
-            am.SetTrigger("SwordAttack");
-        }
+        am.SetBool("isAttacking", ps.isAttacking);
     }
+
+
 }

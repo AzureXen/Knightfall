@@ -23,19 +23,20 @@ namespace Assets.Script.Potion
 
         void Start()
         {
-            GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-            if (enemy != null)
-            {
-                slimeManager = enemy.GetComponent<SlimeManager>();
-                if (slimeManager != null)
-                {
-                    enemyOriginDmg = slimeManager.touchDamage;
-                }
-                else
-                {
-                    Debug.LogError("Slime not found in Player's children!");
-                }
-            }
+            // tf is this code
+            //GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+            //if (enemy != null)
+            //{
+            //    slimeManager = enemy.GetComponent<SlimeManager>();
+            //    if (slimeManager != null)
+            //    {
+            //        enemyOriginDmg = slimeManager.touchDamage;
+            //    }
+            //    else
+            //    {
+            //        Debug.LogError("Slime not found in Player's children!");
+            //    }
+            //}
             if (player != null)
             {
                 playerSword = player.GetComponent<PlayerSword>();

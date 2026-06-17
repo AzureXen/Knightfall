@@ -17,6 +17,7 @@ public class RoninManager : EntityManager
     
 
     [SerializeField] private int maxRetributionStacks;
+    [SerializeField] private int resolveStacksToRetribution = 2;
     public int curRetributionStacks;
     private float resolve;
 
@@ -136,7 +137,7 @@ public class RoninManager : EntityManager
                 {
                     parryStateTimer = 0;
                 }
-                roninAction.EnterAbsoluteDefenseRetribtion();
+                roninAction.EnterAbsoluteDefenseRetribution();
                 // super parry does NOT consume motivation.
                 TakeHitKnockback(0, target, 0, 0);
                 source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
@@ -161,7 +162,7 @@ public class RoninManager : EntityManager
                 source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
                 curAbsoluteDefenseStacks--;
                 resolve++;
-                if(resolve >= 2)
+                if(resolve >= resolveStacksToRetribution)
                 {
                     resolve = 0;
                     curRetributionStacks++;

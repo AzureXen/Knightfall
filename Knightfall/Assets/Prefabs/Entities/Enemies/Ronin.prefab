@@ -91,7 +91,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -801896167
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 5
   m_Sprite: {fileID: 4723107735738678597, guid: c136d541e7bca38498d40ff7ed3fc5f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 275
   health: 275
+  defaultHealth: 100
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
 BoxCollider2D:
@@ -202,7 +203,7 @@ Animator:
   m_GameObject: {fileID: 1344780703779386018}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50d533c5f2827734c91a3e40e4e46b2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: f8210684070f49540a7b8a0a33630d49, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -228,24 +229,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   takeDamageCooldown: 0.2
   canDamage: 1
+  knockbackDuration: 0.5
   defaultColor: {r: 1, g: 0.9339622, b: 0.9339622, a: 0}
   knockbackResist: 10
   maxRetributionStacks: 1
+  resolveStacksToRetribution: 3
   curRetributionStacks: 0
   deflectedBullet: {fileID: 4799751954020987770, guid: c6f24945aec20ed41916114c3ec06631, type: 3}
   RoninCanvasPrefab: {fileID: 0}
-  maxMotivation: 200
-  curMotivation: 200
-  motivationRegenRate: 2
+  roninCanvasInstance: {fileID: 0}
+  maxMotivation: 175
+  curMotivation: 175
+  motivationRegenRate: 0.6
   maxAbsoluteDefenseStacks: 1
   curAbsoluteDefenseStacks: 0
   absoluteDefenseKnockbackForce: 30
   absoluteDefenseKknockbackDuration: 0.35
-  stunDuration: 7.5
+  stunDuration: 10
   parryStateDuration: 1.5
   parryStateTimer: 0
   resilience: 0
-  resilienceStacksToAbsoluteDefense: 2
+  resilienceStacksToAbsoluteDefense: 3
   isInParryState: 0
   audioSource: {fileID: 3842321875405047698}
   audioClips:

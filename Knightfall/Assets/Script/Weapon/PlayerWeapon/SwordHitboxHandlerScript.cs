@@ -21,4 +21,12 @@ public class SwordHitboxHandlerScript : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotateZ);
     }
+    private void OnDisable()
+    {
+        Debug.Log("Hitbox DISABLED");
+    }
+    private void OnEnable()
+    {
+        Debug.Log("Hitbox ENABLED");
+    }
 }
