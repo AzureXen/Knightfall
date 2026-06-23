@@ -18,7 +18,7 @@ public class RoninSFX : MonoBehaviour
     public AudioClip[] severanceClips;
     private void Start()
     {
-        audioSource.volume = 0.6f;
+        audioSource.volume = 0.4f;
     }
     public void playDeflect()
     {

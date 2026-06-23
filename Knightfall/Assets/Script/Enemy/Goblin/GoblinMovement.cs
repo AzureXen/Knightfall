@@ -8,9 +8,12 @@ public class GoblinMovement : EntityMovement
     [SerializeField] private float moveSpeed = 2;
     public Boolean canMove = true;
     [HideInInspector] public Vector2 moveDir;
+
+    private GoblinManager goblinManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        goblinManager = GetComponent<GoblinManager>();
         StartCoroutine(FindPlayer());
     }
 
@@ -19,7 +22,7 @@ public class GoblinMovement : EntityMovement
     {
         if(player!= null)
         {
-            if (canMove)
+            if ( goblinManager != null && goblinManager.isAlive && canMove)
             {
                 moveDir = (player.transform.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);

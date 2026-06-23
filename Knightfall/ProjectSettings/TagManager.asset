@@ -18,6 +18,8 @@ TagManager:
   - EnemyBullet
   - SceneTrigger
   - SceneManager
+  - GameManager
+  - ShopUI
   layers:
   - Default
   - TransparentFX
@@ -51,10 +53,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -64,6 +62,7 @@ TagManager:
     locked: 0
   - name: Floor2
     uniqueID: 540790365
+    locked: 0
   - name: Foreground
     uniqueID: 3264982367
     locked: 0
@@ -96,3 +95,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []

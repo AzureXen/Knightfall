@@ -201,14 +201,14 @@ public class RoninManager : EntityManager
                 return false;
 
             }
-            // If motivation is > 0 but currently cannot parry, reduce 80% damage and 80% knockback.
+            // If motivation is > 0 but currently cannot parry, reduce 60% damage and 60% knockback.
             else if(curMotivation > 0)
             {
-                int reducedDamage = Mathf.RoundToInt(damage * 0.2f);
-                TakeHitKnockback(reducedDamage, target, force * 0.2f, knockBackDuration * 0.2f);
+                int reducedDamage = Mathf.RoundToInt(damage * 0.4f);
+                TakeHitKnockback(reducedDamage, target, force * 0.4f, knockBackDuration * 0.4f);
                 return true;
             }
-            // If motivation <= 0, take 50% more damage
+            // If motivation <= 0 (stunned), take 50% more damage 
             else
             {
                 int increasedDamage = Mathf.RoundToInt(damage * 1.5f);

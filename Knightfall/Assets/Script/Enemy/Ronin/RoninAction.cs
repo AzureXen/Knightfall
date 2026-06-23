@@ -54,7 +54,7 @@ public class RoninAction : MonoBehaviour
     }
     public RoninActions currentAction;
 
-    // Cooldown between each attacks from ronin. During this time he may only chase or move around.
+    // Cooldown between each attacks from ronin. During this time he may only+ move around.
     public float attackCooldown = 2f;
     private float attackCooldownTimer;
 
@@ -125,8 +125,7 @@ public class RoninAction : MonoBehaviour
         // If Ronin is attacking, he cannot parry.
         if (currentAction == RoninActions.IDLE || 
             currentAction == RoninActions.STARTING_IDLE || 
-            currentAction == RoninActions.MOVE || 
-            currentAction == RoninActions.CHASE || currentAction == RoninActions.PARRY)
+            currentAction == RoninActions.MOVE ||  currentAction == RoninActions.PARRY)
         {
             roninManager.canParry = true;
         }

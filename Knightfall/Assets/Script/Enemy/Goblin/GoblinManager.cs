@@ -3,32 +3,32 @@ using UnityEngine;
 /// <summary>
 /// EnemyManager inherits from EntityManager
 /// </summary>
-public class GoblinManager : EntityManager
+public class GoblinManager : EnemyManager
 {
-    [SerializeField] private Boolean touchDamageEnabled = true;
-    public int touchDamage = 5;
-    public int touchKnockbackForce = 5;
-    public float touchKnockbackDuration = 1.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
-        entityHealth = GetComponent<Health>();
-        sr = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
+        EntityName = "Goblin";
         entityMovement = GetComponent<GoblinMovement>();
         isKnockingBack = false;
-        takeDamageCooldown = 0.2f;
-        flashDuration = 2.5f;
-        EntityName = "Goblin";
-        defaultColor = new Color(1, 1, 1, 1);
-    }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        GameObject target = collision.gameObject;
-        if (target.CompareTag("Player") && touchDamageEnabled)
+
+        touchDamageEnabled = true;
+        touchDamage = 5;
+        touchKnockbackForce = 5;
+        touchKnockbackDuration = 0.2f;
+
+        if (entityHealth != null)
         {
-            EntityManager targetManager = target.GetComponent<EntityManager>();
-            targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
+            entityHealth.OnDeath += HandleDeathEvent;
         }
+
+        goldDrop = 15;
+    }
+
+    protected override void Die()
+    {
+        Debug.Log("Killed: " + EntityName);
+        base.Die();
     }
 }

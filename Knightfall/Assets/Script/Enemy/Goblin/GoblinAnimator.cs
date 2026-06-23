@@ -7,7 +7,7 @@ public class GoblinAnimator : MonoBehaviour
     Animator am;
     GoblinMovement gm;
     SpriteRenderer sr;
-
+    GoblinManager goblinManager;
     private Transform player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +15,7 @@ public class GoblinAnimator : MonoBehaviour
         am = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         gm = GetComponent<GoblinMovement>();
+        goblinManager = GetComponent<GoblinManager>();
 
         StartCoroutine(FindPlayer());
     }
@@ -23,14 +24,17 @@ public class GoblinAnimator : MonoBehaviour
     void Update()
     {
         // Check if goblin is moving or not
-        if (gm.moveDir != Vector2.zero)
+        if(goblinManager!=null && goblinManager.isAlive)
         {
-            am.SetBool("isWalking", true);
-            UpdateAnimationState();
-        }
-        else
-        {
-            am.SetBool("isWalking", false);
+            if (gm.moveDir != Vector2.zero)
+            {
+                am.SetBool("isWalking", true);
+                UpdateAnimationState();
+            }
+            else
+            {
+                am.SetBool("isWalking", false);
+            }
         }
     }
     // changes animation based on direction goblin is walking towards.

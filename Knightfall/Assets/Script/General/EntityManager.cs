@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EntityManager : MonoBehaviour
 {
+    public bool isAlive = true;
     public String EntityName { get; set; }
 
     protected Health entityHealth;
@@ -38,28 +39,16 @@ public class EntityManager : MonoBehaviour
 
         EntityName = "EntityNameNotSet";
         defaultColor = Color.white;
+
+        if (entityHealth != null)
+        {
+            entityHealth.OnDeath += HandleDeathEvent;
+        }
     }
-
-    //protected virtual void FixedUpdate()
-    //{
-    //    if(isKnockingBack)
-    //    {
-    //        rb.linearVelocity = new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce);
-    //        //rb.AddForce(new Vector2(knockbackDirection.x * knockbackForce, knockbackDirection.y * knockbackForce));
-    //        knockbackTimer += Time.deltaTime;
-    //        Debug.Log("Knocking back.");
-    //        if(knockbackTimer >= knockbackDuration)
-    //        {
-    //            isKnockingBack=false;
-    //        }
-    //    }
-    //}
-
-
 
     public virtual Boolean TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration, BulletScript bullet)
     {
-        if (canDamage)
+        if (isAlive && canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
             bullet.DestroyBullet();
@@ -69,14 +58,14 @@ public class EntityManager : MonoBehaviour
     }
     public virtual void TakeRangedHit(int damage, Vector3 target, float force, float knockBackDuration)
     {
-        if (canDamage)
+        if (isAlive && canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
         }
     }
     public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
-        if (canDamage)
+        if (isAlive && canDamage)
         {
             TakeHitKnockback(damage, target, force, knockBackDuration);
             return true;
@@ -95,7 +84,7 @@ public class EntityManager : MonoBehaviour
     }
     public virtual Boolean TakeHit(int damage)
     {
-        if (canDamage)
+        if (isAlive && canDamage)
         {
             TakeDamage(damage);
             return true;
@@ -169,28 +158,6 @@ public class EntityManager : MonoBehaviour
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
     }
-    //protected IEnumerator KnockBack(Vector3 target, float force, float duration)
-    //{
-    //    entityMovement.DisableMovement();
-    //    yield return null;
-    //    if (rb != null)
-    //    {
-
-    //    }
-    //    Vector3 direction = (transform.position - target).normalized;
-    //    knockbackDirection = direction;
-    //    knockbackForce = force;
-    //    knockbackDuration = duration;
-    //    isKnockingBack = true;
-    //    while (isKnockingBack)
-    //    {
-    //        yield return null;
-    //    }
-    //    knockbackTimer = 0;
-    //    rb.linearVelocity = Vector2.zero;
-    //    yield return null;
-    //    entityMovement.EnableMovement();
-    //}
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
         entityMovement.DisableMovement();
@@ -222,5 +189,22 @@ public class EntityManager : MonoBehaviour
 
         sr.color = defaultColor;
         flashCoroutine = null;
+    }
+
+    protected virtual void HandleDeathEvent()
+    {
+        Die();
+        StartCoroutine(DelayedDisappear());
+    }
+
+    protected virtual void Die()
+    {
+        isAlive = false;
+    }
+
+    protected virtual IEnumerator DelayedDisappear()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 }

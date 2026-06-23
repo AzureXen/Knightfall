@@ -270,12 +270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51eda49d33f609a439b63fd6c8cb3138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 0.5
-  meleeDamage: 10
+  attackSpeed: 1.5
+  meleeDamage: 12
   knockbackForce: 5
-  knockbackDuration: 1.5
+  knockbackDuration: 0.4
   isAttacking: 0
-  attackCooldown: 0.6
+  attackCooldown: 0.3
   hitbox: {fileID: 3431359631083376709}
 --- !u!114 &4563272628223599261
 MonoBehaviour:
@@ -953,7 +953,7 @@ MonoBehaviour:
   staminaRegenBonusMultiplier: 3
   sprintCostPerSecond: 2
   dodgeCost: 20
-  dodgeIFrameDuration: 0.4
+  dodgeIFrameDuration: 0.25
   isRunning: 0
   isHoldingShift: 0
   isHoldingCtrl: 0
@@ -1007,6 +1007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   takeDamageCooldown: 1
   canDamage: 1
+  knockbackDuration: 0.5
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
 --- !u!114 &8410539355929908391

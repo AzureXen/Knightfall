@@ -44,7 +44,6 @@ public class PlayerSword : MonoBehaviour
     // if during attack, the player switches their weapon, disable the hitbox
     private void OnDisable()
     {
-        Debug.Log("Disabling hitbox onDisable");
         hitbox.SetActive(false);
         isAttacking=false;
         attackCooldownTimer = 0;
@@ -56,7 +55,6 @@ public class PlayerSword : MonoBehaviour
     }
     public void disableHitbox()
     {
-        Debug.Log("Disabling hitbox");
         hitbox.SetActive(false);
     }
     public void endAttack()

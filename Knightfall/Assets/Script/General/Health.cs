@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -11,17 +12,16 @@ public class Health : MonoBehaviour
     public GameObject popUpDamage;
     // used to make the text follow
     private GameObject popUpText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public event Action OnDeath;
     public virtual void Start()
     {
         health = maxHealth;
     }
+
     public virtual void Update()
     {
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
+
     }
     public virtual void FixedUpdate()
     {
@@ -40,6 +40,10 @@ public class Health : MonoBehaviour
         if (amount == 0)
         {
             damageDisplayMesh.color = Color.blue;
+        }
+        if (health <= 0)
+        {
+            OnDeath?.Invoke();
         }
     }
 

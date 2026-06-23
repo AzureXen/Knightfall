@@ -243,7 +243,7 @@ MonoBehaviour:
   motivationRegenRate: 0.6
   maxAbsoluteDefenseStacks: 1
   curAbsoluteDefenseStacks: 0
-  absoluteDefenseKnockbackForce: 30
+  absoluteDefenseKnockbackForce: 25
   absoluteDefenseKknockbackDuration: 0.35
   stunDuration: 10
   parryStateDuration: 1.5
@@ -319,13 +319,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackZone: {fileID: 8179653642698619495, guid: 81c7188480a5c6e46a30c2ea7a2b9f8b, type: 3}
-  attackDuration: 0.3
-  Damage: 5
-  knockbackForce: 3
+  attackDuration: 0.25
+  Damage: 10
+  knockbackForce: 4
   knockbackDuration: 0.3
-  flashSpeed: 100
-  flashSlashRange: 9
-  flashSlashWidth: 1.15
+  flashSpeed: 150
+  flashSlashRange: 10
+  flashSlashWidth: 1.2
   attackTransform: {fileID: 2611350318778995394}
   attackCooldown: 9
   attackCoolDownTimer: 0
@@ -501,10 +501,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 3842321875405047698}
   blockClips:
-  - {fileID: 8300000, guid: 5c358c3887f39074fbea0824e70f992b, type: 3}
-  - {fileID: 8300000, guid: fd1b40a2670a5f54c8706fc88b6c8313, type: 3}
-  - {fileID: 8300000, guid: 0c64c5f36356c4a44afea88d18b65391, type: 3}
-  - {fileID: 8300000, guid: 48de0cc393f95e044a15c30664743b66, type: 3}
+  - {fileID: 8300000, guid: 93f46cced8be95149a44bf454cb65fdf, type: 3}
+  - {fileID: 8300000, guid: c4a2ccb35b278b942a094282ca0587bc, type: 3}
+  - {fileID: 8300000, guid: 0ccc6100b44880042815dcf934701145, type: 3}
   deflectClips:
   - {fileID: 8300000, guid: abdc9449ad9a34144a403f1627920e80, type: 3}
   - {fileID: 8300000, guid: 0b8a1b0604d595843bc807252c681c7f, type: 3}

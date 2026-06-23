@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Prefabs/UI%20Graphics/PlayerUpgrade.uss?fileID=7433441132597879392&amp;guid=0387bd3a6b8fce54faaf33597bfa5fe6&amp;type=3#PlayerUpgrade"/>
+    <ui:VisualElement name="player_upgrade" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgba(243, 5, 156, 0.282); margin-left: 0%; margin-right: 0%; max-width: none; min-width: auto; max-height: none; min-height: auto; flex-basis: 0%;">
+        <ui:Label text="Upgrade Name" name="upgrade_name" style="color: rgb(255, 0, 58); -unity-text-align: middle-center; font-size: 28px; height: 12%;"/>
+        <ui:ScrollView name="upgrade_description" style="height: 71%;">
+            <ui:Label text="Upgrade description" name="upgrade_description_text"/>
+        </ui:ScrollView>
+        <ui:Button text="Purchase Cost" name="upgrade_buy_btn" class="upgrade-buy-btn"/>
+    </ui:VisualElement>
+</ui:UXML>
