@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class GoblinAnimator : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class GoblinAnimator : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         gm = GetComponent<GoblinMovement>();
         goblinManager = GetComponent<GoblinManager>();
-
         StartCoroutine(FindPlayer());
     }
 
@@ -36,11 +36,22 @@ public class GoblinAnimator : MonoBehaviour
                 am.SetBool("isWalking", false);
             }
         }
+        else if (goblinManager != null && !goblinManager.isAlive)
+        {
+            am.SetBool("isLookUp", false);
+            am.SetBool("isLookDown", false);
+            am.SetBool("isLookHorizon", false);
+            am.SetBool("isDead", true);
+        }
     }
     // changes animation based on direction goblin is walking towards.
     void UpdateAnimationState()
     {
-        if (player == null) return; // Safety check
+        if (player == null)
+        {
+            Debug.Log("UpdateAnimationState: player not found");
+            return;
+        }
 
         Vector2 directionToPlayer = (player.position - transform.position).normalized;
         bool isHorizontal = Mathf.Abs(directionToPlayer.x) > Mathf.Abs(directionToPlayer.y);
@@ -55,8 +66,11 @@ public class GoblinAnimator : MonoBehaviour
     {
         while (player == null)
         {
-            player = gm.player.transform;
-            yield return null;
+            if (GameManagerScript.Instance != null && GameManagerScript.Instance.player != null)
+                player = GameManagerScript.Instance.player.transform;
+
+            yield return new WaitForSeconds(0.5f);
         }
+        Debug.Log("Goblin Animator: Found Player.");
     }
 }

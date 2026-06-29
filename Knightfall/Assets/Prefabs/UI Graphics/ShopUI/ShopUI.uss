@@ -1,0 +1,51 @@
+:root {
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    overflow: visible;
+}
+
+.backdrop_panel {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.635);
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.player_info_display {
+    flex-grow: 0;
+    align-items: flex-start;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(243, 195, 77, 0);
+}
+
+.player_gold {
+    flex-grow: 1;
+    width: 15%;
+    background-color: rgba(255, 0, 0, 0.306);
+    left: 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#player_upgrade_list > TemplateContainer {
+    flex-grow: 0;
+    width: 29%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+#close_btn:hover {
+    scale: 1.05 1.05 1.05;
+}
+
+#close_btn:active {
+    scale: 0.95 0.95 0.95;
+}

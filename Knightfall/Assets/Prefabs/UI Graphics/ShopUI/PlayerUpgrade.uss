@@ -1,0 +1,64 @@
+:root {
+}
+
+.upgrade-buy-btn {
+    font-size: 43px;
+    background-color: rgb(228, 240, 246);
+}
+
+.upgrade-buy-btn:hover {
+    background-color: rgb(228, 240, 246);
+    scale: 1.05 1.05 1.05;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+
+.upgrade-buy-btn:active {
+    background-color: rgb(248, 250, 251);
+    scale: 0.95 0.95 0.95;
+}
+
+.custom-scroll #unity-vertical-scroller {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-width: 0;
+}
+
+.custom-scroll .unity-scroller__slider {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.custom-scroll .unity-base-slider__dragger {
+    width: 8px;
+    left: 1px;
+    background-color: rgb(228, 240, 246);
+    border-radius: 5px;
+    border-width: 0;
+}
+
+.custom-scroll .unity-base-slider__dragger:hover {
+    background-color: rgb(231, 242, 247);
+}
+
+.custom-scroll #unity-low-button,
+.custom-scroll #unity-high-button {
+    display: none;
+    visibility: hidden;
+}
+
+.custom-scroll .unity-base-slider__tracker {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}

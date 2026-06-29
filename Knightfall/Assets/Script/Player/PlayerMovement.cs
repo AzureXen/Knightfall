@@ -7,6 +7,8 @@ public class PlayerMovement : EntityMovement
 
     private PlayerManager playerManager;
 
+    [SerializeField] private PlayerDataSO playerData;
+
     [SerializeField] private Boolean canMove;
     public float moveSpeed;
     public float sprintSpeed;
@@ -15,8 +17,7 @@ public class PlayerMovement : EntityMovement
     Rigidbody2D rb;
     [HideInInspector] public Vector2 moveDir;
 
-    public float maxStamina;
-    public float stamina;
+
     [SerializeField] private float staminaRegenPS;
     [SerializeField] private float staminaRegenBonusMultiplier;
     [SerializeField] private float sprintCostPerSecond;
@@ -86,9 +87,9 @@ public class PlayerMovement : EntityMovement
         // Dodging
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isDodging && canMove)
         {
-            if (canMove && stamina > 0)
+            if (canMove && playerData.Stamina > 0)
             {
-                stamina -= dodgeCost;
+                playerData.DecreaseStamina(dodgeCost);
                 StartCoroutine(Dodge());
             }
         }
@@ -101,10 +102,10 @@ public class PlayerMovement : EntityMovement
         if (isRunning)
         {
             rb.linearVelocity = moveDir * sprintSpeed * speedBoost;
-            if (stamina > 0)
+            if (playerData.Stamina > 0)
             {
-                stamina -= sprintCostPerSecond * Time.deltaTime;
-                Mathf.Clamp(stamina, 0, maxStamina);
+                playerData.DecreaseStamina(sprintCostPerSecond * Time.deltaTime);
+                Mathf.Clamp(playerData.Stamina, 0, playerData.MaxStamina);
             }
         }
         else
@@ -140,15 +141,15 @@ public class PlayerMovement : EntityMovement
 
     void RegenStaminaPerSecond()
     {
-        if(stamina < maxStamina && !isRunning)
+        if(playerData.Stamina < playerData.MaxStamina && !isRunning)
         {
             if (!isWalking)
             {
-                stamina += staminaRegenPS * staminaRegenBonusMultiplier * Time.deltaTime;
+                playerData.IncreaseStamina(staminaRegenPS * staminaRegenBonusMultiplier * Time.deltaTime);
             }
-            else stamina += staminaRegenPS * Time.deltaTime;
+            else playerData.IncreaseStamina(staminaRegenPS * Time.deltaTime);
         }
-        Mathf.Clamp(stamina, 0 , maxStamina);
+        Mathf.Clamp(playerData.Stamina, 0 , playerData.MaxStamina);
     }
     public override void DisableMovement()
     {

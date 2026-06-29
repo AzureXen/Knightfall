@@ -596,7 +596,6 @@ GameObject:
   - component: {fileID: 1829615192659537245}
   - component: {fileID: 9215464417675799050}
   - component: {fileID: 5535217026915609584}
-  - component: {fileID: 5327144526882279195}
   m_Layer: 5
   m_Name: PlayerUI
   m_TagString: Untagged
@@ -705,21 +704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 2295386260547483868}
   staminaBar: {fileID: 5899123247750043983}
---- !u!114 &5327144526882279195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554343715798893418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4a71503f64a5604ab66f5eec33e8278, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySlot: {fileID: 4894401520677049966}
-  itemIcon: {fileID: 6994707283626917879}
-  emptySlotSprite: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 0fdcaa19966065d49a74f3d4abddbffd, type: 2}
 --- !u!1 &1830902993327654948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -171, y: -150}
+  m_AnchoredPosition: {x: -269.40918, y: -150}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4397140133977477782

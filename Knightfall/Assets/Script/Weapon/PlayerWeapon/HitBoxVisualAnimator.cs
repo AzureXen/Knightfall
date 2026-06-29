@@ -6,14 +6,16 @@ public class HitBoxVisualAnimator : MonoBehaviour
     Animator am;
     [SerializeField] private PlayerSword ps;
     SpriteRenderer sr;
+    private PlayerDataSO playerData;
 
     private PlayerAnimator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerData = GameManagerScript.Instance.playerData;
         am = GetComponent<Animator>();
-        if (ps == null) ps = FindFirstObjectByType<PlayerSword>();
+        if (ps == null) ps = FindAnyObjectByType<PlayerSword>();
         sr = GetComponent<SpriteRenderer>();
 
         animator = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAnimator>();
@@ -22,7 +24,7 @@ public class HitBoxVisualAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        am.SetFloat("attackSpeedMultiplier", ps.attackSpeed);
+        am.SetFloat("attackSpeedMultiplier", playerData.MeleeSpeed);
         if (animator.isFlipped) { sr.flipY = true; }
         else { sr.flipY = false; }
 

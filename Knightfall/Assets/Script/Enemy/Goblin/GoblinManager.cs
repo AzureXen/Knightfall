@@ -30,5 +30,6 @@ public class GoblinManager : EnemyManager
     {
         Debug.Log("Killed: " + EntityName);
         base.Die();
+        sr.color = Color.black;
     }
 }

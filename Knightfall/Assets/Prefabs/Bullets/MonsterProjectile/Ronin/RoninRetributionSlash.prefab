@@ -38,6 +38,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.554}
 --- !u!212 &2452219115889910327
 SpriteRenderer:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56,6 +57,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -77,9 +80,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -801896167
   m_SortingLayer: 6
   m_SortingOrder: 8
+  m_MaskInteraction: 0
   m_Sprite: {fileID: -3660571561243988826, guid: 849cbe6a30c8e6643a372557a261172e, type: 3}
   m_Color: {r: 1, g: 0.9704014, b: 0.64716977, a: 1}
   m_FlipX: 0
@@ -89,8 +94,8 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!61 &1018295342940005580
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0641a2423eb7d374d9a22f67738b316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 30
+  force: 35
   despawnTime: 4
   damage: 15
   knockbackForce: 7

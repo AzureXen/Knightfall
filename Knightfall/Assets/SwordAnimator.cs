@@ -7,6 +7,8 @@ public class SwordAnimator : MonoBehaviour
     [SerializeField] private PlayerSword ps;
     SpriteRenderer sr;
 
+    private PlayerDataSO playerData;
+
     private PlayerAnimator playerAnimator;
 
     public Boolean isSwinging = false;
@@ -14,17 +16,17 @@ public class SwordAnimator : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerData = GameManagerScript.Instance.playerData;
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAnimator>();
         am = GetComponent<Animator>();
-        if (ps == null) ps = FindFirstObjectByType<PlayerSword>();
         sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        am.SetFloat("attackSpeedMultiplier", ps.attackSpeed);
-        if (ps == null) { return; }
+        am.SetFloat("attackSpeedMultiplier", playerData.MeleeSpeed);
+
 
         if (playerAnimator.isFlipped) { sr.flipY = true; }
         else { sr.flipY = false; }

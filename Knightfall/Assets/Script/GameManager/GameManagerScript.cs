@@ -1,10 +1,18 @@
-using Unity.VisualScripting;
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
     public static GameManagerScript Instance { get; private set; }
-    public PlayerData playerData;
+
+    public static event Action OnReady;
+
+    public static event Action<GameObject> OnPlayerReady;
+
+    public PlayerDataSO playerData;
+
+    public GameObject player;
 
     private void Awake()
     {
@@ -13,18 +21,30 @@ public class GameManagerScript : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        playerData = new PlayerData();
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("GameManager Awake - Instance set: " + (Instance != null));
+
+        if (playerData == null)
+            Debug.LogError("PlayerData is null! Assign PlayerStatsAsset in GameManager Inspector.");
+        else
+            playerData.ResetToDefaults();
     }
 
-    public void AddGold(float amount)
+    private void Start()
     {
-        playerData.AddGold(amount);
+        StartCoroutine(FindPlayer());
+        OnReady?.Invoke();
     }
-    public void RemoveGold(float amount)
+
+
+
+    private IEnumerator FindPlayer()
     {
-        playerData.RemoveGold(amount);
+        while (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            yield return new WaitForSeconds(0.2f);
+        }
+        OnPlayerReady?.Invoke(player);
     }
 }

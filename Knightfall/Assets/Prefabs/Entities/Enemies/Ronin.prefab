@@ -51,6 +51,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3353838080339855975
 SpriteRenderer:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -69,6 +70,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -90,9 +93,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -801896167
   m_SortingLayer: 6
   m_SortingOrder: 5
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 4723107735738678597, guid: c136d541e7bca38498d40ff7ed3fc5f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,8 +107,8 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!114 &79635176445380958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1722deff6c06e49bcfbb382f32dfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 275
-  health: 275
+  maxHealth: 350
+  health: 350
   defaultHealth: 100
   popUpDamage: {fileID: 6024437331263306538, guid: 136092199e1406f4e8fc8be9250d7291, type: 3}
 --- !u!61 &8226357010408771277
@@ -227,6 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fed538683e1c24fb2d472ac5d26fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAlive: 1
   takeDamageCooldown: 0.2
   canDamage: 1
   knockbackDuration: 0.5
@@ -236,20 +242,20 @@ MonoBehaviour:
   resolveStacksToRetribution: 3
   curRetributionStacks: 0
   deflectedBullet: {fileID: 4799751954020987770, guid: c6f24945aec20ed41916114c3ec06631, type: 3}
-  RoninCanvasPrefab: {fileID: 0}
+  RoninCanvasPrefab: {fileID: 5219875930079261101, guid: 89ffd36b5012aee459335ba14c3aaeaa, type: 3}
   roninCanvasInstance: {fileID: 0}
-  maxMotivation: 175
-  curMotivation: 175
-  motivationRegenRate: 0.6
+  maxMotivation: 250
+  curMotivation: 250
+  motivationRegenRate: 1
   maxAbsoluteDefenseStacks: 1
   curAbsoluteDefenseStacks: 0
   absoluteDefenseKnockbackForce: 25
   absoluteDefenseKknockbackDuration: 0.35
-  stunDuration: 10
+  stunDuration: 9
   parryStateDuration: 1.5
   parryStateTimer: 0
   resilience: 0
-  resilienceStacksToAbsoluteDefense: 3
+  resilienceStacksToAbsoluteDefense: 2
   isInParryState: 0
   audioSource: {fileID: 3842321875405047698}
   audioClips:
@@ -272,7 +278,7 @@ MonoBehaviour:
   isChasing: 0
   canMove: 1
   moveSpeed: 2
-  chaseSpeed: 5
+  chaseSpeed: 7
   idealDistance: 5
   directionChangeInterval: 1
   distanceThreshold: 0.5
@@ -320,17 +326,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackZone: {fileID: 8179653642698619495, guid: 81c7188480a5c6e46a30c2ea7a2b9f8b, type: 3}
   attackDuration: 0.25
-  Damage: 10
+  Damage: 15
   knockbackForce: 4
   knockbackDuration: 0.3
-  flashSpeed: 150
+  flashSpeed: 160
   flashSlashRange: 10
-  flashSlashWidth: 1.2
+  flashSlashWidth: 1.3
   attackTransform: {fileID: 2611350318778995394}
-  attackCooldown: 9
+  attackCooldown: 8
   attackCoolDownTimer: 0
-  followPlayerDuration: 0.75
-  delayAfterFollowDuration: 0.3
+  followPlayerDuration: 1.2
+  delayAfterFollowDuration: 0.25
   isAttacking: 0
 --- !u!114 &5570917127877376178
 MonoBehaviour:
@@ -347,9 +353,9 @@ MonoBehaviour:
   rebtributionSlashLength: 0.5
   retributionSlashPrefab: {fileID: 6857924010955406395, guid: a3f3af9fabace954c893e466101b050a, type: 3}
   attackDuration: 1
-  Damage: 10
+  Damage: 20
   knockbackForce: 3
-  knockbackDuration: 0.5
+  knockbackDuration: 0.4
   attackCooldown: 5
   attackCoolDownTimer: 0
   attackTransform: {fileID: 2611350318778995394}
@@ -367,13 +373,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackZone: {fileID: 8179653642698619495, guid: 81c7188480a5c6e46a30c2ea7a2b9f8b, type: 3}
   SeveranceVisual: {fileID: 766328651084064877, guid: a749482a341b8ce458bff6369a03cfa8, type: 3}
-  severanceSize: 2.5
+  severanceSize: 3
   attackDuration: 0.5
-  severanceDamage: 10
+  severanceDamage: 15
   knockbackForce: 5
   knockbackDuration: 0.2
-  followPlayerDuration: 0.5
-  delayAfterFollowDuration: 0.35
+  followPlayerDuration: 0.7
+  delayAfterFollowDuration: 0.25
   attackCooldown: 12
   attackCoolDownTimer: 12
   attackTransform: {fileID: 2611350318778995394}
@@ -400,7 +406,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 93f46cced8be95149a44bf454cb65fdf, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 93f46cced8be95149a44bf454cb65fdf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

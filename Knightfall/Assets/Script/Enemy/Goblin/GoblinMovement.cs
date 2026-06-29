@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoblinMovement : EntityMovement
 {
-    public GameObject player;
+    [NonSerialized] public GameObject player;
     [SerializeField] private float moveSpeed = 2;
     public Boolean canMove = true;
     [HideInInspector] public Vector2 moveDir;
@@ -35,8 +35,10 @@ public class GoblinMovement : EntityMovement
     {
         while (player == null)
         {
-            player = GameObject.FindGameObjectWithTag("Player");
-            yield return null;
+            if (GameManagerScript.Instance != null && GameManagerScript.Instance.player != null)
+                player = GameManagerScript.Instance.player;
+
+            yield return new WaitForSeconds(0.5f);
         }
     }
 

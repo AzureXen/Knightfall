@@ -11,9 +11,10 @@ public class Health : MonoBehaviour
     // used to instantiate
     public GameObject popUpDamage;
     // used to make the text follow
-    private GameObject popUpText;
+    protected GameObject popUpText;
 
-    public event Action OnDeath;
+    public virtual event Action OnDeath;
+
     public virtual void Start()
     {
         health = maxHealth;

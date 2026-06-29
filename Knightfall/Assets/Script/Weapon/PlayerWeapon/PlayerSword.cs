@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class PlayerSword : MonoBehaviour
 {
-    public float attackSpeed = 1f;
-    public int meleeDamage = 10;
-    public float knockbackForce = 5f;
-    public float knockbackDuration = 1.5f;
-
-
     public Boolean isAttacking = false;
-
-    public float attackCooldown = 0.5f;
     private float attackCooldownTimer;
-
     public GameObject hitbox;
+
+    private PlayerDataSO playerData;
+
+
+    private void Start()
+    {
+        playerData = GameManagerScript.Instance.playerData;
+    }
 
     void Update()
     {
@@ -24,7 +23,7 @@ public class PlayerSword : MonoBehaviour
         if (attackCooldownTimer > 0)
         {
             attackCooldownTimer -= Time.deltaTime;
-            attackCooldownTimer = Mathf.Clamp(attackCooldownTimer, 0, attackCooldown);
+            attackCooldownTimer = Mathf.Clamp(attackCooldownTimer, 0, playerData.MeleeAttackCooldown);
         }
     }
     void AttackReg()
@@ -59,7 +58,7 @@ public class PlayerSword : MonoBehaviour
     }
     public void endAttack()
     {
-        attackCooldownTimer = attackCooldown;
+        attackCooldownTimer = playerData.MeleeAttackCooldown;
         isAttacking = false;
     }
 }

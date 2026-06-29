@@ -3,8 +3,22 @@ using UnityEngine;
 
 public class PlayerManager : EntityManager
 {
+
+    public static PlayerManager Instance { get; private set; }
+
     Animator am;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [SerializeField] private PlayerDataSO playerData;
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
     public override void Start()
     {
         base.Start();
@@ -46,39 +60,43 @@ public class PlayerManager : EntityManager
         }
     }
 
-
-}
-
-/*
- using System.Collections;
-using UnityEngine;
-
-public class PlayerManager : EntityManager
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public override void Start()
+    // ======================================== UPGRADES ======================================== //
+    public void IncreaseMaxHealth(int health)
     {
-        base.Start();
-        entityMovement = GetComponent<PlayerMovement>();
-        EntityName = "Player";  
-        defaultColor = Color.white;
+        entityHealth.maxHealth += health;
+        entityHealth.health += health;
     }
 
-    protected override IEnumerator FlashRed()
+    public void FullHeal()
     {
-        sr.color = new Color(2,2,2);
-        yield return null;
+        entityHealth.health += entityHealth.maxHealth;
+    }
 
-        float timer = 0f;
-        while (timer < flashDuration)
-        {
-            timer += Time.deltaTime;
-            sr.color = Color.Lerp(sr.color, defaultColor, timer / flashDuration);
-            yield return null;
+    public void IncreaseMaxStamina(float stamina)
+    {
+        PlayerMovement playerMovement = entityMovement as PlayerMovement;
+        if (playerMovement != null) {
+            playerData.IncreaseMaxStamina(stamina);
         }
 
-        sr.color = defaultColor;
-        flashCoroutine = null;
+    }
+
+    public void IncreaseMeleeDamage(int damage)
+    {
+        playerData.IncreaseMeleeDamage(damage);
+    }
+
+    protected override void TakeDamage(int damage)
+    {
+        entityHealth.TakeDamage(damage);
+        if (damage > 0)
+        {
+            if (flashCoroutine != null)
+            {
+                StopCoroutine(flashCoroutine);
+            }
+            flashCoroutine = StartCoroutine(FlashRed());
+            TakeIFrame(takeDamageCooldown);
+        }
     }
 }
- */
