@@ -158,6 +158,22 @@ public class EntityManager : MonoBehaviour
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
     }
+    //protected IEnumerator KnockBack(Vector3 target, float force, float duration)
+    //{
+    //    entityMovement.DisableMovement();
+    //    yield return null;
+
+    //    if (rb != null)
+    //    {
+    //        Vector3 direction = (transform.position - target).normalized;
+    //        rb.AddForce(direction * force, ForceMode2D.Impulse);
+    //        yield return new WaitForSeconds(duration);
+    //        rb.linearVelocity = Vector2.zero; // Stop movement after duration
+    //    }
+
+    //    entityMovement.EnableMovement();
+    //}
+
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
         entityMovement.DisableMovement();
@@ -165,10 +181,32 @@ public class EntityManager : MonoBehaviour
 
         if (rb != null)
         {
-            Vector3 direction = (transform.position - target).normalized;
-            rb.AddForce(direction * force, ForceMode2D.Impulse);
+            rb.linearVelocity = Vector2.zero; // Clear momentum
+
+            // 1. Calculate the raw distance vector from the attack point (target) to this entity
+            Vector3 directionToFly = transform.position - target;
+
+
+            if (directionToFly.magnitude < 0.05f)
+            {
+                float defaultX = (transform.position.x >= target.x) ? 1f : -1f;
+                directionToFly = new Vector3(defaultX, 0.2f, 0f);
+            }
+            else
+            {
+                // Give it a tiny bit of upward lift so they don't friction-drag on the floor
+                directionToFly.y += 0.2f;
+            }
+
+            // 2. Safely normalize now that we guaranteed it's not zero
+            Vector2 finalDirection = ((Vector2)directionToFly).normalized;
+
+            // 3. Launch away from the attack origin point!
+            rb.AddForce(finalDirection * force, ForceMode2D.Impulse);
+
             yield return new WaitForSeconds(duration);
-            rb.linearVelocity = Vector2.zero; // Stop movement after duration
+
+            rb.linearVelocity = Vector2.zero;
         }
 
         entityMovement.EnableMovement();

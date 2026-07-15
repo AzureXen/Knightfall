@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: ec9becd2e78a7b0418d22febc28631fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -768642370075870110
+    second: InImpactMetal82bReversed_0
+  - first:
+      213: -3376577167891088409
+    second: InImpactMetal82bReversed_1
+  - first:
+      213: -620849622569622475
+    second: InImpactMetal82bReversed_2
+  - first:
+      213: -6179513002511720544
+    second: InImpactMetal82bReversed_3
+  - first:
+      213: -64252006239367126
+    second: InImpactMetal82bReversed_4
+  - first:
+      213: -8957827711560818237
+    second: InImpactMetal82bReversed_5
+  - first:
+      213: 8640281694887432544
+    second: InImpactMetal82bReversed_6
+  - first:
+      213: -3028292525790128653
+    second: InImpactMetal82bReversed_7
+  - first:
+      213: 4260298403894701376
+    second: InImpactMetal82bReversed_8
+  - first:
+      213: 1624770512972468862
+    second: InImpactMetal82bReversed_9
+  - first:
+      213: -3096084084696787925
+    second: InImpactMetal82bReversed_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 70
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c305c36db3555f0800000000000000
+      internalID: -768642370075870110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 46
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb3827a4fcf321d0800000000000000
+      internalID: -3376577167891088409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 26
+        width: 159
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5346dc3ce8c4267f0800000000000000
+      internalID: -620849622569622475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 14
+        width: 193
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af91682aa5fd3aa0800000000000000
+      internalID: -6179513002511720544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_4
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 112
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a201ff7042bbb1ff0800000000000000
+      internalID: -64252006239367126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 121
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1644d28276fa380800000000000000
+      internalID: -8957827711560818237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_6
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 109
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061531f5c6278e770800000000000000
+      internalID: 8640281694887432544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 110
+        width: 73
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f51f4c0ef759f5d0800000000000000
+      internalID: -3028292525790128653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_8
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 78
+        width: 63
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04dae4983de9f1b30800000000000000
+      internalID: 4260298403894701376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_9
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 56
+        width: 14
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72d0435c285c8610800000000000000
+      internalID: 1624770512972468862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InImpactMetal82bReversed_10
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 32
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2458e0cdef7805d0800000000000000
+      internalID: -3096084084696787925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      InImpactMetal82bReversed_0: -768642370075870110
+      InImpactMetal82bReversed_1: -3376577167891088409
+      InImpactMetal82bReversed_10: -3096084084696787925
+      InImpactMetal82bReversed_2: -620849622569622475
+      InImpactMetal82bReversed_3: -6179513002511720544
+      InImpactMetal82bReversed_4: -64252006239367126
+      InImpactMetal82bReversed_5: -8957827711560818237
+      InImpactMetal82bReversed_6: 8640281694887432544
+      InImpactMetal82bReversed_7: -3028292525790128653
+      InImpactMetal82bReversed_8: 4260298403894701376
+      InImpactMetal82bReversed_9: 1624770512972468862
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

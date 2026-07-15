@@ -1,11 +1,15 @@
 using System;
 using System.Collections;
+using Unity.AI.Assistant.Agents;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngineInternal;
 
 public class RoninFlashSlash : MonoBehaviour
 {
+    [SerializeField] private GameObject flashSlashVisual;
+    private RoninManager manager;
+
     private RoninSFX roninSFX;
     private RoninAnimator roninAnimator;
     private RoninAction roninAction;
@@ -36,10 +40,12 @@ public class RoninFlashSlash : MonoBehaviour
     public Boolean isAttacking = false;
     private void Start()
     {
+        manager = GetComponent<RoninManager>();
         roninSFX = GetComponent<RoninSFX>();
         roninAnimator = GetComponent<RoninAnimator>();
         roninAction = GetComponent<RoninAction>();
-        StartCoroutine(FindPlayer());
+        player = GameManagerScript.Instance.player;
+        if (player == null) GameManagerScript.OnPlayerReady += RegisterPlayer;
     }
     private void Update()
     {
@@ -71,13 +77,9 @@ public class RoninFlashSlash : MonoBehaviour
     }
 
 
-    private IEnumerator FindPlayer()
+    private void RegisterPlayer(GameObject player)
     {
-        while (player == null)
-        {
-            yield return new WaitForSeconds(0.2f);
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
+        this.player = player;
     }
 
 
@@ -109,12 +111,10 @@ public class RoninFlashSlash : MonoBehaviour
             float rotateZ = Mathf.Atan2(attackDir.y, attackDir.x) * Mathf.Rad2Deg;
             attackInstance.transform.RotateAround(attackTransform.position, Vector3.forward, rotateZ + 90);
 
-            AttackZoneScript attackZoneScript = attackInstance.GetComponent<AttackZoneScript>();
+            FlashSlashAttackZoneScript attackZoneScript = attackInstance.GetComponent<FlashSlashAttackZoneScript>();
             attackZoneScript.damage = Damage;
             attackZoneScript.knockbackForce = knockbackForce;
             attackZoneScript.knockbackDuration = knockbackDuration;
-
-            attackZoneScript.attackZoneType = AttackZoneScript.AttackZoneType.FlashSlash;
             attackZoneScript.roninSFX = roninSFX;
 
 
@@ -144,18 +144,18 @@ public class RoninFlashSlash : MonoBehaviour
                 {
                     float distanceToWall = hit.distance;
 
-                    Debug.DrawRay(hit.point, Vector3.right * 0.1f, Color.green, 0.1f);
-                    Debug.DrawRay(hit.point, Vector3.up * 0.1f, Color.green, 0.1f);
+                    //Debug.DrawRay(hit.point, Vector3.right * 0.1f, Color.green, 0.1f);
+                    //Debug.DrawRay(hit.point, Vector3.up * 0.1f, Color.green, 0.1f);
 
                     attackInstance.transform.localScale = new Vector3(flashSlashWidth, distanceToWall, flashSlashWidth);
                     attackInstance.transform.position = attackTransform.position + (attackDirection * distanceToWall / 2);
-                    Debug.DrawRay(raycastStart, attackDirection * distanceToWall, Color.red);
+                    //Debug.DrawRay(raycastStart, attackDirection * distanceToWall, Color.red);
                 }
                 else
                 {
                     attackInstance.transform.localScale = new Vector3(flashSlashWidth, raycastDistance, flashSlashWidth);
                     attackInstance.transform.position = attackTransform.position + (attackDirection * raycastDistance / 2);
-                    Debug.DrawRay(raycastStart, attackDirection * raycastDistance, Color.red);
+                    //Debug.DrawRay(raycastStart, attackDirection * raycastDistance, Color.red);
                 }
 
                 yield return null;
@@ -175,21 +175,40 @@ public class RoninFlashSlash : MonoBehaviour
             roninSFX.playFlashSlash();
 
             roninAction.ChangeAnimationState("RoninAttack2");
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+
+            // ignore collider so ronin does not send the player across the map
+
+            Collider2D enemyBodyCollider = GetComponent<Collider2D>();
+
+            Collider2D playerBodyCollider = player.GetComponent<Collider2D>();
+
+            if (enemyBodyCollider != null && playerBodyCollider != null)
+            {
+                Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, true);
+            }
+
             while (Vector3.Distance(transform.position, hitboxEnd) > 2.5f)
             {
                 transform.position = Vector3.MoveTowards(transform.position, hitboxEnd, flashSpeed * Time.deltaTime);
                 yield return null;
             }
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+
+            // turn on colliders again
+            if (enemyBodyCollider != null && playerBodyCollider != null)
+            {
+                Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, false);
+            }
 
             //attackAnimationCoroutine = StartCoroutine(playAttackAnimation(0.28f));
 
 
             // After ( Or mid way) the enemy reaches its destination, enable hitbox to deal damage.
             attackZoneScript.EnableDamage();
+            attackZoneScript.showHitbox = false;
+            SpawnFlashSlashEffect(attackInstance.transform.position, attackInstance.transform.rotation, null, attackInstance.transform.lossyScale);
             yield return new WaitForSeconds(attackDuration);
             attackZoneScript.DisableDamage();
+            attackCoolDownTimer = attackCooldown;
             //if(attackAnimationCoroutine != null)
             //{
             //    StopCoroutine(attackAnimationCoroutine);
@@ -205,5 +224,24 @@ public class RoninFlashSlash : MonoBehaviour
             }
             isAttacking = false;
         }
+    }
+
+    private void SpawnFlashSlashEffect(Vector3 position, Quaternion rotation, Transform parent, Vector3 scale)
+    {
+        StartCoroutine(SpawnFlashSlashEffectCorountine( position,  rotation,  parent,  scale));
+    }
+    private IEnumerator SpawnFlashSlashEffectCorountine(Vector3 position, Quaternion rotation, Transform parent, Vector3 scale)
+    {
+        GameObject effect = Instantiate(flashSlashVisual, position, rotation, parent);
+
+        effect.transform.localScale = new Vector3(
+        Mathf.Abs(scale.x),
+        Mathf.Abs(scale.y),
+        Mathf.Abs(scale.z)
+    );
+
+        yield return new WaitForSeconds(2f);
+
+        Destroy(effect);
     }
 }

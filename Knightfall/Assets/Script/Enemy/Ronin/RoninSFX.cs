@@ -16,6 +16,8 @@ public class RoninSFX : MonoBehaviour
 
     public AudioClip[] severanceWarningClips;
     public AudioClip[] severanceClips;
+
+    public AudioClip[] basicAttackClips;
     private void Start()
     {
         audioSource.volume = 0.4f;
@@ -91,7 +93,7 @@ public class RoninSFX : MonoBehaviour
         }
     }
 
-    public void playAttackWarning()
+    public void playRandomAttackWarning()
     {
         if (attackWarningClips.Length > 0)
         {
@@ -151,6 +153,21 @@ public class RoninSFX : MonoBehaviour
         else
         {
             Debug.LogWarning("severanceClips is empty.");
+        }
+    }
+
+    public void playBasicAttack(float pitch)
+    {
+        if (basicAttackClips.Length > 0)
+        {
+            int random = UnityEngine.Random.Range(0, basicAttackClips.Length);
+            audioSource.pitch = pitch;
+            audioSource.PlayOneShot(basicAttackClips[random], 0.8f);
+            audioSource.pitch = 1;
+        }
+        else
+        {
+            Debug.LogWarning("basicAttackClips is empty.");
         }
     }
 

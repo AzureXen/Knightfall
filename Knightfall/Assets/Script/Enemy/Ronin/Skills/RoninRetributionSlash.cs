@@ -71,8 +71,8 @@ public class RoninRetributionSlash : MonoBehaviour
             {
                 Destroy(attackInstance);
             }
-            attackInstance = Instantiate(retributionSlashPrefab, attackTransform.position, Quaternion.identity, attackTransform);
-            attackInstance.transform.localScale = new Vector3(1, rebtributionSlashLength, 1);
+            attackInstance = Instantiate(retributionSlashPrefab, attackTransform.position, Quaternion.identity);
+            attackInstance.transform.localScale = new Vector3(rebtributionSlashLength * 2, rebtributionSlashLength, rebtributionSlashLength * 2);
         }
         finally
         {

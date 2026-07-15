@@ -38,6 +38,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8515108843763458172
 SpriteRenderer:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56,6 +57,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -77,9 +80,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -801896167
   m_SortingLayer: 6
   m_SortingOrder: 8
+  m_MaskInteraction: 0
   m_Sprite: {fileID: 8249779470359433977, guid: c8c45c9934def2d4099528d092cbb299, type: 3}
   m_Color: {r: 0.9547169, g: 0.88922995, b: 0.6466856, a: 1}
   m_FlipX: 0
@@ -89,8 +94,8 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!114 &1187339972459993986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa85c52448bf9645b0b819a239366cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 20
+  force: 30
   despawnTime: 2
   damage: 10
   knockbackForce: 5
@@ -230,9 +235,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
+  m_ComponentVersion: 4
   m_LightType: 3
   m_BlendStyleIndex: 0
+  m_Light2DProvider:
+    rid: -2
+  m_SelectionSources:
+    rid: 1000
   m_FalloffIntensity: 0.73
   m_Color: {r: 0.827451, g: 0.72156864, b: 0.32941177, a: 1}
   m_Intensity: 4.14
@@ -270,3 +279,16 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1000
+      type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_SelectedHashCode: 3
+        m_SelectedSource:
+          rid: -2
+        m_Provider2DCache:
+          rid: -2

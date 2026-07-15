@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RoninAttack1Quick
-  serializedVersion: 7
+  serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -28,15 +28,15 @@ AnimationClip:
       value: {fileID: -5639509438907974925, guid: a659248720a1ad54fb12b32535000334, type: 3}
     - time: 0.15
       value: {fileID: 452926297546027425, guid: a659248720a1ad54fb12b32535000334, type: 3}
-    - time: 0.28333333
+    - time: 0.21666667
       value: {fileID: 452926297546027425, guid: a659248720a1ad54fb12b32535000334, type: 3}
-    - time: 0.33333334
+    - time: 0.26666668
       value: {fileID: 7441861488978599509, guid: c90c953b1afd82f4b9afa2de743854c3, type: 3}
-    - time: 0.41666666
+    - time: 0.35
       value: {fileID: 8288915215451595207, guid: c90c953b1afd82f4b9afa2de743854c3, type: 3}
-    - time: 0.48333332
+    - time: 0.41666666
       value: {fileID: 4668938655123782945, guid: c90c953b1afd82f4b9afa2de743854c3, type: 3}
-    - time: 0.56666666
+    - time: 0.5
       value: {fileID: 5683539909772271658, guid: c90c953b1afd82f4b9afa2de743854c3, type: 3}
     attribute: m_Sprite
     path: 
@@ -59,6 +59,7 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+      metaData: 0
     pptrCurveMapping:
     - {fileID: 1409549213185883415, guid: a659248720a1ad54fb12b32535000334, type: 3}
     - {fileID: 4976274401295337057, guid: a659248720a1ad54fb12b32535000334, type: 3}
@@ -74,7 +75,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5833333
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

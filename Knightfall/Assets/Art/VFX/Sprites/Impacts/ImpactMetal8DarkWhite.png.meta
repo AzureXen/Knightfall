@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: bd847beacc6ab0a448110757d9103cd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7624521523599517392
+    second: ImpactMetal8DarkWhite_0
+  - first:
+      213: -2512753884570679378
+    second: ImpactMetal8DarkWhite_1
+  - first:
+      213: -2241196198326488897
+    second: ImpactMetal8DarkWhite_2
+  - first:
+      213: 3627990538770927939
+    second: ImpactMetal8DarkWhite_3
+  - first:
+      213: 6897727173294867531
+    second: ImpactMetal8DarkWhite_4
+  - first:
+      213: 3342344460598745155
+    second: ImpactMetal8DarkWhite_5
+  - first:
+      213: 2689285260072803479
+    second: ImpactMetal8DarkWhite_6
+  - first:
+      213: -7704937548375246788
+    second: ImpactMetal8DarkWhite_7
+  - first:
+      213: 2740755814076678785
+    second: ImpactMetal8DarkWhite_8
+  - first:
+      213: 6238181816469797112
+    second: ImpactMetal8DarkWhite_9
+  - first:
+      213: -2128183372883387868
+    second: ImpactMetal8DarkWhite_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ImpactMetal8DarkWhite_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 52
+        width: 88
+        height: 89
+      alignment: 9
+      pivot: {x: 0.481989, y: 0.48812738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039d78b1212403690800000000000000
+      internalID: -7624521523599517392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpactMetal8DarkWhite_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 21
+        width: 142
+        height: 146
+      alignment: 9
+      pivot: {x: 0.49138093, y: 0.50838274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea78e26b7a7e02dd0800000000000000
+      internalID: -2512753884570679378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpactMetal8DarkWhite_2
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2
+        width: 176
+        height: 167
+      alignment: 9
+      pivot: {x: 0.483774, y: 0.5610724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb03bc69eeba5e0e0800000000000000
+      internalID: -2241196198326488897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpactMetal8DarkWhite_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 12
+        width: 195
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3415bef4c26395230800000000000000
+      internalID: 3627990538770927939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpactMetal8DarkWhite_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 15
+        width: 151
+        height: 147
+      alignment: 9
+      pivot: {x: 0.45947307, y: 0.5166515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44ccc18156a9bf50800000000000000
+      internalID: 6897727173294867531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d23af235981773245ac2ef2d4210bb02
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ImpactMetal8DarkWhite_0: -7624521523599517392
+      ImpactMetal8DarkWhite_1: -2512753884570679378
+      ImpactMetal8DarkWhite_10: -2128183372883387868
+      ImpactMetal8DarkWhite_2: -2241196198326488897
+      ImpactMetal8DarkWhite_3: 3627990538770927939
+      ImpactMetal8DarkWhite_4: 6897727173294867531
+      ImpactMetal8DarkWhite_5: 3342344460598745155
+      ImpactMetal8DarkWhite_6: 2689285260072803479
+      ImpactMetal8DarkWhite_7: -7704937548375246788
+      ImpactMetal8DarkWhite_8: 2740755814076678785
+      ImpactMetal8DarkWhite_9: 6238181816469797112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

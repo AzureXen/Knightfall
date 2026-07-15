@@ -146,6 +146,6 @@ public class PlayerDataSO : ScriptableObject
         meleeKnockbackForce = defaultMeleeKnockbackForce;
         meleeKnockbackDuration = defaultMeleeKnockbackDuration;
         meleeAttackCooldown = defaultMeleeAttackCooldown;
-    }
+    }   
 
 }

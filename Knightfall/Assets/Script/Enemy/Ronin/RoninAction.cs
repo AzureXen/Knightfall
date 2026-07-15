@@ -43,8 +43,10 @@ public class RoninAction : MonoBehaviour
         IDLE,
         CHASE,
         MOVE,
+        BASIC_ATTACK,
         FLASHSLASH,
         SEVERANCE,
+        STORMSLASH,
         PARRY,
         ABSOLUTE_DEFENSE,
         RETRIBUTION_SLASH,
@@ -56,18 +58,20 @@ public class RoninAction : MonoBehaviour
 
     // Cooldown between each attacks from ronin. During this time he may only+ move around.
     public float attackCooldown = 2f;
-    private float attackCooldownTimer;
+    [SerializeField] private float attackCooldownTimer = 2f;
+
+    private RoninBasicAttack roninBasicAttack;
 
     private RoninMovement roninMovement;
     private RoninManager roninManager;
     RoninSFX roninSFX;
     private RoninFlashSlash roninFlashSlash;
-    private float flashSlashCooldown;
 
     private RoninRetributionSlash roninRetributionSlash;
 
     private RoninSeverance roninSeverance;
-    private float severanceCoolDown;
+
+    private RoninStormSlash roninStormSlash;
 
     private float stunTimer;
 
@@ -80,15 +84,19 @@ public class RoninAction : MonoBehaviour
         roninAnimator = GetComponent<RoninAnimator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentAction = RoninActions.STARTING_IDLE;
+        roninBasicAttack = GetComponent<RoninBasicAttack>();
         roninFlashSlash = GetComponent<RoninFlashSlash>();
         roninRetributionSlash = GetComponent<RoninRetributionSlash>();
         roninSeverance = GetComponent<RoninSeverance>();
+        roninStormSlash = GetComponent<RoninStormSlash>();
         roninMovement = GetComponent<RoninMovement>();
         roninManager = GetComponent<RoninManager>();
         roninSFX = GetComponent<RoninSFX>();
         am = GetComponent<Animator>();
         roninHealth = GetComponent<Health>();
         ChangeAnimationState(RONIN_KNEEL);
+
+        attackCooldownTimer = 2f;
     }
     private void Update()
     {
@@ -119,8 +127,6 @@ public class RoninAction : MonoBehaviour
         {
             distanceFromPlayer = Vector3.Distance(transform.position, player.position);
         }
-        flashSlashCooldown = roninFlashSlash.attackCoolDownTimer;
-        severanceCoolDown = roninSeverance.attackCoolDownTimer;
 
         // If Ronin is attacking, he cannot parry.
         if (currentAction == RoninActions.IDLE || 
@@ -131,13 +137,14 @@ public class RoninAction : MonoBehaviour
         }
         else roninManager.canParry = false;
         
-        if(attackCooldownTimer > 0)
+        if(attackCooldownTimer > 0 && currentAction != RoninActions.STARTING_IDLE)
         {
             attackCooldownTimer -= Time.deltaTime;
             attackCooldownTimer = Mathf.Clamp(attackCooldownTimer, 0, attackCooldown);
         }
         if(currentAction == RoninActions.IDLE && canDecide)
         {
+            canDecide = false;
             StartCoroutine(DecideNextAction());
         }
 
@@ -163,7 +170,6 @@ public class RoninAction : MonoBehaviour
     private IEnumerator DecideNextAction()
     {
         Debug.Log("Ronin is deciding next action.");
-        canDecide = false;
         if(ActionCoroutine != null)
         {
             StopCurrentAction();
@@ -175,25 +181,35 @@ public class RoninAction : MonoBehaviour
         // if is not on attack cooldown, attempt to attack. Else move.
         if (attackCooldownTimer <= 0) 
         {
-            // Attempt to attack.
-            if (severanceCoolDown <= 0)
+            //Attempt to attack.
+            //if (roninStormSlash.attackCoolDownTimer <= 0)
+            //{
+            //    currentAction = RoninActions.STORMSLASH;
+            //    ActionCoroutine = StartCoroutine(StormSlash());
+            //    canDecide = true;
+            //    yield break;
+            //}
+            //else
+            if (roninSeverance.attackCoolDownTimer <= 0)
             {
+                currentAction = RoninActions.SEVERANCE;
                 ActionCoroutine = StartCoroutine(Severance());
                 canDecide = true;
                 yield break;
             }
-            else if (flashSlashCooldown <= 0)
+            else if (roninFlashSlash.attackCoolDownTimer <= 0)
             {
-
+                currentAction = RoninActions.FLASHSLASH;
                 ActionCoroutine = StartCoroutine(FlashSlash());
                 canDecide = true;
                 yield break;
             }
-            // If attempted to attack, all attack moves are on cool down, move.
             else
             {
-                ActionCoroutine = StartCoroutine(MoveAround());
+                currentAction = RoninActions.BASIC_ATTACK;
+                ActionCoroutine = StartCoroutine(BasicAttack());
                 canDecide = true;
+                yield break;
             }
         }
         else
@@ -460,6 +476,64 @@ public class RoninAction : MonoBehaviour
         }
         finally
         {
+            currentAction = RoninActions.IDLE;
+            ActionCoroutine = null;
+        }
+    }
+
+    IEnumerator StormSlash()
+    {
+        try
+        {
+            attackCooldownTimer = attackCooldown;
+            roninStormSlash.Attack();
+            yield return null;
+            while (roninStormSlash.isAttacking)
+            {
+                yield return null;
+            }
+        }
+        finally
+        {
+            currentAction = RoninActions.IDLE;
+            ActionCoroutine = null;
+        }
+    }
+
+    IEnumerator BasicAttack()
+    {
+        Coroutine basicAtkCoroutine = null;
+        try
+        {
+            // If player is too far away, chase after player until they are within range.
+            // distance before stop chasing is randomized, giving less of a "robot" feeling.
+            float stopChaseDistance = UnityEngine.Random.Range(2f, 3f);
+            while (distanceFromPlayer > stopChaseDistance)
+            {
+                ChangeAnimationState(RONIN_RUN);
+                roninAnimator.canChangeDirection = true;
+                currentAction = RoninActions.CHASE;
+                roninMovement.isMoving = true;
+                roninMovement.isChasing = true;
+                yield return null;
+            }
+            roninAnimator.canChangeDirection = false;
+            ChangeAnimationState(RONIN_IDLE);
+            roninMovement.isMoving = false;
+            roninMovement.isChasing = false;
+
+            currentAction = RoninActions.BASIC_ATTACK;
+            attackCooldownTimer = attackCooldown;
+            basicAtkCoroutine = roninBasicAttack.Attack();
+            yield return null;
+            while (roninBasicAttack.isAttacking)
+            {
+                yield return null;
+            }
+        }
+        finally
+        {
+            if(basicAtkCoroutine != null) StopCoroutine(basicAtkCoroutine);
             currentAction = RoninActions.IDLE;
             ActionCoroutine = null;
         }

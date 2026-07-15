@@ -20,24 +20,24 @@ public class RoninRetriSlashScript : BulletScript
     }
     protected override void Start()
     {
-
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        // DEFAULT ENEMY BULLET DIRECTION IF PLAYER IS DESTROYED WHEN PROJECTILE IS SHOT
-        Vector3 bulletDirection = Vector3.up;
-        Vector3 playerPos = Vector3.up;
-        // FOR ENEMY BULLETS, CHANGE THE BULLET DIRECTION TO PLAYER
-        if (GameObject.FindGameObjectsWithTag("Player") != null)
-        {
-            playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-            bulletDirection = playerPos - transform.position;
-        }
-        rb.linearVelocity = new Vector2(bulletDirection.x, bulletDirection.y).normalized * force;
 
-        Vector3 bulletRotation = transform.position - playerPos;
-        float rotation = Mathf.Atan2(bulletRotation.y, bulletRotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotation + 180);
+        Vector3 bulletDirection = Vector3.up;
+
+        GameObject player = GameManagerScript.Instance?.player;
+        if (player != null)
+        {
+            bulletDirection = (player.transform.position - transform.position).normalized;
+        }
+
+        Debug.Log($"bullet direction: {bulletDirection}, player null: {player == null}");
+        Debug.Log($"bullet pos: {transform.position}, player pos: {player.transform.position}");
+
+        rb.linearVelocity = new Vector2(bulletDirection.x, bulletDirection.y) * force;
+
+        float rotation = Mathf.Atan2(bulletDirection.y, bulletDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rotation);
+
         Destroy(gameObject, despawnTime);
     }
     protected override void OnTriggerEnter2D(Collider2D collision)

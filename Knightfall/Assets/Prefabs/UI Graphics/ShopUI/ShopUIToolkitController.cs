@@ -20,21 +20,43 @@ public class ShopUIToolkitController : MonoBehaviour
     private IVisualElementScheduledItem goldFlashSchedule;
     private Color defaultGoldColor;
 
+
     private void Start()
     {
-        GameManagerScript.Instance.playerData.OnGoldChanged += UpdateDisplay;
+        CloseShopUI();
+    }
+
+    private void Awake()
+    {
+        if (GameManagerScript.Instance != null) 
+            GameManagerScript.Instance.playerData.OnGoldChanged += UpdateDisplay;
+        else
+            GameManagerScript.OnReady += OnGameManagerReady;
+
         ShopManager.OnShopClose += CloseShopUI;
         ShopManager.OnShopOpen += OpenShopUI;
+    }
+
+    private void OnGameManagerReady()
+    {
+        GameManagerScript.OnReady -= OnGameManagerReady;
+        GameManagerScript.Instance.playerData.OnGoldChanged += UpdateDisplay;
+    }
+
+    private void OnDestroy()
+    {
+        GameManagerScript.Instance.playerData.OnGoldChanged -= UpdateDisplay;
+        ShopManager.OnShopClose -= CloseShopUI;
+        ShopManager.OnShopOpen -= OpenShopUI;
     }
 
     private void UpdateDisplay(float gold)
     {
         if (goldLabel != null)
         {
-            Debug.Log("Found Gold Label");
             goldLabel.text = $"{gold}g";
         }
-        else Debug.LogError("gold label not found bruh");
+        else Debug.LogError("gold label not found");
     }
 
     private void OnEnable()
@@ -80,7 +102,7 @@ public class ShopUIToolkitController : MonoBehaviour
         {
             var card = upgradeCardTemplate.Instantiate();
             Debug.Log("Upgrade found: " + upgrade);
-
+                                                                                            
 
 
             card.Q<Label>("upgrade_name").text = upgrade.upgradeName;

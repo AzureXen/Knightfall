@@ -5,13 +5,10 @@ public class OpenShopButton : MonoBehaviour
 {
     private Button button;
 
-    private void Awake()
-    {
-        button = GetComponent<Button>();
-    }
-
     private void OnEnable()
     {
+        button = GetComponent<Button>();
+
         if (button != null)
         {
             button.onClick.AddListener(OnButtonClicked);
@@ -28,13 +25,10 @@ public class OpenShopButton : MonoBehaviour
 
     private void OnButtonClicked()
     {
-        OpenShopUI();
+        Debug.Log("Open Shop Button clicked");
+        ShopManager.OpenShop(); 
     }
 
-    private void OpenShopUI()
-    {
-        ShopManager.OpenShop();
-    }
 
 
 }

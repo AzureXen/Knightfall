@@ -7,6 +7,7 @@ public class EnemyManager : EntityManager
     public int touchDamage = 5;
     public int touchKnockbackForce = 5;
     public float touchKnockbackDuration = 1.5f;
+    public GameObject Player { get; private set; }
 
 
 
@@ -27,8 +28,13 @@ public class EnemyManager : EntityManager
         {
             entityHealth.OnDeath += HandleDeathEvent;
         }
+        Player = GameManagerScript.Instance.player;
+        if(Player== null) GameManagerScript.OnPlayerReady += RegisterPlayer;
     }
-
+    private void RegisterPlayer(GameObject player)
+    {
+        this.Player = player;
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         GameObject target = collision.gameObject;

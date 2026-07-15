@@ -6,15 +6,15 @@ using static Unity.VisualScripting.Member;
 /// <summary>
 /// What does Ronin Manager manages?
 /// Parry - Stun Management
-/// Animation Management
 /// Boss Health/Stamina UI Managemet
 /// Ronin SFX
 /// Ronin BGM ( battle music)
 /// Health
 /// </summary>
-public class RoninManager : EntityManager
+public class RoninManager : EnemyManager
 {
-    
+    [SerializeField] private GameObject parryEffectTransform;
+    [SerializeField] private GameObject parryEffectPrefab;
 
     [SerializeField] private int maxRetributionStacks;
     [SerializeField] private int resolveStacksToRetribution = 2;
@@ -30,6 +30,7 @@ public class RoninManager : EntityManager
     public GameObject roninCanvasInstance = null;
     private RoninCanvasScript roninCanvasScript = null;
 
+    private GameObject player;
 
     [SerializeField] private float maxMotivation;
     [SerializeField] private float curMotivation;
@@ -58,6 +59,7 @@ public class RoninManager : EntityManager
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
+        touchDamageEnabled = false;
         entityHealth = GetComponent<Health>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
@@ -81,6 +83,10 @@ public class RoninManager : EntityManager
         // Ronin cannot be pushed by player
         rb.mass = 10000;
         rb.linearDamping = 10;
+
+        player = GameManagerScript.Instance.player;
+        if (player != null) Debug.Log("Ronin manager: found player without registering.");
+        if (player == null) GameManagerScript.OnPlayerReady += RegisterPlayer;
     }
 
     private void Update()
@@ -126,8 +132,8 @@ public class RoninManager : EntityManager
                 roninAction.currentAction = RoninAction.RoninActions.IDLE;
                 roninBGM.playBattleBGM();
                 roninCanvasScript.showCanvas();
-                Debug.Log("Ronin is starting to attack player.");
-                Debug.Log("Ronin's current action: " + roninAction.currentAction);
+                //Debug.Log("Ronin is starting to attack player.");
+                //Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
 
             if (curAbsoluteDefenseStacks > 0 && canParry && curRetributionStacks > 0)
@@ -137,7 +143,10 @@ public class RoninManager : EntityManager
                 {
                     parryStateTimer = 0;
                 }
+
+                SpawnAbsoluteDefenseParryEffect();
                 roninAction.EnterAbsoluteDefenseRetribution();
+
                 // super parry does NOT consume motivation.
                 TakeHitKnockback(0, target, 0, 0);
                 source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
@@ -156,7 +165,10 @@ public class RoninManager : EntityManager
                 {
                     parryStateTimer = 0;
                 }
+
+                SpawnAbsoluteDefenseParryEffect();
                 roninAction.EnterAbsoluteDefense();
+
                 // super parry does NOT consume motivation.
                 TakeHitKnockback(0, target, 0, 0);
                 source.TakeKnockBack(transform.position, absoluteDefenseKnockbackForce, absoluteDefenseKknockbackDuration);
@@ -197,6 +209,7 @@ public class RoninManager : EntityManager
                 TakeHitKnockback(0, target, force * 0.25f, knockBackDuration * 0.25f);
                 source.TakeKnockBack(transform.position, force * 0.75f, knockBackDuration * 0.75f);
 
+                SpawnParryEffect();
                 roninSFX.playBlock();
                 return false;
 
@@ -277,6 +290,9 @@ public class RoninManager : EntityManager
                         curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
                     }
                 }
+
+                SpawnParryEffect();
+
                 TakeHitKnockback(0, target, 0, 0);
                 roninSFX.playBlock();
                 //play audio
@@ -324,6 +340,47 @@ public class RoninManager : EntityManager
         curMotivation = maxMotivation;
         curAbsoluteDefenseStacks++;
         curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
+    }
+
+    private void RegisterPlayer(GameObject player)
+    {
+        this.player = player;
+        Debug.Log("Ronin manager: registered player.");
+    }
+    private void SpawnAbsoluteDefenseParryEffect()
+    {
+        StartCoroutine(SpawnAbsoluteDefenseParryEffectCoroutine());
+    }
+    private IEnumerator SpawnAbsoluteDefenseParryEffectCoroutine()
+    {
+
+        Vector3 playerPos = player.transform.position;
+        Vector3 enemyPos = transform.position;
+        Vector3 middlePosition = (playerPos + enemyPos) / 2f;
+
+        GameObject effect = Instantiate(parryEffectPrefab, middlePosition, Quaternion.identity);
+        SpriteRenderer sr = effect.GetComponent<SpriteRenderer>();
+        sr.color = new Color32(255, 251, 225, 255);
+
+        yield return new WaitForSeconds(2f);
+
+        Destroy(effect);
+    }
+
+
+    private void SpawnParryEffect()
+    {
+        StartCoroutine(SpawnParryEffectCoroutine());
+    }
+    private IEnumerator SpawnParryEffectCoroutine()
+    {
+        GameObject effect = Instantiate(parryEffectPrefab, parryEffectTransform.transform.position, Quaternion.identity, parryEffectTransform.transform);
+
+        effect.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+
+        yield return new WaitForSeconds(2f);
+
+        Destroy(effect);
     }
 
 }
