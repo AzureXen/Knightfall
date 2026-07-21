@@ -938,6 +938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833b8192097af943a03f2cdf7cea1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprintKey: 304
+  dodgeKey: 324
   playerData: {fileID: 11400000, guid: 0fdcaa19966065d49a74f3d4abddbffd, type: 2}
   canMove: 0
   moveSpeed: 4
@@ -951,8 +953,8 @@ MonoBehaviour:
   dodgeCost: 20
   dodgeIFrameDuration: 0.25
   isRunning: 0
-  isHoldingShift: 0
-  isHoldingCtrl: 0
+  isHoldingDodge: 0
+  isHoldingSprint: 0
   isWalking: 0
 --- !u!114 &4393373870306327074
 MonoBehaviour:

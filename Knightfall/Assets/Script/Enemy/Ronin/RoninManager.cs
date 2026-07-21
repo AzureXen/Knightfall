@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using static RoninAction;
 using static Unity.VisualScripting.Member;
 
 /// <summary>
@@ -13,6 +14,13 @@ using static Unity.VisualScripting.Member;
 /// </summary>
 public class RoninManager : EnemyManager
 {
+    // FOR DEATH SCENE
+    private Health roninHealth;
+    private int currentHealth;
+    public Boolean isDefeated = false;
+
+    private RoninAlphaLevel roninLevelManager;
+
     [SerializeField] private GameObject parryEffectTransform;
     [SerializeField] private GameObject parryEffectPrefab;
 
@@ -55,6 +63,8 @@ public class RoninManager : EnemyManager
 
     private RoninSFX roninSFX;
 
+    private RoninManager roninManager;
+
     public Boolean canParry = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
@@ -79,6 +89,10 @@ public class RoninManager : EnemyManager
 
         roninCanvasInstance = Instantiate(RoninCanvasPrefab);
         roninCanvasScript = roninCanvasInstance.GetComponent<RoninCanvasScript>();
+        
+        roninManager = GetComponent<RoninManager>();
+
+        roninHealth = GetComponent<Health>();
 
         // Ronin cannot be pushed by player
         rb.mass = 10000;
@@ -87,6 +101,20 @@ public class RoninManager : EnemyManager
         player = GameManagerScript.Instance.player;
         if (player != null) Debug.Log("Ronin manager: found player without registering.");
         if (player == null) GameManagerScript.OnPlayerReady += RegisterPlayer;
+
+        GameObject levelManager = GameObject.FindGameObjectWithTag("LevelManager");
+        if (levelManager == null)
+        {
+            Debug.Log("Level Manager not found!");
+        }
+        else
+        {
+            roninLevelManager = levelManager.GetComponent<RoninAlphaLevel>();
+            if (roninLevelManager == null)
+            {
+                Debug.Log("Ronin Level Manager component not found!");
+            }
+        }
     }
 
     private void Update()
@@ -107,7 +135,7 @@ public class RoninManager : EnemyManager
             resilience = 0;
         }
 
-        if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED) && !roninAction.isDefeated)
+        if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED) && !isDefeated)
         {
             StartCoroutine(parryBreakStun(stunDuration));
         }
@@ -116,9 +144,18 @@ public class RoninManager : EnemyManager
             curMotivation += Time.deltaTime;
             curMotivation = Mathf.Clamp(curMotivation, 0, maxMotivation);
         }
-        if(Input.GetKeyDown(KeyCode.K))
+        if (roninHealth != null)
         {
-            roninSeverance.Attack();
+            currentHealth = roninHealth.health;
+            if (currentHealth <= 0)
+            {
+                isDefeated = true;
+                roninManager.canDamage = false;
+            }
+        }
+        if (isDefeated && roninAction.currentAction != RoninActions.DEFEATED)
+        {
+            EnterDeath();
         }
     }
 
@@ -129,9 +166,7 @@ public class RoninManager : EnemyManager
             // If ronin is in the starting idle (not attacking at all) and takes a hit, he will start attacking now.
             if(roninAction.currentAction == RoninAction.RoninActions.STARTING_IDLE)
             {
-                roninAction.currentAction = RoninAction.RoninActions.IDLE;
-                roninBGM.playBattleBGM();
-                roninCanvasScript.showCanvas();
+                EnterBattle();
                 //Debug.Log("Ronin is starting to attack player.");
                 //Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
@@ -239,11 +274,9 @@ public class RoninManager : EnemyManager
             // If ronin is in the starting idle (not attacking at all) and takes a hit, he will start attacking now.
             if (roninAction.currentAction == RoninAction.RoninActions.STARTING_IDLE)
             {
-                roninAction.currentAction = RoninAction.RoninActions.IDLE;
-                roninBGM.playBattleBGM();
-                roninCanvasScript.showCanvas();
-                Debug.Log("Ronin is starting to attack player.");
-                Debug.Log("Ronin's current action: " + roninAction.currentAction);
+                EnterBattle();
+                //Debug.Log("Ronin is starting to attack player.");
+                //Debug.Log("Ronin's current action: " + roninAction.currentAction);
             }
 
             if (curAbsoluteDefenseStacks > 0 && canParry)
@@ -381,6 +414,37 @@ public class RoninManager : EnemyManager
         yield return new WaitForSeconds(2f);
 
         Destroy(effect);
+    }
+
+    private void EnterBattle()
+    {
+        roninLevelManager.closeEntranceGate();
+        roninAction.currentAction = RoninAction.RoninActions.IDLE;
+        roninBGM.playBattleBGM();
+        roninCanvasScript.showCanvas();
+    }
+
+    private void EnterDeath()
+    {
+        // OPEN GATE
+        roninLevelManager.openExitGate();
+        roninLevelManager.openEntranceGate();
+        // CHANGE BGM
+        RoninBGM roninBGM = GetComponent<RoninBGM>();
+        if (roninBGM != null)
+        {
+            roninBGM.playBattleEndBGM();
+        }
+        else Debug.Log("Cannot find roninBGM.");
+        // DISABLE RONIN'S HEALTH / STAMINA UI
+        GameObject roninCanvasInstance = roninManager.roninCanvasInstance;
+        if (roninCanvasInstance != null)
+        {
+            roninCanvasInstance.SetActive(false);
+        }
+        else Debug.Log("RoninAction: Cannot find roninCanvasInstance");
+
+        roninAction.EnterDeath();
     }
 
 }

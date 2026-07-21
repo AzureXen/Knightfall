@@ -61,7 +61,7 @@ public class StormSlashAttackZoneScript : AttackZoneScript
             attackVisualInstance = null;
         }
         attackVisualInstance = Instantiate(attackVisual, transform.position, Quaternion.identity, transform);
-        attackVisualInstance.transform.localScale = new Vector3(attackVisualSize,attackVisualSize,attackVisualSize);
+        //attackVisualInstance.transform.localScale = new Vector3(attackVisualSize,attackVisualSize,attackVisualSize);
         Destroy(attackVisualInstance, 2f);
         StartCoroutine(DestroyAndNullVisualAfterDelay(attackVisualInstance, 2f));
     }

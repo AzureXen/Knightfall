@@ -8526,65 +8526,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2786221480674844433, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
+    - target: {fileID: 7879818233363166254, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
+      propertyPath: dodgeCost
+      value: 18
       objectReference: {fileID: 0}
-    - target: {fileID: 2786221480674844433, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
+    - target: {fileID: 7879818233363166254, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
+      propertyPath: dodgeSpeed
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: attackSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: meleeDamage
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: attackCooldown
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: knockbackDuration
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659146071195608383, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659146071195608383, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761266729254848159, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761266729254848159, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489169026335801145, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: knockbackDuration
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7908310194563281897, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: mainCam
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 9063268744978135184, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207790156173955037, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207790156173955037, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

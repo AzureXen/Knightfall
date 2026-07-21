@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : EntityMovement
 {
+    [Header("Keybindings")]
+    [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
+    [SerializeField] private KeyCode dodgeKey = KeyCode.Mouse3;
 
     private PlayerManager playerManager;
 
@@ -26,8 +29,8 @@ public class PlayerMovement : EntityMovement
 
 
     public Boolean isRunning;
-    public Boolean isHoldingShift;
-    public Boolean isHoldingCtrl;
+    public Boolean isHoldingDodge;
+    public Boolean isHoldingSprint;
     public Boolean isWalking;
 
     private Camera mainCam;
@@ -62,30 +65,28 @@ public class PlayerMovement : EntityMovement
         moveDir = new Vector2(moveX, moveY).normalized;
         isWalking = moveDir != Vector2.zero;
 
-        // After dodging - dashing, if player continues to hold shift, player will start sprinting
-        if (Input.GetKey(KeyCode.LeftShift))
+        // After dodging - dashing, if player continues to hold sprint key, player will start sprinting
+        if (Input.GetKey(dodgeKey))
         {
-            isHoldingShift = true;
+            isHoldingDodge = true;
         }
-        else isHoldingShift = false;
+        else isHoldingDodge = false;
 
         // Sprint without dodging - dashing
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(sprintKey))
         {
-            isHoldingCtrl = true;
+            isHoldingSprint = true;
         }
-        else isHoldingCtrl = false;
+        else isHoldingSprint = false;
 
         // Get mouse position, to get the default dodge direction
-
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
 
         // The default dodge direction is backwards, away from the mouse
-
         defaultDodgeDirection = -(mousePos - transform.position).normalized;
 
         // Dodging
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDodging && canMove)
+        if (Input.GetKeyDown(dodgeKey) && !isDodging && canMove)
         {
             if (canMove && playerData.Stamina > 0)
             {
@@ -116,7 +117,7 @@ public class PlayerMovement : EntityMovement
 
     void Run()
     {
-        isRunning = isHoldingShift || isHoldingCtrl;
+        isRunning = isHoldingSprint || isHoldingDodge;
     }
 
     public IEnumerator Dodge()

@@ -1,16 +1,8 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
-
 public class RoninAction : MonoBehaviour
 {
-    // FOR DEATH SCENE
-    private Health roninHealth;
-    private int currentHealth;
-    public Boolean isDefeated = false;
-
-
     // FOR ANIMATOR
     private string RONIN_IDLE = "RoninIdle";
     private string RONIN_RUN = "RoninRun";
@@ -31,12 +23,12 @@ public class RoninAction : MonoBehaviour
     private RoninAnimator roninAnimator;
     private string currentState;
 
-
     private Animator am;
     private Transform player;
     [SerializeField] private float distanceFromPlayer;
     // STARTING_IDLE: Stands completely still until player attacks, currently only applies at start.
     // IDLE: Boss is standing still and Require next action.
+
     public enum RoninActions
     {
         STARTING_IDLE,
@@ -92,8 +84,8 @@ public class RoninAction : MonoBehaviour
         roninMovement = GetComponent<RoninMovement>();
         roninManager = GetComponent<RoninManager>();
         roninSFX = GetComponent<RoninSFX>();
-        am = GetComponent<Animator>();
-        roninHealth = GetComponent<Health>();
+        am = GetComponentInChildren<Animator>();
+        
         ChangeAnimationState(RONIN_KNEEL);
 
         attackCooldownTimer = 2f;
@@ -102,25 +94,12 @@ public class RoninAction : MonoBehaviour
     {
         if (player == null)
         {
-            if(currentAction!= RoninActions.IDLE)
+            if(currentAction != RoninActions.IDLE)
             StopCurrentAction();
             canDecide = false;
             currentAction = RoninActions.IDLE;
         }
-        // FOR DEATH SCENE
-        if (roninHealth != null)
-        {
-            currentHealth = roninHealth.health;
-            if (currentHealth <= 0)
-            {
-                isDefeated = true;
-                roninManager.canDamage = false;
-            }
-        }
-        if(isDefeated && currentAction != RoninActions.DEFEATED)
-        {
-            EnterDeath();
-        }
+        
 
         parryStateTimer = roninManager.parryStateTimer;
         if (player != null)
@@ -129,8 +108,7 @@ public class RoninAction : MonoBehaviour
         }
 
         // If Ronin is attacking, he cannot parry.
-        if (currentAction == RoninActions.IDLE || 
-            currentAction == RoninActions.STARTING_IDLE || 
+        if (currentAction == RoninActions.STARTING_IDLE || 
             currentAction == RoninActions.MOVE ||  currentAction == RoninActions.PARRY)
         {
             roninManager.canParry = true;
@@ -180,7 +158,7 @@ public class RoninAction : MonoBehaviour
 
         // if is not on attack cooldown, attempt to attack. Else move.
         if (attackCooldownTimer <= 0) 
-        {
+        {       
             //Attempt to attack.
             //if (roninStormSlash.attackCoolDownTimer <= 0)
             //{
@@ -333,6 +311,8 @@ public class RoninAction : MonoBehaviour
             roninRetributionSlash.Attack();
             roninManager.curRetributionStacks--;
             yield return new WaitForSeconds(1.5f);
+
+            attackCooldownTimer = attackCooldown;
         }
         finally
         {
@@ -353,7 +333,7 @@ public class RoninAction : MonoBehaviour
             stunTimer = duration;
             while (stunTimer > 0)
             {
-                if (isDefeated)
+                if (roninManager.isDefeated)
                 {
                     stunTimer = 0;
                     yield break;
@@ -385,22 +365,6 @@ public class RoninAction : MonoBehaviour
             }
             ActionCoroutine = StartCoroutine(DeathScene());
         }
-        // OPEN GATE
-        openGate();
-        // CHANGE BGM
-        RoninBGM roninBGM = GetComponent<RoninBGM>();
-        if (roninBGM != null)
-        {
-            roninBGM.playBattleEndBGM();
-        }
-        else Debug.Log("Cannot find roninBGM.");
-        // DISABLE RONIN'S HEALTH / STAMINA UI
-        GameObject roninCanvasInstance = roninManager.roninCanvasInstance;
-        if (roninCanvasInstance != null)
-        {
-            roninCanvasInstance.SetActive(false);
-        }
-        else Debug.Log("RoninAction: Cannot find roninCanvasInstance");
     }
 
     IEnumerator DeathScene()
@@ -530,6 +494,7 @@ public class RoninAction : MonoBehaviour
             {
                 yield return null;
             }
+            attackCooldownTimer = attackCooldown;
         }
         finally
         {
@@ -559,17 +524,5 @@ public class RoninAction : MonoBehaviour
         }
     }
 
-    void openGate()
-    {
-        GameObject map = GameObject.FindGameObjectWithTag("Map");
-        GameObject spikes = map.transform.Find("Spikes").gameObject;
-        if (spikes != null)
-        {
-            spikes.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("Cannot find gate.");
-        }
-    }
+    
 }

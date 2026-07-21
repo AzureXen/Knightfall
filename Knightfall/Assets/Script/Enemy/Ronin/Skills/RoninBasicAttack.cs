@@ -5,7 +5,6 @@ using static RoninAction;
 
 public class RoninBasicAttack : MonoBehaviour
 {
-    Vector3 trueCenter;
     [SerializeField] private int damage = 5;
     [SerializeField] private float knockbackForce = 3f;
     [SerializeField] private float knockbackDuration = 0.5f;
@@ -33,7 +32,6 @@ public class RoninBasicAttack : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         manager = GetComponent<RoninManager>();
-        trueCenter = GetComponent<SpriteRenderer>().bounds.center;
         roninAction = GetComponent<RoninAction>();
         animator = GetComponent<RoninAnimator>();
         player = GameManagerScript.Instance.player;
@@ -44,12 +42,12 @@ public class RoninBasicAttack : MonoBehaviour
         attackZone1.damage = damage;
         attackZone1.knockbackDuration = knockbackDuration;
         attackZone1.knockbackForce = knockbackForce;
-        attackZone1.damageSourcePosition = trueCenter;
+        attackZone1.damageSourcePosition = transform.position;
 
         attackZone2.damage = damage;
         attackZone2.knockbackDuration = knockbackDuration;
         attackZone2.knockbackForce = knockbackForce;
-        attackZone2.damageSourcePosition = trueCenter;
+        attackZone2.damageSourcePosition = transform.position;
     }
 
     private void RegisterPlayer(GameObject player)
@@ -122,7 +120,6 @@ public class RoninBasicAttack : MonoBehaviour
     private IEnumerator DashTowardsPlayerCoroutine()
     {
         Collider2D enemyBodyCollider = GetComponent<Collider2D>();
-
         Collider2D playerBodyCollider = player.GetComponent<Collider2D>();
 
         if (enemyBodyCollider != null && playerBodyCollider != null)
@@ -130,32 +127,56 @@ public class RoninBasicAttack : MonoBehaviour
             Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, true);
         }
 
-
         Vector3 startingPosition = transform.position;
         Vector3 playerPosition = player.transform.position;
 
         Vector3 directionToPlayer = (playerPosition - startingPosition);
         float distanceToPlayer = directionToPlayer.magnitude;
         directionToPlayer.Normalize();
-        Vector3 hitboxEnd;
+
+        Vector3 targetDestination;
         if (distanceToPlayer <= dashMaxDistance)
         {
-            hitboxEnd = playerPosition;
+            targetDestination = playerPosition;
         }
         else
         {
-            hitboxEnd = startingPosition + (directionToPlayer * dashMaxDistance);
+            targetDestination = startingPosition + (directionToPlayer * dashMaxDistance);
         }
 
-        while (Vector3.Distance(transform.position, hitboxEnd) > 0.01f)
+        float totalDashDistance = Vector3.Distance(startingPosition, targetDestination);
+        RaycastHit2D wallHit = Physics2D.Raycast(startingPosition, directionToPlayer, totalDashDistance, LayerMask.GetMask("Wall"));
+
+        // --- VISUAL DEBUGGING START ---
+        if (wallHit.collider != null && wallHit.collider.CompareTag("Wall"))
         {
-            Vector2 newPos = Vector2.MoveTowards(
-                rb.position,
-                hitboxEnd,
-                dashSpeed * Time.fixedDeltaTime
+            // Draw a RED line from the starting position to exactly where it hit the wall
+            Debug.DrawLine(startingPosition, wallHit.point, Color.red, 2.0f);
+
+            // Draw a green dot/crosshair at the exact collision point
+            Debug.DrawRay(wallHit.point, Vector3.up * 0.2f, Color.green, 2.0f);
+        }
+        else
+        {
+            // Draw a GREEN line showing the full clear path of the dash if nothing was hit
+            Debug.DrawLine(startingPosition, targetDestination, Color.green, 2.0f);
+        }
+        // --- VISUAL DEBUGGING END ---
+
+        if (wallHit.collider != null && wallHit.collider.CompareTag("Wall"))
+        {
+            float safeDistance = Mathf.Max(0f, wallHit.distance - 5f);
+            targetDestination = startingPosition + (directionToPlayer * safeDistance);
+        }
+
+        while (Vector3.Distance(transform.position, targetDestination) > 0.15f)
+        {
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                targetDestination,
+                dashSpeed * Time.deltaTime 
             );
-            rb.MovePosition(newPos);
-            yield return new WaitForFixedUpdate();
+            yield return null;
         }
 
         if (enemyBodyCollider != null && playerBodyCollider != null)

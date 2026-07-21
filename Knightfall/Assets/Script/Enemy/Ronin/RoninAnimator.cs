@@ -16,7 +16,7 @@ public class RoninAnimator : MonoBehaviour
     void Start()
     {
         roninSFX = GetComponent<RoninSFX>();
-        am = GetComponent<Animator>();
+        am = GetComponentInChildren<Animator>();
         roninBasicAttack = GetComponent<RoninBasicAttack>();
         sr = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");

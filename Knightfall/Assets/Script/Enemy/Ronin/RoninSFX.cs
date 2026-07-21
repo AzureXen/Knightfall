@@ -18,6 +18,10 @@ public class RoninSFX : MonoBehaviour
     public AudioClip[] severanceClips;
 
     public AudioClip[] basicAttackClips;
+
+    public AudioClip[] unsheathClips;
+
+    public AudioClip[] sheatheClips;
     private void Start()
     {
         audioSource.volume = 0.4f;
@@ -40,7 +44,7 @@ public class RoninSFX : MonoBehaviour
     public void playDeflectRanged()
     {
         // Random pitch if want
-        //audioSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
+        //audioSource.pitch = UnityEngine.Random.Range(0.98f, 1.02f);
         if (deflectRangedClips.Length > 0)
         {
             int random = UnityEngine.Random.Range(0, deflectRangedClips.Length);
@@ -72,7 +76,7 @@ public class RoninSFX : MonoBehaviour
         if (flashSlashClips.Length > 0)
         {
             int random = UnityEngine.Random.Range(0, flashSlashClips.Length);
-            audioSource.PlayOneShot(flashSlashClips[random]);
+            audioSource.PlayOneShot(flashSlashClips[random], 1.5f);
         }
         else
         {
@@ -122,8 +126,7 @@ public class RoninSFX : MonoBehaviour
     {
         if (retributionSlashClips.Length > 0)
         {
-            int random = UnityEngine.Random.Range(0, retributionSlashClips.Length);
-            audioSource.PlayOneShot(retributionSlashClips[random]);
+            audioSource.PlayOneShot(retributionSlashClips[0]);
         }
         else
         {
@@ -168,6 +171,32 @@ public class RoninSFX : MonoBehaviour
         else
         {
             Debug.LogWarning("basicAttackClips is empty.");
+        }
+    }
+
+    public void playUnsheathe()
+    {
+        if (unsheathClips.Length > 0)
+        {
+            int random = UnityEngine.Random.Range(0, unsheathClips.Length);
+            audioSource.PlayOneShot(unsheathClips[random], 1f);
+        }
+        else
+        {
+            Debug.LogWarning("unsheathClips is empty.");
+        }
+    }
+
+    public void playSheathe()
+    {
+        if (sheatheClips.Length > 0)
+        {
+            int random = UnityEngine.Random.Range(0, sheatheClips.Length);
+            audioSource.PlayOneShot(sheatheClips[random], 1f);
+        }
+        else
+        {
+            Debug.LogWarning("sheatheClips is empty.");
         }
     }
 

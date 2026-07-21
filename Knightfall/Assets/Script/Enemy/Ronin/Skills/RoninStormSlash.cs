@@ -11,6 +11,9 @@ public class RoninStormSlash : MonoBehaviour
     private RoninManager roninManager;
     private Rigidbody2D rb;
 
+    // give player time to skidaddle
+    [SerializeField] private float attackDelay = 5f;
+
     public GameObject stormSlashAttackZone;
 
     [SerializeField] private float stormSize;
@@ -88,23 +91,14 @@ public class RoninStormSlash : MonoBehaviour
                 isAttacking = false;
                 yield break;
             }
-            roninManager.canDamage = false;
-            roninAnimator.canChangeDirection = true;
+            
             isAttacking = true;
             if (attackInstance != null)
             {
                 Destroy(attackInstance);
             }
-            rb.bodyType = RigidbodyType2D.Kinematic;
-            roninAction.ChangeAnimationState("RoninFlashStepDisappear");
 
-            yield return roninAnimator.IsAnimationFinished("RoninFlashStepDisappear");
-
-            yield return new WaitForSeconds(2f);
-
-            rb.bodyType = RigidbodyType2D.Dynamic;
-
-            attackInstance = Instantiate(stormSlashAttackZone, player.transform.position, Quaternion.identity);
+            attackInstance = Instantiate(stormSlashAttackZone, transform.position, Quaternion.identity);
 
             attackInstance.transform.localScale = new Vector3(stormSize, stormSize, stormSize);
 
@@ -114,22 +108,33 @@ public class RoninStormSlash : MonoBehaviour
             attackZoneScript.knockbackForce = knockbackForce;
             attackZoneScript.knockbackDuration = knockbackDuration;
 
+            yield return new WaitForSeconds(attackDelay);
 
-            // Delays for while
-            roninSFX.playAttackWarning(2);
-            roninAction.ChangeAnimationState("RoninSeveranceWarning");
-            yield return new WaitForSeconds(1f);
+
+            rb.bodyType = RigidbodyType2D.Kinematic;
+            roninManager.canDamage = false;
+
+            roninAction.ChangeAnimationState("RoninFlashStepDisappear");
+            yield return new WaitUntil(() => roninAnimator.IsAnimationFinished("RoninFlashStepDisappear"));
+
+            rb.bodyType = RigidbodyType2D.Dynamic;
+
+            yield return new WaitForSeconds(0.5f);
             // Attack
             attackZoneScript.showHitbox = true;
-            roninAction.ChangeAnimationState("RoninSeverance");
             roninSFX.playSeverance();
             attackZoneScript.EnableDamage();
             yield return new WaitForSeconds(attackDuration);
             attackZoneScript.DisableDamage();
             Destroy(attackInstance);
 
+            roninAction.ChangeAnimationState("RoninFlashStepAppear");
+            yield return new WaitUntil(() => roninAnimator.IsAnimationFinished("RoninFlashStepAppear"));
+
+            roninAction.ChangeAnimationState("RoninSheathe");
+            yield return new WaitUntil(() => roninAnimator.IsAnimationFinished("RoninSheathe"));
             // relax bruh
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1);
         }
         finally
         {

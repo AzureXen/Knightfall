@@ -21,6 +21,7 @@ TagManager:
   - GameManager
   - ShopUI
   - EnemySpawnPoints
+  - LevelManager
   layers:
   - Default
   - TransparentFX

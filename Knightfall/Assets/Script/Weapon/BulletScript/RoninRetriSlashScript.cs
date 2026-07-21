@@ -30,8 +30,6 @@ public class RoninRetriSlashScript : BulletScript
             bulletDirection = (player.transform.position - transform.position).normalized;
         }
 
-        Debug.Log($"bullet direction: {bulletDirection}, player null: {player == null}");
-        Debug.Log($"bullet pos: {transform.position}, player pos: {player.transform.position}");
 
         rb.linearVelocity = new Vector2(bulletDirection.x, bulletDirection.y) * force;
 
@@ -40,9 +38,9 @@ public class RoninRetriSlashScript : BulletScript
 
         Destroy(gameObject, despawnTime);
     }
+
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        
         if (collision.CompareTag("Player"))
         {
             playerManager = collision.gameObject.GetComponent<EntityManager>();

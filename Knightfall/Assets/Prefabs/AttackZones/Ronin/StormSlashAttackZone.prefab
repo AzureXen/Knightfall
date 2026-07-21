@@ -253,4 +253,5 @@ MonoBehaviour:
   attackShow: {fileID: 3646155254116413035}
   roninSFX: {fileID: 0}
   attackHitParticle: {fileID: 0}
-  attackVisual: {fileID: 2183146480622160771, guid: 131ad0e894ecda14eac32155d82d6c3d, type: 3}
+  attackVisual: {fileID: 8891151766747667264, guid: cf85ec743d0cf0c4c88dbea454933284, type: 3}
+  attackVisualSize: 1

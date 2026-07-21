@@ -169,6 +169,13 @@ AnimationClip:
     floatParameter: 1
     intParameter: 0
     messageOptions: 0
+  - time: 0.55
+    functionName: playUnsheathe
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.68333334
     functionName: EnableHitbox1
     data: 
@@ -234,6 +241,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.9
     functionName: DisableHitbox2
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.1
+    functionName: playSheathe
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

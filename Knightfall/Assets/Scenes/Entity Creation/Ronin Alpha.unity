@@ -1645,7 +1645,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.92
+  orthographic size: 8.74
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1984,7 +1984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7990725747006556297, guid: 9dfe10f267aad5c4db246cb7c1469a5a, type: 3}
       propertyPath: BGMVolume
-      value: 0.502
+      value: 0.43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2151,7 +2151,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 5.92
+    OrthographicSize: 8.74
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2253,6 +2253,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc4da175e67fd7d4ba25f89420960c3c, type: 3}
+--- !u!1 &1626301326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626301328}
+  - component: {fileID: 1626301327}
+  m_Layer: 0
+  m_Name: _LevelManager
+  m_TagString: LevelManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1626301327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626301326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebfa48722645d824f81e1ccb81b12dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoninAlphaLevel
+--- !u!4 &1626301328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626301326}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.72193, y: 3.23647, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654901061
 GameObject:
   m_ObjectHideFlags: 0
@@ -8502,65 +8546,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2786221480674844433, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2786221480674844433, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: attackSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: meleeDamage
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: attackCooldown
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5582966858010730386, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: knockbackDuration
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659146071195608383, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659146071195608383, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761266729254848159, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761266729254848159, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
-      objectReference: {fileID: 0}
-    - target: {fileID: 7489169026335801145, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: knockbackDuration
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7908310194563281897, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: mainCam
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 9063268744978135184, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207790156173955037, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207790156173955037, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -801896167
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8584,3 +8572,4 @@ SceneRoots:
   - {fileID: 1207408870}
   - {fileID: 948871539}
   - {fileID: 314782548}
+  - {fileID: 1626301328}

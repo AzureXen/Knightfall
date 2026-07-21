@@ -107,9 +107,11 @@ public class RoninFlashSlash : MonoBehaviour
 
             // Aim attack at player.
             Vector3 playerPos = player.transform.position;
-            Vector3 attackDir = (attackTransform.position - playerPos).normalized;
+
+            Vector3 attackDir = (transform.position - playerPos).normalized;
+
             float rotateZ = Mathf.Atan2(attackDir.y, attackDir.x) * Mathf.Rad2Deg;
-            attackInstance.transform.RotateAround(attackTransform.position, Vector3.forward, rotateZ + 90);
+            attackInstance.transform.RotateAround(transform.position, Vector3.forward, rotateZ + 90);
 
             FlashSlashAttackZoneScript attackZoneScript = attackInstance.GetComponent<FlashSlashAttackZoneScript>();
             attackZoneScript.damage = Damage;
@@ -127,16 +129,16 @@ public class RoninFlashSlash : MonoBehaviour
                 Vector3 playerPosFollow = player.transform.position;
                 if (playerPosFollow != playerPos)
                 {
-                    Vector3 attackDirFollow = (attackTransform.position - playerPosFollow).normalized;
+                    Vector3 attackDirFollow = (transform.position - playerPosFollow).normalized;
                     float rotateZFollow = Mathf.Atan2(attackDirFollow.y, attackDirFollow.x) * Mathf.Rad2Deg;
                     float rotationDifference = rotateZFollow - rotateZ;
-                    attackInstance.transform.RotateAround(attackTransform.position, Vector3.forward, rotationDifference);
+                    attackInstance.transform.RotateAround(transform.position, Vector3.forward, rotationDifference);
                     rotateZ = rotateZFollow;
                     playerPos = playerPosFollow;
                 }
                 // Check if the hitbox went through a wall
                 Vector3 attackDirection = attackInstance.transform.up;
-                Vector3 raycastStart = attackTransform.position;
+                Vector3 raycastStart = transform.position;
                 float raycastDistance = originalLength;
                 RaycastHit2D hit = Physics2D.Raycast(raycastStart, attackDirection, raycastDistance, LayerMask.GetMask("Wall"));
 
@@ -148,13 +150,13 @@ public class RoninFlashSlash : MonoBehaviour
                     //Debug.DrawRay(hit.point, Vector3.up * 0.1f, Color.green, 0.1f);
 
                     attackInstance.transform.localScale = new Vector3(flashSlashWidth, distanceToWall, flashSlashWidth);
-                    attackInstance.transform.position = attackTransform.position + (attackDirection * distanceToWall / 2);
+                    attackInstance.transform.position = transform.position + (attackDirection * distanceToWall / 2);
                     //Debug.DrawRay(raycastStart, attackDirection * distanceToWall, Color.red);
                 }
                 else
                 {
                     attackInstance.transform.localScale = new Vector3(flashSlashWidth, raycastDistance, flashSlashWidth);
-                    attackInstance.transform.position = attackTransform.position + (attackDirection * raycastDistance / 2);
+                    attackInstance.transform.position = transform.position + (attackDirection * raycastDistance / 2);
                     //Debug.DrawRay(raycastStart, attackDirection * raycastDistance, Color.red);
                 }
 
@@ -173,6 +175,7 @@ public class RoninFlashSlash : MonoBehaviour
 
             // play sfx
             roninSFX.playFlashSlash();
+            roninSFX.playUnsheathe();
 
             roninAction.ChangeAnimationState("RoninAttack2");
 

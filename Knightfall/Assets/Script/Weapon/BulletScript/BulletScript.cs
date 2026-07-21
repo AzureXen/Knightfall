@@ -47,6 +47,7 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    // Why didn't i comment anything for this one
     public virtual void BreakBullet()
     {
         Destroy(gameObject);
