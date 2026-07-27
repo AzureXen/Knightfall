@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0641a2423eb7d374d9a22f67738b316e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 25
+  force: 30
   despawnTime: 4
   damage: 15
   knockbackForce: 7

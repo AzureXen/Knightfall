@@ -85,7 +85,7 @@ public class AttackZoneScript : MonoBehaviour
         damagedPlayer = false;
     }
 
-    private void RegisterPlayer(GameObject player)
+    public void RegisterPlayer(GameObject player)
     {
         this.player = player;
         playerManager = player.GetComponent<PlayerManager>();

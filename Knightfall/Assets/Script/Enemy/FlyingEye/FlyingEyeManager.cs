@@ -3,38 +3,56 @@ using UnityEngine;
 
 namespace Assets.Script.Enemy.FlyingEye
 {
-    public class FlyingEyeManager : EntityManager
+    public class FlyingEyeManager : EnemyManager
     {
-        [SerializeField] private Boolean touchDamageEnabled = true;
-        public int touchDamage = 10;
-        public int touchKnockbackForce = 10;
-        public float touchKnockbackDuration = 1.5f;
         private Animator animator;
         [SerializeField] private float attackRange = 10f;
         [SerializeField] private float fireRate = 2f;
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
         private Health health;
 
         [SerializeField] private float healChance = 0.3f; 
         [SerializeField] private int healAmount = 20;
+
+        public event Action<GameObject> OnPlayerFound;
+        protected GameObject player;
+        
         public override void Start()
         {
             entityHealth = GetComponent<Health>();
             sr = GetComponent<SpriteRenderer>();
             rb = GetComponent<Rigidbody2D>();
             entityMovement = GetComponent<FlyingEyeMovement>();
-            isKnockingBack = false;
-            takeDamageCooldown = 0.2f;
-            flashDuration = 2.5f;
+            
             EntityName = "FlyingEye";
             defaultColor = new Color(1, 1, 1, 1);
             animator = GetComponent<Animator>();
             Health health = GetComponent<Health>();
+
+            touchDamageEnabled = false;
+            touchDamage = 10;
+            touchKnockbackForce = 10;
+            touchKnockbackDuration = 1.5f;
+            isKnockingBack = false;
+            takeDamageCooldown = 0.2f;
+            flashDuration = 2.5f;
+
+            player = GameManagerScript.Instance.player;
+            if(player!=null)
+            {
+                OnPlayerFound?.Invoke(player);
+            }
+            else
+            {
+                GameManagerScript.OnPlayerReady += RegisterPlayer;
+            }
         }
 
-        
+        private void RegisterPlayer(GameObject player)
+        {
+            this.player = player;
+            OnPlayerFound?.Invoke(player);
+        }
 
-        // Update is called once per frame
         private void OnCollisionStay2D(Collision2D collision)
         {
             GameObject target = collision.gameObject;

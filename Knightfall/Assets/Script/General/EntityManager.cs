@@ -8,7 +8,7 @@ public class EntityManager : MonoBehaviour
     public bool isAlive = true;
     public String EntityName { get; set; }
 
-    protected Health entityHealth;
+    public Health entityHealth;
     protected EntityMovement entityMovement;
 
     protected SpriteRenderer sr;

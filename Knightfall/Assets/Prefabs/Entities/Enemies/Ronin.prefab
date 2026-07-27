@@ -196,6 +196,7 @@ MonoBehaviour:
   touchKnockbackForce: 5
   touchKnockbackDuration: 1.5
   goldDrop: 5
+  isDefeated: 0
   parryEffectTransform: {fileID: 904429449547155543}
   parryEffectPrefab: {fileID: 2214014688981334391, guid: 032fced119c8b724b95df52d622cca17, type: 3}
   maxRetributionStacks: 1
@@ -222,6 +223,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ccc6100b44880042815dcf934701145, type: 3}
   - {fileID: 8300000, guid: 93f46cced8be95149a44bf454cb65fdf, type: 3}
   canParry: 0
+  singleSlashAttackZone: {fileID: 8179653642698619495, guid: 7de2ac5606611854fbd7c3691fc227dc, type: 3}
 --- !u!114 &4721103885939232146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e840dd469eacbf34aa9f67ab1bef4345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefeated: 0
   distanceFromPlayer: 0
   currentAction: 0
   attackCooldown: 3
@@ -288,17 +289,17 @@ MonoBehaviour:
   flashSlashVisual: {fileID: 8251175109518570751, guid: 039dd5a2d627a5440b4cbdc37a3ebc8c, type: 3}
   attackZone: {fileID: 8179653642698619495, guid: 876d439f84a6899429ae8a5181ecf367, type: 3}
   attackDuration: 0.25
-  Damage: 15
+  Damage: 8
   knockbackForce: 4
   knockbackDuration: 0.3
   flashSpeed: 200
-  flashSlashRange: 10
-  flashSlashWidth: 1.33
+  flashSlashRange: 11
+  flashSlashWidth: 1.4
   attackTransform: {fileID: 2611350318778995394}
-  attackCooldown: 4
+  attackCooldown: 12
   attackCoolDownTimer: 4
   followPlayerDuration: 1
-  delayAfterFollowDuration: 0.4
+  delayAfterFollowDuration: 0.28
   isAttacking: 0
 --- !u!114 &5570917127877376178
 MonoBehaviour:
@@ -316,7 +317,7 @@ MonoBehaviour:
   retributionSlashPrefab: {fileID: 6857924010955406395, guid: a3f3af9fabace954c893e466101b050a, type: 3}
   retributionSlashSwingPrefab: {fileID: 3674603051728546029, guid: 3f9680fd95ae46b45918095f8228688b, type: 3}
   attackDuration: 1
-  Damage: 20
+  Damage: 10
   knockbackForce: 3
   knockbackDuration: 0.4
   attackCooldown: 5
@@ -336,13 +337,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackZone: {fileID: 8179653642698619495, guid: 81c7188480a5c6e46a30c2ea7a2b9f8b, type: 3}
   SeveranceVisual: {fileID: 766328651084064877, guid: a749482a341b8ce458bff6369a03cfa8, type: 3}
-  severanceSize: 3
+  severanceSize: 3.5
   attackDuration: 0.5
-  severanceDamage: 15
+  severanceDamage: 10
   knockbackForce: 5
   knockbackDuration: 0.2
   followPlayerDuration: 0.7
-  delayAfterFollowDuration: 0.35
+  delayAfterFollowDuration: 0.28
   attackCooldown: 22
   attackCoolDownTimer: 12
   attackTransform: {fileID: 2611350318778995394}
@@ -359,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3720793d6d0db6f4f858c7674a3e28ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoninBasicAttack
-  damage: 8
+  damage: 7
   knockbackForce: 6
   knockbackDuration: 0.2
   dashMaxDistance: 3.6

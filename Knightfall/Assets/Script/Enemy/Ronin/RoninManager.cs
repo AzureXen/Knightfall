@@ -66,7 +66,9 @@ public class RoninManager : EnemyManager
     private RoninManager roninManager;
 
     public Boolean canParry = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // SINGLE SLASH TEST
+    [SerializeField] private GameObject singleSlashAttackZone;
     public override void Start()
     {
         touchDamageEnabled = false;
@@ -115,6 +117,7 @@ public class RoninManager : EnemyManager
                 Debug.Log("Ronin Level Manager component not found!");
             }
         }
+        
     }
 
     private void Update()
@@ -156,6 +159,10 @@ public class RoninManager : EnemyManager
         if (isDefeated && roninAction.currentAction != RoninActions.DEFEATED)
         {
             EnterDeath();
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            StartCoroutine(SpawnSingleAttackZoneTest());
         }
     }
 
@@ -445,6 +452,26 @@ public class RoninManager : EnemyManager
         else Debug.Log("RoninAction: Cannot find roninCanvasInstance");
 
         roninAction.EnterDeath();
+    }
+
+    private IEnumerator SpawnSingleAttackZoneTest()
+    {
+        GameObject attackInstance = Instantiate(singleSlashAttackZone, player.transform.position, Quaternion.identity);
+        attackInstance.transform.localScale = new Vector3(1f, 5f, 1f);
+        yield return new WaitForSeconds(2);
+        SingleSlashAttackZone attackZoneScript = attackInstance.GetComponent<SingleSlashAttackZone>();
+        if (attackZoneScript != null)
+        {
+            attackZoneScript.EnableDamage();
+            yield return new WaitForSeconds(0.5f);
+            attackZoneScript.DisableDamage();
+            Destroy(attackInstance);
+        }
+        else
+        {
+            Debug.Log("spawnSingleAttackZoneTest: attackZoneScript not found!");
+        }
+            yield return null;
     }
 
 }
