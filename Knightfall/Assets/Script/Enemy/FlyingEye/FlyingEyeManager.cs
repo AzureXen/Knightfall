@@ -15,7 +15,10 @@ namespace Assets.Script.Enemy.FlyingEye
 
         public event Action<GameObject> OnPlayerFound;
         protected GameObject player;
-        
+
+        [SerializeField] private Collider2D enemyBodyCollider;
+        private Collider2D playerBodyCollider;
+
         public override void Start()
         {
             entityHealth = GetComponent<Health>();
@@ -28,18 +31,11 @@ namespace Assets.Script.Enemy.FlyingEye
             animator = GetComponent<Animator>();
             Health health = GetComponent<Health>();
 
-            touchDamageEnabled = false;
-            touchDamage = 10;
-            touchKnockbackForce = 10;
-            touchKnockbackDuration = 1.5f;
-            isKnockingBack = false;
-            takeDamageCooldown = 0.2f;
-            flashDuration = 2.5f;
-
             player = GameManagerScript.Instance.player;
             if(player!=null)
             {
                 OnPlayerFound?.Invoke(player);
+                playerBodyCollider = player.GetComponent<Collider2D>();
             }
             else
             {
@@ -50,18 +46,40 @@ namespace Assets.Script.Enemy.FlyingEye
         private void RegisterPlayer(GameObject player)
         {
             this.player = player;
+            playerBodyCollider = player.GetComponent<Collider2D>();
             OnPlayerFound?.Invoke(player);
         }
 
         private void OnCollisionStay2D(Collision2D collision)
         {
             GameObject target = collision.gameObject;
-            if (target.CompareTag("Player") && touchDamageEnabled)
+            if (touchDamageEnabled && target.CompareTag("Player"))
             {
                 EntityManager targetManager = target.GetComponent<EntityManager>();
+                Debug.Log("Dealing touch damage to player");
+                Debug.Log("Knockback: " + touchKnockbackForce);
+                Debug.Log("Knockback Duration: " + touchKnockbackDuration);
                 targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
             }
         }
 
+        public void EnablePlayerCollision()
+        {
+            if (enemyBodyCollider != null && playerBodyCollider != null)
+            {
+                Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, false);
+            }
+            if (enemyBodyCollider == null) Debug.LogWarning("Cannot find enemy collider");
+            if (playerBodyCollider == null) Debug.LogWarning("Cannot find player collider");
+        }
+        public void DisablePlayerCollision()
+        {
+            if (enemyBodyCollider != null && playerBodyCollider != null)
+            {
+                Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, true);
+            }
+            if (enemyBodyCollider == null) Debug.LogWarning("Cannot find enemy collider");
+            if (playerBodyCollider == null) Debug.LogWarning("Cannot find player collider");
+        }
     }
 }

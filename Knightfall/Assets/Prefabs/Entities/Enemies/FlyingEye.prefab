@@ -81,6 +81,8 @@ GameObject:
   - component: {fileID: 7601901128205913805}
   - component: {fileID: 7324157838190956727}
   - component: {fileID: 1785489046473146992}
+  - component: {fileID: 7698436792577237682}
+  - component: {fileID: 8146666705530366468}
   - component: {fileID: 8223872046203670705}
   - component: {fileID: 7220255738612979716}
   - component: {fileID: 4118457291684047014}
@@ -204,7 +206,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2, y: -0.18}
+  m_Offset: {x: 0.27, y: -0.29}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -214,7 +216,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.32, y: 1.75}
+  m_Size: {x: 1.5, y: 1.28}
   m_EdgeRadius: 0
 --- !u!50 &5553396225276920437
 Rigidbody2D:
@@ -228,8 +230,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 1000
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -241,7 +243,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &8803645038761706078
 MonoBehaviour:
@@ -260,17 +262,19 @@ MonoBehaviour:
   takeDamageCooldown: 0.2
   canDamage: 1
   knockbackDuration: 0.5
+  isKnockingBack: 0
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   knockbackResist: 0
   touchDamageEnabled: 1
   touchDamage: 10
-  touchKnockbackForce: 10
-  touchKnockbackDuration: 1.5
+  touchKnockbackForce: 5
+  touchKnockbackDuration: 0.2
   goldDrop: 5
   attackRange: 10
   fireRate: 2
   healChance: 0.3
   healAmount: 20
+  enemyBodyCollider: {fileID: 370013090541378026}
 --- !u!114 &5304359244288691449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +292,7 @@ MonoBehaviour:
   moveDir: {x: 0, y: 0}
   isChasingPlayer: 0
   isMoving: 0
-  chaseSpeed: 5
+  chaseSpeed: 7
   maxWallAvoidAttempts: 5
   wallStopDistance: 3
   wallDetectionDistance: 4
@@ -325,6 +329,7 @@ MonoBehaviour:
   currentAction: 1
   attackCooldown: 3
   moveAroundTime: 2
+  distanceFromPlayer: 0
 --- !u!114 &1785489046473146992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +347,43 @@ MonoBehaviour:
   dashSpeed: 8
   isAttacking: 0
   damage: 5
+  knockbackDuration: 0.3
+  knockbackForce: 2
+--- !u!114 &7698436792577237682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409527561792853631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651968998cb14a4cb9b7e3df1eb1db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingEyeShoot
+  bulletPrefab: {fileID: 2528800921919278007, guid: aa69e356977896f43b246b916268d443, type: 3}
+  bulletSpeed: 20
+  damage: 5
+  knockbackDuration: 0.3
+  knockbackForce: 2
+  shootDelay: 0.5
+  recoilForce: 5
+  recoilDuration: 0.15
+--- !u!114 &8146666705530366468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409527561792853631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0c5483146ed042ac8982692f9916d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingEyeSpecial
+  chaseSpeed: 4
+  chaseDuration: 4
+  damage: 8
   knockbackDuration: 0.3
   knockbackForce: 2
 --- !u!114 &8223872046203670705
@@ -646,6 +688,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1610952001512927442, guid: 12c43e8e7f6a20648b49fba4c9928ea1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646155254116413035, guid: 12c43e8e7f6a20648b49fba4c9928ea1, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6320089587102039529, guid: 12c43e8e7f6a20648b49fba4c9928ea1, type: 3}

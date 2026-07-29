@@ -945,12 +945,12 @@ MonoBehaviour:
   moveSpeed: 4
   sprintSpeed: 8
   speedBoost: 1
-  dodgeSpeed: 12
+  dodgeSpeed: 10
   moveDir: {x: 0, y: 0}
   staminaRegenPS: 4
   staminaRegenBonusMultiplier: 3
   sprintCostPerSecond: 2
-  dodgeCost: 20
+  dodgeCost: 18
   dodgeIFrameDuration: 0.25
   isRunning: 0
   isHoldingDodge: 0
@@ -1004,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlive: 1
+  entityHealth: {fileID: 0}
   takeDamageCooldown: 1
   canDamage: 1
   knockbackDuration: 0.5

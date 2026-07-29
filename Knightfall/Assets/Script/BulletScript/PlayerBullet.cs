@@ -2,14 +2,15 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class EnemyBullet : BulletScript
+public class PlayerBullet : BulletScript
 {
+    // For Destroy Bullet
     public GameObject arrowHalvesPrefab;
     public float splitForce = 2f;
     public float splitRotateForce = 25f;
     public float destroyTime = 2f;
     public float fadeDuration = 1f;
-    //FOR ERNEMY BULLET, ADD PLAYER POSITION
+    public PlayerSFX playerSFX;
 
     protected override void Start()
     {
@@ -17,18 +18,10 @@ public class EnemyBullet : BulletScript
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        // DEFAULT ENEMY BULLET DIRECTION IF PLAYER IS DESTROYED WHEN PROJECTILE IS SHOT
-        Vector3 bulletDirection = Vector3.up;
-        Vector3 playerPos = Vector3.up;
-        // FOR ENEMY BULLETS, CHANGE THE BULLET DIRECTION TO PLAYER
-        if (GameObject.FindGameObjectsWithTag("Player") != null)
-        {
-            playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-            bulletDirection = playerPos - transform.position;
-        }
+        Vector3 bulletDirection = mousePos - transform.position;
         rb.linearVelocity = new Vector2(bulletDirection.x, bulletDirection.y).normalized * force;
 
-        Vector3 bulletRotation = transform.position - playerPos;
+        Vector3 bulletRotation = transform.position - mousePos;
         float rotation = Mathf.Atan2(bulletRotation.y, bulletRotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotation + 90);
         Destroy(gameObject, despawnTime);
@@ -36,13 +29,17 @@ public class EnemyBullet : BulletScript
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        Boolean successHit = false;
-        if (collision.CompareTag("Player"))
+        Boolean successHit = false; 
+        if (!disabledDamage && collision.CompareTag("Enemy"))
         {
             EntityManager enemyManager = collision.gameObject.GetComponent<EntityManager>();
             if (enemyManager != null)
             {
                 successHit = enemyManager.TakeRangedHit(damage, transform.position, knockbackForce, knockbackDuration, this);
+            }
+            if (successHit && playerSFX!=null)
+            {
+                playerSFX.playArrowHit();
             }
         }
     }
@@ -88,7 +85,7 @@ public class EnemyBullet : BulletScript
     {
         Color originColor = sr.color;
         float timer = 0f;
-        while (timer < fadeDuration)
+        while(timer < fadeDuration)
         {
             timer += Time.deltaTime;
             float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);

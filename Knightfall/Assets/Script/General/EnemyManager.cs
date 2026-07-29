@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyManager : EntityManager
 {
-    [SerializeField] protected bool touchDamageEnabled = true;
+    [SerializeField] public bool touchDamageEnabled = true;
     public int touchDamage = 5;
     public int touchKnockbackForce = 5;
     public float touchKnockbackDuration = 1.5f;

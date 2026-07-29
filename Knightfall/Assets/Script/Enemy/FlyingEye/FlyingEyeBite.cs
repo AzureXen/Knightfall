@@ -6,8 +6,6 @@ using static RoninAction;
 public class FlyingEyeBite : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private FlyingEyeManager manager;
-    private FlyingEyeAction eyeAction;
     private FlyingEyeAnimator animator;
     private GameObject player;
     [SerializeField] private GameObject biteAttackHitbox;
@@ -27,8 +25,6 @@ public class FlyingEyeBite : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        manager = GetComponent<FlyingEyeManager>();
-        eyeAction = GetComponent<FlyingEyeAction>();
         animator = GetComponent<FlyingEyeAnimator>();
         player = GameManagerScript.Instance.player;
         if (player == null) GameManagerScript.OnPlayerReady += RegisterPlayer;
@@ -67,8 +63,6 @@ public class FlyingEyeBite : MonoBehaviour
     {
         try
         {
-            // i set isAttacking in FlyingEyeAction immediately after calling Attack() function now
-            //isAttacking = true;
             animator.PlayAnimation(FlyingEyeAnimator.ATTACK_1);
             yield return new WaitUntil(() => animator.IsAnimationFinished(FlyingEyeAnimator.ATTACK_1));
             yield return new WaitForSeconds(0.1f);
@@ -105,67 +99,43 @@ public class FlyingEyeBite : MonoBehaviour
         Collider2D enemyBodyCollider = GetComponent<Collider2D>();
         Collider2D playerBodyCollider = player.GetComponent<Collider2D>();
 
-        if (enemyBodyCollider != null && playerBodyCollider != null)
-        {
-            Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, true);
-        }
-
         Vector3 startingPosition = transform.position;
         Vector3 playerPosition = player.transform.position;
+        Vector3 directionToPlayer = (playerPosition - startingPosition).normalized;
+        float distanceToPlayer = Vector3.Distance(startingPosition, playerPosition);
 
-        Vector3 directionToPlayer = (playerPosition - startingPosition);
-        float distanceToPlayer = directionToPlayer.magnitude;
-        directionToPlayer.Normalize();
-
-        Vector3 targetDestination;
-        if (distanceToPlayer <= dashMaxDistance)
-        {
-            targetDestination = playerPosition;
-        }
-        else
-        {
-            targetDestination = startingPosition + (directionToPlayer * dashMaxDistance);
-        }
+        Vector3 targetDestination = distanceToPlayer <= dashMaxDistance
+            ? playerPosition
+            : startingPosition + (directionToPlayer * dashMaxDistance);
 
         float totalDashDistance = Vector3.Distance(startingPosition, targetDestination);
-        RaycastHit2D wallHit = Physics2D.Raycast(startingPosition, directionToPlayer, totalDashDistance, LayerMask.GetMask("Wall"));
 
-        // --- VISUAL DEBUGGING START ---
-        if (wallHit.collider != null && wallHit.collider.CompareTag("Wall"))
-        {
-            // Draw a RED line from the starting position to exactly where it hit the wall
-            Debug.DrawLine(startingPosition, wallHit.point, Color.red, 2.0f);
+        float enemyRadius = enemyBodyCollider != null ? enemyBodyCollider.bounds.extents.x : 0.5f;
+        RaycastHit2D wallHit = Physics2D.CircleCast(
+            startingPosition,
+            enemyRadius,
+            directionToPlayer,
+            totalDashDistance,
+            LayerMask.GetMask("Wall")
+        );
 
-            // Draw a green dot/crosshair at the exact collision point
-            Debug.DrawRay(wallHit.point, Vector3.up * 0.2f, Color.green, 2.0f);
-        }
-        else
+        if (wallHit.collider != null)
         {
-            // Draw a GREEN line showing the full clear path of the dash if nothing was hit
-            Debug.DrawLine(startingPosition, targetDestination, Color.green, 2.0f);
-        }
-        // --- VISUAL DEBUGGING END ---
-
-        if (wallHit.collider != null && wallHit.collider.CompareTag("Wall"))
-        {
-            float safeDistance = Mathf.Max(0f, wallHit.distance - 5f);
+            float safeDistance = Mathf.Max(0f, wallHit.distance - enemyRadius + 0.5f);
             targetDestination = startingPosition + (directionToPlayer * safeDistance);
         }
-
-        while (Vector3.Distance(transform.position, targetDestination) > 0.15f)
+        while (Vector3.Distance(rb.position, targetDestination) > 0.1f)
         {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
+            Vector2 newPos = Vector2.MoveTowards(
+                rb.position,
                 targetDestination,
-                dashSpeed * Time.deltaTime
+                dashSpeed * Time.fixedDeltaTime
             );
-            yield return null;
+            rb.MovePosition(newPos);
+            yield return new WaitForFixedUpdate();
         }
 
-        if (enemyBodyCollider != null && playerBodyCollider != null)
-        {
-            Physics2D.IgnoreCollision(enemyBodyCollider, playerBodyCollider, false);
-        }
+        rb.MovePosition(targetDestination);
 
         rb.linearVelocity = Vector2.zero;
         dashCoroutine = null;

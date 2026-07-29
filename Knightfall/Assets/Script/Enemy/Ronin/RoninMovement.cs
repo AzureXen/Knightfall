@@ -18,14 +18,19 @@ public class RoninMovement : EntityMovement
     private float directionTimer;
     private int currentSideDirection = 1; // 1 for right, -1 for left
 
+    private RoninManager roninManager;
+
     private void Start()
     {
+        roninManager = GetComponent<RoninManager>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void FixedUpdate()
     {
+        if (roninManager.isKnockingBack) return;
+
         if (!canMove || player==null)
         {
             rb.linearVelocity = Vector2.zero;

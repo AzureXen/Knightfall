@@ -23,7 +23,7 @@ public class EntityManager : MonoBehaviour
 
     public float knockbackDuration = 0.5f;
     protected float knockbackTimer = 0f;
-    protected Boolean isKnockingBack;
+    public Boolean isKnockingBack;
     protected Vector3 knockbackDirection;
     protected float knockbackForce;
 
@@ -63,6 +63,11 @@ public class EntityManager : MonoBehaviour
             TakeHitKnockback(damage, target, force, knockBackDuration);
         }
     }
+
+    // target: the target who dealt this knock back to this entity
+    // source: the manager of the entity that dealt this knock back to this entity
+    // why? damage reflection. there maybe times where if we deal damage to a certain entity at a certain situation, they will reflect that damage back.
+    // optional. in this code, you can see that the EntityManager is unused. but you must specify the entitymanager source every time, in case a certain entity requires it.
     public virtual Boolean TakeMeleeHit(int damage, Vector3 target, float force, float knockBackDuration, EntityManager source)
     {
         if (isAlive && canDamage)
@@ -81,6 +86,7 @@ public class EntityManager : MonoBehaviour
         {
             StartCoroutine(KnockBack(target, finalKnockbackForce, duration));
         }
+        else Debug.Log(EntityName +": knock back force is less than 0: " + finalKnockbackForce);
     }
     public virtual Boolean TakeHit(int damage)
     {
@@ -174,42 +180,78 @@ public class EntityManager : MonoBehaviour
     //    entityMovement.EnableMovement();
     //}
 
+
+
+
+    // THIS KNOCK BACK USES ADD FORCE
+    //protected IEnumerator KnockBack(Vector3 target, float force, float duration)
+    //{
+    //    entityMovement.DisableMovement();
+    //    yield return null;
+
+    //    if (rb != null)
+    //    {
+    //        rb.linearVelocity = Vector2.zero; // Clear momentum
+
+    //        // 1. Calculate the raw distance vector from the attack point (target) to this entity
+    //        Vector3 directionToFly = transform.position - target;
+
+
+    //        if (directionToFly.magnitude < 0.05f)
+    //        {
+    //            float defaultX = (transform.position.x >= target.x) ? 1f : -1f;
+    //            directionToFly = new Vector3(defaultX, 0.2f, 0f);
+    //        }
+
+    //        // 2. Safely normalize now that we guaranteed it's not zero
+    //        Vector2 finalDirection = ((Vector2)directionToFly).normalized;
+
+    //        // 3. Launch away from the attack origin point!
+    //        rb.AddForce(finalDirection * force, ForceMode2D.Impulse);
+
+    //        yield return new WaitForSeconds(duration);
+
+    //        rb.linearVelocity = Vector2.zero;
+    //    }
+
+    //    entityMovement.EnableMovement();
+    //}
+
+
+    // THIS KNOCK BACK USES LINEAR.VELOCITY
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
+        isKnockingBack = true;
         entityMovement.DisableMovement();
         yield return null;
-
         if (rb != null)
         {
-            rb.linearVelocity = Vector2.zero; // Clear momentum
+            rb.linearVelocity = Vector2.zero;
 
-            // 1. Calculate the raw distance vector from the attack point (target) to this entity
             Vector3 directionToFly = transform.position - target;
-
-
+            Debug.Log($"entity pos: {transform.position}, target: {target}, raw direction: {directionToFly}");
             if (directionToFly.magnitude < 0.05f)
             {
                 float defaultX = (transform.position.x >= target.x) ? 1f : -1f;
                 directionToFly = new Vector3(defaultX, 0.2f, 0f);
             }
-            else
-            {
-                // Give it a tiny bit of upward lift so they don't friction-drag on the floor
-                directionToFly.y += 0.2f;
-            }
 
-            // 2. Safely normalize now that we guaranteed it's not zero
             Vector2 finalDirection = ((Vector2)directionToFly).normalized;
+            Debug.Log($"final direction: {finalDirection}, force: {force}");
 
-            // 3. Launch away from the attack origin point!
-            rb.AddForce(finalDirection * force, ForceMode2D.Impulse);
-
-            yield return new WaitForSeconds(duration);
+            float elapsed = 0f;
+            while (elapsed < duration)
+            {
+                rb.linearVelocity = finalDirection * force;
+                Debug.Log($"velocity being set: {rb.linearVelocity}, actual rb velocity: {rb.linearVelocity}");
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
 
             rb.linearVelocity = Vector2.zero;
         }
-
         entityMovement.EnableMovement();
+        isKnockingBack = false;
     }
 
     protected virtual IEnumerator FlashRed()

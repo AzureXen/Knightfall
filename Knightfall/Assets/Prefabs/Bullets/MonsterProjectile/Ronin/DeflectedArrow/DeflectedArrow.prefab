@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5082480139916536778}
   - component: {fileID: 8515108843763458172}
-  - component: {fileID: 1187339972459993986}
+  - component: {fileID: 8762870831036503842}
   - component: {fileID: 7688563116428333891}
   - component: {fileID: 6357902006561327376}
   m_Layer: 0
-  m_Name: EnemyArrow
+  m_Name: DeflectedArrow
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &1187339972459993986
+--- !u!114 &8762870831036503842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,19 +105,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4799751954020987770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa85c52448bf9645b0b819a239366cd, type: 3}
+  m_Script: {fileID: 11500000, guid: ff2079caffa41bf4ea5f91a1ba31628e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  force: 30
-  despawnTime: 2
-  damage: 10
-  knockbackForce: 5
-  knockbackDuration: 0.2
-  arrowHalvesPrefab: {fileID: 5741511456241383006, guid: a6c61eb2d77adf94e992cace0d2b9da0, type: 3}
-  splitForce: 2
-  splitRotateForce: 25
-  destroyTime: 2
-  fadeDuration: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DeflectedBulletScript
 --- !u!50 &7688563116428333891
 Rigidbody2D:
   serializedVersion: 5
@@ -291,4 +281,8 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 3235815005774414043
+    - rid: 3235815005774414043
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []

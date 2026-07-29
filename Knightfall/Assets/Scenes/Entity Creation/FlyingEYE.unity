@@ -1864,14 +1864,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2201619712846001529, guid: ef60ce4c785405744a8bebac834035ab, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2201619712846001529, guid: ef60ce4c785405744a8bebac834035ab, type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
     - target: {fileID: 8826305488335529828, guid: ef60ce4c785405744a8bebac834035ab, type: 3}
       propertyPath: m_Name
       value: MapBeta
@@ -8525,14 +8517,6 @@ PrefabInstance:
     - target: {fileID: 1532414566598632214, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7879818233363166254, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: dodgeCost
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7879818233363166254, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
-      propertyPath: dodgeSpeed
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9063268744978135184, guid: d7690ca2838a8ac4095cab7c3fa8ff98, type: 3}
       propertyPath: m_Name

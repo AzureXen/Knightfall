@@ -96,12 +96,7 @@ public class RoninManager : EnemyManager
 
         roninHealth = GetComponent<Health>();
 
-        // Ronin cannot be pushed by player
-        rb.mass = 10000;
-        rb.linearDamping = 10;
-
         player = GameManagerScript.Instance.player;
-        if (player != null) Debug.Log("Ronin manager: found player without registering.");
         if (player == null) GameManagerScript.OnPlayerReady += RegisterPlayer;
 
         GameObject levelManager = GameObject.FindGameObjectWithTag("LevelManager");
@@ -117,7 +112,7 @@ public class RoninManager : EnemyManager
                 Debug.Log("Ronin Level Manager component not found!");
             }
         }
-        
+
     }
 
     private void Update()
@@ -248,8 +243,8 @@ public class RoninManager : EnemyManager
                     }
                 }
                 curMotivation -= damage;
-                TakeHitKnockback(0, target, force * 0.25f, knockBackDuration * 0.25f);
-                source.TakeKnockBack(transform.position, force * 0.75f, knockBackDuration * 0.75f);
+                TakeHitKnockback(0, target, force * 0.5f, knockBackDuration * 0.5f);
+                source.TakeKnockBack(transform.position, force * 0.5f, knockBackDuration * 0.5f);
 
                 SpawnParryEffect();
                 roninSFX.playBlock();
@@ -302,9 +297,11 @@ public class RoninManager : EnemyManager
                     curRetributionStacks++;
                 }
                 curRetributionStacks = Mathf.Clamp(curRetributionStacks, 0, maxRetributionStacks);
-                bullet.DestroyBulletInstant();
                 GameObject instance = Instantiate(deflectedBullet, transform.position, Quaternion.identity);
+                DeflectedBulletScript enemyBullet = instance.GetComponent<DeflectedBulletScript>();
+                enemyBullet.Init(Utils.DirectionTo(transform, player), bullet.force, bullet.damage, bullet.knockbackForce, bullet.knockbackDuration);
 
+                bullet.DestroyBulletInstant();
                 roninSFX.playDeflectRanged();
                 return false;
             }

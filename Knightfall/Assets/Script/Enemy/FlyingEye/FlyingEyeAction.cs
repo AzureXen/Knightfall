@@ -23,6 +23,8 @@ public class FlyingEyeAction : MonoBehaviour
     private FlyingEyeManager flyingEyeManager;
     private FlyingEyeMovement flyingEyeMovement;
     private FlyingEyeBite flyingEyeBite;
+    private FlyingEyeShoot flyingEyeShoot;
+    private FlyingEyeSpecial flyingEyeSpecial;
     private FlyingEyeAnimator flyingEyeAnimator;
 
     [SerializeField] private float attackCooldown= 3f;
@@ -33,12 +35,16 @@ public class FlyingEyeAction : MonoBehaviour
 
     [SerializeField] private float moveAroundTime = 2f;
 
+    [SerializeField] private float distanceFromPlayer;
+
 
     private void Start()
     {
         flyingEyeManager = GetComponent<FlyingEyeManager>();
         flyingEyeMovement = GetComponent<FlyingEyeMovement>();
         flyingEyeBite = GetComponent<FlyingEyeBite>();
+        flyingEyeShoot = GetComponent<FlyingEyeShoot>();
+        flyingEyeSpecial = GetComponent<FlyingEyeSpecial>();
         flyingEyeAnimator = GetComponent<FlyingEyeAnimator>();
         player = flyingEyeManager.Player;
         if(player == null)
@@ -54,6 +60,11 @@ public class FlyingEyeAction : MonoBehaviour
         {
             currentAction = FlyingEyeActions.FINDING_PLAYER;
             return;
+        }
+
+        if (player != null)
+        {
+            distanceFromPlayer = Vector3.Distance(transform.position, player.transform.position);
         }
 
         switch (currentAction) {
@@ -81,7 +92,7 @@ public class FlyingEyeAction : MonoBehaviour
     {
         if (attackCooldownTimer == 0)
         {
-            actionCoroutine = StartCoroutine(AttackBite());
+            actionCoroutine = StartCoroutine(AttackSpecial());
         }
         else actionCoroutine = StartCoroutine(MoveAround());
     }
@@ -89,20 +100,64 @@ public class FlyingEyeAction : MonoBehaviour
 
     private IEnumerator AttackBite()
     {
+        Coroutine attackBiteCoroutine = null;
         try
         {
+            // If player is too far away, chase after player until they are within range.
+            // distance before stop chasing is randomized, giving less of a "robot" feeling.
+            float stopChaseDistance = UnityEngine.Random.Range(2f, 3f);
+            while (distanceFromPlayer > stopChaseDistance)
+            {
+                flyingEyeAnimator.ChangeDirectionFacePlayer();
+                currentAction = FlyingEyeActions.CHASE;
+                flyingEyeMovement.isMoving = true;
+                flyingEyeMovement.isChasingPlayer = true;
+                yield return null;
+            }
+            flyingEyeMovement.isMoving = false;
+            flyingEyeMovement.isChasingPlayer = false;
+
             currentAction = FlyingEyeActions.ATTACK_CLOSE;
-            flyingEyeBite.Attack();
-            flyingEyeBite.isAttacking = true;
-            while (flyingEyeBite.isAttacking) yield return null;
+            yield return flyingEyeBite.Attack();
+            attackCooldownTimer = attackCooldown;
+        }
+        finally
+        {
+            if (attackBiteCoroutine != null) StopCoroutine(attackBiteCoroutine);
+            currentAction = FlyingEyeActions.IDLE;
+            actionCoroutine = null;
+        }
+    }
+
+    private IEnumerator AttackShoot()
+    {
+        try
+        {
+            currentAction = FlyingEyeActions.ATTACK_RANGED;
+            yield return flyingEyeShoot.Attack();
+            attackCooldownTimer = attackCooldown;
         }
         finally
         {
             currentAction = FlyingEyeActions.IDLE;
-            attackCooldownTimer = attackCooldown;
+            actionCoroutine = null;
         }
     }
 
+    private IEnumerator AttackSpecial()
+    {
+        try
+        {
+            currentAction = FlyingEyeActions.ATTACK_SPECIAL;
+            yield return flyingEyeSpecial.Attack();
+            attackCooldownTimer = attackCooldown;
+        }
+        finally
+        {
+            currentAction = FlyingEyeActions.IDLE;
+            actionCoroutine = null;
+        }
+    }
 
     private IEnumerator MoveAround()
     {

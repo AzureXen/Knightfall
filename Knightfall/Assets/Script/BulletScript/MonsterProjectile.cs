@@ -3,15 +3,10 @@ using UnityEngine;
 public class MonsterProjectile : BulletScript
 {
     [SerializeField] private float speed = 10f;
-    [SerializeField] private int monsterDmg = 10;
-    public int monsterKnockbackForce = 10;
-    public float touchKnockbackDuration = 1.5f;
     private Vector2 direction;
 
     protected override void Start()
     {
-        damage = monsterDmg;
-        knockbackForce = monsterKnockbackForce;
         Destroy(gameObject, 5f);
     }
 
@@ -34,7 +29,7 @@ public class MonsterProjectile : BulletScript
             EntityManager player = collision.GetComponent<EntityManager>();
             if (player != null)
             {
-                player.TakeRangedHit(damage, transform.position, knockbackForce, touchKnockbackDuration, this);
+                player.TakeRangedHit(damage, transform.position, knockbackForce, knockbackDuration, this);
             }
             Destroy(gameObject);
         }

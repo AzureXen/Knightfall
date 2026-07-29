@@ -12,11 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbe446c376180041a22d9ea67eea6e3, type: 3}
   m_Name: PlayerDataSO
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDataSO
+  defaultHealth: 100
+  defaultMaxHealth: 100
+  defaultStamina: 120
+  defaultMaxStamina: 120
+  defaultGold: 0
+  defaultMeleeDamage: 12
+  defaultMeleeSpeed: 1.5
+  defaultMeleeKnockbackForce: 5
+  defaultMeleeKnockbackDuration: 0.4
+  defaultMeleeAttackCooldown: 0.3
   currentHealth: 100
   maxHealth: 100
+  stamina: 120.03955
   maxStamina: 120
-  stamina: 120
-  goldAmount: 0
+  gold: 0
   meleeDamage: 12
   meleeSpeed: 1.5
   meleeKnockbackForce: 5
