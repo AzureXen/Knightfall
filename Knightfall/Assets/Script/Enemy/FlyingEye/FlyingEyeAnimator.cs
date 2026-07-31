@@ -10,6 +10,7 @@ public class FlyingEyeAnimator : MonoBehaviour
     public const String ATTACK_2_END = "Attack2End";
     public const String ATTACK_3_WARNING = "Attack3Warning";
     public const String ATTACK_3_SHOOT = "Attack3Shoot";
+    public const String ATTACK_4 = "Attack4";
     public const String DEATH_1 = "Death1";
     public const String DEATH_2 = "Death2";
     public const String HURT = "Hurt";

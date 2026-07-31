@@ -192,7 +192,7 @@ MonoBehaviour:
   knockbackDuration: 0.5
   isKnockingBack: 0
   defaultColor: {r: 1, g: 0.9339622, b: 0.9339622, a: 0}
-  knockbackResist: 0
+  knockbackResist: 10
   touchDamageEnabled: 1
   touchDamage: 5
   touchKnockbackForce: 5
@@ -302,7 +302,8 @@ MonoBehaviour:
   attackCoolDownTimer: 4
   followPlayerDuration: 1
   delayAfterFollowDuration: 0.28
-  isAttacking: 0
+  FollowUpFollowPlayerDuration: 0.25
+  FollowUpDelayAfterFollowDuration: 0.25
 --- !u!114 &5570917127877376178
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class RoninBGM : MonoBehaviour
 
     public void playBattleBGM()
     {
-        BGMAudioScript.changeBGM(RoninBGMClips[1], 0.3f);
+        BGMAudioScript.changeBGM(RoninBGMClips[1], 0.7f);
     }
     public void playBattleEndBGM()
     {

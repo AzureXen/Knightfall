@@ -19,6 +19,8 @@ public class RoninManager : EnemyManager
     private int currentHealth;
     public Boolean isDefeated = false;
 
+    public bool IsInAbsoluteOffenseState = false;
+
     private RoninAlphaLevel roninLevelManager;
 
     [SerializeField] private GameObject parryEffectTransform;
@@ -136,6 +138,7 @@ public class RoninManager : EnemyManager
         if(curMotivation < 0 && (!isStunned || roninAction.currentAction != RoninAction.RoninActions.STUNNED) && !isDefeated)
         {
             StartCoroutine(parryBreakStun(stunDuration));
+            IsInAbsoluteOffenseState = true;
         }
         if(curMotivation < maxMotivation && !isStunned)
         {
@@ -242,7 +245,11 @@ public class RoninManager : EnemyManager
                         curAbsoluteDefenseStacks = Mathf.Clamp(curAbsoluteDefenseStacks, 0, maxAbsoluteDefenseStacks);
                     }
                 }
-                curMotivation -= damage;
+
+                // IF RONIN IS IN ABSOLUTE OFFENSE STATE, TAKE 50% LESS REDUCTION TO MOTIVATION
+                if(IsInAbsoluteOffenseState) curMotivation -= Mathf.RoundToInt(damage * 0.75f);
+                else curMotivation -= damage;
+
                 TakeHitKnockback(0, target, force * 0.5f, knockBackDuration * 0.5f);
                 source.TakeKnockBack(transform.position, force * 0.5f, knockBackDuration * 0.5f);
 

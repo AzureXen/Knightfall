@@ -63,8 +63,8 @@ public class FlyingEyeBite : MonoBehaviour
     {
         try
         {
-            animator.PlayAnimation(FlyingEyeAnimator.ATTACK_1);
-            yield return new WaitUntil(() => animator.IsAnimationFinished(FlyingEyeAnimator.ATTACK_1));
+            animator.PlayAnimation(FlyingEyeAnimator.ATTACK_4);
+            yield return new WaitUntil(() => animator.IsAnimationFinished(FlyingEyeAnimator.ATTACK_4));
             yield return new WaitForSeconds(0.1f);
             isAttacking = false;
         }

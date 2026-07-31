@@ -41,6 +41,7 @@ public class RoninAction : MonoBehaviour
         STORMSLASH,
         PARRY,
         ABSOLUTE_DEFENSE,
+        FOLLOW_UP_FLASH_SLASH,
         RETRIBUTION_SLASH,
         SUPERPARRY,
         STUNNED,
@@ -59,6 +60,8 @@ public class RoninAction : MonoBehaviour
     RoninSFX roninSFX;
     private RoninFlashSlash roninFlashSlash;
 
+    private RoninHealth roninHealth;
+
     private RoninRetributionSlash roninRetributionSlash;
 
     private RoninSeverance roninSeverance;
@@ -73,6 +76,7 @@ public class RoninAction : MonoBehaviour
     [SerializeField] private float parryStateTimer;
     void Start()
     {
+        roninHealth = GetComponent<RoninHealth>();
         roninAnimator = GetComponent<RoninAnimator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentAction = RoninActions.STARTING_IDLE;
@@ -267,6 +271,7 @@ public class RoninAction : MonoBehaviour
             canDecide = false;
             currentAction = RoninActions.ABSOLUTE_DEFENSE;
             ChangeAnimationState(RONIN_ATTACK_1_QUICK);
+            if (roninManager.IsInAbsoluteOffenseState) attackCooldownTimer = 0;
             yield return new WaitForSeconds(0.5f);
         }
         finally
@@ -297,20 +302,12 @@ public class RoninAction : MonoBehaviour
             canDecide = false;
             currentAction = RoninActions.ABSOLUTE_DEFENSE;
             ChangeAnimationState(RONIN_ATTACK_1_QUICK);
+            if (roninManager.IsInAbsoluteOffenseState) attackCooldownTimer = 0;
             yield return new WaitForSeconds(0.5f);
 
-            currentAction = RoninActions.RETRIBUTION_SLASH;
-            ChangeAnimationState(RONIN_RETRIBUTIONSLASH_WARNING);
-            roninSFX.playAttackWarning(3);
-            yield return new WaitForSeconds(0.5f);
-
-            ChangeAnimationState(RONIN_ATTACK_2);
-            roninSFX.playRetributionSlash();
-            yield return new WaitForSeconds(0.35f);
-
-            roninRetributionSlash.Attack();
+            currentAction = RoninActions.FOLLOW_UP_FLASH_SLASH;
+            yield return roninFlashSlash.AttackFollowUp();
             roninManager.curRetributionStacks--;
-            yield return new WaitForSeconds(1.5f);
 
             attackCooldownTimer = attackCooldown;
         }
@@ -326,6 +323,8 @@ public class RoninAction : MonoBehaviour
     {
         try
         {
+            roninManager.isKnockbackResist = true;
+            roninManager.IsInAbsoluteOffenseState = true;
             roninAnimator.canChangeDirection = false;
             canDecide = false;
             ChangeAnimationState(RONIN_STUNNED);
@@ -347,6 +346,7 @@ public class RoninAction : MonoBehaviour
         }
         finally
         {
+            roninManager.isKnockbackResist = false;
             attackCooldownTimer = 1f;
             canDecide = true;
             ChangeAnimationState(RONIN_IDLE);
@@ -410,13 +410,11 @@ public class RoninAction : MonoBehaviour
             roninMovement.isChasing = false;
 
             currentAction = RoninActions.FLASHSLASH;
-            attackCooldownTimer = attackCooldown;
-            roninFlashSlash.Attack();
-            yield return null;
-            while (roninFlashSlash.isAttacking)
-            {
-                yield return null;
-            }
+            yield return roninFlashSlash.Attack();
+
+            // IF RONIN HEALTH IS IN ABSOLUTE OFFENSE STATE, FLASH SLASH WILL NOT APLPLY ATTACK COOLDOWN
+            // He is going craazy
+            if(!roninManager.IsInAbsoluteOffenseState) attackCooldownTimer = attackCooldown;
         }
         finally
         {

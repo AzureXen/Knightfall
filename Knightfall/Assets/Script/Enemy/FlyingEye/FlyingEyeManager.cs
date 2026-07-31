@@ -19,12 +19,15 @@ namespace Assets.Script.Enemy.FlyingEye
         [SerializeField] private Collider2D enemyBodyCollider;
         private Collider2D playerBodyCollider;
 
+        public event Action OnTouchDamage;
+
         public override void Start()
         {
             entityHealth = GetComponent<Health>();
             sr = GetComponent<SpriteRenderer>();
             rb = GetComponent<Rigidbody2D>();
             entityMovement = GetComponent<FlyingEyeMovement>();
+            touchDamageEnabled = false;
             
             EntityName = "FlyingEye";
             defaultColor = new Color(1, 1, 1, 1);
@@ -50,16 +53,16 @@ namespace Assets.Script.Enemy.FlyingEye
             OnPlayerFound?.Invoke(player);
         }
 
-        private void OnCollisionStay2D(Collision2D collision)
+        protected override void OnCollisionStay2D(Collision2D collision)
         {
             GameObject target = collision.gameObject;
             if (touchDamageEnabled && target.CompareTag("Player"))
             {
                 EntityManager targetManager = target.GetComponent<EntityManager>();
-                Debug.Log("Dealing touch damage to player");
-                Debug.Log("Knockback: " + touchKnockbackForce);
-                Debug.Log("Knockback Duration: " + touchKnockbackDuration);
-                targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this);
+                if(targetManager.TakeMeleeHit(touchDamage, transform.position, touchKnockbackForce, touchKnockbackDuration, this))
+                {
+                    OnTouchDamage?.Invoke();
+                }
             }
         }
 

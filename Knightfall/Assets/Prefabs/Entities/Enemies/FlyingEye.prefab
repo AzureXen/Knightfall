@@ -30,6 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9022176938564351349}
+  - {fileID: 5537729014202491619}
   m_Father: {fileID: 9072612765411650543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1365375150769951327
@@ -83,6 +84,7 @@ GameObject:
   - component: {fileID: 1785489046473146992}
   - component: {fileID: 7698436792577237682}
   - component: {fileID: 8146666705530366468}
+  - component: {fileID: 7827844779647520240}
   - component: {fileID: 8223872046203670705}
   - component: {fileID: 7220255738612979716}
   - component: {fileID: 4118457291684047014}
@@ -104,8 +106,8 @@ Transform:
   m_GameObject: {fileID: 8409527561792853631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.057, y: -1.312, z: 0}
-  m_LocalScale: {x: 0.8711, y: 0.8608, z: 1}
+  m_LocalPosition: {x: -3.0197, y: -1.312, z: 0}
+  m_LocalScale: {x: 0.86360854, y: 0.8608, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2286252816254905626}
@@ -381,11 +383,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a0c5483146ed042ac8982692f9916d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyingEyeSpecial
-  chaseSpeed: 4
-  chaseDuration: 4
-  damage: 8
-  knockbackDuration: 0.3
+  chaseSpeed: 6
+  chaseDuration: 3.5
+  damage: 12
+  knockbackDuration: 0.5
   knockbackForce: 2
+--- !u!114 &7827844779647520240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409527561792853631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfd9d688583c04439f1c11943f59be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyingEyeDashAttack
+  dashSpeed: 12
+  dashMaxDistance: 25
+  damage: 10
+  knockbackDuration: 0.3
+  knockbackForce: 8
+  DashAttackZoneGameObject: {fileID: 3098829331561965654}
 --- !u!114 &8223872046203670705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +649,89 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9187101524446085130, guid: 7dd05142a8760d7428704f5d2b3ed145, type: 3}
   m_PrefabInstance: {fileID: 5051217750108485325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6521976960728961585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2286252816254905626}
+    m_Modifications:
+    - target: {fileID: -7638389828440506595, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: showHitbox
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 482171856844276428, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179653642698619495, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+      propertyPath: m_Name
+      value: DashAttackZone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+--- !u!1 &3098829331561965654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8179653642698619495, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+  m_PrefabInstance: {fileID: 6521976960728961585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5537729014202491619 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1610952001512927442, guid: 52b133f2bb5506f4dbc3a24c7f6cfee5, type: 3}
+  m_PrefabInstance: {fileID: 6521976960728961585}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7741254898346919335
 PrefabInstance:

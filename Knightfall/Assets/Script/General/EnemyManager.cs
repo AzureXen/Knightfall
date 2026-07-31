@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -35,7 +36,7 @@ public class EnemyManager : EntityManager
     {
         this.Player = player;
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    protected virtual void OnCollisionStay2D(Collision2D collision)
     {
         GameObject target = collision.gameObject;
         if (target.CompareTag("Player") && touchDamageEnabled && isAlive)
@@ -50,10 +51,10 @@ public class EnemyManager : EntityManager
     {
         base.Die();
 
-        Collider2D entityCollider = GetComponent<Collider2D>();
-        if (entityCollider != null)
+        Collider2D[] entityColliders = GetComponents<Collider2D>();
+        foreach (var col in entityColliders)
         {
-            entityCollider.enabled = false;
+            col.enabled = false;
         }
 
         sr.color = Color.black;

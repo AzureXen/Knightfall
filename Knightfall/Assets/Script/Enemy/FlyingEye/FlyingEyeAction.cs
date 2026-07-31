@@ -15,7 +15,8 @@ public class FlyingEyeAction : MonoBehaviour
         MOVE,
         ATTACK_CLOSE,
         ATTACK_RANGED,
-        ATTACK_SPECIAL
+        ATTACK_SPECIAL,
+        ATTACK_DASH,
     }
 
     [SerializeField] private FlyingEyeActions currentAction = FlyingEyeActions.IDLE;
@@ -25,6 +26,7 @@ public class FlyingEyeAction : MonoBehaviour
     private FlyingEyeBite flyingEyeBite;
     private FlyingEyeShoot flyingEyeShoot;
     private FlyingEyeSpecial flyingEyeSpecial;
+    private FlyingEyeDashAttack flyingEyeDashAttack;
     private FlyingEyeAnimator flyingEyeAnimator;
 
     [SerializeField] private float attackCooldown= 3f;
@@ -45,6 +47,7 @@ public class FlyingEyeAction : MonoBehaviour
         flyingEyeBite = GetComponent<FlyingEyeBite>();
         flyingEyeShoot = GetComponent<FlyingEyeShoot>();
         flyingEyeSpecial = GetComponent<FlyingEyeSpecial>();
+        flyingEyeDashAttack = GetComponent<FlyingEyeDashAttack>();
         flyingEyeAnimator = GetComponent<FlyingEyeAnimator>();
         player = flyingEyeManager.Player;
         if(player == null)
@@ -92,7 +95,7 @@ public class FlyingEyeAction : MonoBehaviour
     {
         if (attackCooldownTimer == 0)
         {
-            actionCoroutine = StartCoroutine(AttackSpecial());
+            actionCoroutine = StartCoroutine(AttackDash());
         }
         else actionCoroutine = StartCoroutine(MoveAround());
     }
@@ -117,7 +120,38 @@ public class FlyingEyeAction : MonoBehaviour
             flyingEyeMovement.isMoving = false;
             flyingEyeMovement.isChasingPlayer = false;
 
-            currentAction = FlyingEyeActions.ATTACK_CLOSE;
+            currentAction = FlyingEyeActions.ATTACK_DASH;
+            yield return flyingEyeDashAttack.Attack();
+            attackCooldownTimer = attackCooldown;
+        }
+        finally
+        {
+            if (attackBiteCoroutine != null) StopCoroutine(attackBiteCoroutine);
+            currentAction = FlyingEyeActions.IDLE;
+            actionCoroutine = null;
+        }
+    }
+
+    private IEnumerator AttackDash()
+    {
+        Coroutine attackBiteCoroutine = null;
+        try
+        {
+            // If player is too far away, chase after player until they are within range.
+            // distance before stop chasing is randomized, giving less of a "robot" feeling.
+            float stopChaseDistance = UnityEngine.Random.Range(6f, 9f);
+            while (distanceFromPlayer > stopChaseDistance)
+            {
+                flyingEyeAnimator.ChangeDirectionFacePlayer();
+                currentAction = FlyingEyeActions.CHASE;
+                flyingEyeMovement.isMoving = true;
+                flyingEyeMovement.isChasingPlayer = true;
+                yield return null;
+            }
+            flyingEyeMovement.isMoving = false;
+            flyingEyeMovement.isChasingPlayer = false;
+
+            currentAction = FlyingEyeActions.ATTACK_DASH;
             yield return flyingEyeBite.Attack();
             attackCooldownTimer = attackCooldown;
         }

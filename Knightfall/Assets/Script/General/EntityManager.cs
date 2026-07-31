@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EntityManager : MonoBehaviour
 {
+    public bool isKnockbackResist = false;
     public bool isAlive = true;
     public String EntityName { get; set; }
 
@@ -221,37 +222,37 @@ public class EntityManager : MonoBehaviour
     // THIS KNOCK BACK USES LINEAR.VELOCITY
     protected IEnumerator KnockBack(Vector3 target, float force, float duration)
     {
-        isKnockingBack = true;
-        entityMovement.DisableMovement();
-        yield return null;
-        if (rb != null)
+        if (!isKnockbackResist)
         {
-            rb.linearVelocity = Vector2.zero;
-
-            Vector3 directionToFly = transform.position - target;
-            Debug.Log($"entity pos: {transform.position}, target: {target}, raw direction: {directionToFly}");
-            if (directionToFly.magnitude < 0.05f)
+            isKnockingBack = true;
+            entityMovement.DisableMovement();
+            yield return null;
+            if (rb != null)
             {
-                float defaultX = (transform.position.x >= target.x) ? 1f : -1f;
-                directionToFly = new Vector3(defaultX, 0.2f, 0f);
+                rb.linearVelocity = Vector2.zero;
+
+                Vector3 directionToFly = transform.position - target;
+                if (directionToFly.magnitude < 0.05f)
+                {
+                    float defaultX = (transform.position.x >= target.x) ? 1f : -1f;
+                    directionToFly = new Vector3(defaultX, 0.2f, 0f);
+                }
+
+                Vector2 finalDirection = ((Vector2)directionToFly).normalized;
+
+                float elapsed = 0f;
+                while (elapsed < duration)
+                {
+                    rb.linearVelocity = finalDirection * force;
+                    elapsed += Time.deltaTime;
+                    yield return null;
+                }
+
+                rb.linearVelocity = Vector2.zero;
             }
-
-            Vector2 finalDirection = ((Vector2)directionToFly).normalized;
-            Debug.Log($"final direction: {finalDirection}, force: {force}");
-
-            float elapsed = 0f;
-            while (elapsed < duration)
-            {
-                rb.linearVelocity = finalDirection * force;
-                Debug.Log($"velocity being set: {rb.linearVelocity}, actual rb velocity: {rb.linearVelocity}");
-                elapsed += Time.deltaTime;
-                yield return null;
-            }
-
-            rb.linearVelocity = Vector2.zero;
+            entityMovement.EnableMovement();
+            isKnockingBack = false;
         }
-        entityMovement.EnableMovement();
-        isKnockingBack = false;
     }
 
     protected virtual IEnumerator FlashRed()
